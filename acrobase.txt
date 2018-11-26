@@ -176,6 +176,7 @@ OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 OOP,,Object Oriented Programming
 OS,,Operating System
+OTOH,,On The Other Hand
 PC,,Personal Compute
 PITA,,Pain In The Assr
 PNG,,Portable Network Graphics (an image file format and its support community)
