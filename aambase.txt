@@ -2,3 +2,4 @@
 [style i [i [b]]]
 [style strike <strike>[b]</strike>]
 [style bq <blockquote>[b]</blockquote>]
+[style sqig [ls][b][rs]]
