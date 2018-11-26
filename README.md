@@ -7,6 +7,15 @@ acronyms, and you should, as you find yourself using them. In addition,
 there's a built-in macro processor that lets you build shortcuts for
 anything, signatures, etc., so you can make richer posts more easily.
 
+## Requirements / Installation:
+
+This is a CGI web application, so it needs to run on a webserver such as
+Apache. Put all the files into a directory where python cgi applications
+\(denoted by files that end in `.py`\) are allowed to run, then
+simple access the application with:
+
+`http://yourserver.tld/cgi-path/soyacro.py`
+
 ## Use:
 
 When you write your post on this page, if you use an acronym (defined as
