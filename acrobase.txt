@@ -86,6 +86,7 @@ FFS,,For Fuck's Sake
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FML,,Fuck My Life
+FOSS,,Free Open Source Software
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
 FTFY,,Fixed That For You
@@ -180,9 +181,10 @@ OEM,,Original Equipment Manufacturer
 OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 OOP,,Object Oriented Programming
-OS,,Operating System
+OS,,Operating System, Open-Source (software)
 OTOH,,On The Other Hand
 PC,,Personal Compute
+PD,,Public Domain, Police Department
 PITA,,Pain In The Assr
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
