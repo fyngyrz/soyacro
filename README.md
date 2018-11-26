@@ -27,7 +27,7 @@ acronym file. Anything that is reasonable will be merged.
 This is a CGI web application, so it needs to run on a webserver such as
 Apache. Put all the files into a directory where python cgi applications
 \(denoted by files that end in `.py`\) are allowed to run, then
-simple access the application with:
+simply access the application with:
 
 `http://yourserver.tld/cgi-path/soyacro.py`
 
