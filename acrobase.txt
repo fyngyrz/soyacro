@@ -248,6 +248,7 @@ USPS,,United States Postal Service
 VPN,,Virtual Private Network
 WAN,,Wide Area Network
 WHO,,World Health Organization
+WRT,,With Regard To
 WTF,,What The Fuck
 WTH,,What The Hell
 WWW,,World Wide Web (or just, "the Web")
