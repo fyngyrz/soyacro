@@ -1,0 +1,250 @@
+# This is an all-caps acronym/abbreviation definition file
+# To be used with acro.py
+# Format each entry all on one line with three elements:
+#    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
+#    A-SINGLE-COMMA
+#    Nothing OR a mixed-case replacement for the all-caps, ie MHZ,MHz,Megahertz
+#    A-SINGLE COMMA
+#    Acronym / abbreviation expansion all on ONE line. Example:
+# ACRO,Acronym
+# -------------------------------------------------------------------
+
+2D,,Two Dimensional
+3D,,Three Dimensional
+411,,A number, and a shorthand for: Information
+420,,A number, and a shorthand for: Time to smoke some pot
+69,,A number, and a shorthand for: Mutual inverted oral sex activities
+73,,A number, and a shorthand for: Goodbye
+AC,,Anonymous Coward, or Alternating Current
+ADC,,Analog to Digital Converter
+ADD,,Attention Deficit Disorder
+AFAIK,,As Far As I Know
+AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
+AMA,,Ask Me Anything
+ANSI,,American National Standards Institute
+AOL,,America OnLine (a digital services provider)
+API,,Application Programmer Interface
+APL,,A Programming Language
+ASCII,,American Standard Code For Information Interchange (a 7-bit code)
+BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
+BBC,,British Broadcasting Corporation
+BCC,,Blind Carbon Copy
+BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
+BTW,,By The Way
+CAD,,Computer Aided Design
+CBC,,Canadian Broadcasting Corporation
+CC,,Carbon Copy
+CD,,Compact Disk
+CEO,,Chief Executive Officer
+CDC,,Center for Disease Control (US)
+CFO,,Chief Financial Officer
+CGI,,Common Gateway Interface, also Computer Generated Imagery
+CIA,,Central Intelligence Agency (US)
+CMOS,,Complementary Metal Oxide Semiconductor
+CMY,,Cyan, Magenta, Yellow
+CMYK,,Cyan, Magenta, Yellow, Black
+CNC,,Computer Numeric Control (manufacturing tools)
+CNN,,Cable News Network
+COO,,Chief Operating Officer
+CPU,,Central Processing Unit
+CRT,,Cathode Ray Tube
+CSS,,Cascading Style Sheet - a means to indirectly provide formatting to HTML
+CST,,Central Standard Time
+DAC,,Digital to Analog Converter
+DBMS,,Database Management System
+DC,,Direct Current
+DEA,,Drug Enforcement Agency (US)
+DHCP,,Dynamic Host Configuration Protocol
+DHS,,Department of Homeland Security (US)
+DIMM,,Dual Inline Memory module
+DMA,,Direct Memory Access
+DNS,,Domain Name System
+DOD,,Department Of Defense (US)
+DOE,,Department Of Energy (US)
+DOJ,,Department Of Justice (US)
+DOT,,Department Of Transportation (US)
+DPI,,Dots Per Inch
+DR,,Didn't Read
+DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
+DSL,,Digital Subscriber Line
+DSLR,,Digital single-lens reflex (camera)
+DVD,,Digital Video Disk
+DVR,,Digital Video Recorder
+ECC,,Error Correcting Code
+EPA,,Environmental Protection Agency (US)
+EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
+EPS,,Encapsulated PostScript
+EST,,Eastern Standard Time
+EU,,European Union
+FAA,,Federal Aviation Administration (US)
+FAQ,,Frequently Asked Questions
+FBI,,Federal Bureau of Investigation (US)
+FCC,,Federal Communications Commission
+FDA,,Food and Drug Administration (US)
+FEMA,,Federal Emergency Management Agency (US)
+FFS,,For Fuck's Sake
+FIFO,,First In, First Out
+FIOS,,FIber Optic Service
+FML,,Fuck My Life
+FPU,,Floating Point Unit
+FSB,,Federal Security Service (Russian Federation)
+FTFY,,Fixed That For You
+FTP,,File Transfer Protocol
+FTW,,For The Win
+FU,,Fuck You
+FUBAR,,Fucked Up Beyond All Recovery
+FWIW,,For What It's Worth
+FYI,,For Your Information
+GB,,Gigabytes
+GHZ,GHz,Gigahertz - Billions of cycles per second
+GIF,,Graphics Interchange Format - stores either still or animated images
+GIGO,,Garbage In, Garbage Out
+GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
+GPS,,Global Positioning System
+GPU,,Graphics Processing Unit
+HDMI,,High Definition Multimedia Interface
+HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
+HP,,Hewlett-Packard (company) or Highway Patrol (officer)
+HTH,,Hope That Helped or Here To Help
+IBM,,International Business Machines
+ICE,,Immigration and Customs Enforcement
+IDC,,I Don't Care
+IDGAD,,I Don't Give A Damn
+IDGAF,,I Don't Give A Fuck
+IDK,,I Don't Know
+IMHO,,In My Honest Opinion
+IOW,,In Other Words
+IQ,,Intelligence Quotient or I/Q phases of data encoding
+IRC,,Internet Relay Chat
+HF,,High Frequency
+HOA,,Home Owner's Association
+HTML,,Hypertext Markup Language
+HTTP,,HyperText Transfer Protocol
+HTTPS,,HyperText Transfer Protocol, Secure
+HZ,Hz,Hertz (cycles per second)
+ICANN,,Internet Corporation For Assigned Names And Numbers
+ICMP,,Internet Control Message Protocol
+IDE,,Integrated Development Environment (for example editor + compiler + linker)
+IEEE,,Institute Of Electrical And Electronics Engineers
+IP,,Internet Protocol (usually referring to a specific Internet addrees)
+IRQ,,Interrupt ReQuest
+IRS,,Internal Revenue Service (US)
+ISA,,Industry Standard Architecture
+ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
+ISP,,Internet Service Provider
+JPG,,A format for compressing image files.
+JPEG,,A format for compressing image files.
+JRE,,Java Runtime Environment
+JSON,,A file format designed to hold human- and machine-readable data
+KB,,Kilobytes or Knowledge Base
+KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
+KHZ,KHz,Kilohertz - Thousands of cycles per second
+KVM,,Keyboard, Video, and Mouse switch
+LAN,,Local Area Network
+LCD,,Liquid Crystal Display
+LDAP,,Lightweight Directory Access Protocol
+LF,,Low Frequency
+LIFO,,Last In, First Out
+LMAO,,Laughing My Ass Off
+LMFAO,,Laughing My Fucking Ass Off
+LOL,,Laugh Out Loud
+LPI,,Lines Per Inch
+MB,,Megabytes
+MHZ,MHz,Megahertz - Millions of cycles per second
+MF,,Medium Frequency
+MIC,,Miltary Industrial Complex
+MIDI,,Musical Instrument Digital Interface
+MMU,,Memory Management Unit
+MPEG,,Motion Picture Experts Group
+MST,,Mountain Standard Time
+NASA,,National Aeronautics and Space Administration
+NAT,,Network Address Translation
+NSFW,,Not Safe For Work
+NFW,,No Fucking Way
+NHK,,International public broadcasting service of Japan.
+NHS,,National Health Service (Britain)
+NIH,,Not Invented Here
+NPR,,National Public Radio (US)
+NRO,,National Reconnaisance Office (US)
+NSA,,National Security Agency (US)
+NTS,,Note To Self
+NTW,,Not To Worry
+NYT,,New York Times
+OCR,,Optical Character Recognition
+OEM,,Original Equipment Manufacturer
+OMB,,Office of Management and Budget (US)
+OMG,,Oh My God
+OOP,,Object Oriented Programming
+OS,,Operating System
+PC,,Personal Compute
+PITA,,Pain In The Assr
+PNG,,Portable Network Graphics (an image file format and its support community)
+POS,,Piece Of Shit
+PPI,,Pixels Per Inch
+PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
+PST,,Pacific Standard Time
+RAM,,Random Access Memory - get to any part of the memory at any time
+RAW,,Deep color image files, usually from cameras
+RF,,Radio Frequency, usually short for Radio Frequency signal
+RFI,,Radio Frequency Interference
+RGB,,Red, Green, Blue
+RGBA,,Red, Green, Blue, Alpha (transparency)
+ROM,,Read-Only Memory - you can't write new information to this
+ROTFL,,Rolling On The Floor Laughing
+RTTY,,Radio Teletype
+SATA,,Serial Advanced Technology Attachment
+SCOTUS,,Supreme Court Of The United States
+SDR,,Software Defined Radio
+SEO,,Search Engine Optimization
+SETI,,Search for Extra Terrestrial Intelligence
+SFW,,Safe For Work
+SIMM,,Single Inline Memory Module
+SLR,,Single Lens Reflex (cameras)
+SHF,,Super High Frequency
+SMB,,Server Message Block
+SMH,,Suck Me Hard
+SMS,,Short Message Service
+SOL,,Shit Out of Luck
+SQL,,Structured Query Language (for databases)
+SRLSY,,Seriously
+SSA,,Social Security Administration (US)
+SSH,,Secure SHell
+SSL,,Secure Sockets Layer
+SSN,,Social Security Number	
+SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
+TBH,,To Be Honest
+TF,,The Fuck
+TFA,,The Fucking Article
+TFS,,The Fucking Summary
+TFT,,Thin Film Transistor (usually display)
+TIA,,Thanks In Advance
+TIFF,,Tagged Image File Format
+TIL,,Today I Learned
+TL,,Too Long
+TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
+TMI,,Too Much Information
+TSA,,Transportation Security Administration (US)
+TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networking, Time To Live
+TTY,,Teletype
+TTYL,,Talk To You Later
+UDP,,User Datagram Protocol
+UHF,,Ultra High Frequency
+UK,,United Kingdom
+UPS,,Uninterruptible Power Supply, or United Parcel Service
+URI,,Uniform Resource Identifier
+URL,,Uniform Resource Locator
+US,,United States (of America)
+USA,,United States of America
+USB,,Universal Serial Bus
+USD,,United States Dollars (currency)
+USG,,United States Government
+USPS,,United States Postal Service
+VPN,,Virtual Private Network
+WAN,,Wide Area Network
+WHO,,World Health Organization
+WTF,,What The Fuck
+WTH,,What The Hell
+WWW,,World Wide Web (or just, "the Web")
+XML,,eXtensible Markup Language
+XTAL,,Crystal
+YOLO,,You Only Live Once
