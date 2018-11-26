@@ -157,7 +157,7 @@ MIDI,,Musical Instrument Digital Interface
 MMU,,Memory Management Unit
 MPEG,,Motion Picture Experts Group
 MST,,Mountain Standard Time
-NASA,,National Aeronautics and Space Administration
+NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
 NSFW,,Not Safe For Work
 NFW,,No Fucking Way

@@ -1,4 +1,3 @@
-[style itoolbox <a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>]
 [style b [b [b]]]
 [style i [i [b]]]
 [style strike <strike>[b]</strike>]
