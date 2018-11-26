@@ -17,6 +17,11 @@ In addition, there's a built-in macro processor that lets you build
 shortcuts for anything, signatures, etc., so you can make richer posts
 more easily.
 
+### Contributions:
+
+I would particularly appreciate any pull requests that enhance the
+acronym file. Anything that is reasonable will be merged.
+
 ## Requirements / Installation:
 
 This is a CGI web application, so it needs to run on a webserver such as
