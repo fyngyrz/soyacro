@@ -227,7 +227,7 @@ border-bottom: red dashed;
 
 mybody = """
 This is an acronym clarifier. When you're going to make a post
-on soylentnews.org, which supports use of the <acro> tag, run the
+on soylentnews.org, which supports use of the <abbr> tag, run the
 post through this first, then copy & paste the output into the
 Soylent comment box. For example, here's what happens to "ISP."
 
