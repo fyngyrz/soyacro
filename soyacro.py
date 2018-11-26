@@ -79,7 +79,7 @@ if aambase != '':
 	mod = macro(noshell=True,noembrace=True,noinclude=True)
 	mod.do(aambase)
 	mod.do('[listg source=local,loclist][asort loclist]')
-	thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span> {cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
+	thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
 	thestylecount = mod.do('[llen loclist]')
 else:
 	mod = None
