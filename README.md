@@ -42,6 +42,11 @@ can rename any of the files \(and you should do so\) to anything you
 like, preferably something very unlikely, so as to prevent anyone from
 stumbling upon the cgi.
 
+Personally, I run it on a webserver inside my LAN, which has no external
+means of access, so I'm not worried about anyone else using it. The above
+remarks are more meant for those who only have a public webserver to
+place this on.
+
 ## Use:
 
 When you write your post on this page, if you use an acronym (defined as
