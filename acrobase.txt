@@ -118,7 +118,7 @@ IQ,,Intelligence Quotient or I/Q phases of data encoding
 IRC,,Internet Relay Chat
 HF,,High Frequency
 HOA,,Home Owner's Association
-HTML,,Hypertext Markup Language
+HTML,,HyperText Markup Language
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
 HZ,Hz,Hertz (cycles per second)
