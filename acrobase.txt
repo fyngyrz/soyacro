@@ -106,16 +106,6 @@ HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
 HTH,,Hope That Helped or Here To Help
-IBM,,International Business Machines
-ICE,,Immigration and Customs Enforcement
-IDC,,I Don't Care
-IDGAD,,I Don't Give A Damn
-IDGAF,,I Don't Give A Fuck
-IDK,,I Don't Know
-IMHO,,In My Honest Opinion
-IOW,,In Other Words
-IQ,,Intelligence Quotient or I/Q phases of data encoding
-IRC,,Internet Relay Chat
 HF,,High Frequency
 HOA,,Home Owner's Association
 HTML,,HyperText Markup Language (in general, also version 1)
@@ -126,11 +116,22 @@ HTML5,,HyperText Markup Language version 5
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
 HZ,Hz,Hertz (cycles per second)
+IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
+ICE,,Immigration and Customs Enforcement
 ICMP,,Internet Control Message Protocol
+IDC,,I Don't Care
 IDE,,Integrated Development Environment (for example editor + compiler + linker)
+IDGAD,,I Don't Give A Damn
+IDGAF,,I Don't Give A Fuck
+IDK,,I Don't Know
 IEEE,,Institute Of Electrical And Electronics Engineers
+IMHO,,In My Honest Opinion
+IIRC,,If I ReCall
+IOW,,In Other Words
 IP,,Internet Protocol (usually referring to a specific Internet addrees)
+IQ,,Intelligence Quotient or I/Q phases of data encoding
+IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
 ISA,,Industry Standard Architecture
