@@ -31,21 +31,45 @@ simply access the application with:
 
 `http://yourserver.tld/cgi-path/soyacro.py`
 
-## Security:
+## Setup
+
+If you'd like unicode support \(UTF-8\), then the `utf8` variable at the
+top of soyacro.py must be set to `True`. In this case, the macro
+processor will not be available.
+
+If you are willing to work with just ASCII text, meaning no character
+accents, no emojis, etc., then set the `utf8` variable to `False`. If you
+do happen to enter a non-ASCII character in this configuration, then it
+will be replaced with the string in the `ucrep` variable. The default is
+an `x` that has been struck out.
+
+You can use the `ifile` and `mfile` variables to change the name of the
+acronym and style files. If you're running only on your own LAN, not much
+to worry about there. But if the web page is on a server with WAN access,
+I recommend renaming both so as to prevent snoooping, etc.
+
+### More on Security:
 
 This application is something specifically intended for use by the person
 who has access to the definition files, which will almost certainly be
 the owner of the server permissions. I highly recommend that you do _not_
 hand out the URL to this web application, as I wrote it for the use of a
-benign user. I've provided a means for security-by-obscurity, in that you
-can rename any of the files \(and you should do so\) to anything you
-like, preferably something very unlikely, so as to prevent anyone from
-stumbling upon the cgi.
+benign user.
 
-Personally, I run it on a webserver inside my LAN, which has no external
-means of access, so I'm not worried about anyone else using it. The above
-remarks are more meant for those who only have a public webserver to
-place this on.
+On a WAN or untrusted LAN? I've provided a means for
+security-by-obscurity, in that you can rename any of the data files \(and
+you should do so\) to anything you like, preferably something very
+unlikely, so as to prevent anyone from stumbling upon the cgi.
+
+You can also rename the main processor. If you do this, you need to
+change the `cginame` variable at the top of the file to match the new
+filename.
+
+Personally, I run this on a webserver inside my LAN, which has no
+external means of access and to which no one else has any access, so I'm
+not worried about anyone else using it. The above remarks are more meant
+for those who only have a public webserver to place this on, or who
+have untrusted users on their LAN \(why?\)
 
 ## Use:
 
@@ -96,7 +120,8 @@ NASA,,National Aeronautics and Space Administration (US)
 
 ## `aambase.txt`:
 
-This contains macros you can use in your posts. The macro language,
+This contains macros you can use in your posts if you set the `utf8`
+variable to `False`. . The macro language,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html) is _very_
 capable, and if you'd like to go further, the documentation awaits. You
 can use HTML in the macros. For instance, here's a macro that produces a
@@ -143,9 +168,9 @@ Italizing for emphasis, I <i>really</i> mean it!
 
 ## The Python files
 
-`soyacro.py` is the cgi you access on your webserver. You might put in a
-cgi-bin folder, along with the other two Python files, and then get to it
-with `http://mysite.com/cgi-bin/soyacro.py`, although I strongly
+`soyacro.py` is the cgi you access on your webserver. You might put it in
+a cgi-bin folder, along with the other two Python files, and then get to
+it with `http://mysite.com/cgi-bin/soyacro.py`, although I strongly
 recommend you rename it to something else, and change the `cginame`
 variable in `soyacro.py` to that name in order to provide a layer of
 "security by obscurity."
@@ -153,7 +178,7 @@ variable in `soyacro.py` to that name in order to provide a layer of
 Likewise, you can, and probably should, change the filenames of the
 `aambase.txt` and `acrobase.txt`, and again there are variables at the
 top of `soyacro.py` into which you should place the new names so it knows
-how to find the files.
+how to find the files. See *Setup*, above.
 
 ## Limitations and Design Choices
 
@@ -162,12 +187,14 @@ This is a Python 2 project. It incorporates another Python 2 project,
 or unless I move that project to Python 3 \(not very likely, but someone
 else might undertake that\), Python 2 will remain the target here.
 
-Unicode is not supported. Same reason: The macro processor doesn't
+Unicode is not fully supported. Same reason: The macro processor doesn't
 support Unicode, so things would generally break there if this project
-tried to allow for Unicode.
+tried to allow for Unicode overall. There is a setting to select unicode,
+which will switch off the macro processor. Conversely, if you turn
+off unicode, you get to use macros. Choose wisely, grasshopper.
 
-Having said that, by all means feel free to fork and go your own way with
-either / both projects. The Github repo for the macro processor is
+Having said all that, by all means feel free to fork and go your own way
+with either / both projects. The Github repo for the macro processor is
 [here](https://github.com/fyngyrz/aa_macro).
 
 ## License
