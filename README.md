@@ -157,7 +157,7 @@ how to find the files.
 
 ## Limitations and Design Choices
 
-This is a Python 2 project. It incorporates another Python 2.7 project,
+This is a Python 2 project. It incorporates another Python 2 project,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
 or unless I move that project to Python 3 \(not very likely, but someone
 else might undertake that\), Python 2 will remain the target here.
