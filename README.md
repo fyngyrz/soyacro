@@ -179,6 +179,6 @@ at. Stop feeding the lawyers. Also, if your country doesn't allow for
 public domain release by authors, you should get to work fixing that
 right away.
 
-The top of the Python files contains information about development and so
+The top of the Python files present information about development and so
 forth if you'd like to peruse that. Otherwise, don't worry about it, and
 have fun.
