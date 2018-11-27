@@ -155,6 +155,21 @@ Likewise, you can, and probably should, change the filenames of the
 top of `soyacro.py` into which you should place the new names so it knows
 how to find the files.
 
+## Limitations and Design Choices
+
+This is a Python 2 project. It incorporates another Python 2.7 project,
+[aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
+or unless I move that project to Python 3 \(not very likely, but someone
+else might undertake that\), Python 2 will remain the targett here.
+
+Unicode is not supported. Same reason: The macro processor doesn't
+support Unicode, so things would generally break there if this project
+tried to allow for Unicode.
+
+Having said that, by all means feel free to fork and go your own way with
+either / both projects. The Github repo for the macro processor is
+[here](https://github.com/fyngyrz/aa_macro).
+
 ## License
 
 You can use this any way you want. It's 100% free and unencumbered by any
