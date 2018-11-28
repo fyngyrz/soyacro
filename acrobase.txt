@@ -60,6 +60,7 @@ DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
 DIMM,,Dual Inline Memory module
 DMA,,Direct Memory Access
+DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNS,,Domain Name System
 DOD,,Department Of Defense (US)
 DOE,,Department Of Energy (US)
@@ -76,6 +77,8 @@ ECC,,Error Correcting Code
 EPA,,Environmental Protection Agency (US)
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
+ERU,,Energy Recovery Unit
+ESA,,European Space Agency
 EST,,Eastern Standard Time
 EU,,European Union
 FAA,,Federal Aviation Administration (US)
@@ -108,10 +111,11 @@ GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
-HP,,Hewlett-Packard (company) or Highway Patrol (officer)
-HTH,,Hope That Helped or Here To Help
 HF,,High Frequency
+HIV,,Human Immunodeficiency Virus
+HP,,Hewlett-Packard (company) or Highway Patrol (officer)
 HOA,,Home Owner's Association
+HTH,,Hope That Helped or Here To Help
 HTML,,HyperText Markup Language (in general, also version 1)
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
@@ -174,6 +178,7 @@ NFW,,No Fucking Way
 NHK,,International public broadcasting service of Japan.
 NHS,,National Health Service (Britain)
 NIH,,Not Invented Here
+NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRO,,National Reconnaisance Office (US)
 NSA,,National Security Agency (US)
@@ -201,6 +206,7 @@ RF,,Radio Frequency, usually short for Radio Frequency signal
 RFI,,Radio Frequency Interference
 RGB,,Red, Green, Blue
 RGBA,,Red, Green, Blue, Alpha (transparency)
+RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 ROM,,Read-Only Memory - you can't write new information to this
 ROTFL,,Rolling On The Floor Laughing
 RTTY,,Radio Teletype
@@ -254,6 +260,7 @@ USG,,United States Government
 USPS,,United States Postal Service
 VPN,,Virtual Private Network
 WAN,,Wide Area Network
+WEC,,Wave Energy Converter
 WHO,,World Health Organization
 WRT,,With Regard To
 WTF,,What The Fuck
