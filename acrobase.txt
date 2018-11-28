@@ -125,6 +125,7 @@ HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
 HZ,Hz,Hertz (cycles per second)
 IBM,,International Business Machines
+IC,,Integrated Circuit; Insenstive Clod
 ICANN,,Internet Corporation For Assigned Names And Numbers
 ICE,,Immigration and Customs Enforcement
 ICMP,,Internet Control Message Protocol
