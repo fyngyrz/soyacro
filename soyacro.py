@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: November 27th, 2018 (code file only)
+#  Last Update: November 28th, 2018 (code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #  Tab Spacing: Set to 4 for sane readability of Python source
@@ -22,8 +22,9 @@
 #               standard Python os import library
 # ----------------------------------------------------------
 
-# If you use UTF-8 (emojis, non-English characters), you should
-# set this to True. Macro processing is disabled in that case.
+# If you want to use UTF-8 (emojis, non-English characters),
+# you can set this to True. Macro processing is disabled in
+# that case. You get one or the other.
 # -------------------------------------------------------------
 utf8 = False
 
@@ -52,8 +53,8 @@ mfile = 'aambase.txt'	# list of aa_macro macros - see file
 # cginame variable just above.
 # --------------------------------------------------------------
 
-# The format for each line in the data file is:
-# =============================================
+# The format for each line in the acronym data file is:
+# =====================================================
 # all-caps-keyword,[optional keyword replacement],expansion
 #     or...
 # blank line

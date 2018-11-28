@@ -26,6 +26,7 @@ AOL,,America OnLine (a digital services provider)
 API,,Application Programmer Interface
 APL,,A Programming Language
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
+ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
 BCC,,Blind Carbon Copy
