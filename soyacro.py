@@ -33,7 +33,10 @@ utf8 = False
 # Other sane choices might be '' for just skipping the characters,
 # '.' for a period, '--NO UNICODE--' to really annoy yourself,
 # etc. You can use anything, just be aware that a lot of "anything"
-# will probably make a mess out of your posts. :)
+# will probably make a mess out of your posts.
+# This also might be fun...
+#        &#128169;
+# ...it'll turn every unicode character into a pile of poop. :)
 # -----------------------------------------------------------------
 ucrep = '<strike>x</strike>'
 
