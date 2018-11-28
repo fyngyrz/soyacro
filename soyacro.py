@@ -19,6 +19,7 @@
 #               aa_macro.py by fyngyrz
 #               standard Python cgi import library
 #               standard Python sys import library
+#               standard Python os import library
 # ----------------------------------------------------------
 
 # If you use UTF-8 (emojis, non-English characters), you should
@@ -66,28 +67,35 @@ mfile = 'aambase.txt'	# list of aa_macro macros - see file
 # ===========================================
 
 from aa_webpage import *
-import cgi,sys
+import cgi,sys,os
 
 undict = {}
 errors = u''
 
+if 'GATEWAY_INTERFACE' in os.environ:
+	cmdline = False
+else:
+	cmdline = True
+
 # Read in the user's post content:
 # --------------------------------
-form = cgi.FieldStorage()
-
-try:
-	usertext = unicode(form['thetext'].value,'UTF-8')
-	usernote = u''
-except:
-	usertext = u''
-	usernote = u'No text entered'
+if cmdline == False:
+	form = cgi.FieldStorage()
+	try:
+		usertext = unicode(form['thetext'].value,'UTF-8')
+		usernote = u''
+	except Exception,e:
+		usertext = u''
+		usernote = u'No text entered'
+else: # we're running from command line
+	usertext = u'A little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
+	usernote = u'Running from command line'
 
 # Read in the style definitions:
 # ------------------------------
 try:
-	fh = open(mfile)
-	aambase = fh.read()
-	fh.close
+	with open(mfile) as fh:
+		aambase = fh.read()
 except Exception,e:
 	aambase = u''
 	errors += u'failed to read file'+str(e)+u'<br>'
@@ -115,13 +123,13 @@ else: # utf8 processing, so no macros
 # Read in the abbreviation / acronym file:
 # ----------------------------------------
 try:
-	fh = open(ifile)
-	acrobase = fh.read()
-	fh.close()
-	acrobase = acrobase.replace(u'"',u'&quot;') # can't have quotes in abbr tags
+	with open(ifile) as fh:
+		acrobase = fh.read()
 except Exception,e:
 	acrobase = u''
 	errors += u'failed to read file'+str(e)+u'<br>'
+else:
+	acrobase = acrobase.replace(u'"',u'&quot;') # can't have quotes in abbr tags
 
 # Create a dictionary from the acronym / abbreviation file contents:
 # ------------------------------------------------------------------
@@ -356,4 +364,19 @@ tp = thePage(	title   = u'Abbr processor',
 				forhead = mtag,
 				forbody = colors)
 
-sys.stdout.write((tp.assemble() + u'\n').encode('UTF-8'))
+s = (tp.assemble() + u'\n').encode('UTF-8')
+tfile = 'testfile.uco'
+if 0:
+	with open(tfile,'w') as fh:
+		fh.write(s)
+else:
+	if cmdline == True:
+		with open(tfile) as fh:
+			canned = fh.read()
+		if canned != s:
+			print s
+			print '\ntest failed!'
+		else:
+			print 'test passed.'
+	else:
+		sys.stdout.write(s)

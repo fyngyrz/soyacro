@@ -50,6 +50,7 @@ CPU,,Central Processing Unit
 CRT,,Cathode Ray Tube
 CSS,,Cascading Style Sheet - a means to indirectly provide formatting to HTML
 CST,,Central Standard Time
+CTRL,,Control
 DAC,,Digital to Analog Converter
 DBMS,,Database Management System
 DC,,Direct Current
