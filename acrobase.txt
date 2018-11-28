@@ -88,6 +88,7 @@ FFS,,For Fuck's Sake
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FML,,Fuck My Life
+FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
@@ -165,6 +166,7 @@ MIDI,,Musical Instrument Digital Interface
 MMU,,Memory Management Unit
 MPEG,,Motion Picture Experts Group
 MST,,Mountain Standard Time
+MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
 NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
 NSFW,,Not Safe For Work
