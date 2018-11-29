@@ -46,6 +46,7 @@ def tstchars(text):
 di = {}
 data = text.split('\n')
 ln = 1
+rct = 0
 exl = 0
 for line in data:
 	if line != '' and line[0] != '#':
@@ -54,6 +55,7 @@ for line in data:
 		except:
 			errors += 'line %d failed to split into three components\n' % (ln)
 		else:
+			if replacement != '': rct += 1
 			if expansion.find('<') != -1: errors += 'expansion of key '+key+' contains "<"\n'
 			if expansion.find('>') != -1: errors += 'expansion of key '+key+' contains ">"\n'
 			if replacement.find('<') != -1: errors += 'expansion of key '+key+' contains "<"\n'
@@ -80,5 +82,6 @@ else:
 	print '-' * sl
 al = len(di)
 print '%d acronyms found' % (len(di))
+print '%d acronyms have replacements' % (rct)
 print 'acronym file size is %d bytes' % (len(text))
 print 'average expansion length is %d characters' % (round(float(exl) / float(al)))
