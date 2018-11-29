@@ -18,8 +18,9 @@ here as a pull request, and we all win.
 
 You can produce output that is comprised more than just all-caps and/or
 numbers by using the second field, which is a replacement field. The only
-restriction is that there can be no commas in the replacement field. So,
-for instance, this line in the `acrobase.txt` file...
+restrictions are that there can be no commas in the replacement field,
+and that there be no non-ASCII characters. So, for instance, this line
+in the `acrobase.txt` file...
 
 `TLDR,TL;DR:,Too Long, Didn't Read`
 
