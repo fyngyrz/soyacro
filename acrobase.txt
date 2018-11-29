@@ -1,6 +1,5 @@
-# This is an all-caps-or-numbers acronym/abbreviation definition file
+# This is an all-caps acronym/abbreviation definition file
 # To be used with soyacro.py or similar application
-# Write in all-caps; if mixed case is appropriate, can do conversion
 # Format each entry all on one line with three elements; ASCII characters only:
 #    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
 #    A-SINGLE-COMMA
@@ -11,24 +10,32 @@
 # ADC,,Analog to Digital Converter
 # -----------------------------------------------------------------------------
 
+1802,,An RCA 8-bit CPU
 2D,,Two Dimensional
 3D,,Three Dimensional
-411,,A number, and a shorthand for: Information
-420,,A number, and a shorthand for: Time to smoke some pot
-69,,A number, and a shorthand for: Mutual inverted oral sex activities
-707,,A number, and a passenger aircraft
-727,,A number, and a passenger aircraft
-73,,A number, and a shorthand for: Goodbye
-737,,A number, and a passenger aircraft
-747,,A number, and a passenger aircraft
+411,,A shorthand for: Information
+420,,A shorthand for: Time to smoke some pot
+69,,A shorthand for: Mutual inverted oral sex activities
+707,,A passenger aircraft
+727,,A passenger aircraft
+73,,A shorthand for: Goodbye
+737,,A passenger aircraft
+747,,A passenger aircraft
+6809,,A Motorola 8-bit CPU
+8080,,An Intel 8-bit CPU
 A320,,A passenger aircraft
 AB,,Alberta (Canada)
+ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 AC,,Anonymous Coward, or Alternating Current
+ACLU,,American Civil Liberties Union
 ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
 AFAIK,,As Far As I Know
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
+AI,,Artificial Intelligence
+AIDS,,Acquired ImmunoDeficiency Syndrome
 AK,,Alaska (USA)
+AKA,,Also Known As
 AL,,Alabama (USA)
 AMA,,Ask Me Anything
 ANSI,,American National Standards Institute
@@ -39,18 +46,21 @@ AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
+AWS,,Amazon Web Services
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
 BC,,British Columbia (Canada)
 BCC,,Blind Carbon Copy
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
+BI,,Bisexual
 BP,,Blood Pressure
 BSOD,,Blue Screen Of Death
 BTW,,By The Way
 CA,,California (USA)
 CAD,,Computer Aided Design
 CBC,,Canadian Broadcasting Corporation
+CBS,,Columbia Broadcasting System
 CC,,Carbon Copy
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
@@ -58,14 +68,18 @@ CEO,,Chief Executive Officer
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
 CIA,,Central Intelligence Agency (US)
+CIS,,Cisgender - where sense of identity corresponds to birth sex
+CIT,,California Institute of Technology
 CMOS,,Complementary Metal Oxide Semiconductor
 CMY,,Cyan, Magenta, Yellow
 CMYK,,Cyan, Magenta, Yellow, Black
 CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
-CO,,Colorado (USA)
+CO,,Colorado (USA); Carbon Monoxide
+CO2,,Carbon Dioxide
 COO,,Chief Operating Officer
 CPU,,Central Processing Unit
+CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
 CSS,,Cascading Style Sheet - a means to indirectly provide formatting to HTML
 CST,,Central Standard Time
@@ -79,9 +93,11 @@ DE,,Delaware (USA)
 DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
 DIMM,,Dual Inline Memory module
+DIN,,German institute, similar to US ANSI
 DIY,,Do It Yourself
 DMA,,Direct Memory Access
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
+DNC,,Democratic National Convention
 DNS,,Domain Name System
 DOD,,Department Of Defense (US)
 DOE,,Department Of Energy (US)
@@ -96,12 +112,14 @@ DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
+EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
 EPA,,Environmental Protection Agency (US)
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
 ERU,,Energy Recovery Unit
 ESA,,European Space Agency
+ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
 EU,,European Union
 FAA,,Federal Aviation Administration (US)
@@ -119,6 +137,7 @@ FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
+FTC,,Federal Trade Commission (USA)
 FTFY,,Fixed That For You
 FTP,,File Transfer Protocol
 FTW,,For The Win
@@ -126,12 +145,17 @@ FUBAR,,Fucked Up Beyond All Recovery
 FU,,Fuck You
 FWIW,,For What It's Worth
 FYI,,For Your Information
+G20,,Group of 20 (countries)
 GA,,Georgia (USA)
 GB,,Gigabyte
 GHZ,GHz,Gigahertz - Billions of cycles per second
+GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
 GIF,,Graphics Interchange Format - stores either still or animated images
 GIGO,,Garbage In, Garbage Out
+GM,,General Motors
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
+GOP,,Grand Old Party (Republican party, USA)
+GPH,,Gallons Per Hour
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
@@ -142,6 +166,9 @@ HI,,Hawaii (USA)
 HIV,,Human Immunodeficiency Virus
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
+HQ,,Headquarters
+HR,,Human Resources
+HRW,,Human Rights Watch
 HTH,,Hope That Helped or Here To Help
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
@@ -163,11 +190,13 @@ IDE,,Integrated Development Environment (for example editor + compiler + linker)
 IDGAD,,I Don't Give A Damn
 IDGAF,,I Don't Give A Fuck
 IDK,,I Don't Know
+IED,,Improvised Explosive Device
 IEEE,,Institute Of Electrical And Electronics Engineers
 IIRC,,If I ReCall
 IL,,Illinois (USA)
 IMHO,,In My Honest Opinion
 IN,,Indiana (USA)
+INF,,Intermediate-range Nuclear Forces (treaty)
 IOW,,In Other Words
 IP,,Internet Protocol (usually referring to a specific Internet addrees)
 IQ,,Intelligence Quotient or I/Q phases of data encoding
@@ -175,6 +204,7 @@ IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
 ISA,,Industry Standard Architecture
+ISIS,,Islamic State of Iraq and Syria
 ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
 ISP,,Internet Service Provider
 JPEG,,A format for compressing image files.
@@ -187,17 +217,23 @@ KHZ,KHz,Kilohertz - Thousands of cycles per second
 KMS,,Kilometers; Knowledge Management System
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
+KPH,,Kilometers Per Hour
 KY,,Kentucky (USA)
 LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
 LF,,Low Frequency
+LGB,,Lesbian, Gay and Bisexual
+LGBT,,Lesbian, Gay, Bisexual and Transexual
+LGBTQ,,Lesbian, Gay, Bisexual, Transexual and Questioning
+LGBTQQ,,Lesbian, Gay, Bisexual, Transexual, Questioning, Queer
 LIFO,,Last In, First Out
 LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
 LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
+LTE,,A mobile communications standard
 MA,,Massachusetts (USA)
 MB,,Megabytes; Manitoba (Canada)
 MD,,Maryland (USA)
@@ -206,11 +242,14 @@ MF,,Medium Frequency
 MHZ,MHz,Megahertz - Millions of cycles per second
 MIC,,Miltary Industrial Complex
 MIDI,,Musical Instrument Digital Interface
-MI,,Michigan (USA)
+MI,,Michigan (USA); Machine Intelligence
+MIT,,Massachusetts Institute of Technology
+MLB,,Major League Baseball
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MO,,Missouri (USA)
 MPEG,,Motion Picture Experts Group
+MPH,,Miles Per Hour
 MS,,Mississippi (USA)
 MST,,Mountain Standard Time
 MT,,Montana (USA)
@@ -219,19 +258,23 @@ NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
 NATO,,North Atlantic Treaty Organization
 NB,,New Brunswick (Canada)
+NBC,,National Broadcasting Company
 NC,,North Carolina (USA)
 ND,,North Dakota (USA)
 NE,,Nebraska (USA)
 NFW,,No Fucking Way
+NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
 NH,,New Hampshire (USA)
 NHS,,National Health Service (Britain)
 NIH,,Not Invented Here
+NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
 NM,,New Mexico (USA)
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
+NRA,,National Rifle Association (US)
 NRO,,National Reconnaisance Office (US)
 NS,,Nova Scotia (Canada)
 NSA,,National Security Agency (US)
@@ -240,6 +283,7 @@ NTS,,Note To Self
 NTW,,Not To Worry
 NU,,Nunavut (Canada)
 NV,,Nevada (USA)
+NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYT,,New York Times
@@ -255,6 +299,7 @@ OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
 OTOH,,On The Other Hand
 PA,,Pennsylvania (USA)
+PAC,,Political Action Group
 PC,,Personal Compute
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
@@ -268,14 +313,17 @@ QC,,Quebec (Canada)
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
 RC,,Radio Control(ed)
+RCA,,Radio Corporation of America; an audio / low RF connector
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
 RGB,,Red, Green, Blue
 RI,,Rhode Island (USA)
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
+RNC,,Repubican National Convention
 ROM,,Read-Only Memory - you can't write new information to this
 ROTFL,,Rolling On The Floor Laughing
+RPM,,Revolutions Per Minute
 RTTY,,Radio Teletype
 SATA,,Serial Advanced Technology Attachment
 SCOTUS,,Supreme Court Of The United States
@@ -314,22 +362,29 @@ TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TL,,Too Long
 TMI,,Too Much Information
 TN,,Tennessee (USA)
+TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networking, Time To Live
 TTYL,,Talk To You Later
 TTY,,Teletype
+TV,,Television
 TX,,Texas (USA)
+UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
 UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency
 UK,,United Kingdom
+UN,,United Nations
+UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UPS,,Uninterruptible Power Supply, or United Parcel Service
 URI,,Uniform Resource Identifier
 URL,,Uniform Resource Locator
-USA,,United States of America
+USA,,United States of America; United States Army
+USAF,,United States Air Force
 USB,,Universal Serial Bus
 USD,,United States Dollars (currency)
 USG,,United States Government
+USN,,United States Navy
 USPS,,United States Postal Service
 USSR,,United Soviet Socialist Republics
 US,,United States (of America)
@@ -343,6 +398,7 @@ WEC,,Wave Energy Converter
 WHO,,World Health Organization
 WI,,Wisonsin (USA)
 WRT,,With Regard To
+WSJ,,Wall Street Journal (US newspaper)
 WTF,,What The Fuck
 WTH,,What The Hell
 WV,,West Virginia (USA)
