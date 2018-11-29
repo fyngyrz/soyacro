@@ -120,13 +120,19 @@ for el in l1:
 	if len(el) != 0:
 		if el[0:1] != u'#':
 			try:
+				veri = True
 				key,alternate,expansion = el.split(u',',2)
-				term = key
-				if alternate != u'':
-					term = alternate
-				if acros.get(key,'') != '':
-					errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-				acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
+				if expansion.find('<') != -1: veri = False
+				if expansion.find('>') != -1: veri = False
+				if veri == True:
+					term = key
+					if alternate != u'':
+						term = alternate
+					if acros.get(key,'') != '':
+						errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
+					acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
+				else:
+					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
 			except:
 				errors += u'line '+str(linecounter)+u': '
 				errors += u'"<span style="color:red;">'+el+u'</span>"<br>'
