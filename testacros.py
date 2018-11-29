@@ -69,10 +69,8 @@ for line in data:
 				di[key] = expansion
 	ln += 1
 
-keys = di.keys()
-keys.sort()
 if errors != '':
 	print errors
 else:
 	print afile + ' passed all tests'
-print '%d acronyms found' % (len(keys))
+print '%d acronyms found' % (len(di))
