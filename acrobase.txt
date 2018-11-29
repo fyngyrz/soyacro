@@ -331,6 +331,7 @@ PITA,,Pain In The Ass
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
 PPI,,Pixels Per Inch
+PR,,Pull Request - source code alteration submission
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PST,,Pacific Standard Time
 QC,,Quebec (Canada)
