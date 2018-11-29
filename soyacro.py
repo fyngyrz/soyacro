@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: November 28th, 2018 (code file only)
+#  Last Update: November 29th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #  Tab Spacing: Set to 4 for sane readability of Python source
