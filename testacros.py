@@ -64,6 +64,8 @@ for line in data:
 			if key == '':
 				errors += 'key is empty at line %d\n' % (ln)
 			else:
+				if di.get(key,'') != '':
+					errors += 'duplicate key %s at line %d\n' % (key,ln)
 				di[key] = expansion
 	ln += 1
 
