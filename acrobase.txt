@@ -26,6 +26,7 @@
 A320,,A passenger aircraft
 AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
+ABM,,Anti-Ballistic Missile
 AC,,Anonymous Coward, or Alternating Current
 ACLU,,American Civil Liberties Union
 ADC,,Analog to Digital Converter
@@ -125,6 +126,7 @@ ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
 EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
+EMT,,Emergency Medical Technician
 EPA,,Environmental Protection Agency (US)
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
@@ -198,6 +200,7 @@ IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
 ICE,,Immigration and Customs Enforcement
 IC,,Integrated Circuit; Insenstive Clod
+ICBM,,Intercontinental Ballistic Missile
 ICMP,,Internet Control Message Protocol
 ID,,Idaho (USA); Identification
 IDC,,I Don't Care
