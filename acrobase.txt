@@ -175,8 +175,7 @@ KHZ,KHz,Kilohertz - Thousands of cycles per second
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
 KY,,Kentucky (USA)
-LA,,Los Angeles (California, USA)
-LA,,Louisiana (USA)
+LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
