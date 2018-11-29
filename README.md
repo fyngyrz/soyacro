@@ -11,16 +11,19 @@ post text with explanations.
 So what this project does is provides built-in definitions of acronyms
 used in posts \(as long as they're in the acronym file, `acrobase.txt`.\)
 You can edit the `acrobase.txt` file and add acronyms, and you should, as
-you find yourself using them.
+you find yourself using them. You might keep an eye on the one in
+the project, as I seem to be adding to it regularly. Better yet,
+submit your additions here as a pull request, and we all win.
 
-In addition, there's a built-in macro processor that lets you build
-shortcuts for anything, signatures, etc., so you can make richer posts
-more easily.
+There is also a built-in macro processor that lets you build shortcuts
+for anything, signatures, etc., so you can make richer posts more easily.
 
 ### Contributions:
 
 I would particularly appreciate any pull requests that enhance the
-acronym file. Anything that is reasonable will be merged.
+acronym file. Anything that is reasonable will be merged. Code PRs
+will be carefully checked and if suitable, I will happily accept
+those as well.
 
 ## Requirements / Installation:
 
@@ -33,20 +36,12 @@ simply access the application with:
 
 ## Setup
 
-If you'd like unicode support \(UTF-8\), then the `utf8` variable at the
-top of soyacro.py must be set to `True`. In this case, the macro
-processor will not be available.
-
-If you are willing to work with just ASCII text, meaning no character
-accents, no emojis, etc., then set the `utf8` variable to `False`. If you
-do happen to enter a non-ASCII character in this configuration, then it
-will be replaced with the string in the `ucrep` variable. The default is
-an `x` that has been struck out.
-
-You can use the `ifile` and `mfile` variables to change the name of the
-acronym and style files. If you're running only on your own LAN, not much
-to worry about there. But if the web page is on a server with WAN access,
-I recommend renaming both so as to prevent snoooping, etc.
+You can use the `ifile` and `mfile` variables in the `soyacro.py` code to
+change the name of the acronym and style files. If you're running only on
+your own LAN, not much to worry about there. But if the web page is on a
+server with WAN access, I recommend renaming both so as to prevent
+snoooping, etc. I also suggest you rename the main cgi and set the
+`cginame` variable to match.
 
 ### More on Security:
 
@@ -61,9 +56,9 @@ security-by-obscurity, in that you can rename any of the data files \(and
 you should do so\) to anything you like, preferably something very
 unlikely, so as to prevent anyone from stumbling upon the cgi.
 
-You can also rename the main processor. If you do this, you need to
-change the `cginame` variable at the top of the file to match the new
-filename.
+In such a case, you should also rename the main processor. To do this,
+you need to change the `cginame` variable at the top of the file to match
+the new filename.
 
 Personally, I run this on a webserver inside my LAN, which has no
 external means of access and to which no one else has any access, so I'm
@@ -73,8 +68,8 @@ have untrusted users on their LAN \(why?\)
 
 ## Use:
 
-When you write your post on this page, if you use an acronym (defined as
-an caps-and/or-numbers sequence), it'll be wrapped with HTML `<abbr>`
+When you write your post on this page, if you use an acronym \(defined as
+a caps-and/or-numbers sequence\), it'll be wrapped with HTML `<abbr>`
 tags and will include an expansion visible when one hovers a mouse
 pointer in a web browser.
 
@@ -96,18 +91,20 @@ File | Purpose
 ## `acrobase.txt`:
 
 The format is defined at the top of the file. Basically there are three
-comma-separated fields. *Don't use HTML in these fields.*
+comma-separated fields. **Important:** _Don't use HTML in these fields._
 
 The first field is the caps-and/or-number sequence that is the acronym,
 such as `TIL`, `3D`, or `MHZ`.
 
 The second field is a replacement field that is only used if the all-caps
 sequence isn't exactly how the term should be presented. So for `MHZ`,
-this field contains `MHz`, which is the correct way to write it. For
-acronymns that are all-caps, this field remains empty.
+this field contains `MHz`, which is the correct way to write the term.
+For acronymns that are all-caps, this field remains empty.
 
 The third field is the content that is presented when the mouse is
 hovered over the acronym in the post.
+
+This file must contain only ASCII characters; no unicode.
 
 ### Examples:
 
@@ -120,12 +117,23 @@ NASA,,National Aeronautics and Space Administration (US)
 
 ## `aambase.txt`:
 
-This contains macros you can use in your posts if you set the `utf8`
-variable to `False`. . The macro language,
+This contains macros you can use in your posts. The macro language,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html) is _very_
 capable, and if you'd like to go further, the documentation awaits. You
-can use HTML in the macros. For instance, here's a macro that produces a
-link to my iToolBox project:
+can use HTML in the macros, but you must use only ASCII; no unicode. The
+macro system, in the context of this application, will process unicode
+symbols \(they are converted into HTML entities\), but the macros
+themselves cannot be written in unicode. If you desperately need a
+unicode character in a macro used here, then write it as an HTML numeric
+entity, such as `&#128169;` (that's the "poop" emoji.) Here's an example
+of that...
+
+`[style poophead [b] is a &#128169;-head.]`
+
+...which you would use this way: {poophead fyngyrz}
+
+As to HTML in general, here's a macro that produces a link to my iToolBox
+project as a simple example:
 
 _Macro:_
 
@@ -170,15 +178,9 @@ Italizing for emphasis, I <i>really</i> mean it!
 
 `soyacro.py` is the cgi you access on your webserver. You might put it in
 a cgi-bin folder, along with the other two Python files, and then get to
-it with `http://mysite.com/cgi-bin/soyacro.py`, although I strongly
-recommend you rename it to something else, and change the `cginame`
-variable in `soyacro.py` to that name in order to provide a layer of
-"security by obscurity."
+it with `http://mysite.com/cgi-bin/soyacro.py`
 
-Likewise, you can, and probably should, change the filenames of the
-`aambase.txt` and `acrobase.txt`, and again there are variables at the
-top of `soyacro.py` into which you should place the new names so it knows
-how to find the files. See *Setup*, above.
+Please do observe the ruminations at the top of this readme about security.
 
 ## Limitations and Design Choices
 
@@ -186,12 +188,6 @@ This is a Python 2 project. It incorporates another Python 2 project,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
 or unless I move that project to Python 3 \(not very likely, but someone
 else might undertake that\), Python 2 will remain the target here.
-
-Unicode is not fully supported. Same reason: The macro processor doesn't
-support Unicode, so things would generally break there if this project
-tried to allow for Unicode overall. There is a setting to select unicode,
-which will switch off the macro processor. Conversely, if you turn
-off unicode, you get to use macros. Choose wisely, grasshopper.
 
 Having said all that, by all means feel free to fork and go your own way
 with either / both projects. The Github repo for the macro processor is
@@ -202,9 +198,10 @@ with either / both projects. The Github repo for the macro processor is
 You can use this any way you want. It's 100% free and unencumbered by any
 rights claims whatsoever, released into the public domain. It is original
 code written by me, and any claims otherwise should be heartily laughed
-at. Stop feeding the lawyers. Also, if your country doesn't allow for
-public domain release by authors, you should get to work fixing that
-right away.
+at and otherwise ignored. Stop feeding the lawyers. Also, if your country
+doesn't allow for public domain release by authors, you should get to
+work fixing that right away. It's your country, you broke it, you get to
+fix it.
 
 The top of the Python files present information about development and so
 forth if you'd like to peruse that. Otherwise, don't worry about it, and

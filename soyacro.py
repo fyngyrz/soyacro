@@ -22,24 +22,6 @@
 #               standard Python os import library
 # ----------------------------------------------------------
 
-# If you want to use UTF-8 (emojis, non-English characters),
-# you can set this to True. Macro processing is disabled in
-# that case. You get one or the other.
-# -------------------------------------------------------------
-utf8 = False
-
-# If you use this in the utf8 = False mode, then any characters
-# above 127 will be replaced with the following string.
-# Other sane choices might be '' for just skipping the characters,
-# '.' for a period, '--NO UNICODE--' to really annoy yourself,
-# etc. You can use anything, just be aware that a lot of "anything"
-# will probably make a mess out of your posts.
-# This also might be fun...
-#        &#128169;
-# ...it'll turn every unicode character into a pile of poop. :)
-# -----------------------------------------------------------------
-ucrep = '<strike>x</strike>'
-
 # Data filenames:
 # ===============
 # These are user-configurable; you can make these filenames
@@ -106,23 +88,17 @@ except Exception,e:
 
 # Process the canned styles:
 # --------------------------
-if utf8 == False:
-	from aa_macro import *
-	if aambase != '':
-		mod = macro(noshell=True,noembrace=True,noinclude=True)
-		mod.do(aambase)
-		mod.do('[listg source=local,loclist][asort loclist]')
-		thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
-		thestylecount = mod.do('[llen loclist]')
-	else:
-		mod = None
-		thestyles = u''
-		thestylecount = u''
-else: # utf8 processing, so no macros
+from aa_macro import *
+if aambase != '':
+	mod = macro(noshell=True,noembrace=True,noinclude=True)
+	mod.do(aambase)
+	mod.do('[listg source=local,loclist][asort loclist]')
+	thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
+	thestylecount = mod.do('[llen loclist]')
+else:
 	mod = None
 	thestyles = u''
 	thestylecount = u''
-	aambase = u''
 
 # Read in the abbreviation / acronym file:
 # ----------------------------------------
@@ -176,7 +152,9 @@ def repsquares(text):
 	return text
 
 # Converts a unicode string to an ASCII string, replacing any
-# characters > 127 with '.'
+# characters > 127 with the appropriate character entity.
+# That in turn makes the text compatible with the macro
+# processor, as character entities are 100$ ASCII.
 # -----------------------------------------------------------
 def makeascii(text):
 	global ucrep
@@ -186,8 +164,9 @@ def makeascii(text):
 			c = text[i].encode("ascii")
 			o += c
 		except:
-			o += ucrep
+			o += '&#{:d};'.format(ord(text[i]))
 	return o
+
 
 # aa_macro uses squiggly braces for macro invocation. Because it
 # can nest macros, the braces must be balanced, or things will

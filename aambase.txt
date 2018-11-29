@@ -1,3 +1,4 @@
+[comment ASCII only, nothing above chr(127)]
 [style b [b [b]]]
 [style i [i [b]]]
 [style strike <strike>[b]</strike>]

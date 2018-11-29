@@ -1,13 +1,14 @@
 # This is an all-caps acronym/abbreviation definition file
 # To be used with acro.py
-# Format each entry all on one line with three elements:
+# Format each entry all on one line with three elements; ASCII characters only:
 #    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
 #    A-SINGLE-COMMA
 #    Nothing OR a mixed-case replacement for the all-caps, ie MHZ,MHz,Megahertz
 #    A-SINGLE COMMA
-#    Acronym / abbreviation expansion all on ONE line. Example:
-# ACRO,Acronym
-# -------------------------------------------------------------------
+#    Acronym / abbreviation expansion all on ONE line. Examples:
+# MHZ,MHz,Megahertz
+# ADC,,Analog to Digital Converter
+# -----------------------------------------------------------------------------
 
 2D,,Two Dimensional
 3D,,Three Dimensional
