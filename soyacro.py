@@ -39,9 +39,14 @@ mfile = 'aambase.txt'	# list of aa_macro macros - see file
 # --------------------------------------------------------------
 
 # If you set this to True, all the known acronyms will be dumped
-# at the bottom of the web page
+# at the bottom of the web page, otherwise False
 # --------------------------------------------------------------
 showmacros = False
+
+# If you set this to True, all the known styles will be dumped
+# at the bottom of the web page, otherwise False
+# --------------------------------------------------------------
+showstyles = True
 
 # The format for each line in the acronym data file is:
 # =====================================================
@@ -333,11 +338,12 @@ if unknowns != []:
 
 # If there are styles (and there should be), list them:
 # -----------------------------------------------------
-if aambase != '':
-	if thestyles != '':
-		thestylecount = unicode(thestylecount)
-		thestyles = unicode(thestyles)
-		mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
+if showstyles == True:
+	if aambase != '':
+		if thestyles != '':
+			thestylecount = unicode(thestylecount)
+			thestyles = unicode(thestyles)
+			mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
 
 # Report all known acronyms:
 # --------------------------
