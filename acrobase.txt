@@ -1,5 +1,6 @@
-# This is an all-caps acronym/abbreviation definition file
-# To be used with acro.py
+# This is an all-caps-or-numbers acronym/abbreviation definition file
+# To be used with soyacro.py or similar application
+# Write in all-caps; if mixed case is appropriate, can do conversion
 # Format each entry all on one line with three elements; ASCII characters only:
 #    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
 #    A-SINGLE-COMMA
@@ -15,7 +16,12 @@
 411,,A number, and a shorthand for: Information
 420,,A number, and a shorthand for: Time to smoke some pot
 69,,A number, and a shorthand for: Mutual inverted oral sex activities
+707,,A number, and a passenger aircraft
+727,,A number, and a passenger aircraft
 73,,A number, and a shorthand for: Goodbye
+737,,A number, and a passenger aircraft
+747,,A number, and a passenger aircraft
+A320,,A passenger aircraft
 AB,,Alberta (Canada)
 AC,,Anonymous Coward, or Alternating Current
 ADC,,Analog to Digital Converter
@@ -30,6 +36,7 @@ AOL,,America OnLine (a digital services provider)
 API,,Application Programmer Interface
 APL,,A Programming Language
 AR,,Arkansas (USA)
+ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 AZ,,Arizona (USA)
@@ -39,6 +46,7 @@ BC,,British Columbia (Canada)
 BCC,,Blind Carbon Copy
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure
+BSOD,,Blue Screen Of Death
 BTW,,By The Way
 CA,,California (USA)
 CAD,,Computer Aided Design
@@ -71,6 +79,7 @@ DE,,Delaware (USA)
 DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
 DIMM,,Dual Inline Memory module
+DIY,,Do It Yourself
 DMA,,Direct Memory Access
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNS,,Domain Name System
@@ -86,6 +95,8 @@ DSLR,,Digital single-lens reflex (camera)
 DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
 ECC,,Error Correcting Code
+ECG,,ElectroCardioGram
+EKG,,Electro(C/k)ardioGram
 EPA,,Environmental Protection Agency (US)
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
@@ -116,13 +127,14 @@ FU,,Fuck You
 FWIW,,For What It's Worth
 FYI,,For Your Information
 GA,,Georgia (USA)
-GB,,Gigabytes
+GB,,Gigabyte
 GHZ,GHz,Gigahertz - Billions of cycles per second
 GIF,,Graphics Interchange Format - stores either still or animated images
 GIGO,,Garbage In, Garbage Out
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
+GUI,,Graphic User Interface
 HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency
@@ -145,11 +157,11 @@ ICANN,,Internet Corporation For Assigned Names And Numbers
 ICE,,Immigration and Customs Enforcement
 IC,,Integrated Circuit; Insenstive Clod
 ICMP,,Internet Control Message Protocol
+ID,,Idaho (USA); Identification
 IDC,,I Don't Care
 IDE,,Integrated Development Environment (for example editor + compiler + linker)
 IDGAD,,I Don't Give A Damn
 IDGAF,,I Don't Give A Fuck
-ID,,Idaho (USA)
 IDK,,I Don't Know
 IEEE,,Institute Of Electrical And Electronics Engineers
 IIRC,,If I ReCall
@@ -172,6 +184,7 @@ JSON,,A file format designed to hold human- and machine-readable data
 KB,,Kilobytes or Knowledge Base
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
+KMS,,Kilometers; Knowledge Management System
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
 KY,,Kentucky (USA)
@@ -254,6 +267,7 @@ PST,,Pacific Standard Time
 QC,,Quebec (Canada)
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
+RC,,Radio Control(ed)
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
@@ -305,6 +319,7 @@ TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networ
 TTYL,,Talk To You Later
 TTY,,Teletype
 TX,,Texas (USA)
+UAV,,Unmanned Aerial Vehicle
 UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency
 UK,,United Kingdom
