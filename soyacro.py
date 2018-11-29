@@ -124,6 +124,8 @@ for el in l1:
 				term = key
 				if alternate != u'':
 					term = alternate
+				if acros.get(key,'') != '':
+					errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
 				acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
 			except:
 				errors += u'line '+str(linecounter)+u': '
