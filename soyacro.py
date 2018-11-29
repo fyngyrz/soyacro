@@ -46,7 +46,7 @@ mfile	= 'aambase.txt'		# list of aa_macro macros - see file
 # If usemacros is True, then the macro processor will be invoked.
 # If it is False, then the macro processor won't be invoked.
 # ---------------------------------------------------------------
-usemacros = False
+usemacros = True
 
 # If you set showstyles to True, all the known macro styles will
 # be dumped at the bottom of the web page, otherwise False. This
