@@ -81,4 +81,4 @@ else:
 al = len(di)
 print '%d acronyms found' % (len(di))
 print 'acronym file size is %d bytes' % (len(text))
-print 'average expansion length is %d characters' % (int(float(exl) / float(al)))
+print 'average expansion length is %d characters' % (round(float(exl) / float(al)))

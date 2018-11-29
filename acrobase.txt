@@ -353,6 +353,7 @@ SDR,,Software Defined Radio
 SD,,South Dakota (USA)
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
+SF,,Science Fiction or less accurately Speculative Fiction; San Francisco (California)
 SFW,,Safe For Work
 SHF,,Super High Frequency
 SIG,,Special Interest Group; Signature
