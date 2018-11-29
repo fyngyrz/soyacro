@@ -38,6 +38,11 @@ mfile = 'aambase.txt'	# list of aa_macro macros - see file
 # cginame variable just above.
 # --------------------------------------------------------------
 
+# If you set this to True, all the known acronyms will be dumped
+# at the bottom of the web page
+# --------------------------------------------------------------
+showmacros = False
+
 # The format for each line in the acronym data file is:
 # =====================================================
 # all-caps-keyword,[optional keyword replacement],expansion
@@ -135,7 +140,7 @@ for el in l1:
 					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
 			except:
 				errors += u'line '+str(linecounter)+u': '
-				errors += u'"<span style="color:red;">'+el+u'</span>"<br>'
+				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
 	linecounter += 1
 
 # This removes all square braces prior to aa_macro processing.
@@ -336,16 +341,18 @@ if aambase != '':
 
 # Report all known acronyms:
 # --------------------------
-ka = acros.keys()
-if ka != None:
-	ka.sort()
-	o = u''
-	for k in ka:
-		o += k+u', '
-	kao = o
-	if len(kao) > 0: kao = kao[:-2]
-	mybody += u'<hr><div><span style="color:#00ff00;">Known ABBRs ('+str(len(ka))+u'):</span><br><span style="color:green;">'+kao+u'</span></div>'
+if showmacros == True:
+	ka = acros.keys()
+	if ka != None:
+		ka.sort()
+		o = u''
+		for k in ka:
+			o += k+u', '
+		kao = o
+		if len(kao) > 0: kao = kao[:-2]
+		mybody += u'<hr><div><span style="color:#00ff00;">Known ABBRs ('+str(len(ka))+u'):</span><br><span style="color:green;">'+kao+u'</span></div>'
 
+# Last section, wall it off:
 mybody += u'<hr>'
 
 # Finally, produce the web page:
