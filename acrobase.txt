@@ -36,11 +36,12 @@ AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
 AK,,Alaska (USA)
 AKA,,Also Known As
-AL,,Alabama (USA)
+AL,,Alabama (USA); Artificial Life
 AMA,,Ask Me Anything
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 API,,Application Programmer Interface
+AP,,Access Point
 APL,,A Programming Language
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
@@ -78,6 +79,7 @@ CNN,,Cable News Network
 CO,,Colorado (USA); Carbon Monoxide
 CO2,,Carbon Dioxide
 COO,,Chief Operating Officer
+CP,,Child Porn
 CPU,,Central Processing Unit
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
@@ -163,6 +165,7 @@ HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency
 HI,,Hawaii (USA)
+HIFI,,High Fidelity
 HIV,,Human Immunodeficiency Virus
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
@@ -235,6 +238,7 @@ LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
 LTE,,A mobile communications standard
 MA,,Massachusetts (USA)
+MAC,,Media Access Control address
 MB,,Megabytes; Manitoba (Canada)
 MD,,Maryland (USA)
 ME,,Maine (USA)
@@ -248,6 +252,7 @@ MLB,,Major League Baseball
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MO,,Missouri (USA)
+MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MS,,Mississippi (USA)
@@ -319,6 +324,7 @@ RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
 RGB,,Red, Green, Blue
 RI,,Rhode Island (USA)
+RIAA,,Recording Industry Association of America
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 RNC,,Repubican National Convention
 ROM,,Read-Only Memory - you can't write new information to this
@@ -362,6 +368,7 @@ TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TL,,Too Long
 TMI,,Too Much Information
 TN,,Tennessee (USA)
+TOS,,Terms Of Service
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networking, Time To Live
@@ -397,6 +404,8 @@ WA,,Washington (USA)
 WEC,,Wave Energy Converter
 WHO,,World Health Organization
 WI,,Wisonsin (USA)
+WIFI,Wi-Fi,WLAN based on any of the 802.11 standards
+WLAN,,Wireless Local Area Network
 WRT,,With Regard To
 WSJ,,Wall Street Journal (US newspaper)
 WTF,,What The Fuck
