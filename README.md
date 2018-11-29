@@ -99,6 +99,7 @@ File | Purpose
 `aa_macro.py` | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 `aambase.txt` | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 `acrobase.txt` | acronym definitions \(see below\)
+`testacros.py` | Tests `acrobase.txt` format to assure proper operation with `soyacro.py`
 
 ## `acrobase.txt`:
 
