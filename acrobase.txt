@@ -30,6 +30,7 @@ AC,,Anonymous Coward, or Alternating Current
 ACLU,,American Civil Liberties Union
 ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
+AF,,Audio Frequency
 AFAIK,,As Far As I Know
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AI,,Artificial Intelligence
@@ -37,6 +38,7 @@ AIDS,,Acquired ImmunoDeficiency Syndrome
 AK,,Alaska (USA)
 AKA,,Also Known As
 AL,,Alabama (USA); Artificial Life
+AM,,Amplitude Modulation
 AMA,,Ask Me Anything
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
@@ -58,6 +60,7 @@ BI,,Bisexual
 BP,,Blood Pressure
 BSOD,,Blue Screen Of Death
 BTW,,By The Way
+BW,,Black and White (imaging); Bandwidth
 CA,,California (USA)
 CAD,,Computer Aided Design
 CBC,,Canadian Broadcasting Corporation
@@ -81,17 +84,20 @@ CO2,,Carbon Dioxide
 COO,,Chief Operating Officer
 CP,,Child Porn
 CPU,,Central Processing Unit
+CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
 CSS,,Cascading Style Sheet - a means to indirectly provide formatting to HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)
 CTRL,,Control
+CW,,Continous Wave (only) transmissions (generally Morse Code)
 DAC,,Digital to Analog Converter
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
 DEA,,Drug Enforcement Agency (US)
 DE,,Delaware (USA)
+DGPS,,Differential Global Positioning System
 DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
 DIMM,,Dual Inline Memory module
@@ -108,10 +114,12 @@ DOT,,Department Of Transportation (US)
 DPI,,Dots Per Inch
 DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
 DR,,Didn't Read
+DRM,,Digital Rights Management; Digital Radio Mondial (a digital broadcast format)
 DSL,,Digital Subscriber Line
 DSLR,,Digital single-lens reflex (camera)
 DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
+DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
 EFF,,Electronic Frontier Foundation
@@ -124,8 +132,10 @@ ESA,,European Space Agency
 ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
 EU,,European Union
+EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
 FAQ,,Frequently Asked Questions
+FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
 FCC,,Federal Communications Commission
 FDA,,Food and Drug Administration (US)
@@ -134,6 +144,7 @@ FFS,,For Fuck's Sake
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FL,,Florida (USA)
+FM,,Frequency Modulation
 FML,,Fuck My Life
 FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
@@ -195,6 +206,7 @@ IDGAF,,I Don't Give A Fuck
 IDK,,I Don't Know
 IED,,Improvised Explosive Device
 IEEE,,Institute Of Electrical And Electronics Engineers
+IF,,Intermediate Frequency
 IIRC,,If I ReCall
 IL,,Illinois (USA)
 IMHO,,In My Honest Opinion
@@ -302,6 +314,7 @@ ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
 OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
+OSX,,Operating System X (Apple), AKA MacOS
 OTOH,,On The Other Hand
 PA,,Pennsylvania (USA)
 PAC,,Political Action Group
@@ -319,6 +332,7 @@ RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
 RC,,Radio Control(ed)
 RCA,,Radio Corporation of America; an audio / low RF connector
+RDS,,Radio Data System
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
@@ -334,6 +348,7 @@ RTTY,,Radio Teletype
 SATA,,Serial Advanced Technology Attachment
 SCOTUS,,Supreme Court Of The United States
 SC,,South Carolina (USA)
+SCA,,Subsidiary Communications Authorization
 SDR,,Software Defined Radio
 SD,,South Dakota (USA)
 SEO,,Search Engine Optimization
@@ -352,10 +367,12 @@ SOL,,Shit Out of Luck
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
 SSA,,Social Security Administration (US)
+SSB,,Single SideBand
 SSH,,Secure SHell
 SSL,,Secure Sockets Layer
 SSN,,Social Security Number	
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
+SW,,Shortwave (radio)
 TBH,,To Be Honest
 TFA,,The Fucking Article
 TFS,,The Fucking Summary
@@ -397,11 +414,13 @@ USSR,,United Soviet Socialist Republics
 US,,United States (of America)
 UT,,Utah (USA)
 VA,,Virgina (USA)
+VFO,,Variable Frequency Oscillator
 VPN,,Virtual Private Network
 VT,,Vermont (USA)
 WAN,,Wide Area Network
 WA,,Washington (USA)
 WEC,,Wave Energy Converter
+WFM,,Wide FM (generally 200 KHz wide broadcast format)
 WHO,,World Health Organization
 WI,,Wisonsin (USA)
 WIFI,Wi-Fi,WLAN based on any of the 802.11 standards
