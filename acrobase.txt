@@ -269,6 +269,7 @@ MLB,,Major League Baseball
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MO,,Missouri (USA)
+MOAB,,Mother Of All Bombs - a very large fuel-air bomb
 MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
@@ -387,8 +388,9 @@ TFT,,Thin Film Transistor (usually display)
 TIA,,Thanks In Advance
 TIFF,,Tagged Image File Format
 TIL,,Today I Learned
-TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TL,,Too Long
+TLDR,TL;DR:,Too Long, Didn't Read
+TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TOS,,Terms Of Service

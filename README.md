@@ -9,11 +9,22 @@ others can learn about them easily, without otherwise clogging up the
 post text with explanations.
 
 So what this project does is provides built-in definitions of acronyms
-used in posts \(as long as they're in the acronym file, `acrobase.txt`.\)
-You can edit the `acrobase.txt` file and add acronyms, and you should, as
-you find yourself using them. You might keep an eye on the one in
-the project, as I seem to be adding to it regularly. Better yet,
-submit your additions here as a pull request, and we all win.
+written in all-capital letters and/or numeric digits used in posts \(as
+long as they're in the acronym file, `acrobase.txt`.\) You can edit the
+`acrobase.txt` file and add acronyms, and you should, as you find
+yourself using them. You might keep an eye on the one in the project, as
+I seem to be adding to it regularly. Better yet, submit your additions
+here as a pull request, and we all win.
+
+You can produce output that is comprised more than just all-caps and/or numbers
+by using the second field, which is a replacement field. The only restriction
+is that there can be no commas in the replacement field. So, for instance,
+you could enter this line in the file...
+
+`TLDR,TL;DR:,Too Long, Didn't Read`
+
+...and while you enter TLDR in your post source, the output post will contain
+the string `TL;DR:`, which is the actual common usage.
 
 There is also a built-in macro processor that lets you build shortcuts
 for anything, signatures, etc., so you can make richer posts more easily.
