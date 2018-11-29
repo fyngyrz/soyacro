@@ -55,6 +55,7 @@ AWS,,Amazon Web Services
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
+BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada)
 BCC,,Blind Carbon Copy
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
@@ -93,6 +94,7 @@ CSS,,Cascading Style Sheet - a means to indirectly provide formatting to HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)
 CTRL,,Control
+CUL,,See You Later
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 DAC,,Digital to Analog Converter
 DBMS,,Database Management System
