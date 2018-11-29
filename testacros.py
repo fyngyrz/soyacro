@@ -46,6 +46,7 @@ def tstchars(text):
 di = {}
 data = text.split('\n')
 ln = 1
+exl = 0
 for line in data:
 	if line != '' and line[0] != '#':
 		try:
@@ -67,10 +68,17 @@ for line in data:
 				if di.get(key,'') != '':
 					errors += 'duplicate key %s at line %d\n' % (key,ln)
 				di[key] = expansion
+			exl += len(expansion)
 	ln += 1
 
 if errors != '':
 	print errors
 else:
-	print afile + ' passed all tests'
+	s = afile + ' passed all tests'
+	sl = len(s)
+	print s
+	print '-' * sl
+al = len(di)
 print '%d acronyms found' % (len(di))
+print 'acronym file size is %d bytes' % (len(text))
+print 'average expansion length is %d characters' % (int(float(exl) / float(al)))
