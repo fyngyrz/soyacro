@@ -38,6 +38,7 @@ AIDS,,Acquired ImmunoDeficiency Syndrome
 AK,,Alaska (USA)
 AKA,,Also Known As
 AL,,Alabama (USA); Artificial Life
+ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AM,,Amplitude Modulation
 AMA,,Ask Me Anything
 ANSI,,American National Standards Institute
@@ -238,6 +239,7 @@ LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
+LED,,Light Emitting Diode
 LF,,Low Frequency
 LGB,,Lesbian, Gay and Bisexual
 LGBT,,Lesbian, Gay, Bisexual and Transexual
@@ -375,8 +377,8 @@ SSN,,Social Security Number
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 SW,,Shortwave (radio)
 TBH,,To Be Honest
-TFA,,The Fucking Article
-TFS,,The Fucking Summary
+TFA,,The Fucking Article: bowdlerized, The Fine Article
+TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
 TFT,,Thin Film Transistor (usually display)
 TIA,,Thanks In Advance
