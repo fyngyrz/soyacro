@@ -22,46 +22,46 @@
 #               standard Python os import library
 # ----------------------------------------------------------
 
+# There are a few configurable items. They follow here. Once
+# you get to the "Code" section, I advise you to not meddle.
+# ==========================================================
+# ==========================================================
+# ==========================================================
+
 # Data filenames:
 # ===============
 # These are user-configurable; you can make these filenames
 # anything you like, and put them anywhere you want, and you
-# **should**, to provide a layer of obscurity:
-# ----------------------------------------------------------
-cginame = 'soyacro.py'		# DEFINITELY change this!
-ifile = 'acrobase.txt'	# list of known acronyms - see file
-mfile = 'aambase.txt'	# list of aa_macro macros - see file
-
+# **should**, to provide a layer of obscurity.
+#
 # Likewise, you should rename THIS file, nominally "soyacro.py",
 # so that it cannot be found by simply looking in your folders
 # by bots, etc. The filename must match the filename in the
-# cginame variable just above.
-# --------------------------------------------------------------
-
-# If you set this to True, all the known styles will be dumped
-# at the bottom of the web page, otherwise False
-# --------------------------------------------------------------
-showstyles = True
+# cginame variable below.
+# ----------------------------------------------------------
+cginame	= 'soyacro.py'		# DEFINITELY change this!
+ifile	= 'acrobase.txt'	# list of known acronyms - see file
+mfile	= 'aambase.txt'		# list of aa_macro macros - see file
 
 # If usemacros is True, then the macro processor will be invoked.
 # If it is False, then the macro processor won't be invoked.
 # ---------------------------------------------------------------
 usemacros = False
 
-# If you set this to True, all the known acronyms will be dumped
-# at the bottom of the web page, otherwise False. If usemacros
-# is False, this has no effect.
+# If you set showstyles to True, all the known macro styles will
+# be dumped at the bottom of the web page, otherwise False. This
+# will have no effect if usemacros, above, is False.
 # --------------------------------------------------------------
-showmacros = True
+showstyles = True
 
-# The format for each line in the acronym data file is:
-# =====================================================
-# all-caps-keyword,[optional keyword replacement],expansion
-#     or...
-# blank line
-#     or...
-# #[optional comment text]
-# ------------------------------------------------------------------
+# If you set this to True, all the known acronyms will be dumped
+# at the bottom of the web page, otherwise False.
+# --------------------------------------------------------------
+showacros = True
+
+# ==========================================================
+# ==========================================================
+# ==========================================================
 
 # Code - Good luck if you change anything. :)
 # ===========================================
@@ -359,7 +359,7 @@ if showstyles == True:
 
 # Report all known acronyms:
 # --------------------------
-if showmacros == True:
+if showacros == True:
 	ka = acros.keys()
 	if ka != None:
 		ka.sort()
