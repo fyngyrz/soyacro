@@ -38,15 +38,21 @@ mfile = 'aambase.txt'	# list of aa_macro macros - see file
 # cginame variable just above.
 # --------------------------------------------------------------
 
-# If you set this to True, all the known acronyms will be dumped
-# at the bottom of the web page, otherwise False
-# --------------------------------------------------------------
-showmacros = False
-
 # If you set this to True, all the known styles will be dumped
 # at the bottom of the web page, otherwise False
 # --------------------------------------------------------------
 showstyles = True
+
+# If usemacros is True, then the macro processor will be invoked.
+# If it is False, then the macro processor won't be invoked.
+# ---------------------------------------------------------------
+usemacros = False
+
+# If you set this to True, all the known acronyms will be dumped
+# at the bottom of the web page, otherwise False. If usemacros
+# is False, this has no effect.
+# --------------------------------------------------------------
+showmacros = True
 
 # The format for each line in the acronym data file is:
 # =====================================================
@@ -98,14 +104,20 @@ except Exception,e:
 
 # Process the canned styles:
 # --------------------------
-from aa_macro import *
-if aambase != '':
-	mod = macro(noshell=True,noembrace=True,noinclude=True)
-	mod.do(aambase)
-	mod.do('[listg source=local,loclist][asort loclist]')
-	thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
-	thestylecount = mod.do('[llen loclist]')
+if usemacros == True:
+	from aa_macro import *
+	if aambase != '':
+		mod = macro(noshell=True,noembrace=True,noinclude=True)
+		mod.do(aambase)
+		mod.do('[listg source=local,loclist][asort loclist]')
+		thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
+		thestylecount = mod.do('[llen loclist]')
+	else:
+		mod = None
+		thestyles = u''
+		thestylecount = u''
 else:
+	aambase = ''
 	mod = None
 	thestyles = u''
 	thestylecount = u''
