@@ -195,7 +195,7 @@ _Produces:_
 ### Squiggly braces are special, because of macro processing
 
 If macro processing is on, you need to be mindful about using `{` and `}`
-as these are used to onvoke macros. If you want to use them as characters
+as these are used to invoke macros. If you want to use them as characters
 in a post, just use `{ls}` for the left squiggly brace, and `{rs}` for the
 right squiggly brace. If there are unbalanced squiggly braces in the text,
 macro processing is cancelled.
