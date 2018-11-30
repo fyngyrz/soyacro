@@ -425,6 +425,8 @@ URL,,Uniform Resource Locator
 USA,,United States of America; United States Army
 USAF,,United States Air Force
 USB,,Universal Serial Bus
+USB2,,Universal Serial Bus v2
+USB3,,Universal Serial Bus v3
 USD,,United States Dollars (currency)
 USG,,United States Government
 USN,,United States Navy
