@@ -223,6 +223,7 @@ IL,,Illinois (USA)
 IMHO,,In My Honest Opinion
 IN,,Indiana (USA)
 INF,,Intermediate-range Nuclear Forces (treaty)
+IOT,,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (usually referring to a specific Internet addrees)
 IQ,,Intelligence Quotient or I/Q phases of data encoding
@@ -321,6 +322,7 @@ OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
 OH,,Ohio (USA)
 OK,,Oklahoma (USA)
+OLED,,Organic Light Emitting Diode
 OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 ON,,Ontario (Canada)
