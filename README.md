@@ -22,7 +22,7 @@ restrictions are that there can be no commas in the replacement field,
 and that there be no non-ASCII characters. So, for instance, this line
 in the `acrobase.txt` file...
 
-`TLDR,TL;DR:,Too Long, Didn't Read`
+> `TLDR,TL;DR:,Too Long, Didn't Read`
 
 ...sets things up so that when you enter TLDR in your post source, the
 output post will contain the string `TL;DR:` instead, which corresponds
@@ -138,12 +138,10 @@ unless there is no replacement field.
 
 ### Examples:
 
-> ```
-3D,,Three Dimensional
-411,,A number, and a shorthand for: Information
-MHZ,MHz,Megahertz - Millions of cycles per second
-NASA,,National Aeronautics and Space Administration (US)
-```
+> `3D,,Three Dimensional`
+> `411,,A number, and a shorthand for: Information`
+> `MHZ,MHz,Megahertz - Millions of cycles per second`
+> `NASA,,National Aeronautics and Space Administration (US)`
 
 ## `aambase.txt`:
 
@@ -158,7 +156,7 @@ unicode character in a macro used here, then write it as an HTML numeric
 entity, such as `&#128169;` (that's the "poop" emoji.) Here's an example
 of that...
 
-`[style poophead [b] is a &#128169;-head.]`
+> `[style poophead [b] is a &#128169;-head.]`
 
 ...which you would use this way: {poophead fyngyrz}
 
@@ -167,42 +165,32 @@ project as a simple example:
 
 _Macro:_
 
-```
-[style itoolbox <a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>]
-```
+
+> `[style itoolbox <a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>]`
+
 
 _Usage:_
 
-```
-{itoolbox}
-```
+> `{itoolbox}`
 
 _Result:_
 
-```
-<a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>
-```
+> `<a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>`
 
 ### Examples:
 
-```
-[style b [b [b]]]
-[style i [i [b]]]
-[style strike <strike>[b]</strike>]
-[style bq <blockquote>[b]</blockquote>]
-```
+> `[style b [b [b]]]`
+> `[style i [i [b]]]`
+> `[style strike <strike>[b]</strike>]`
+> `[style bq <blockquote>[b]</blockquote>]`
 
 ### Using the Macros:
 
-```
-Italizing for emphasis, I {i really} mean it!
-```
+> `Italizing for emphasis, I {i really} mean it!`
 
 _Produces:_
 
-```
-Italizing for emphasis, I <i>really</i> mean it!
-```
+> `Italizing for emphasis, I <i>really</i> mean it!`
 
 ## The Python files
 
