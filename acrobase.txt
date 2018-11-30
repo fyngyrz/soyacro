@@ -43,6 +43,7 @@ AL,,Alabama (USA); Artificial Life
 ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AM,,Amplitude Modulation
 AMA,,Ask Me Anything
+AMD,,American Micro Devices
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 API,,Application Programmer Interface
@@ -402,6 +403,7 @@ TN,,Tennessee (USA)
 TOS,,Terms Of Service
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
+TSMC,,Taiwan Semiconductor Manufacturing Company
 TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networking, Time To Live
 TTYL,,Talk To You Later
 TTY,,Teletype
