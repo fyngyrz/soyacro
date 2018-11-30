@@ -141,6 +141,7 @@ ESA,,European Space Agency
 ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
 EU,,European Union
+EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
 FAQ,,Frequently Asked Questions
@@ -245,6 +246,8 @@ KMS,,Kilometers; Knowledge Management System
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
 KPH,,Kilometers Per Hour
+KW,kW,kiloWatt
+KWH,kWh,kiloWatt-Hour
 KY,,Kentucky (USA)
 LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
@@ -441,6 +444,7 @@ VA,,Virgina (USA)
 VFO,,Variable Frequency Oscillator
 VPN,,Virtual Private Network
 VT,,Vermont (USA)
+VW,,VolksWagon
 WAN,,Wide Area Network
 WA,,Washington (USA)
 WEC,,Wave Energy Converter
