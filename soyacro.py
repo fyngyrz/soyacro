@@ -233,8 +233,11 @@ def makeacros(text):
 	incaps = False
 	accum = u''
 	o = u''
+	wait = False
 	for c in text: # iterate all characters
-		if (c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9'):
+		if c == u'<': wait = True # if in an HTML tag, don't bother
+		elif c == u'>': wait = False
+		if wait == False and (c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9'):
 			accum += c
 		else: # not a cap now
 			if len(accum) > 1:

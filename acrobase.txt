@@ -339,6 +339,7 @@ PAC,,Political Action Group
 PC,,Personal Compute
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
+PI,,Private Investigator
 PITA,,Pain In The Ass
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
