@@ -34,7 +34,7 @@ for anything, signatures, etc., so you can make richer posts more easily.
 ### But what if I _need_ non-ASCII characters in a replacement field?
 
 Then you can use HTML entities. For instance, El ni&#241;o can be
-spelled as `El ni&amp;#241;o`. Simple as that. You can do the same thing in
+spelled as `El ni&#241;o`. Simple as that. You can do the same thing in
 the expansion field.
 
 ### Contributions:
