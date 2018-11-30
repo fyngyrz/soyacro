@@ -138,10 +138,10 @@ unless there is no replacement field.
 
 ### Examples:
 
-> `3D,,Three Dimensional`
-> `411,,A number, and a shorthand for: Information`
-> `MHZ,MHz,Megahertz - Millions of cycles per second`
-> `NASA,,National Aeronautics and Space Administration (US)`
+> `3D,,Three Dimensional`  
+> `411,,A number, and a shorthand for: Information`  
+> `MHZ,MHz,Megahertz - Millions of cycles per second`  
+> `NASA,,National Aeronautics and Space Administration (US)`  
 
 ## `aambase.txt`:
 
@@ -179,10 +179,10 @@ _Result:_
 
 ### Examples:
 
-> `[style b [b [b]]]`
-> `[style i [i [b]]]`
-> `[style strike <strike>[b]</strike>]`
-> `[style bq <blockquote>[b]</blockquote>]`
+> `[style b [b [b]]]`  
+> `[style i [i [b]]]`  
+> `[style strike <strike>[b]</strike>]`  
+> `[style bq <blockquote>[b]</blockquote>]`  
 
 ### Using the Macros:
 
