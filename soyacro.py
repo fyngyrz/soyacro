@@ -197,6 +197,19 @@ def makeascii(text):
 			o += '&#{:d};'.format(ord(text[i]))
 	return o
 
+# general balance tester
+# ----------------------
+def lrtest(a,b,text):
+	left = 0
+	right = 0
+	for c in text:
+		if c == a:
+			left += 1
+		elif c == b:
+			right += 1
+	if left != right:
+		return False
+	return True
 
 # aa_macro uses squiggly braces for macro invocation. Because it
 # can nest macros, the braces must be balanced, or things will
@@ -204,18 +217,18 @@ def makeascii(text):
 # braces in the post, if any, are balanced; if they are not,
 # it cancels aa_macro processing and warns about the problem.
 # --------------------------------------------------------------
-def testforbalance(text):
+def testforsquigs(text):
 	global errors,aambase
-	left = 0
-	right = 0
-	for c in text:		# examine all braces
-		if c == u'{':
-			left += 1
-		elif c == u'}':
-			right += 1
-	if left != right:	# indication of unbalanced braces
+	if lrtest(u'{',u'}',text) == False:
 		aambase = u''	# this cancels any {macro} processing
-		errors += u'<span style="color: red;">Unbalanced sqiggly braces</span><br>'
+		errors += u'<span style="color: red;">Unbalanced {...} braces</span><br>'
+
+# If there are unbalanced angle braces, they should be character entities
+# -----------------------------------------------------------------------
+def testforhtml(text):
+	global errors
+	if lrtest(u'<',u'>',text) == False:
+		errors += u'<span style="color: red;">Unbalanced &lt;...&gt; braces: need &amp;lt; or &amp;gt; ? Or is an HTML tag unclosed?</span><br>'
 
 # This method determines if what appears to be an acronym (because
 # acronyms can have/be numbers) is entirely numeric. If it is, it
@@ -314,6 +327,7 @@ myform = myform.replace('CGINAME',cginame)
 
 # ready to go, process everything into page body
 # ----------------------------------------------
+testforhtml(usertext)						# test for unbalanced HTML tag braces
 tmp = makeraw(usertext)						# the text you entered
 myform = myform.replace(u'TEXTBLOCK',tmp)	# goes into the entry form (again)
 mybody = makeraw(mybody)					# the text at the top of the page
@@ -321,7 +335,7 @@ mybody = u'<p>'+makeacros(mybody)+u'</p>'	# gets the acronyms stuffed in
 mybody += myform							# form added to main page body
 mybody += u'<hr>'							# new output section
 tmp = makeacros(usertext)					# Now the post gets its acronyms
-testforbalance(tmp)		# verify {macro} brace balance
+testforsquigs(tmp)			# verify {macro} brace balance
 if aambase != '':			# here's the aa_macro processing, if braces balance
 	tmp = nosquares(tmp)	# escape any square brackets
 	tmp = makeascii(tmp)	# aa_macro requires ASCII string
@@ -336,7 +350,7 @@ mybody += u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="
 # Report any errors:
 # ------------------
 if errors != '':
-	mybody += u'<hr><div><b><span style="color:orange;">Errors found in</span> <span style="color:white;">'+ifile+u'</span></b><br>'
+	mybody += u'<hr><div><b><span style="color:orange;">Errors found:</span></b><br>'
 	mybody += errors
 	mybody += u'</div>'
 
