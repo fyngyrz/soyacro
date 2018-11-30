@@ -221,6 +221,6 @@ doesn't allow for public domain release by authors, you should get to
 work fixing that right away. It's your country, you broke it, you get to
 fix it.
 
-The top of the Python files present information about development and so
+The top of the **Python** files present information about development and so
 forth if you'd like to peruse that. Otherwise, don't worry about it, and
 have fun.
