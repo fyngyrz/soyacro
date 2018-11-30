@@ -35,7 +35,9 @@ for anything, signatures, etc., so you can make richer posts more easily.
 
 Then you can use HTML entities. For instance, El ni&#241;o can be spelled
 as `El ni&#241;o`. Simple as that. You can write the same thing in the
-expansion field.
+expansion field:
+
+> `ENSO,,El Ni&#241;o/Southern Oscillation`
 
 Don't know the HTML entity for a certain character? No problem. Type it
 into the input \(top\) field of this application, press submit, and it
@@ -55,7 +57,7 @@ Apache. Put all the files into a directory where python cgi applications
 \(denoted by files that end in `.py`\) are allowed to run, then
 simply access the application with:
 
-`http://yourserver.tld/cgi-path/soyacro.py`
+> `http://yourserver.tld/cgi-path/soyacro.py`
 
 ## Setup
 
@@ -136,7 +138,7 @@ unless there is no replacement field.
 
 ### Examples:
 
-```
+> ```
 3D,,Three Dimensional
 411,,A number, and a shorthand for: Information
 MHZ,MHz,Megahertz - Millions of cycles per second
