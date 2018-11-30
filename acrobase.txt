@@ -157,6 +157,7 @@ FM,,Frequency Modulation
 FML,,Fuck My Life
 FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
+FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
 FTC,,Federal Trade Commission (USA)
@@ -387,6 +388,7 @@ SSL,,Secure Sockets Layer
 SSN,,Social Security Number	
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 SW,,Shortwave (radio)
+TAM,,Total Addressable Market
 TBH,,To Be Honest
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
