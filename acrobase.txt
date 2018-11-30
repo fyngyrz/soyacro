@@ -34,6 +34,7 @@ ADD,,Attention Deficit Disorder
 AF,,Audio Frequency
 AFAIK,,As Far As I Know
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
+AGW,,Antropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
 AK,,Alaska (USA)
@@ -52,6 +53,7 @@ ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 AWS,,Amazon Web Services
+AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
@@ -129,6 +131,7 @@ ECG,,ElectroCardioGram
 EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
 EMT,,Emergency Medical Technician
+ENSO,,El Ni&#241;o/Southern Oscillation
 EPA,,Environmental Protection Agency (US)
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript

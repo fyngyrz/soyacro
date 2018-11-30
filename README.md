@@ -31,6 +31,12 @@ with the actual common usage.
 There is also a built-in macro processor that lets you build shortcuts
 for anything, signatures, etc., so you can make richer posts more easily.
 
+### But what if I _need_ non-ASCII characters in a replacement field?
+
+Then you can use HTML entities. For instance, El nin&#241;o can be
+spelled as `El ni&#241;o``. Simple as that. You can do the same thing in
+the expansion field.
+
 ### Contributions:
 
 I would particularly appreciate any pull requests that enhance the
@@ -118,7 +124,11 @@ For acronymns that are all-caps, this field remains empty.
 The third field is the content that is presented when the mouse is
 hovered over the acronym in the post.
 
-This file must contain only ASCII characters; no unicode.
+This file must contain only ASCII characters; no unicode. You can use
+HTML entities in the replacement and expansion fields instead, though, so
+there's no limit on the accuracy of the results, only on the all-caps
+sequences used to trigger them, and those don't show up in the posts
+unless there is no replacement field.
 
 ### Examples:
 
