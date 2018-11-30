@@ -38,8 +38,8 @@ as `El ni&#241;o`. Simple as that. You can write the same thing in the
 expansion field.
 
 Don't know the HTML entity for a certain character? No problem. Type it
-into the input field of this application, press submit, and it will
-appear in the bottom field. Just copy and paste.
+into the input \(top\) field of this application, press submit, and it
+will appear in the output \(bottom\) field. Just copy and paste.
 
 ### Contributions:
 
