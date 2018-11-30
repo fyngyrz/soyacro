@@ -192,6 +192,23 @@ _Produces:_
 
 > `Italizing for emphasis, I <i>really</i> mean it!`
 
+### Squiggly braces are special, because of macro processing
+
+If macro processing is on, you need to be mindful about using `{` and `}`
+as these are used to onvoke macros. If you want to use them as characters
+in a post, just use `{ls}` for the left squiggly brace, and `{rs}` for the
+right squiggly brace. If there are unbalanced squiggly braces in the text,
+macro processing is cancelled.
+
+### Angle braces are special too, because of HTML
+
+Angle braces need to be balanced because of how HTML tags are processed
+(not just by the app, but also by the HTML browser.) If you need to use
+an angle brace in text, use the usual HTML escapes, which are
+`&lt;` for the less-than brace, and `&gt;` for the greater-than brace.
+
+If angle braces are unbalanced, the app will warn you.
+
 ## The Python files
 
 `soyacro.py` is the cgi you access on your webserver. You might put it in
