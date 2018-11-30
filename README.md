@@ -53,7 +53,7 @@ those as well.
 ## Requirements / Installation:
 
 This is a CGI web application, so it needs to run on a webserver such as
-Apache. Put all the files into a directory where python cgi applications
+Apache. Put all the files into a directory where **Python** cgi applications
 \(denoted by files that end in `.py`\) are allowed to run, then
 simply access the application with:
 
@@ -195,17 +195,17 @@ _Produces:_
 ## The Python files
 
 `soyacro.py` is the cgi you access on your webserver. You might put it in
-a cgi-bin folder, along with the other two Python files, and then get to
+a cgi-bin folder, along with the other two **Python** files, and then get to
 it with `http://mysite.com/cgi-bin/soyacro.py`
 
 Please do observe the ruminations at the top of this readme about security.
 
 ## Limitations and Design Choices
 
-This is a Python 2 project. It incorporates another Python 2 project,
+This is a **Python** project. It incorporates another **Python** project,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
-or unless I move that project to Python 3 \(not very likely, but someone
-else might undertake that\), Python 2 will remain the target here.
+or unless I move that project to **Python3** \(not very likely, but someone
+else might undertake that\), **Python** will remain the target here.
 
 Having said all that, by all means feel free to fork and go your own way
 with either / both projects. The Github repo for the macro processor is
