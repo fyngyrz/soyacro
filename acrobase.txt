@@ -142,6 +142,7 @@ ERU,,Energy Recovery Unit
 ESA,,European Space Agency
 ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
+ET,,Eastern Time; Extra-Terrestrial
 EU,,European Union
 EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
