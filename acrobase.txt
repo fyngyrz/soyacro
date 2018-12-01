@@ -271,7 +271,7 @@ LTE,,A mobile communications standard
 MA,,Massachusetts (USA)
 MAC,,Media Access Control address
 MB,,Megabytes; Manitoba (Canada)
-MD,,Maryland (USA)
+MD,,Maryland (USA); Medical Doctor
 ME,,Maine (USA)
 MF,,Medium Frequency
 MHZ,MHz,Megahertz - Millions of cycles per second
