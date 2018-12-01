@@ -29,6 +29,7 @@ ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 AC,,Anonymous Coward, or Alternating Current
 ACLU,,American Civil Liberties Union
+AD,,Anno Domini (in the year of the Lord)
 ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
 AF,,Audio Frequency
@@ -59,7 +60,7 @@ AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
 BBIAB,,Be Back In A Bit
-BC,,British Columbia (Canada)
+BC,,British Columbia (Canada); Before Christ
 BCC,,Blind Carbon Copy
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BI,,Bisexual
@@ -74,6 +75,7 @@ CBS,,Columbia Broadcasting System
 CC,,Carbon Copy
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
+CE,,Current Era
 CEO,,Chief Executive Officer
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
