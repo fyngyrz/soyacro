@@ -426,6 +426,7 @@ TX,,Texas (USA)
 UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
 UC,,University of California
+UCSD,,University of California, San Diego
 UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency
 UK,,United Kingdom
