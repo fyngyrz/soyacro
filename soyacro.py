@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: November 29th, 2018 (this code file only)
+#  Last Update: December 2nd, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #  Tab Spacing: Set to 4 for sane readability of Python source
@@ -302,12 +302,10 @@ border-bottom: red dashed;
 """
 
 mybody = u"""
-This is an acronym clarifier. When you're going to make a post
-on soylentnews.org, which supports use of the <abbr> tag, run the
-post through this first, then copy & paste the output into the
+This is an all-caps-and/or-numbers acronym clarifier. When you're going
+to make a post on soylentnews.org, which supports use of the <abbr> tag,
+run the post through this first, then copy & paste the output into the
 Soylent comment box. For example, here's what happens to "ISP."
-
-Save yourself some angst, and use lower case for all your HTML tags. :)
 """
 
 myform = u"""
