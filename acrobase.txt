@@ -107,6 +107,7 @@ DAC,,Digital to Analog Converter
 DB,,Database
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
+DD,,2-digit day, 01-31
 DEA,,Drug Enforcement Agency (US)
 DE,,Delaware (USA)
 DGPS,,Differential Global Positioning System
@@ -290,6 +291,7 @@ MIDI,,Musical Instrument Digital Interface
 MI,,Michigan (USA); Machine Intelligence
 MIT,,Massachusetts Institute of Technology
 MLB,,Major League Baseball
+MM,,2-digit Month, 01-12
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MO,,Missouri (USA)
@@ -492,3 +494,5 @@ XML,,eXtensible Markup Language
 XTAL,,Crystal
 YOLO,,You Only Live Once
 YT,,Yukon Territory (Canada)
+YY,,last 2-digits year
+YYYY,,4-digit Year
