@@ -47,9 +47,9 @@ AMA,,Ask Me Anything
 AMD,,American Micro Devices
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
-API,,Application Programmer Interface
 AP,,Access Point
-APL,,A Programming Language
+API,,Application Programmer Interface
+APL,,A Programming Language; APpLe stock symbol
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
@@ -71,6 +71,7 @@ BW,,Black and White (imaging); Bandwidth
 CA,,California (USA)
 CAD,,Computer Aided Design
 CBC,,Canadian Broadcasting Corporation
+CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy
 CDC,,Center for Disease Control (US)
@@ -89,6 +90,7 @@ CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
 CO,,Colorado (USA); Carbon Monoxide
 CO2,,Carbon Dioxide
+COM,,COMmunications
 COO,,Chief Operating Officer
 CP,,Child Porn
 CPU,,Central Processing Unit
@@ -154,6 +156,7 @@ FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
 FCC,,Federal Communications Commission
 FDA,,Food and Drug Administration (US)
+FDIC,,Federal Deposit Insurance Corporation
 FEMA,,Federal Emergency Management Agency (US)
 FFS,,For Fuck's Sake
 FIFO,,First In, First Out
@@ -177,6 +180,7 @@ FYI,,For Your Information
 G20,,Group of 20 (countries)
 GA,,Georgia (USA)
 GB,,Gigabyte
+GCC,,GNU Compiler Collection; Gulf Cooperation Council
 GHZ,GHz,Gigahertz - Billions of cycles per second
 GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
 GIF,,Graphics Interchange Format - stores either still or animated images
@@ -192,7 +196,7 @@ HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency
 HI,,Hawaii (USA)
-HIFI,,High Fidelity
+HIFI,HiFi,High Fidelity
 HIV,,Human Immunodeficiency Virus
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
@@ -242,6 +246,7 @@ ISA,,Industry Standard Architecture
 ISIS,,Islamic State of Iraq and Syria
 ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
 ISP,,Internet Service Provider
+ISS,,International Space Station
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
 JRE,,Java Runtime Environment
@@ -288,6 +293,7 @@ MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MO,,Missouri (USA)
 MOAB,,Mother Of All Bombs - a very large fuel-air bomb
+MP,,MegaPixel; Member of Parliament
 MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
@@ -295,6 +301,7 @@ MS,,Mississippi (USA)
 MST,,Mountain Standard Time
 MT,,Montana (USA)
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
+NAFTA,,North American Free Trade Agreement
 NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
 NATO,,North Atlantic Treaty Organization
@@ -328,6 +335,7 @@ NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYT,,New York Times
+OC,,Organized Crime; Original Content
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
 OH,,Ohio (USA)
@@ -337,17 +345,20 @@ OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
+OPEC,,Organization of Petroleum Exporting Countries
 OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
 OSX,,Operating System X (Apple), AKA MacOS
+OTC,,Over The Counter
 OTOH,,On The Other Hand
 PA,,Pennsylvania (USA)
 PAC,,Political Action Group
-PC,,Personal Compute
+PC,,Personal Computer
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
 PI,,Private Investigator
 PITA,,Pain In The Ass
+PM,,Prime Minister
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
 PPI,,Pixels Per Inch
@@ -455,8 +466,9 @@ VFO,,Variable Frequency Oscillator
 VPN,,Virtual Private Network
 VT,,Vermont (USA)
 VW,,VolksWagon
-WAN,,Wide Area Network
 WA,,Washington (USA)
+WAN,,Wide Area Network
+WASP,,White Anglo Saxon Protestant
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
 WHO,,World Health Organization
