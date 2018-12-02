@@ -117,6 +117,7 @@ DMA,,Direct Memory Access
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNC,,Democratic National Convention
 DNS,,Domain Name System
+DOH,DoH,DNS-over-HTTPS
 DOD,,Department Of Defense (US)
 DOE,,Department Of Energy (US)
 DOJ,,Department Of Justice (US)
@@ -206,6 +207,7 @@ HTML5,,HyperText Markup Language version 5
 HTML,,HyperText Markup Language (in general, also version 1)
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
+HWP,,HighWay Patrol; Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
 IBM,,International Business Machines
