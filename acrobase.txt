@@ -225,6 +225,7 @@ IEEE,,Institute Of Electrical And Electronics Engineers
 IF,,Intermediate Frequency
 IIRC,,If I ReCall
 IL,,Illinois (USA)
+IMDB,IMDb,Internet Movie Database
 IMHO,,In My Honest Opinion
 IN,,Indiana (USA)
 INF,,Intermediate-range Nuclear Forces (treaty)
