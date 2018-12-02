@@ -27,9 +27,11 @@ A320,,A passenger aircraft
 AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
-AC,,Anonymous Coward, or Alternating Current
+AC,,Anonymous Coward; Alternating Current; Air Conditioning
+ACT,,Air Channel Transistor
 ACLU,,American Civil Liberties Union
 AD,,Anno Domini (in the year of the Lord)
+ADA,,Americans with Disabilities Act (US)
 ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
 AF,,Audio Frequency
@@ -43,7 +45,7 @@ AK,,Alaska (USA)
 AKA,,Also Known As
 AL,,Alabama (USA); Artificial Life
 ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
-AM,,Amplitude Modulation
+AM,,Amplitude Modulation; Ante Meridiem - before midday
 AMA,,Ask Me Anything
 AMD,,American Micro Devices
 ANSI,,American National Standards Institute
@@ -76,7 +78,7 @@ CAD,,Computer Aided Design
 CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
-CC,,Carbon Copy
+CC,,Carbon Copy; Credit Card
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
 CE,,Current Era
@@ -106,6 +108,7 @@ CT,,Connecticut (USA)
 CTRL,,Control
 CUL,,See You Later
 CW,,Continous Wave (only) transmissions (generally Morse Code)
+CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
 DB,,Database
 DBMS,,Database Management System
@@ -123,9 +126,11 @@ DMA,,Direct Memory Access
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNC,,Democratic National Convention
 DNS,,Domain Name System
-DOH,DoH,DNS-over-HTTPS
+DOB,,Date Of Birth
 DOD,,Department Of Defense (US)
 DOE,,Department Of Energy (US)
+DOH,DoH,DNS-over-HTTPS
+DOI,,Department of the Interior (US); Digital Object Identifier
 DOJ,,Department Of Justice (US)
 DOT,,Department Of Transportation (US)
 DPI,,Dots Per Inch
@@ -134,11 +139,13 @@ DR,,Didn't Read
 DRM,,Digital Rights Management; Digital Radio Mondial (a digital broadcast format)
 DSL,,Digital Subscriber Line
 DSLR,,Digital single-lens reflex (camera)
+DSS,,Data Security Standard
 DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
+EEOC,,Equal Employment Opportunity Commission (US)
 EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
 EMT,,Emergency Medical Technician
@@ -152,6 +159,7 @@ ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
 ET,,Eastern Time; Extra-Terrestrial
 EU,,European Union
+EULA,,End User License Agreement
 EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
@@ -185,6 +193,7 @@ G20,,Group of 20 (countries)
 GA,,Georgia (USA)
 GB,,Gigabyte
 GCC,,GNU Compiler Collection; Gulf Cooperation Council
+GDPR,,General Data Protection Regulation (EU)
 GHZ,GHz,Gigahertz - Billions of cycles per second
 GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
 GIF,,Graphics Interchange Format - stores either still or animated images
@@ -202,6 +211,7 @@ HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equa
 HF,,High Frequency
 HI,,Hawaii (USA)
 HIFI,HiFi,High Fidelity
+HIPAA,,Health Insurance Portability and Accountability Act (US)
 HIV,,Human Immunodeficiency Virus
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
@@ -243,7 +253,7 @@ IN,,Indiana (USA)
 INF,,Intermediate-range Nuclear Forces (treaty)
 IOT,,Internet Of Things
 IOW,,In Other Words
-IP,,Internet Protocol (usually referring to a specific Internet addrees)
+IP,,Internet Protocol (often a specific Internet address); Intellectual Property
 IQ,,Intelligence Quotient or I/Q phases of data encoding
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
@@ -279,6 +289,7 @@ LGBT,,Lesbian, Gay, Bisexual and Transexual
 LGBTQ,,Lesbian, Gay, Bisexual, Transexual and Questioning
 LGBTQQ,,Lesbian, Gay, Bisexual, Transexual, Questioning, Queer
 LIFO,,Last In, First Out
+LLC,,Limited Liability Corporation
 LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
 LOL,,Laugh Out Loud
@@ -317,6 +328,7 @@ NB,,New Brunswick (Canada)
 NBC,,National Broadcasting Company
 NC,,North Carolina (USA)
 ND,,North Dakota (USA)
+NDA,,Non Disclosure Agreement
 NE,,Nebraska (USA)
 NFW,,No Fucking Way
 NGO,,Non-Governmental Organization
@@ -329,6 +341,7 @@ NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
 NM,,New Mexico (USA)
+NN,,Network Neutrality
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
@@ -354,20 +367,24 @@ OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
+OP,,Original Poster
 OPEC,,Organization of Petroleum Exporting Countries
 OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
+OSI,,Open Systems Interconnection
 OSX,,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
+P2P,,Peer to Peer
 PA,,Pennsylvania (USA)
 PAC,,Political Action Group
 PC,,Personal Computer
+PCI,,Payment Card Industry
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
 PI,,Private Investigator
 PITA,,Pain In The Ass
-PM,,Prime Minister
+PM,,Prime Minister; Post Meridiem - after midday
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
 PPI,,Pixels Per Inch
@@ -403,6 +420,7 @@ SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
 SF,,Science Fiction or less accurately Speculative Fiction; San Francisco (California)
 SFW,,Safe For Work
+SFWA,,Science Fiction Writers of America
 SHF,,Super High Frequency
 SIG,,Special Interest Group; Signature
 SIMM,,Single Inline Memory Module
