@@ -246,6 +246,7 @@ ISA,,Industry Standard Architecture
 ISIS,,Islamic State of Iraq and Syria
 ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
 ISP,,Internet Service Provider
+ISRO,,India Space Research Organisation
 ISS,,International Space Station
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
@@ -364,6 +365,7 @@ POS,,Piece Of Shit
 PPI,,Pixels Per Inch
 PR,,Pull Request - source code alteration submission
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
+PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
 QC,,Quebec (Canada)
 RAM,,Random Access Memory - get to any part of the memory at any time
@@ -461,6 +463,7 @@ USPS,,United States Postal Service
 USSR,,United Soviet Socialist Republics
 US,,United States (of America)
 UT,,Utah (USA)
+UTC,,Universal Coordinated Time
 VA,,Virgina (USA)
 VFO,,Variable Frequency Oscillator
 VPN,,Virtual Private Network
