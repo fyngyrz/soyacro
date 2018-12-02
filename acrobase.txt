@@ -35,6 +35,7 @@ ADD,,Attention Deficit Disorder
 AF,,Audio Frequency
 AFAIK,,As Far As I Know
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
+AG,,Attorney General; Aerographer's mate (US navy)
 AGW,,Antropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
@@ -54,6 +55,7 @@ AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
+ATM,,Automated Teller Machine
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
@@ -62,6 +64,7 @@ BBC,,British Broadcasting Corporation
 BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada); Before Christ
 BCC,,Blind Carbon Copy
+BFE,,Bum Fuck Egypt (middle of nowhere)
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BI,,Bisexual
 BP,,Blood Pressure
@@ -189,6 +192,7 @@ GIGO,,Garbage In, Garbage Out
 GM,,General Motors
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GOP,,Grand Old Party (Republican party, USA)
+GP,,GrandParent (usually parent of parent post); General Practitioner (medical)
 GPH,,Gallons Per Hour
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
@@ -234,6 +238,7 @@ IIRC,,If I ReCall
 IL,,Illinois (USA)
 IMDB,IMDb,Internet Movie Database
 IMHO,,In My Honest Opinion
+IMO,,In My Opinion
 IN,,Indiana (USA)
 INF,,Intermediate-range Nuclear Forces (treaty)
 IOT,,Internet Of Things
@@ -318,6 +323,7 @@ NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
 NH,,New Hampshire (USA)
 NHS,,National Health Service (Britain)
+NIMBY,,Not In My Back Yard
 NIH,,Not Invented Here
 NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
@@ -492,6 +498,7 @@ WWW,,World Wide Web (or just, "the Web")
 WY,,Wyoming (USA)
 XML,,eXtensible Markup Language
 XTAL,,Crystal
+YMMV,,Your Milage May Vary
 YOLO,,You Only Live Once
 YT,,Yukon Territory (Canada)
 YY,,last 2-digits year
