@@ -102,6 +102,7 @@ CTRL,,Control
 CUL,,See You Later
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 DAC,,Digital to Analog Converter
+DB,,Database
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
 DEA,,Drug Enforcement Agency (US)
