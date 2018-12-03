@@ -52,6 +52,7 @@ AMZN,,Amazon's stock ticker symbol
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 AP,,Access Point
+APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language; APpLe stock symbol
 AR,,Arkansas (USA)
