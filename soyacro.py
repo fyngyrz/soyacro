@@ -147,6 +147,40 @@ def nosquares(text):
 	text = text.replace(']',metaright)
 	return text
 
+# This converts character entities into actual unicode
+# ----------------------------------------------------
+def subents(text):
+	state = 0 # nothing detected
+	accum = u''
+	o = u''
+	for c in text:
+		if state == 0:		# nothing as yet?
+			if c == u'&':	# ampersand?
+				state = 1	# ampersand!
+			else:
+				o += c
+		elif state == 1:	# ampersand found?
+			if c == u'#':	# hash?
+				state = 2	# hash!
+				accum = u''	# clear accumulator
+			else:			# not a hash, so not an entity encoding
+				state = 0	# abort
+				o += u'&'+c	# flush char, done
+		elif state == 2:	# expecting digits or terminating semicolon
+			if c.isdigit():	# digit?
+				accum += c	# add it to accumulator if so
+			elif c == u';':	# terminating
+				s = u'\\U%08x' % (int(accum))
+				ss= s.decode('unicode-escape')
+				o += ss
+				state = 0
+			else: # bad encoding?
+				o += u'&#'
+				o += accum
+				state = 0
+	return o
+
+
 # Restores braces, post aa_macro processing
 # -----------------------------------------
 def repsquares(text):
@@ -316,6 +350,9 @@ if aambase != '':			# here's the aa_macro processing, if braces balance
 	tmp = mod.do(tmp)		# process the {macros}
 	tmp = repsquares(tmp)	# replace the square brackets
 	tmp = makeraw(tmp)		# encode for the textarea
+
+tmp = tmp.replace(u'&amp;#',u'&#')	# watch out for intended char entities
+tmp = subents(tmp)					# convert char entities into actual unicode
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
