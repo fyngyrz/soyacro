@@ -206,6 +206,7 @@ GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GOP,,Grand Old Party (Republican party, USA)
 GP,,GrandParent (usually parent of parent post); General Practitioner (medical)
 GPH,,Gallons Per Hour
+GPIO,,General Purose Input Output
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
