@@ -464,6 +464,7 @@ SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
 SSA,,Social Security Administration (US)
 SSB,,Single SideBand
+SSD,,Solid State Disk
 SSH,,Secure SHell
 SSL,,Secure Sockets Layer
 SSN,,Social Security Number
