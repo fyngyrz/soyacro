@@ -30,8 +30,8 @@
 cginame		= 'soyacro.py'		# this CGI file
 ifile		= 'acrobase.txt'	# acronyms file
 mfile		= 'aambase.txt'		# macros file
-usemacros	= True				# macros enabled or not
-showstyles	= True				# styles displayed or not
+usemacros	= True				# macro styles enabled or not
+showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 # ==========================================================
 # ==========================================================
@@ -421,7 +421,7 @@ else:
 			canned = fh.read()
 		if canned != s:
 			print s
-			print '\ntest file does not match. New acronyms?'
+			print '\ntest file does not match. New macros?'
 		else:
 			print 'test passed.'
 	else:
