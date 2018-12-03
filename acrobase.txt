@@ -48,6 +48,7 @@ ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AM,,Amplitude Modulation; Ante Meridiem - before midday
 AMA,,Ask Me Anything
 AMD,,American Micro Devices
+AMZN,,Amazon's stock ticker symbol
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 AP,,Access Point
