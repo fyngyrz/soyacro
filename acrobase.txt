@@ -357,6 +357,7 @@ NTS,,Note To Self
 NTW,,Not To Worry
 NU,,Nunavut (Canada)
 NV,,Nevada (USA)
+NVM,,Non Volatile RAM
 NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
@@ -376,7 +377,7 @@ OPEC,,Organization of Petroleum Exporting Countries
 OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
 OSI,,Open Systems Interconnection
-OSX,,Operating System X (Apple), AKA MacOS
+OSX,OS X,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
 P2P,,Peer to Peer
@@ -501,6 +502,7 @@ UT,,Utah (USA)
 UTC,,Universal Coordinated Time
 VA,,Virgina (USA)
 VFO,,Variable Frequency Oscillator
+VM,,Virtual Memory
 VPN,,Virtual Private Network
 VT,,Vermont (USA)
 VW,,VolksWagon
