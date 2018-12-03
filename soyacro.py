@@ -32,7 +32,7 @@ ifile		= 'acrobase.txt'	# acronyms file
 mfile		= 'aambase.txt'		# macros file
 usemacros	= True				# macros enabled or not
 showstyles	= True				# styles displayed or not
-showacros	= True				# all acronyms displayed or not
+showacros	= False				# all acronyms displayed or not
 # ==========================================================
 # ==========================================================
 # ==========================================================
