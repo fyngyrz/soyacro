@@ -57,7 +57,7 @@ AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
-ATM,,Automated Teller Machine
+ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
@@ -83,6 +83,7 @@ CDC,,Center for Disease Control (US)
 CD,,Compact Disk
 CE,,Current Era
 CEO,,Chief Executive Officer
+CEQA,,California Environmental Quality Act (US)
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
 CIA,,Central Intelligence Agency (US)
