@@ -67,6 +67,7 @@ BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada); Before Christ
 BCC,,Blind Carbon Copy
 BFE,,Bum Fuck Egypt (middle of nowhere)
+BFR,,Big Fucking Rocket
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BI,,Bisexual
 BP,,Blood Pressure
@@ -146,6 +147,7 @@ DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
+EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
 EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
@@ -284,6 +286,7 @@ LAN,,Local Area Network
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
 LED,,Light Emitting Diode
+LENR,,Low Energy Nuclear Reactor
 LF,,Low Frequency
 LGB,,Lesbian, Gay and Bisexual
 LGBT,,Lesbian, Gay, Bisexual and Transexual
@@ -388,6 +391,7 @@ PITA,,Pain In The Ass
 PM,,Prime Minister; Post Meridiem - after midday
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
+POV,,Point Of View
 PPI,,Pixels Per Inch
 PR,,Pull Request - source code alteration submission
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
@@ -427,6 +431,7 @@ SIG,,Special Interest Group; Signature
 SIMM,,Single Inline Memory Module
 SK,,Saskatchewan (Canada)
 SLR,,Single Lens Reflex (cameras)
+SLS,,Space Launch System
 SMB,,Server Message Block
 SMH,,Suck Me Hard
 SMS,,Short Message Service
@@ -440,7 +445,8 @@ SSA,,Social Security Administration (US)
 SSB,,Single SideBand
 SSH,,Secure SHell
 SSL,,Secure Sockets Layer
-SSN,,Social Security Number	
+SSN,,Social Security Number
+SSO,,Sun Synchronous Orbit
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 SW,,Shortwave (radio)
 TAM,,Total Addressable Market
