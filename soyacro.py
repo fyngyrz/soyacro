@@ -64,7 +64,7 @@ if cmdline == False:
 		usertext = u''
 		usernote = u'No text entered'
 else: # we're running from command line
-	usertext = u'A little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
+	usertext = u'uchar pizza: &#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
 	usernote = u'Running from command line'
 
 # Read in the style definitions:
