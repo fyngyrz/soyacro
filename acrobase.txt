@@ -419,6 +419,7 @@ PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
 QC,,Quebec (Canada)
+RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
 RC,,Radio Control(ed)
