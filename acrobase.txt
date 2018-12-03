@@ -524,6 +524,7 @@ VA,,Virgina (USA)
 VC,,Venture Capitalist
 VFO,,Variable Frequency Oscillator
 VIP,,Very Important Person
+VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
 VPN,,Virtual Private Network
 VT,,Vermont (USA)
