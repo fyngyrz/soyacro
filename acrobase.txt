@@ -57,6 +57,7 @@ APL,,A Programming Language; APpLe stock symbol
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
+ASIC,,Application-Specific Integrated Circuit
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 AWS,,Amazon Web Services
