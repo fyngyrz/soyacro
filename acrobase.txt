@@ -101,6 +101,7 @@ CO2,,Carbon Dioxide
 COM,,COMmunications
 COO,,Chief Operating Officer
 CP,,Child Porn
+CPM,CP/M,An OS for the 8080 microprocessor: Control Program for Microcomputers
 CPU,,Central Processing Unit
 CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
@@ -109,6 +110,7 @@ CSS,,Cascading Style Sheet - a means to indirectly format to HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)
 CTRL,,Control
+CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
@@ -181,6 +183,7 @@ FFS,,For Fuck's Sake
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FL,,Florida (USA)
+FLEX,,An OS for the 6800 and 6809 microprocessors
 FM,,Frequency Modulation
 FML,,Fuck My Life
 FORTRAN,,A computer language, "FORmula TRANSlator"
@@ -390,6 +393,7 @@ OP,,Original Poster
 OPEC,,Organization of Petroleum Exporting Countries
 OR,,Oregon (USA)
 OS,,Operating System, Open-Source (software)
+OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
 OSX,OS X,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
