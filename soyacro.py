@@ -22,43 +22,17 @@
 #               standard Python os import library
 # ----------------------------------------------------------
 
-# There are a few configurable items. They follow here. Once
-# you get to the "Code" section, I advise you to not meddle.
-# ==========================================================
-# ==========================================================
-# ==========================================================
+### Configuration: ###
+### ============== ###
 
-# Data filenames:
-# ===============
-# These are user-configurable; you can make these filenames
-# anything you like, and put them anywhere you want, and you
-# **should**, to provide a layer of obscurity.
-#
-# Likewise, you should rename THIS file, nominally "soyacro.py",
-# so that it cannot be found by simply looking in your folders
-# by bots, etc. The filename must match the filename in the
-# cginame variable below.
-# ----------------------------------------------------------
-cginame	= 'soyacro.py'		# DEFINITELY change this!
-ifile	= 'acrobase.txt'	# list of known acronyms - see file
-mfile	= 'aambase.txt'		# list of aa_macro macros - see file
-
-# If usemacros is True, then the macro processor will be invoked.
-# If it is False, then the macro processor won't be invoked.
-# ---------------------------------------------------------------
-usemacros = True
-
-# If you set showstyles to True, all the known macro styles will
-# be dumped at the bottom of the web page, otherwise False. This
-# will have no effect if usemacros, above, is False.
-# --------------------------------------------------------------
-showstyles = True
-
-# If you set this to True, all the known acronyms will be dumped
-# at the bottom of the web page, otherwise False.
-# --------------------------------------------------------------
-showacros = True
-
+# App Filenames:
+# --------------
+cginame		= 'soyacro.py'		# this CGI file
+ifile		= 'acrobase.txt'	# acronyms file
+mfile		= 'aambase.txt'		# macros file
+usemacros	= True				# macros enabled or not
+showstyles	= True				# styles displayed or not
+showacros	= True				# all acronyms displayed or not
 # ==========================================================
 # ==========================================================
 # ==========================================================
@@ -410,7 +384,7 @@ else:
 			canned = fh.read()
 		if canned != s:
 			print s
-			print '\ntest failed!'
+			print '\ntest file does not match. New acronyms?'
 		else:
 			print 'test passed.'
 	else:
