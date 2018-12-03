@@ -448,6 +448,7 @@ TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
 TFT,,Thin Film Transistor (usually display)
+THZ,THz,TeraHertz
 TIA,,Thanks In Advance
 TIFF,,Tagged Image File Format
 TIL,,Today I Learned
