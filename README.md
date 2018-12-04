@@ -82,11 +82,17 @@ In such a case, you should also rename the main processor. To do this,
 you need to change the `cginame` variable at the top of the file to match
 the new filename.
 
+You should also set your permissions carefully. There's no cause for the
+app to write to the folder it or the data files are in, so the folder
+should be read-only except by very high priviledge users. The app itself
+and the two data files should also be read-only to anyone but high
+priviledge users.
+
 Personally, I run this on a webserver inside my LAN, which has no
 external means of access and to which no one else has any access, so I'm
-not worried about anyone else using it. The above remarks are more meant
-for those who only have a public webserver to place this on, or who
-have untrusted users on their LAN \(why?\)
+not particularly worried about anyone else using it. The above remarks
+are more meant for those who only have a public webserver to place this
+on, or who have untrusted users on their LAN \(why?\)
 
 ## Use:
 
