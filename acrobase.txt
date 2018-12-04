@@ -28,6 +28,7 @@ AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 AC,,Anonymous Coward; Alternating Current; Air Conditioning
+ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
 ACT,,Air Channel Transistor
 ADA,,Americans with Disabilities Act (US)
@@ -115,8 +116,10 @@ CP,,Child Porn
 CPM,CP/M,An OS for the 8080 microprocessor: Control Program for Microcomputers
 CPU,,Central Processing Unit
 CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
+CRA,,Computing Research Association
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
+CS,,Computer Science
 CSS,,Cascading Style Sheet - a means to indirectly format to HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)
@@ -587,6 +590,7 @@ WASP,,White Anglo Saxon Protestant
 WA,,Washington (USA)
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
+WH,,White House (US)
 WHO,,World Health Organization
 WIFI,Wi-Fi,WLAN based on any of the 802.11 standards
 WI,,Wisonsin (USA)
@@ -601,6 +605,7 @@ WW1,,World War One
 WW2,,World War Two
 WW3,,World War Three
 WWW,,World Wide Web (or just, "the Web")
+WX,,Weather
 WY,,Wyoming (USA)
 XML,,eXtensible Markup Language
 XOR,,XOR gate: input 1 not equal input 2 = output
