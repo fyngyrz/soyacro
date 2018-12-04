@@ -64,7 +64,7 @@ if cmdline == False:
 		usertext = u''
 		usernote = u'No text entered'
 else: # we're running from command line
-	usertext = u'uchar pizza: &#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
+	usertext = u'skip this: <abbr title="testing">DONTTREADONME</abbr> uchar pizza: &#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
 	usernote = u'Running from command line'
 
 # Read in the style definitions:
@@ -254,11 +254,22 @@ def makeacros(text):
 	incaps = False
 	accum = u''
 	o = u''
+	ctag = u''
 	wait = False
+	wait2 = False
 	for c in text: # iterate all characters
-		if c == u'<': wait = True # if in an HTML tag, don't bother
+		if c == u'<':
+			wait = True	# if within an HTML tag, don't bother
+			ctag = u''	# reset abbr detector
 		elif c == u'>': wait = False
-		if wait == False and (c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9'):
+		ctag += c.lower()
+		if ctag[:5] == u'<abbr':
+			wait2 = True	# ignore between <abbr></abbr>
+			ctag = u''
+		elif ctag[:6] == u'</abbr':
+			wait2 = False
+			ctag = u''
+		if wait == False and wait2 == False and (c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9'):
 			accum += c
 		else: # not a cap now
 			if len(accum) > 1:
