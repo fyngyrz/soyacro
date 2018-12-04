@@ -49,6 +49,7 @@ AMA,,Ask Me Anything
 AM,,Amplitude Modulation; Ante Meridiem - before midday
 AMD,,American Micro Devices
 AMZN,,Amazon's stock ticker symbol
+AND,,AND gate: input 1 AND input 2 = output
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 AP,,Access Point
@@ -68,6 +69,7 @@ BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BBC,,British Broadcasting Corporation
 BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada); Before Christ
+BCB,,BroadCast Band
 BCC,,Blind Carbon Copy
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFR,,Big Fucking Rocket
@@ -304,6 +306,7 @@ KW,kW,kiloWatt
 KY,,Kentucky (USA)
 LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
+LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
 LED,,Light Emitting Diode
@@ -370,6 +373,7 @@ NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
 NM,,New Mexico (USA)
 NN,,Network Neutrality
+NOT,,NOT gate: input 1 = output in opposite state
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
@@ -399,7 +403,7 @@ ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
 OPEC,,Organization of Petroleum Exporting Countries
 OP,,Original Poster
-OR,,Oregon (USA)
+OR,,Oregon (USA); OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
 OS,,Operating System, Open-Source (software)
@@ -562,6 +566,7 @@ WW3,,World War Three
 WWW,,World Wide Web (or just, "the Web")
 WY,,Wyoming (USA)
 XML,,eXtensible Markup Language
+XOR,,XOR gate: input 1 not equal input 2 = output
 XTAL,,Crystal
 YMMV,,Your Milage May Vary
 YOLO,,You Only Live Once
