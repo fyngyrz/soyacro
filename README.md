@@ -18,7 +18,8 @@ here as a pull request, and we all win.
 
 You can produce output that is comprised more than just all-caps and/or
 numbers by using the second field, which is a replacement field. The only
-restrictions are that there can be no commas in the replacement field,
+restrictions are that there can be no actual commas in the replacement field
+\(you can use &#44; if you need a comma, just not an actual comma character\),
 and that there be no non-ASCII characters. So, for instance, this line
 in the `acrobase.txt` file...
 
