@@ -48,6 +48,7 @@ ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AMA,,Ask Me Anything
 AM,,Amplitude Modulation; Ante Meridiem - before midday
 AMD,,American Micro Devices
+AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
 AND,,AND gate: input 1 AND input 2 = output
 ANSI,,American National Standards Institute
@@ -62,8 +63,9 @@ ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
-AWS,,Amazon Web Services
 ATT,AT&amp;T,American Telephone and Telegraph company
+AU,,Astronomical Unit; Australia
+AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
@@ -87,6 +89,7 @@ CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy; Credit Card
+CCTV,,Closed Circuit TeleVision
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
 CE,,Current Era
@@ -135,6 +138,7 @@ DHS,,Department of Homeland Security (US)
 DIMM,,Dual Inline Memory module
 DIN,,German institute, similar to US ANSI
 DIY,,Do It Yourself
+DJ,,Disc Jockey
 DMA,,Direct Memory Access
 DMR,,Digital Mobile Radio
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
@@ -187,9 +191,9 @@ FAA,,Federal Aviation Administration (US)
 FAQ,,Frequently Asked Questions
 FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
-FCC,,Federal Communications Commission
+FCC,,Federal Communications Commission (US)
 FDA,,Food and Drug Administration (US)
-FDIC,,Federal Deposit Insurance Corporation
+FDIC,,Federal Deposit Insurance Corporation (US)
 FEMA,,Federal Emergency Management Agency (US)
 FFS,,For Fuck's Sake
 FIFO,,First In, First Out
@@ -270,6 +274,7 @@ IC,,Integrated Circuit; Insenstive Clod
 ICMP,,Internet Control Message Protocol
 IDC,,I Don't Care
 IDE,,Integrated Development Environment (for example editor + compiler + linker)
+IDF,,Israel Defense Forces
 IDGAD,,I Don't Give A Damn
 IDGAF,,I Don't Give A Fuck
 ID,,Idaho (USA); Identification
@@ -399,6 +404,7 @@ NOT,,NOT gate: input 1 = output in opposite state
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
+NRCC,,National Republican Congressional Committee (US)
 NRO,,National Reconnaisance Office (US)
 NSA,,National Security Agency (US)
 NSFW,,Not Safe For Work
@@ -413,6 +419,7 @@ NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYPD,,New York city Police Department
 NYT,,New York Times
+NZ,,New Zealand; Non-Zero
 OC,,Organized Crime; Original Content
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
@@ -454,6 +461,7 @@ PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
 QC,,Quebec (Canada)
+QSL,,Radio shorthand for response
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
@@ -509,6 +517,7 @@ SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 SW,,Shortwave (radio)
+SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
 TBH,,To Be Honest
