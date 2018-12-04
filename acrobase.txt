@@ -1,11 +1,11 @@
-# This is an all-caps acronym/abbreviation definition file
+# This is an all-caps acronym/abbreviation definition file, ASCII-only format
 # To be used with soyacro.py or similar application
 # Format each entry all on one line with three elements; ASCII characters only:
 #    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
 #    A-SINGLE-COMMA
 #    Nothing OR a mixed-case replacement for the all-caps, ie MHZ,MHz,Megahertz
-#    A-SINGLE COMMA
-#    Acronym / abbreviation expansion all on ONE line. Examples:
+#    A-SINGLE-COMMA
+#    Acronym / abbreviation expansion all on ONE line, no HTML. Examples:
 # MHZ,MHz,Megahertz
 # ADC,,Analog to Digital Converter
 # -----------------------------------------------------------------------------
