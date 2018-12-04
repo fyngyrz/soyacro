@@ -107,6 +107,7 @@ CMY,,Cyan, Magenta, Yellow
 CMYK,,Cyan, Magenta, Yellow, Black
 CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
+CNSA,,China National Space Administration
 CO2,,Carbon Dioxide
 CO,,Colorado (USA); Carbon Monoxide
 COBOL,,Common Business-Oriented Language
@@ -126,6 +127,7 @@ CT,,Connecticut (USA)
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
+CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
@@ -160,7 +162,7 @@ DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep 
 DR,,Didn't Read
 DRM,,Digital Rights Management; Digital Radio Mondial (a digital broadcast format)
 DSL,,Digital Subscriber Line
-DSLR,,Digital single-lens reflex (camera)
+DSLR,,Digital Single-Lens Reflex (camera)
 DSS,,Data Security Standard
 DTMF,,Dual Tone Multi Frequency (touch-tone encoding)
 DVD,,Digital Video Disk
@@ -206,6 +208,7 @@ FL,,Florida (USA)
 FLOPS,,FLoating Point OPerations per Second
 FM,,Frequency Modulation
 FML,,Fuck My Life
+FOIA,,Freedom Of Information Act (US)
 FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FOSTA,,Fight Online Sex Trafficking Act (US)
@@ -403,6 +406,7 @@ NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
 NM,,New Mexico (USA)
 NN,,Network Neutrality
+NOAA,,National Oceanic and Atmospheric Administration (US)
 NOT,,NOT gate: input 1 = output in opposite state
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
@@ -427,6 +431,7 @@ OC,,Organized Crime; Original Content
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
 OH,,Ohio (USA)
+OIG,,Office of the Inspector General (US DOJ)
 OK,,Oklahoma (USA); "Okay"
 OJT,,On the Job Training
 OLED,,Organic Light Emitting Diode
@@ -537,6 +542,7 @@ TIL,,Today I Learned
 TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TLDR,TL;DR:,Too Long, Didn't Read
 TL,,Too Long
+TLS,,Transport Layer Security
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TOS,,Terms Of Service
