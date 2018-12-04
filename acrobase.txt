@@ -186,11 +186,14 @@ FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FL,,Florida (USA)
 FLEX,,An OS for the 6800 and 6809 microprocessors
+FLOPS,,FLoating Point OPerations per Second
 FM,,Frequency Modulation
 FML,,Fuck My Life
 FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FOSTA,,Fight Online Sex Trafficking Act (US)
+FP16,,16-bit Floating Point
+FP32,,32-but Floating Point
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
@@ -209,6 +212,7 @@ GB,,Gigabyte
 GCC,,GNU Compiler Collection; Gulf Cooperation Council
 GCHQ,,Government Communications HeadQuarters (UK)
 GDPR,,General Data Protection Regulation (EU)
+GFLOPS,,Giga FLoating Point OPerations per Second
 GHZ,GHz,Gigahertz - Billions of cycles per second
 GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
 GIF,,Graphics Interchange Format - stores either still or animated images
@@ -288,6 +292,7 @@ JPG,,A format for compressing image files.
 JRE,,Java Runtime Environment
 JSON,,A file format designed to hold human- and machine-readable data
 KB,,Kilobytes or Knowledge Base
+KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
 KMS,,Kilometers; Knowledge Management System
@@ -321,6 +326,7 @@ MB,,Megabytes; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
 ME,,Maine (USA)
 MF,,Medium Frequency
+MFLOPS,,Million FLoating Point OPerations per Second
 MHZ,MHz,Megahertz - Millions of cycles per second
 MI6,,Secret Intelligence Service (UK, also know as SIS)
 MIC,,Miltary Industrial Complex
@@ -478,6 +484,7 @@ TBH,,To Be Honest
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
+TFLOPS,,Tera FLoating Point OPerations per Second
 TFT,,Thin Film Transistor (usually display)
 THOT,,That Hoe Over There
 THZ,THz,TeraHertz
