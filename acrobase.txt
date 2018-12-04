@@ -63,6 +63,7 @@ ASIC,,Application-Specific Integrated Circuit
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 AWS,,Amazon Web Services
+ATT,AT&amp;T,American Telephone and Telegraph company
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
