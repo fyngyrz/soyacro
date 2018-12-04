@@ -228,6 +228,7 @@ GPIO,,General Purose Input Output
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
+HAM,Ham,Amatuer radio operators
 HBO,,Home Box Office (US media)
 HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
