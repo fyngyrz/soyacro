@@ -525,6 +525,7 @@ USB,,Universal Serial Bus
 USD,,United States Dollars (currency)
 USG,,United States Government
 USMC,,United States Marine Corps
+USMCA,,United States-Mexico-Canada Agreement
 USN,,United States Navy
 USPS,,United States Postal Service
 USSR,,United Soviet Socialist Republics
