@@ -532,7 +532,7 @@ USSR,,United Soviet Socialist Republics
 US,,United States (of America)
 UTC,,Universal Coordinated Time
 UT,,Utah (USA)
-VA,,Virgina (USA)
+VA,,Virgina (USA); Veteran's Administration (US)
 VC,,Venture Capitalist
 VFO,,Variable Frequency Oscillator
 VIP,,Very Important Person
