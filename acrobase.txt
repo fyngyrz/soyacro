@@ -193,7 +193,7 @@ FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FOSTA,,Fight Online Sex Trafficking Act (US)
 FP16,,16-bit Floating Point
-FP32,,32-but Floating Point
+FP32,,32-bit Floating Point
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
