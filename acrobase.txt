@@ -102,6 +102,7 @@ CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
 CO2,,Carbon Dioxide
 CO,,Colorado (USA); Carbon Monoxide
+COBOL,,Common Business-Oriented Language
 COM,,COMmunications
 COO,,Chief Operating Officer
 CP,,Child Porn
