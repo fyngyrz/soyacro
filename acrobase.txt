@@ -530,6 +530,7 @@ VIP,,Very Important Person
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
 VPN,,Virtual Private Network
+VRAM,,Video Ram
 VT,,Vermont (USA)
 VW,,VolksWagon
 WA,,Washington (USA)
