@@ -39,10 +39,6 @@ expansion field:
 
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
 
-Don't know the HTML entity for a certain character? No problem. Type it
-into the input \(top\) field of this application, press submit, and it
-will appear in the output \(bottom\) field. Just copy and paste.
-
 ### Contributions:
 
 I would particularly appreciate any pull requests that enhance the
@@ -93,10 +89,10 @@ have untrusted users on their LAN \(why?\)
 
 ## Use:
 
-When you write your post on this page, if you use an acronym \(defined as
-a caps-and/or-numbers sequence\), it'll be wrapped with HTML `<abbr>`
-tags and will include an expansion visible when one hovers a mouse
-pointer in a web browser.
+When you write your post on this page, if you use a known acronym
+\(defined as a caps-and/or-numbers sequence in the acronym file\),
+it'll be wrapped with HTML `<abbr>` tags and will include an expansion
+visible when one hovers a mouse pointer in a web browser.
 
 The result is generated into the lower text box when you press `submit`.
 
@@ -112,7 +108,8 @@ File | Purpose
 `aa_macro.py` | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 `aambase.txt` | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 `acrobase.txt` | acronym definitions \(see below\)
-`testacros.py` | Tests `acrobase.txt` format to assure proper operation with `soyacro.py`
+`testacros.py` | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
+`testfile.uco` | Test comparison file for running `soyacro.py` from the command line
 
 ## `acrobase.txt`:
 
@@ -146,15 +143,16 @@ unless there is no replacement field.
 ## `aambase.txt`:
 
 This contains macros you can use in your posts. The macro language,
-[aa_macro](http://ourtimelines.com/aamacrodoc/general.html) is _very_
-capable, and if you'd like to go further, the documentation awaits. You
-can use HTML in the macros, but you must use only ASCII; no unicode. The
-macro system, in the context of this application, will process unicode
-symbols \(they are converted into HTML entities\), but the macros
-themselves cannot be written in unicode. If you desperately need a
-unicode character in a macro used here, then write it as an HTML numeric
-entity, such as `&#128169;` (that's the "poop" emoji.) Here's an example
-of that...
+[aa_macro](http://ourtimelines.com/aamacrodoc/general.html) is very
+capable, and if you'd like to go further,
+
+[the documentation](http://ourtimelines.com/aamacrodoc/general.html)
+awaits. You can use HTML in the macros, but you must use only ASCII; no
+unicode. The macro system, in the context of this application, will
+process unicode symbols, but the macros themselves cannot be written in
+unicode. If you desperately need a unicode character in a macro used
+here, then write it as an HTML numeric entity, such as `&#128169;`
+(that's the "poop" emoji.) Here's an example of that...
 
 > `[style poophead [b] is a &#128169;-head.]`
 
@@ -165,9 +163,7 @@ project as a simple example:
 
 _Macro:_
 
-
 > `[style itoolbox <a target="_blank" href="http://ourtimelines.com/itdoc/intro.html">iToolBox</a>]`
-
 
 _Usage:_
 
@@ -179,8 +175,8 @@ _Result:_
 
 ### Examples:
 
-> `[style b [b [b]]]`  
-> `[style i [i [b]]]`  
+> `[style b <b>[b]</b>]`  
+> `[style i <i>[b]</i>]`  
 > `[style strike <strike>[b]</strike>]`  
 > `[style bq <blockquote>[b]</blockquote>]`  
 
@@ -197,13 +193,13 @@ _Produces:_
 If macro processing is on, you need to be mindful about using `{` and `}`
 as these are used to invoke macros. If you want to use them as characters
 in a post, just use `{ls}` for the left squiggly brace, and `{rs}` for the
-right squiggly brace. If there are unbalanced squiggly braces in the text,
-macro processing is cancelled.
+right squiggly brace. **If there are unbalanced squiggly braces in the text,
+macro processing is cancelled.**
 
 ### Angle braces are special too, because of HTML
 
 Angle braces need to be balanced because of how HTML tags are processed
-(not just by the app, but also by the HTML browser.) If you need to use
+\(not just by the app, but also by the HTML browser.\) If you need to use
 an angle brace in text, use the usual HTML escapes, which are
 `&lt;` for the less-than brace, and `&gt;` for the greater-than brace.
 
