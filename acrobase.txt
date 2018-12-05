@@ -516,9 +516,10 @@ SMB,,Server Message Block
 SMH,,Suck Me Hard
 SMS,,Short Message Service
 SN,,Soylent News
+SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
-SO,,Significant Other
+SOP,,Standard Operating Procedure
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
 SSA,,Social Security Administration (US)
