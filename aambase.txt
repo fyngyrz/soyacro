@@ -1,4 +1,5 @@
 [comment ASCII only, nothing above chr(127)]
+[comment Some basic styles:]
 [style b [b [b]]]
 [style i [i [b]]]
 [style strike <strike>[b]</strike>]
@@ -6,3 +7,20 @@
 [style sqig [ls][b][rs]]
 [style ls [ls]]
 [style rs [rs]]
+
+[comment the following three lines implement random selection from lists:]
+[gstyle rt [random]]  
+[gstyle rrange [int [mul mode=float,[b] {rt}]]]  
+[gstyle rlist [local tfllen [llen [b]]][e [b],{rrange [v tfllen]}]]
+
+[style sig --
+{rlist sigs}]
+
+[comment fill this in with various signatures, then put {sig} at the end of your posts]
+[list sep=|,sigs,Signature 1
+|Signature 2
+|Signature 3
+|...
+|Signature N
+]
+
