@@ -187,6 +187,25 @@ _Result:_
 > `[style strike <strike>[b]</strike>]`  
 > `[style bq <blockquote>[b]</blockquote>]`  
 
+### More about styles
+
+Specifically in the context of this application, `[style]` \(page-local
+styles\) and `[gstyle]` \(global styles\) perform exactly the same
+function, because the global context for the macro processor is the same
+as the local one: there's only one "page" being processed by the
+webapp.
+
+However, since the global styles and the local styles are kept in
+separate lists, the application uses the local list to display available
+styles, which effectively hides the global styles from the list at the
+bottom of the page. The end result is that you can create styles that
+don't clog up the page with things you're not planning to use directly.
+
+I demonstrate this with the signature generator \(`{sig}`\) style. You'd
+use that, but not any of the lower-level styles that it calls upon, so
+those are implemented with `[gstyle]` instead of `[style]`, consequently
+you don't see them listed on the web page.
+
 ### Using the Macros:
 
 > `Italizing for emphasis, I {i really} mean it!`
