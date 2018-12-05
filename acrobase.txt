@@ -28,6 +28,7 @@ AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 AC,,Anonymous Coward; Alternating Current; Air Conditioning
+ACA,,Affordable Care Act (US)
 ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
 ACT,,Air Channel Transistor
@@ -375,6 +376,7 @@ MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MOAB,,Mother Of All Bombs - a very large fuel-air bomb
 MO,,Missouri (USA)
+MOS,,Metal Oxide Semiconductor
 MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
