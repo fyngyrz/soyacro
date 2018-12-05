@@ -81,6 +81,7 @@ BFR,,Big Fucking Rocket
 BI,,Bisexual
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure
+BS,,Bachelor of Science; BullShit
 BSD,,Berkeley Software Distribution
 BSOD,,Blue Screen Of Death
 BTW,,By The Way
@@ -128,6 +129,7 @@ CT,,Connecticut (USA)
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
+CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
@@ -175,6 +177,7 @@ EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
 EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
+EG,e.g.,exempli gratia: "for example"
 EKG,,Electro(C/k)ardioGram
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
@@ -287,7 +290,7 @@ IDGAD,,I Don't Give A Damn
 IDGAF,,I Don't Give A Fuck
 ID,,Idaho (USA); Identification
 IDK,,I Don't Know
-IE,,Internet Explorer 
+IE,,Internet Explorer; IE sometimes for i.e., is id est "for example""
 IE2,,Internet Explorer v2
 IE3,,Internet Explorer v3
 IE4,,Internet Explorer v4
@@ -341,6 +344,7 @@ KW,kW,kiloWatt
 KY,,Kentucky (USA)
 LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
+LASER,,Light Amplification by Stimulated Emission of Radiation
 LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
@@ -361,6 +365,7 @@ LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
+MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MB,,Megabytes; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
 ME,,Maine (USA)
@@ -412,6 +417,7 @@ NM,,New Mexico (USA)
 NN,,Network Neutrality
 NOAA,,National Oceanic and Atmospheric Administration (US)
 NOT,,NOT gate: input 1 = output in opposite state
+NPC,,Non-Player Character; National People's Congress (China)
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
@@ -459,6 +465,7 @@ PCI,,Payment Card Industry
 PC,,Personal Computer
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
+PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
 PITA,,Pain In The Ass
 PM,,Prime Minister; Post Meridiem - after midday
