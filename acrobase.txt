@@ -468,6 +468,7 @@ PAC,,Political Action Group
 PA,,Pennsylvania (USA)
 PCI,,Payment Card Industry
 PC,,Personal Computer
+PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
 PE,,Prince Edward Island (Canada)
 PHD,Ph.D.,Doctorate of Philosphy
