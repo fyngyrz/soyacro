@@ -131,6 +131,7 @@ CT,,Connecticut (USA)
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
+CV,,Computer Vision; Curriculum Vitae (latin: "course of life")
 CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
