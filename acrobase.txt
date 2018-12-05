@@ -178,6 +178,7 @@ EFF,,Electronic Frontier Foundation
 EKG,,Electro(C/k)ardioGram
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
+EO,,Executive Order
 EOF,,End Of File
 EOL,,End Of Line
 EPA,,Environmental Protection Agency (US)
@@ -356,6 +357,7 @@ LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
 LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
+LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
@@ -562,6 +564,7 @@ UCSD,,University of California, San Diego
 UC,,University of California
 UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency
+UI,,User Interface
 UK,,United Kingdom
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
@@ -590,6 +593,7 @@ VIP,,Very Important Person
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
 VPN,,Virtual Private Network
+VR,,Virtual Reality
 VRAM,,Video Ram
 VT,,Vermont (USA)
 VW,,VolksWagon
