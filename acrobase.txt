@@ -484,8 +484,9 @@ RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
 RGB,,Red, Green, Blue
-RIAA,,Recording Industry Association of America
 RI,,Rhode Island (USA)
+RIAA,,Recording Industry Association of America
+RISC,,Reduced Instruction Set Comput(ing/er)
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 RNC,,Repubican National Convention
 ROM,,Read-Only Memory - you can't write new information to this
