@@ -13,6 +13,7 @@
 1802,,An RCA 8-bit CPU
 2D,,Two Dimensional
 3D,,Three Dimensional
+401K,401(k),Retirement savings plan
 411,,A shorthand for: Information
 420,,A shorthand for: Time to smoke some pot
 4G,,Fourth Generation wireless
@@ -66,10 +67,12 @@ ARM,,A class of CPUs
 ARRL,,American Radio Relay League (Amatuer radio)
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
+ASPCA,,American Society for the Prevention of Cruelty to Animals
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 AU,,Astronomical Unit; Australia
+AV,,Autonomous Vehicle
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
@@ -183,6 +186,7 @@ EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
 EG,e.g.,exempli gratia: "for example"
 EKG,,Electro(C/k)ardioGram
+EMACS,Emacs,Editing MACroS
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
 EO,,Executive Order
@@ -240,6 +244,7 @@ GAO,,Government Accountability Office (US)
 GB,,Gigabyte
 GCC,,GNU Compiler Collection; Gulf Cooperation Council
 GCHQ,,Government Communications HeadQuarters (UK)
+GDP,,Gross Domestic Product
 GDPR,,General Data Protection Regulation (EU)
 GFLOPS,,Giga FLoating Point OPerations per Second
 GHZ,GHz,Gigahertz - Billions of cycles per second
@@ -248,10 +253,12 @@ GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron"
 GIGO,,Garbage In, Garbage Out
 GM,,General Motors
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
+GNU,,GNU's Not Unix (a recursive definition!)
 GOP,,Grand Old Party (Republican party, USA)
 GP,,GrandParent (usually parent of parent post); General Practitioner (medical)
 GPH,,Gallons Per Hour
 GPIO,,General Purose Input Output
+GPL,,General Public License
 GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
@@ -322,6 +329,7 @@ IP,,Internet Protocol (often a specific Internet address); Intellectual Property
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
 IQ,,Intelligence Quotient or I/Q phases of data encoding
+IRA,,Individual Retirement Account; Irish-Republican Army
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
@@ -461,7 +469,7 @@ OR,,Oregon (USA); OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
 OS,,Operating System, Open-Source (software)
-OSX,OS X,Operating System X (Apple), AKA MacOS
+OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
 P2P,,Peer to Peer
@@ -471,6 +479,7 @@ PCI,,Payment Card Industry
 PC,,Personal Computer
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
+PDA,,Personal Digital Assitant; Public Display of Affection
 PE,,Prince Edward Island (Canada)
 PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
@@ -642,6 +651,9 @@ WV,,West Virginia (USA)
 WW1,,World War One
 WW2,,World War Two
 WW3,,World War Three
+WWI,,World War One
+WWII,,World War Two
+WWIII,,World War Three
 WWW,,World Wide Web (or just, "the Web")
 WX,,Weather
 WY,,Wyoming (USA)
