@@ -63,6 +63,7 @@ API,,Application Programmer Interface
 APL,,A Programming Language; APpLe stock symbol
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
+ARRL,,American Radio Relay League (Amatuer radio)
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
@@ -464,7 +465,7 @@ OSX,OS X,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
 P2P,,Peer to Peer
-PAC,,Political Action Group
+PAC,,Political Action Committee
 PA,,Pennsylvania (USA)
 PCI,,Payment Card Industry
 PC,,Personal Computer
@@ -623,6 +624,8 @@ VW,,VolksWagon
 WAN,,Wide Area Network
 WASP,,White Anglo Saxon Protestant
 WA,,Washington (USA)
+WAC,,Worked All Countries (amatuer radio)
+WAS,,Worked All States (amatuer radio)
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
 WH,,White House (US)
@@ -642,9 +645,12 @@ WW3,,World War Three
 WWW,,World Wide Web (or just, "the Web")
 WX,,Weather
 WY,,Wyoming (USA)
+XL,,eXtra Large
 XML,,eXtensible Markup Language
 XOR,,XOR gate: input 1 not equal input 2 = output
 XTAL,,Crystal
+XXL,,eXtra eXtra Large
+XXXL,,eXtra eXtra eXtra Large
 YMMV,,Your Milage May Vary
 YOLO,,You Only Live Once
 YT,,Yukon Territory (Canada)
