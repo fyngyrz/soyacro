@@ -117,6 +117,7 @@ File | Purpose
 `acrobase.txt` | acronym definitions \(see below\)
 `testacros.py` | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
 `testfile.uco` | Test comparison file for running `soyacro.py` from the command line
+`check.py` | Quick checker to see if an acronym is in `acrobase.txt`
 
 ## `acrobase.txt`:
 
