@@ -482,7 +482,7 @@ POTUS,,President Of The United States
 POV,,Point Of View
 PPI,,Pixels Per Inch
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
-PR,,Pull Request - source code alteration submission
+PR,,Pull Request - source code alteration submission; Public Relations
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
@@ -527,9 +527,14 @@ SJW,,Social Justice Warrior
 SK,,Saskatchewan (Canada)
 SLR,,Single Lens Reflex (cameras)
 SLS,,Space Launch System
+SMA,,Surface Mount Assembly
 SMB,,Server Message Block
+SMC,,Surface Mount Component
+SMD,,Surface Mount Device
 SMH,,Suck Me Hard
+SMP,,Surface Mount Package; Symmetric Multi-Process(ing/or)
 SMS,,Short Message Service
+SMT,,Surface Mount Technology
 SN,,Soylent News
 SO,,Significant Other
 SOC,SoC,System on a Chip
