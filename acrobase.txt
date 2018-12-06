@@ -478,6 +478,7 @@ PM,,Prime Minister; Post Meridiem - after midday
 PNAS,,Proceedings of the National Academy of Sciences
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
+POTUS,,President Of The United States
 POV,,Point Of View
 PPI,,Pixels Per Inch
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
@@ -608,6 +609,7 @@ VFO,,Variable Frequency Oscillator
 VIP,,Very Important Person
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
+VP,,Vice President
 VPN,,Virtual Private Network
 VR,,Virtual Reality
 VRAM,,Video Ram
