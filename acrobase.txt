@@ -94,6 +94,7 @@ BTW,,By The Way
 BW,,Black and White (imaging); Bandwidth
 CA,,California (USA)
 CAD,,Computer Aided Design
+CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
@@ -129,7 +130,7 @@ CRA,,Computing Research Association
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
 CS,,Computer Science
-CSS,,Cascading Style Sheet - a means to indirectly format to HTML
+CSS,,Cascading Style Sheet - a means to indirectly format HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)
 CTRL,,Control
