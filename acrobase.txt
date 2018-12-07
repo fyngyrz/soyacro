@@ -176,6 +176,7 @@ DSL,,Digital Subscriber Line
 DSLR,,Digital Single-Lens Reflex (camera)
 DSS,,Data Security Standard
 DTMF,,Dual Tone Multi Frequency (touch-tone encoding)
+DUVL,,Deep UltraViolet Lithography
 DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
@@ -205,6 +206,7 @@ EST,,Eastern Standard Time
 ET,,Eastern Time; Extra-Terrestrial
 EU,,European Union
 EULA,,End User License Agreement
+EUVL,,Extreme UltraViolet Lithography
 EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
@@ -291,6 +293,7 @@ HTML5,,HyperText Markup Language version 5
 HTML,,HyperText Markup Language (in general, also version 1)
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
+HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol; Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
