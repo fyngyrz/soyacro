@@ -182,6 +182,7 @@ ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
+EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
 EG,e.g.,exempli gratia: "for example"
@@ -265,6 +266,8 @@ GUI,,Graphic User Interface
 H1B,,Non-immigrant visa (US)
 HAM,Ham,Amatuer radio operators
 HBO,,Home Box Office (US media)
+HD,,Hard Disk
+HDD,,Hard Disk Drive
 HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency
@@ -323,6 +326,7 @@ IMHO,,In My Honest Opinion
 IMO,,In My Opinion
 INF,,Intermediate-range Nuclear Forces (treaty)
 IN,,Indiana (USA)
+IOS,iOS,An Apple Operating System.
 IOT,,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address); Intellectual Property
@@ -468,7 +472,7 @@ OP,,Original Poster
 OR,,Oregon (USA); OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
-OS,,Operating System, Open-Source (software)
+OS,,Operating System; Open-Source (software)
 OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
@@ -496,6 +500,7 @@ PR,,Pull Request - source code alteration submission; Public Relations
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
+PVC,,PolyVinyl Chloride
 QC,,Quebec (Canada)
 QSL,,Radio shorthand for response
 RAID,,Redundant Array of Independent Disks
@@ -516,6 +521,7 @@ RNC,,Repubican National Convention
 ROM,,Read-Only Memory - you can't write new information to this
 ROTFL,,Rolling On The Floor Laughing
 RPM,,Revolutions Per Minute
+RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
@@ -550,6 +556,8 @@ SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
+SP,,Spelling
+SPID,,Service Profile Identifier
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
 SSA,,Social Security Administration (US)
