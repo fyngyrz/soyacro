@@ -242,6 +242,7 @@ FWIW,,For What It's Worth
 FYI,,For Your Information
 G20,,Group of 20 (countries)
 GA,,Georgia (USA)
+GAN,,Generative Adversarial Network
 GAO,,Government Accountability Office (US)
 GB,,Gigabyte
 GCC,,GNU Compiler Collection; Gulf Cooperation Council
@@ -350,7 +351,7 @@ JPG,,A format for compressing image files.
 JRE,,Java Runtime Environment
 JSON,,A file format designed to hold human- and machine-readable data
 K12,,Kindergarten to 12th grade
-KB,,Kilobytes or Knowledge Base
+KB,,Kilobyte; Knowledge Base
 KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
@@ -385,7 +386,7 @@ LTE,,A mobile communications standard
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
-MB,,Megabytes; Manitoba (Canada)
+MB,,Megabyte; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
 ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
@@ -574,6 +575,7 @@ SW,,Shortwave (radio)
 SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
+TB,,TeraByte
 TBH,,To Be Honest
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFLOPS,,Tera FLoating Point OPerations per Second
