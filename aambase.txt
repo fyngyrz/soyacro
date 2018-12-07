@@ -18,7 +18,9 @@
 [style nsig --[nl][e sigs,[sub [b] 1]]]
 [style sig --[nl]{rlist sigs}]
 
-[comment fill this in with various signatures, then put {sig} at the end of your posts]
+[comment you can use {lsigs} to get a numbered list of your signatures, and...]
+[comment you can use {nsig N} to select a specific signature where N is a number from that list]
+[comment fill this list in with various signatures, then put {sig} at the end of your posts]
 [list sep=|,sigs,Signature 1
 |Signature 2
 |Signature 3
