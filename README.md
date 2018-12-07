@@ -230,7 +230,7 @@ lines of your own. You can have as many (or as few) as you want. Just
 follow the formatting shown: a newline, a `|` \(pipe character\), and
 a signature. Signatures can be more than one line; just don't use the
 pipe on the 2nd and following lines for that particular signature. The
-pipe marks the _beginning_ of a signature.
+pipe marks the _beginning_ of the next signature.
 
 Simply placing `{sig}` at the end of your message will generate a
 random signature from that list every time you hit `[Submit]` on
