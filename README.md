@@ -215,6 +215,38 @@ _Produces:_
 
 > `Italizing for emphasis, I <i>really</i> mean it!`
 
+### The signature generator
+
+I've included three macros for your signing pleasure. soylentnews.org allows you to
+have one short, fixed string for your signature. This can be limiting. So clear out
+your signature setting on soylentnews.org, and use the signature generator macro
+instead!
+
+There's a list named `sigs` towards the end of  the `aambase.txt` file.
+This contains a list of various signatures, separated by the `|` (pipe)
+character. I've populated it with placholders like `Signature 1`, where
+the intent is that you replace those placeholders with clever signature
+lines of your own. You can have as many (or as few) as you want. Just
+follow the formatting shown: a newline, a `|` \(pipe character\), and
+a signature. Signatures can be more than one line; just don't use the
+pipe on the 2nd and following lines for that particular signature. The
+pipe marks the _beginning_ of a signature.
+
+Simply placing `{sig}` at the end of your message will generate a
+random signature from that list every time you hit `[Submit]` on
+the webpage.
+
+You can also select specific signatures with `{nsig N}`, where `N` is the
+number of the signature you want, from 1-N. Considering that you may add
+to the list, you can't count on the number remaining the same, so there's
+also an `{lsigs}` macro, which will list, and number, every signature for
+you. So use that once, look for the one you want, and then use the number
+in front of it.
+
+Suppose the signature you want is number 10 in the `{lsigs}` result. Just
+write `{nsig 10}` \(and remove the `{lsigs}` macro\) and that's the
+signature that will be used. Easy. Fun! _Improved!_
+
 ### Squiggly braces are special, because of macro processing
 
 If macro processing is on, you need to be mindful about using `{` and `}`
