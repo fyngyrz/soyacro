@@ -410,6 +410,7 @@ MS,,Mississippi (USA); MicroSoft
 MST,,Mountain Standard Time
 MT,,Montana (USA)
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
+MW,,Medium Wave
 NAFTA,,North American Free Trade Agreement
 NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
@@ -665,6 +666,7 @@ WWIII,,World War Three
 WWW,,World Wide Web (or just, "the Web")
 WX,,Weather
 WY,,Wyoming (USA)
+WYSIWYG,,What You See Is What You Get
 XL,,eXtra Large
 XML,,eXtensible Markup Language
 XOR,,XOR gate: input 1 not equal input 2 = output
