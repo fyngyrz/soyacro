@@ -267,6 +267,7 @@ GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
 H1B,,Non-immigrant visa (US)
 HAM,Ham,Amatuer radio operators
+HAMR,,Heat-Assisted Magnetic Recording
 HBO,,Home Box Office (US media)
 HD,,Hard Disk
 HDD,,Hard Disk Drive
@@ -411,6 +412,7 @@ MP,,MegaPixel; Member of Parliament
 MS,,Mississippi (USA); MicroSoft
 MST,,Mountain Standard Time
 MT,,Montana (USA)
+MTBF,,Mean Time Between Failures
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
 MW,,Medium Wave
 NAFTA,,North American Free Trade Agreement

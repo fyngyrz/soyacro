@@ -13,8 +13,10 @@
 [gstyle rrange [int [mul mode=float,[b] {rt}]]]  
 [gstyle rlist [local tfllen [llen [b]]][e [b],{rrange [v tfllen]}]]
 
-[style sig --
-{rlist sigs}]
+[gstyle ncnt [lb][vinc nn][rb]: [b]]
+[style lsigs [local nn 0][dlist style=ncnt,sigs]]
+[style nsig --[nl][e sigs,[sub [b] 1]]]
+[style sig --[nl]{rlist sigs}]
 
 [comment fill this in with various signatures, then put {sig} at the end of your posts]
 [list sep=|,sigs,Signature 1
