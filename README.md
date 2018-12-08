@@ -68,7 +68,8 @@ and set the `cginame` variable to match.
 At the top of the `soyacro.py` file, there are settings you can change to
 control the number of lines in the entry and result text boxes, and to
 switch on or off various displays of other information relevant to what
-you're doing.
+you're doing. You can also set up automatic random signatures. See the
+section on signatures below for more details.
 
 ### More on Security:
 
@@ -240,6 +241,9 @@ pipe marks the _beginning_ of the next signature.
 Simply placing `{sig}` at the end of your message will generate a
 **random** signature from that list every time you hit `[Submit]` on
 the webpage.
+
+You can even make this automatic; just set `randsigs` variable near the
+top of the `soyacro.py` file to `True`.
 
 You can also select specific signatures with `{nsig N}`, where `N` is the
 number of the signature you want, from 1-N. Considering that you may add
