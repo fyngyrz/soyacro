@@ -242,8 +242,10 @@ Simply placing `{sig}` at the end of your message will generate a
 **random** signature from that list every time you hit `[Submit]` on
 the webpage.
 
-You can even make this automatic; just set `randsigs` variable near the
-top of the `soyacro.py` file to `True`.
+You can even make this automatic; just set the `randsigs` variable near
+the top of the `soyacro.py` file to `True`. The default is `False`,
+because the sigs list is initially populated with demo placeholders which
+have no value in an actual post.
 
 You can also select specific signatures with `{nsig N}`, where `N` is the
 number of the signature you want, from 1-N. Considering that you may add
