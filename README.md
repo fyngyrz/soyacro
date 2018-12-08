@@ -58,12 +58,17 @@ simply access the application with:
 
 ## Setup
 
-You can use the `ifile` and `mfile` variables in the `soyacro.py` code to
-change the name of the acronym and style files. If you're running only on
-your own LAN, not much to worry about there. But if the web page is on a
-server with WAN access, I recommend renaming both so as to prevent
-snoooping, etc. I also suggest you rename the main cgi and set the
-`cginame` variable to match.
+You can use the `ifile` and `mfile` variables at the top of the
+`soyacro.py` code to change the name of the acronym and style files. If
+you're running only on your own LAN, not much to worry about there. But
+if the web page is on a server with WAN access, I recommend renaming both
+so as to prevent snoooping, etc. I also suggest you rename the main cgi
+and set the `cginame` variable to match.
+
+At the top of the `soyacro.py` file, there are settings you can change to
+control the number of lines in the entry and result text boxes, and to
+switch on or off various displays of other information relevant to what
+you're doing.
 
 ### More on Security:
 
