@@ -24,12 +24,17 @@
 
 ### Configuration: ###
 ### ============== ###
+### ============== ###
+### ============== ###
 
 # App Filenames:
 # --------------
 cginame		= 'soyacro.py'		# this CGI file
 ifile		= 'acrobase.txt'	# acronyms file
 mfile		= 'aambase.txt'		# macros file
+
+# Web Page Options:
+# -----------------
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
