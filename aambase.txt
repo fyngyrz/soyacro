@@ -15,6 +15,9 @@
 
 [gstyle ncnt [lb][vinc nn][rb]: [b]]
 [style lsigs [local nn 0][dlist style=ncnt,sigs]]
+[gstyle red <span style="color:red;">[b]</span>]
+[gstyle wncnt {red [lb][vinc nn][rb]:} [b]]
+[gstyle wlsigs [local nn 0][dlist style=wncnt,sigs]]
 [style nsig --[nl][e sigs,[sub [b] 1]]]
 [style sig --[nl]{rlist sigs}]
 

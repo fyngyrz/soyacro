@@ -398,7 +398,7 @@ if showstyles == True:
 			mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
 
 if showsigs == True:
-	siglist = unicode(mod.do('{lsigs}'))
+	siglist = unicode(mod.do('{wlsigs}'))
 	siglist = siglist.replace(u'\n',u'<br>\n')
 	siglist = u'<hr><div><span style="color:#00ff00;">Signatures:</span><br>\n'+siglist+u'</div>'
 	mybody += siglist
