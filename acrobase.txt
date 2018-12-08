@@ -337,6 +337,7 @@ IOS,iOS,An Apple Operating System.
 IOT,,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address); Intellectual Property
+IPO,,Initial Public Offering
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
 IQ,,Intelligence Quotient or I/Q phases of data encoding
@@ -397,10 +398,11 @@ ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
 MF,,Medium Frequency
 MHZ,MHz,Megahertz - Millions of cycles per second
+MI,,Michigan (USA); Machine Intelligence
 MI6,,Secret Intelligence Service (UK, also know as SIS)
+MIA,,Missing In Action
 MIC,,Miltary Industrial Complex
 MIDI,,Musical Instrument Digital Interface
-MI,,Michigan (USA); Machine Intelligence
 MIT,,Massachusetts Institute of Technology
 MLB,,Major League Baseball
 MM,,2-digit Month, 01-12
@@ -455,6 +457,7 @@ NSA,,National Security Agency (US)
 NSFW,,Not Safe For Work
 NS,,Nova Scotia (Canada)
 NTS,,Note To Self
+NTSB,,National Transportation Safety Board
 NTW,,Not To Worry
 NU,,Nunavut (Canada)
 NVM,,Non Volatile RAM
@@ -538,7 +541,7 @@ SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
 SC,,South Carolina (USA)
 SDR,,Software Defined Radio
-SD,,South Dakota (USA)
+SD,,South Dakota (USA); Secure Digital
 SDK,,Software Development Kit
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
