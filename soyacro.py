@@ -33,6 +33,7 @@ mfile		= 'aambase.txt'		# macros file
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
+showsigs	= True				# all signatures displayed or not
 # ==========================================================
 # ==========================================================
 # ==========================================================
@@ -395,6 +396,12 @@ if showstyles == True:
 			thestylecount = unicode(thestylecount)
 			thestyles = unicode(thestyles)
 			mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
+
+if showsigs == True:
+	siglist = unicode(mod.do('{lsigs}'))
+	siglist = siglist.replace(u'\n',u'<br>\n')
+	siglist = u'<hr><div><span style="color:#00ff00;">Signatures:</span><br>\n'+siglist+u'</div>'
+	mybody += siglist
 
 # Report all known acronyms:
 # --------------------------
