@@ -190,6 +190,7 @@ EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
 EG,e.g.,exempli gratia: "for example"
 EKG,,Electro(C/k)ardioGram
+EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
@@ -591,6 +592,7 @@ TBD,,To Be Determined
 TBH,,To Be Honest
 TDP,,Thermal Design Power or Point
 TFA,,The Fucking Article: bowdlerized, The Fine Article
+TFC,,The Fucking Comments: bowdlerized, The Fine Comments
 TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
@@ -646,6 +648,7 @@ UT,,Utah (USA)
 VA,,Virgina (USA); Veteran's Administration (US)
 VC,,Venture Capitalist
 VFO,,Variable Frequency Oscillator
+VIN,,Vehicle Identification Number
 VIP,,Very Important Person
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
