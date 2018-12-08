@@ -374,6 +374,7 @@ LASER,,Light Amplification by Stimulated Emission of Radiation
 LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
+LDS,,Latter Day Saints (Mormons)
 LED,,Light Emitting Diode
 LENR,,Low Energy Nuclear Reactor
 LF,,Low Frequency
