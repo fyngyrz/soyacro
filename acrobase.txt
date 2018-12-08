@@ -587,6 +587,7 @@ SWAT,,Special Weapons And Tactics
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
 TB,,TeraByte
+TBD,,To Be Determined
 TBH,,To Be Honest
 TDP,,Thermal Design Power or Point
 TFA,,The Fucking Article: bowdlerized, The Fine Article
