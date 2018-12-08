@@ -39,9 +39,11 @@ usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
-# ==========================================================
-# ==========================================================
-# ==========================================================
+entlines	= 20				# number of text lines in entry box
+reslines	= 20				# number of text lines in result box
+# ==================================================================
+# ==================================================================
+# ==================================================================
 
 # Code - Good luck if you change anything. :)
 # ===========================================
@@ -338,17 +340,18 @@ all-caps-and/or-digits.
 myform = u"""
 <FORM ACTION="CGINAME" METHOD="POST">
 <div style="text-align: center;">
-<TEXTAREA NAME="thetext" ROWS="40" COLS="80">TEXTBLOCK</TEXTAREA><br>
+<TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
 <br><br>
 </div>
 </FORM>
 """
+myform = myform.replace(u'ENTLINES',unicode(str(entlines)))
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
 # ---------------------------------------------------------------
-myform = myform.replace('CGINAME',cginame)
+myform = myform.replace(u'CGINAME',unicode(cginame))
 
 # ready to go, process everything into page body
 # ----------------------------------------------
@@ -373,7 +376,9 @@ tmp = subents(tmp)					# convert char entities into actual unicode
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
-mybody += u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="5" COLS="80">'+tmp+u'</TEXTAREA></div><br></div>'
+resform = u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="RESLINES" COLS="80">'+tmp+u'</TEXTAREA></div><br></div>'
+resform = resform.replace(u'RESLINES',unicode(str(reslines)))
+mybody += resform
 
 # Report any errors:
 # ------------------
