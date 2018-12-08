@@ -584,6 +584,7 @@ TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
 TB,,TeraByte
 TBH,,To Be Honest
+TDP,,Thermal Design Power or Point
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
