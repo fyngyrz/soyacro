@@ -39,11 +39,12 @@ usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
+randsigs	= False				# append a random signature when generating
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
-# ==================================================================
-# ==================================================================
-# ==================================================================
+# =========================================================================
+# =========================================================================
+# =========================================================================
 
 # Code - Good luck if you change anything. :)
 # ===========================================
@@ -365,6 +366,8 @@ mybody += u'<hr>'							# new output section
 tmp = makeacros(usertext)					# Now the post gets its acronyms
 testforsquigs(tmp)			# verify {macro} brace balance
 if aambase != '':			# here's the aa_macro processing, if braces balance
+	if randsigs == True:	# automatically append a random signature? ...
+		tmp += u'\n{sig}'	# ...yep.
 	tmp = nosquares(tmp)	# escape any square brackets
 	tmp = makeascii(tmp)	# aa_macro requires ASCII string
 	tmp = mod.do(tmp)		# process the {macros}
