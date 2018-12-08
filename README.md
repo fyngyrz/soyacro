@@ -233,19 +233,23 @@ pipe on the 2nd and following lines for that particular signature. The
 pipe marks the _beginning_ of the next signature.
 
 Simply placing `{sig}` at the end of your message will generate a
-random signature from that list every time you hit `[Submit]` on
+**random** signature from that list every time you hit `[Submit]` on
 the webpage.
 
 You can also select specific signatures with `{nsig N}`, where `N` is the
 number of the signature you want, from 1-N. Considering that you may add
 to the list, you can't count on the number remaining the same, so there's
-also an `{lsigs}` macro, which will list, and number, every signature for
-you. So use that once, look for the one you want, and then use the number
-in front of it.
+a web page display option that allows you to see your current list of
+signatures, numbered to match the usage in the `{nsig N}` macro. This
+defaults to on.
+
+There is also an `{lsigs}` macro, which will list, and number, every
+signature for you right in the generated output. So use that once, look
+for the one you want, and then use the number in front of it.
 
 Suppose the signature you want is number 10 in the `{lsigs}` result. Just
-write `{nsig 10}` \(and remove the `{lsigs}` macro\) and that's the
-signature that will be used. Easy. Fun! _Improved!_
+write `{nsig 10}` and that's the signature that will be used. Easy. Fun!
+_Improved!_
 
 ### Squiggly braces are special, because of macro processing
 
