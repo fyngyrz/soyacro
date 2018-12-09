@@ -175,11 +175,11 @@ Run `check.py` with the term(s) you want to check for...
 
 > `./check.py MHZ THZ`
 
-...If the term is in the file, it will be listed. If not, you'll
-get a message telling you that.
+...If the term or terms are found in the file, you'll see confirmation of
+that. If not, you'll be informed as to what is missing.
 
-Once `check.py` is running, it will keep running until you
-press `return` without providing a term to search for.
+Once `check.py` is running, it will keep running until you press `return`
+without providing a term to search for.
 
 ## `aambase.txt`:
 
