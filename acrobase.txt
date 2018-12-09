@@ -284,6 +284,8 @@ HIFI,HiFi,High Fidelity
 HI,,Hawaii (USA)
 HIPAA,,Health Insurance Portability and Accountability Act (US)
 HIV,,Human Immunodeficiency Virus
+HM,,Her Majesty
+HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company) or Highway Patrol (officer)
 HQ,,Headquarters
@@ -542,6 +544,7 @@ ROTFL,,Rolling On The Floor Laughing
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
+RV,,Research Vessel
 RX,,Receive
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
@@ -580,6 +583,7 @@ SP,,Spelling
 SPID,,Service Profile Identifier
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
+SS,,Secret Service; SteamShip
 SSA,,Social Security Administration (US)
 SSB,,Single SideBand
 SSD,,Solid State Disk
@@ -647,6 +651,7 @@ USMC,,United States Marine Corps
 USMCA,,United States-Mexico-Canada Agreement
 USN,,United States Navy
 USPS,,United States Postal Service
+USS,,United States Ship
 USSR,,United Soviet Socialist Republics
 US,,United States (of America)
 UTC,,Universal Coordinated Time
