@@ -189,6 +189,7 @@ EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only
 EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
 EG,e.g.,exempli gratia: "for example"
+EHF: Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
@@ -277,7 +278,7 @@ HD,,Hard Disk
 HDD,,Hard Disk Drive
 HDMI,,High Definition Multimedia Interface
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
-HF,,High Frequency
+HF,,High Frequency: 3-30 MHz
 HIFI,HiFi,High Fidelity
 HI,,Hawaii (USA)
 HIPAA,,Health Insurance Portability and Accountability Act (US)
@@ -330,6 +331,7 @@ IIRC,,If I ReCall
 IIS,,Internet Information Services
 IL,,Illinois (USA)
 IMDB,IMDb,Internet Movie Database
+IMF,,International Monetary Fund
 IMHO,,In My Honest Opinion
 IMO,,In My Opinion
 INF,,Intermediate-range Nuclear Forces (treaty)
@@ -362,6 +364,7 @@ KB,,Kilobyte; Knowledge Base
 KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
+KISS,,Keep It Simple, Stupid
 KMS,,Kilometers; Knowledge Management System
 KPH,,Kilometers Per Hour
 KS,,Kansas (USA)
@@ -378,7 +381,7 @@ LDAP,,Lightweight Directory Access Protocol
 LDS,,Latter Day Saints (Mormons)
 LED,,Light Emitting Diode
 LENR,,Low Energy Nuclear Reactor
-LF,,Low Frequency
+LF,,Low Frequency: 30-300 KHz
 LGB,,Lesbian, Gay and Bisexual
 LGBT,,Lesbian, Gay, Bisexual and Transexual
 LGBTQ,,Lesbian, Gay, Bisexual, Transexual and Questioning
@@ -398,7 +401,7 @@ MB,,Megabyte; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
 ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
-MF,,Medium Frequency
+MF,,Medium Frequency: 300-3000 KHz
 MHZ,MHz,Megahertz - Millions of cycles per second
 MI,,Michigan (USA); Machine Intelligence
 MI6,,Secret Intelligence Service (UK, also know as SIS)
@@ -550,7 +553,7 @@ SETI,,Search for Extra Terrestrial Intelligence
 SF,,Science Fiction or less accurately Speculative Fiction; San Francisco (California)
 SFWA,,Science Fiction Writers of America
 SFW,,Safe For Work
-SHF,,Super High Frequency
+SHF,,Super High Frequency: 3-30 GHz
 SIG,,Special Interest Group; Signature
 SIMM,,Single Inline Memory Module
 SIS,,Secret Intelligence Service (UK, also know as MI6)
@@ -597,6 +600,7 @@ TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
 TFT,,Thin Film Transistor (usually display)
+THF: Tremendously Frequency: 300 GHz - 3 THz
 THOT,,That Hoe Over There
 THZ,THz,TeraHertz
 TIA,,Thanks In Advance
@@ -622,7 +626,7 @@ UAV,,Unmanned Aerial Vehicle
 UCSD,,University of California, San Diego
 UC,,University of California
 UDP,,User Datagram Protocol
-UHF,,Ultra High Frequency
+UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
 UK,,United Kingdom
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
@@ -648,8 +652,10 @@ UT,,Utah (USA)
 VA,,Virgina (USA); Veteran's Administration (US)
 VC,,Venture Capitalist
 VFO,,Variable Frequency Oscillator
+VHF,,Very High Frequency: 30-300 MHz
 VIN,,Vehicle Identification Number
 VIP,,Very Important Person
+VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
 VP,,Vice President
