@@ -80,6 +80,7 @@ AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
+BB,,A small, round projectile
 BBC,,British Broadcasting Corporation
 BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada); Before Christ
@@ -88,6 +89,7 @@ BCC,,Blind Carbon Copy
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFR,,Big Fucking Rocket
 BI,,Bisexual
+BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure
 BS,,Bachelor of Science; BullShit
@@ -101,7 +103,7 @@ CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Ap
 CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
-CC,,Carbon Copy; Credit Card
+CC,,Carbon Copy; Credit Card; Creative Commons
 CCTV,,Closed Circuit TeleVision
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
@@ -288,6 +290,7 @@ HDMI,,High Definition Multimedia Interface
 HDR,,High Dynamic Range
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency: 3-30 MHz
+HFCS,,High Fructose Corn Syrup
 HIFI,HiFi,High Fidelity
 HI,,Hawaii (USA)
 HIPAA,,Health Insurance Portability and Accountability Act (US)
@@ -500,7 +503,7 @@ OMG,,Oh My God
 ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
 OPEC,,Organization of Petroleum Exporting Countries
-OP,,Original Poster
+OP,,Original Poster; OPerator
 OR,,Oregon (USA); OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
@@ -528,6 +531,7 @@ POS,,Piece Of Shit
 POTUS,,President Of The United States
 POV,,Point Of View
 PPI,,Pixels Per Inch
+PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PR,,Pull Request - source code alteration submission; Public Relations
 PS,,PostScript
@@ -693,6 +697,7 @@ WASP,,White Anglo Saxon Protestant
 WA,,Washington (USA)
 WAC,,Worked All Countries (amatuer radio)
 WAS,,Worked All States (amatuer radio)
+WC,,Water Closet (bathroom); Waist Circumference
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
 WH,,White House (US)
