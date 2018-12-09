@@ -73,6 +73,7 @@ ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 AU,,Astronomical Unit; Australia
 AV,,Autonomous Vehicle
+AWOL,,Absent Without Official Leave
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
