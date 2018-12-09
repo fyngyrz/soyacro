@@ -154,6 +154,33 @@ unless there is no replacement field.
 > `MHZ,MHz,Megahertz - Millions of cycles per second`  
 > `NASA,,National Aeronautics and Space Administration (US)`  
 
+### Working with `acrobase.txt`
+
+#### Adding new expansions
+
+Edit the `acrobase.txt` file with a text editor. Stick to the format
+described at the top of the file. ASCII only, no unicode. Square
+braces mean optional:
+
+> TERM,[Term],Expansion(s)
+
+#### Checking `acrobase.txt` for correctness
+
+Run `testacros.py` - it will tell you if there are any problems,
+and where they are in the file.
+
+#### Checking to see if an expansion is already present
+
+Run `check.py` with the term(s) you want to check for...
+
+> `./check.py MHZ THZ`
+
+...If the term is in the file, it will be listed. If not, you'll
+get a message telling you that.
+
+Once `check.py` is running, it will keep running until you
+press `return` without providing a term to search for.
+
 ## `aambase.txt`:
 
 This contains macros you can use in your posts. The macro language,
