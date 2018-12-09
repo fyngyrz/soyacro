@@ -51,19 +51,30 @@ for el in l1:
 				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
 	linecounter += 1
 
-for n in range(1,argc):
-	tst = sys.argv[n]
-	okay = True
-	for c in tst:
-		if c.isdigit() is False:
-			if c.isupper() is False:
-				okay = False
-				break
-	if okay == True:
-		res = acros.get(tst,'')
-		if res == '':
-			print '"' + tst + '" not in acronyms'
+loclist = sys.argv[1:]
+llen = argc - 1
+
+while len(loclist) > 0:
+	for n in range(0,llen):
+		tst = loclist[n]
+		okay = True
+		for c in tst:
+			if c.isdigit() is False:
+				if c.isupper() is False:
+					okay = False
+					break
+		if okay == True:
+			res = acros.get(tst,'')
+			if res == '':
+				print '"' + tst + '" not in acronyms'
+			else:
+				print tst + ' : ' + res
 		else:
-			print tst + ' : ' + res
-	else:
-		print '"'+tst+'" is not a valid expansion key'
+			print '"'+tst+'" is not a valid expansion key'
+	iput = raw_input(':')
+	loclist = iput.split(' ')
+	if len(loclist) == 1:
+		if loclist[0] == '':
+			loclist = []
+	llen = len(loclist)
+
