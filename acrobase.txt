@@ -30,6 +30,7 @@ A320,,A passenger aircraft
 AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
+ABS,,Automatic Braking System
 AC,,Anonymous Coward; Alternating Current; Air Conditioning
 ACA,,Affordable Care Act (US)
 ACM,,Association for Computing Machinery
@@ -72,6 +73,7 @@ ASPCA,,American Society for the Prevention of Cruelty to Animals
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
 ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
+ATV,,All Terrain Vehicle
 AU,,Astronomical Unit; Australia
 AV,,Autonomous Vehicle
 AWG,,Atmospheric Water Generator; American Wire Gauge
@@ -111,6 +113,7 @@ CDT,,Central Daylight Time
 CE,,Current Era
 CEO,,Chief Executive Officer
 CEQA,,California Environmental Quality Act (US)
+CERN,,European Organization for Nuclear Research (French orig.)
 CFC,,ChloroFluoroCarbon
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
@@ -191,6 +194,7 @@ DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
+ECU,,Engine Control Unit
 EDT,,Eastern Daylight Time
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
@@ -298,7 +302,7 @@ HIV,,Human Immunodeficiency Virus
 HM,,Her Majesty
 HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
-HP,,Hewlett-Packard (company) or Highway Patrol (officer)
+HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
 HQ,,Headquarters
 HR,,Human Resources
 HRW,,Human Rights Watch
@@ -427,6 +431,7 @@ MIDI,,Musical Instrument Digital Interface
 MIT,,Massachusetts Institute of Technology
 MLB,,Major League Baseball
 MM,,2-digit Month, 01-12
+MMORPG,,Massively Multiplayer Online Role-Playing Game
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MOAB,,Mother Of All Bombs - a very large fuel-air bomb
@@ -454,7 +459,7 @@ NC,,North Carolina (USA)
 NCA,,Non-Compete Agreement
 NDA,,Non Disclosure Agreement
 ND,,North Dakota (USA)
-NE,,Nebraska (USA)
+NE,,Nebraska (USA); NorthEast
 NFW,,No Fucking Way
 NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
@@ -465,7 +470,7 @@ NIMBY,,Not In My Back Yard
 NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
-NM,,New Mexico (USA)
+NM,,New Mexico (USA); Never Mind
 NN,,Network Neutrality
 NOAA,,National Oceanic and Atmospheric Administration (US)
 NOT,,NOT gate: input 1 = output in opposite state
@@ -484,6 +489,7 @@ NTW,,Not To Worry
 NU,,Nunavut (Canada)
 NVM,,Non Volatile RAM
 NV,,Nevada (USA)
+NW,,NorthWest
 NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
@@ -558,7 +564,10 @@ RISC,,Reduced Instruction Set Comput(ing/er)
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 RNC,,Repubican National Convention
 ROM,,Read-Only Memory - you can't write new information to this
+ROFLMAO,,Rolling On Floor Laughing My Ass Off
 ROTFL,,Rolling On The Floor Laughing
+ROTFLMAO,,Rolling On The Floor Laughing My Ass Off
+RPG,,Role Playing Game
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
@@ -571,6 +580,7 @@ SC,,South Carolina (USA)
 SDR,,Software Defined Radio
 SD,,South Dakota (USA); Secure Digital
 SDK,,Software Development Kit
+SE,,SouthEast
 SEC,,Securities and Exchange Commission (US)
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
@@ -583,6 +593,7 @@ SIMM,,Single Inline Memory Module
 SIS,,Secret Intelligence Service (UK, also know as MI6)
 SJW,,Social Justice Warrior
 SK,,Saskatchewan (Canada)
+SLAC,,Stanford Linear Accelerator Center
 SLR,,Single Lens Reflex (cameras)
 SLS,,Space Launch System
 SMA,,Surface Mount Assembly
@@ -612,7 +623,7 @@ SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 SVG,,Scalable Vector Graphics
-SW,,Shortwave (radio)
+SW,,Shortwave (radio); SouthWest
 SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
