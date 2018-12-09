@@ -184,7 +184,7 @@ without providing a term to search for.
 ## `aambase.txt`:
 
 This contains macros you can use in your posts. The macro language,
-[aa_macro](http://ourtimelines.com/aamacrodoc/general.html) is very
+[aa_macro](http://ourtimelines.com/aamacrodoc/general.html), is very
 capable, and if you'd like to go further,
 
 [the documentation](http://ourtimelines.com/aamacrodoc/general.html)
