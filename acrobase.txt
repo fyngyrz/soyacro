@@ -62,6 +62,7 @@ AP,,Access Point
 APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language; APpLe stock symbol
+APRS,,Automatic Packet Reporting System
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ARRL,,American Radio Relay League (Amatuer radio)
