@@ -576,6 +576,7 @@ RX,,Receive
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
+SCUBA,,Self-Contained Underwater Breathing Apparatus
 SC,,South Carolina (USA)
 SDR,,Software Defined Radio
 SD,,South Dakota (USA); Secure Digital
