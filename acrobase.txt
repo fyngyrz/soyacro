@@ -631,6 +631,7 @@ TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
 TB,,TeraByte
 TBD,,To Be Determined
 TBH,,To Be Honest
+TCPA,,Telecom Consumer Protection Act
 TDP,,Thermal Design Power or Point
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFC,,The Fucking Comments: bowdlerized, The Fine Comments
