@@ -8,6 +8,8 @@ import sys
 # ./check.py NAFTA CEO CPU
 # ./check.py NOTINHERE 73
 
+errors = u''
+
 argc = len(sys.argv)
 if argc < 2:
 	print 'Usage: check.py ACRO[,ACRO2]...[ACROn]'

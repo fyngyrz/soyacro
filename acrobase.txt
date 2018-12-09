@@ -541,6 +541,7 @@ ROTFL,,Rolling On The Floor Laughing
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
+RX,,Receive
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
@@ -620,7 +621,7 @@ TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networ
 TTYL,,Talk To You Later
 TTY,,Teletype
 TV,,Television
-TX,,Texas (USA)
+TX,,Texas (USA); Transmit
 UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
 UCSD,,University of California, San Diego
