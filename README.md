@@ -186,7 +186,6 @@ without providing a term to search for.
 This contains macros you can use in your posts. The macro language,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), is very
 capable, and if you'd like to go further,
-
 [the documentation](http://ourtimelines.com/aamacrodoc/general.html)
 awaits. You can use HTML in the macros, but you must use only ASCII; no
 unicode. The macro system, in the context of this application, will
