@@ -539,7 +539,7 @@ POV,,Point Of View
 PPI,,Pixels Per Inch
 PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
-PR,,Pull Request - source code alteration submission; Public Relations
+PR,,Pull Request - source code alteration submission; Public Relations; Puerto Rico
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
