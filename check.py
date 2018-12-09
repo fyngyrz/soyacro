@@ -76,5 +76,7 @@ while len(loclist) > 0:
 	if len(loclist) == 1:
 		if loclist[0] == '':
 			loclist = []
+		elif loclist[0] == 'q':
+			loclist = []
 	llen = len(loclist)
 

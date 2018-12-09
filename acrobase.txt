@@ -74,6 +74,7 @@ ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 AU,,Astronomical Unit; Australia
 AV,,Autonomous Vehicle
+AWG,,Atmospheric Water Generator; American Wire Gauge
 AWOL,,Absent Without Official Leave
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
@@ -108,6 +109,7 @@ CDT,,Central Daylight Time
 CE,,Current Era
 CEO,,Chief Executive Officer
 CEQA,,California Environmental Quality Act (US)
+CFC,,ChloroFluoroCarbon
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
 CIA,,Central Intelligence Agency (US)
@@ -366,6 +368,7 @@ ISS,,International Space Station
 IT,,Information Technology
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
+JPL,,Jet Propulsion Labratory (US)
 JRE,,Java Runtime Environment
 JSON,,A file format designed to hold human- and machine-readable data
 K12,,Kindergarten to 12th grade
@@ -431,6 +434,7 @@ MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MP,,MegaPixel; Member of Parliament
 MS,,Mississippi (USA); MicroSoft
+MSFT,,Microsoft (stock ticker symbol)
 MST,,Mountain Standard Time
 MT,,Montana (USA); Mountain Time
 MTBF,,Mean Time Between Failures
@@ -543,6 +547,7 @@ RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
 RGB,,Red, Green, Blue
+RH,,Relative Humidity
 RI,,Rhode Island (USA)
 RIAA,,Recording Industry Association of America
 RISC,,Reduced Instruction Set Comput(ing/er)
@@ -602,6 +607,7 @@ SSL,,Secure Sockets Layer
 SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
+SVG,,Scalable Vector Graphics
 SW,,Shortwave (radio)
 SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
@@ -626,6 +632,7 @@ TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TLDR,TL;DR:,Too Long, Didn't Read
 TL,,Too Long
 TLS,,Transport Layer Security
+TM,,TradeMark
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TOS,,Terms Of Service
