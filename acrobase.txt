@@ -190,7 +190,7 @@ EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only
 EEU,,Eurasian Economic Union
 EFF,,Electronic Frontier Foundation
 EG,e.g.,exempli gratia: "for example"
-EHF: Extremely High Frequency: 30-300 GHz
+EHF,,Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
@@ -602,7 +602,7 @@ TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
 TFT,,Thin Film Transistor (usually display)
-THF: Tremendously Frequency: 300 GHz - 3 THz
+THF,,Tremendously Frequency: 300 GHz - 3 THz
 THOT,,That Hoe Over There
 THZ,THz,TeraHertz
 TIA,,Thanks In Advance
