@@ -278,6 +278,7 @@ HBO,,Home Box Office (US media)
 HD,,Hard Disk
 HDD,,Hard Disk Drive
 HDMI,,High Definition Multimedia Interface
+HDR,,High Dynamic Range
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
 HF,,High Frequency: 3-30 MHz
 HIFI,HiFi,High Fidelity
