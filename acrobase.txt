@@ -104,6 +104,7 @@ CC,,Carbon Copy; Credit Card
 CCTV,,Closed Circuit TeleVision
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
+CDT,,Central Daylight Time
 CE,,Current Era
 CEO,,Chief Executive Officer
 CEQA,,California Environmental Quality Act (US)
@@ -126,6 +127,7 @@ COM,,COMmunications
 COO,,Chief Operating Officer
 CP,,Child Porn
 CPM,CP/M,An OS for the 8080 microprocessor: Control Program for Microcomputers
+CPR,,CardioPulmonary Resusitation
 CPU,,Central Processing Unit
 CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
 CRA,,Computing Research Association
@@ -134,7 +136,7 @@ CRT,,Cathode Ray Tube
 CS,,Computer Science
 CSS,,Cascading Style Sheet - a means to indirectly format HTML
 CST,,Central Standard Time
-CT,,Connecticut (USA)
+CT,,Connecticut (USA); Central Time
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
@@ -185,6 +187,7 @@ DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
+EDT,,Eastern Daylight Time
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
 EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only, but can be erased
@@ -195,6 +198,7 @@ EHF,,Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
+EMS,,Emergency Medical Services
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
 EO,,Executive Order
@@ -261,7 +265,7 @@ GHZ,GHz,Gigahertz - Billions of cycles per second
 GIF,,Graphics Interchange Format - stores either still or animated images
 GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
 GIGO,,Garbage In, Garbage Out
-GM,,General Motors
+GM,,General Motors; General Manager
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GNU,,GNU's Not Unix (a recursive definition!)
 GOP,,Grand Old Party (Republican party, USA)
@@ -404,6 +408,7 @@ MA,,Massachusetts (USA)
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MB,,Megabyte; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
+MDT,,Mountain Daylight Time
 ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
 MF,,Medium Frequency: 300-3000 KHz
@@ -427,7 +432,7 @@ MPH,,Miles Per Hour
 MP,,MegaPixel; Member of Parliament
 MS,,Mississippi (USA); MicroSoft
 MST,,Mountain Standard Time
-MT,,Montana (USA)
+MT,,Montana (USA); Mountain Time
 MTBF,,Mean Time Between Failures
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
 MW,,Medium Wave
@@ -507,6 +512,7 @@ PC,,Personal Computer
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
 PDA,,Personal Digital Assitant; Public Display of Affection
+PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
 PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
@@ -523,6 +529,7 @@ PR,,Pull Request - source code alteration submission; Public Relations
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
+PT,,Pacific Time
 PVC,,PolyVinyl Chloride
 QC,,Quebec (Canada)
 QSL,,Radio shorthand for response
@@ -555,6 +562,7 @@ SC,,South Carolina (USA)
 SDR,,Software Defined Radio
 SD,,South Dakota (USA); Secure Digital
 SDK,,Software Development Kit
+SEC,,Securities and Exchange Commission (US)
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
 SF,,Science Fiction or less accurately Speculative Fiction; San Francisco (California)
