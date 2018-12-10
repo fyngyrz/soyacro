@@ -1,13 +1,14 @@
-# This is an all-caps acronym/abbreviation definition file, ASCII-only format
+# This is an all-caps term->expansion definition file, ASCII-only format
 # To be used with soyacro.py or similar application
-# Format each entry all on one line with three elements; ASCII characters only:
-#    ALL-CAPSorNUMBERS-NOTHING-ELSE-ACRONYM/ABBREVIATION
+# Each entry all on one line with 3 elements; ASCII characters only, no HTML:
+#    ALL-CAPSorNUMBERS-NOTHING-ELSE-TERM
 #    A-SINGLE-COMMA
-#    Nothing OR a mixed-case replacement for the all-caps, ie MHZ,MHz,Megahertz
+#    Nothing OR replacement for term, ie MHZ,MHz,Megahertz
 #    A-SINGLE-COMMA
-#    Acronym / abbreviation expansion all on ONE line, no HTML. Examples:
-# MHZ,MHz,Megahertz
-# ADC,,Analog to Digital Converter
+#    Expansion, separate multiples with ';'.
+# Examples:
+#    MHZ,MHz,Megahertz
+#    AL,,Alabama (USA); Artificial Life
 # -----------------------------------------------------------------------------
 
 1802,,An RCA 8-bit CPU
