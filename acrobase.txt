@@ -106,7 +106,7 @@ CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy; Credit Card; Creative Commons
-CCTV,,Closed Circuit TeleVision
+CCTV,,Closed Circuit TeleVision; China Central Television
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
 CDT,,Central Daylight Time
@@ -308,7 +308,7 @@ HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
 HQ,,Headquarters
 HR,,Human Resources
 HRW,,Human Rights Watch
-HTH,,Hope That Helped or Here To Help
+HTH,,Hope That Helped; Here To Help
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
 HTML4,,HyperText Markup Language version 4
@@ -363,7 +363,7 @@ IP,,Internet Protocol (often a specific Internet address); Intellectual Property
 IPO,,Initial Public Offering
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
-IQ,,Intelligence Quotient or I/Q phases of data encoding
+IQ,,Intelligence Quotient; I/Q phases of data encoding
 IRA,,Individual Retirement Account; Irish-Republican Army
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
@@ -659,7 +659,7 @@ TOS,,Terms Of Service
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TSMC,,Taiwan Semiconductor Manufacturing Company
-TTL,,Transistor-Transistor Logic, or for cameras, Through The Lens, or in networking, Time To Live
+TTL,,Transistor-Transistor Logic; Through The Lens; Time To Live
 TTYL,,Talk To You Later
 TTY,,Teletype
 TV,,Television
@@ -674,7 +674,7 @@ UI,,User Interface
 UK,,United Kingdom
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
-UPS,,Uninterruptible Power Supply, or United Parcel Service
+UPS,,Uninterruptible Power Supply; United Parcel Service
 URI,,Uniform Resource Identifier
 URL,,Uniform Resource Locator
 USAF,,United States Air Force
