@@ -298,6 +298,7 @@ HF,,High Frequency: 3-30 MHz
 HFCS,,High Fructose Corn Syrup
 HIFI,HiFi,High Fidelity
 HI,,Hawaii (USA)
+HIG,,Human Interface Guidelines
 HIPAA,,Health Insurance Portability and Accountability Act (US)
 HIV,,Human Immunodeficiency Virus
 HM,,Her Majesty
