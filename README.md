@@ -37,9 +37,9 @@ for anything, signatures, etc., so you can make richer posts more easily.
 
 ### But what if I _need_ non-ASCII characters in a replacement field?
 
-Then you can use HTML entities. For instance, El ni&#241;o can be spelled
-as `El ni&#241;o`. Simple as that. You can write the same thing in the
-replacement field:
+Then you can use HTML entities. For instance, El ni&#241;o can be
+represented by `El ni&#241;o`. Simple as that. You can write the same
+thing in the replacement field:
 
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
 
