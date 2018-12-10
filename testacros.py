@@ -48,6 +48,8 @@ data = text.split('\n')
 ln = 1
 rct = 0
 exl = 0
+defcount = 0
+multidefs = 0
 for line in data:
 	if line != '' and line[0] != '#':
 		try:
@@ -70,6 +72,11 @@ for line in data:
 				if di.get(key,'') != '':
 					errors += 'duplicate key %s at line %d\n' % (key,ln)
 				di[key] = expansion
+			sublist = expansion.split(';')
+			dc = len(sublist)
+			defcount += dc
+			if dc > 1:
+				multidefs += 1
 			exl += len(expansion)
 	ln += 1
 
@@ -81,7 +88,9 @@ else:
 	print s
 	print '-' * sl
 al = len(di)
-print '%d acronyms found' % (len(di))
-print '%d acronyms have replacements' % (rct)
-print 'acronym file size is %d bytes' % (len(text))
+print '%d terms found' % (len(di))
+print '%d definitions' % (defcount)
+print '%d terms have multiple definitions' % (multidefs)
+print '%d terms have replacements' % (rct)
+print 'expansion file size is %d bytes' % (len(text))
 print 'average expansion length is %d characters' % (round(float(exl) / float(al)))
