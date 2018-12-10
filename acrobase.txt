@@ -157,6 +157,7 @@ DB,,Database
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
 DD,,2-digit day, 01-31
+DDOS,,Distributed Denial Of Service
 DEA,,Drug Enforcement Agency (US)
 DE,,Delaware (USA)
 DGPS,,Differential Global Positioning System
@@ -178,7 +179,7 @@ DOE,,Department Of Energy (US)
 DOH,DoH,DNS-over-HTTPS
 DOI,,Department of the Interior (US); Digital Object Identifier
 DOJ,,Department Of Justice (US)
-DOS,,Disk Operating System
+DOS,,Disk Operating System; Denial Of Service
 DOT,,Department Of Transportation (US)
 DPI,,Dots Per Inch
 DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
@@ -623,6 +624,7 @@ SSL,,Secure Sockets Layer
 SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
+STEM,,Science, Technology, Engineering, Math
 SVG,,Scalable Vector Graphics
 SW,,Shortwave (radio); SouthWest
 SWAT,,Special Weapons And Tactics 
