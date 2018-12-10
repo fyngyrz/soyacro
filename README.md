@@ -199,7 +199,9 @@ here, then write it as an HTML numeric entity, such as `&#128169;`
 
 > `[style poophead [b] is a &#128169;-head.]`
 
-...which you would use this way: {poophead fyngyrz}
+...which you would use this way: {poophead fyngyrz} and which would generate...
+
+> fyngyrz is a &#128169;-head.
 
 As to HTML in general, here's a macro that produces a link to my iToolBox
 project as a simple example:
