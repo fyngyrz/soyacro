@@ -199,7 +199,7 @@ here, then write it as an HTML numeric entity, such as `&#128169;`
 
 > `[style poophead [b] is a &#128169;-head.]`
 
-...which you would use this way: {poophead fyngyrz} and which would generate...
+...which you would use this way: `{poophead fyngyrz}` and which would generate...
 
 > fyngyrz is a &#128169;-head.
 
