@@ -1,27 +1,30 @@
 # soyacro.py - making better posts on soylentnews.org
 
-We're deluged by acronyms and abbreviations. Even though I'm technically
-oriented and have been around social networks for quite some time, I see
-acronyms and abbreviations I don't know \(or remember\) constantly. If
-it's happening to me, it's happening to others. While I can't fix my own
-failure to recognize, I can fix the acronyms I use in my posts so that
-others can learn about them easily, without otherwise clogging up the
-post text with explanations.
+We're deluged by acronyms and abbreviations, quite often in the form of
+all-caps terms. Even though I'm technically oriented and have been around
+social networks for quite some time, I see such terms I don't know \(or
+remember\) constantly. If it's happening to me, it's happening to others.
+While I can't fix my own failure to recognize, I can fix those I use in
+my posts so that others can learn about them easily, without otherwise
+clogging up the post text with explanations.
 
-So what this project does is provides built-in definitions of acronyms
+So what this project does is provides built-in definitions of terms
 written in all-capital letters and/or numeric digits used in posts \(as
-long as they're in the acronym file, `acrobase.txt`.\) You can edit the
-`acrobase.txt` file and add acronyms, and you should, as you find
-yourself using them. You might keep an eye on the one in the project, as
-I seem to be adding to it regularly. Better yet, submit your additions
-here as a pull request, and we all win.
+long as they're in the expansion file, `acrobase.txt`.\) You can edit the
+`acrobase.txt` file and add terms, and you should, as you find yourself
+using them. You might keep an eye on the one in the project, as I seem to
+be adding to it regularly. Better yet, submit your additions here as a
+pull request, and we all win. Here's the format for a line to do that, where
+[] indicates optional:
+
+> term,[replacement],expansion[;expansion]
 
 You can produce output that is comprised more than just all-caps and/or
-numbers by using the second field, which is a replacement field. The only
-restrictions are that there can be no actual commas in the replacement field
-\(you can use &amp;#44; if you need a comma, just not an actual comma character\),
-and that there be no non-ASCII characters. So, for instance, this line
-in the `acrobase.txt` file...
+numbers by using the second field, the optional replacement. The only
+restrictions are that there can be no actual commas in the replacement
+\(you can use &amp;#44; if you need a comma, just not an actual
+comma character\), and that there be no non-ASCII characters. So, for
+instance, this line in the `acrobase.txt` file...
 
 > `TLDR,TL;DR:,Too Long, Didn't Read`
 
@@ -36,7 +39,7 @@ for anything, signatures, etc., so you can make richer posts more easily.
 
 Then you can use HTML entities. For instance, El ni&#241;o can be spelled
 as `El ni&#241;o`. Simple as that. You can write the same thing in the
-expansion field:
+replacement field:
 
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
 
@@ -102,10 +105,9 @@ on, or who have untrusted users on their LAN \(why?\)
 
 ## Use:
 
-When you write your post on this page, if you use a known acronym
-\(defined as a caps-and/or-numbers sequence in the acronym file\),
-it'll be wrapped with HTML `<abbr>` tags and will include an expansion
-visible when one hovers a mouse pointer in a web browser.
+When you write your post on this page, if you use a known term it'll be
+wrapped with HTML `<abbr>` tags and will include an expansion visible
+when one hovers a mouse pointer in a web browser.
 
 The result is generated into the lower text box when you press `submit`.
 
@@ -120,17 +122,17 @@ File | Purpose
 `aa_webpage.py` | convenience for generating HTML 4.01 pages
 `aa_macro.py` | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 `aambase.txt` | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
-`acrobase.txt` | acronym definitions \(see below\)
+`acrobase.txt` | term definitions \(see below\)
 `testacros.py` | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
 `testfile.uco` | Test comparison file for running `soyacro.py` from the command line
-`check.py` | Quick checker to see if an acronym is in `acrobase.txt`
+`check.py` | Quick checker to see if a term is in `acrobase.txt`
 
 ## `acrobase.txt`:
 
 The format is defined at the top of the file. Basically there are three
 comma-separated fields. **Important:** _Don't use HTML in these fields._
 
-The first field is the caps-and/or-number sequence that is the acronym,
+The first field is the caps-and/or-number sequence that is the term,
 such as `TIL`, `3D`, or `MHZ`.
 
 The second field is a replacement field that is only used if the all-caps
@@ -138,14 +140,14 @@ sequence isn't exactly how the term should be presented. So for `MHZ`,
 this field contains `MHz`, which is the correct way to write the term.
 For acronymns that are all-caps, this field remains empty.
 
-The third field is the content that is presented when the mouse is
-hovered over the acronym in the post.
+The third field is the expansion that is presented when the mouse is
+hovered over the term \(or its replacement\) in the post.
 
 This file must contain only ASCII characters; no unicode. You can use
 HTML entities in the replacement and expansion fields instead, though, so
 there's no limit on the accuracy of the results, only on the all-caps
 sequences used to trigger them, and those don't show up in the posts
-unless there is no replacement field.
+except where there is no replacement field content.
 
 ### Examples:
 
@@ -162,7 +164,7 @@ Edit the `acrobase.txt` file with a text editor. Stick to the format
 described at the top of the file. ASCII only, no unicode. Square
 braces mean optional:
 
-> TERM,[Term],Expansion(s)
+> TERM,[replacement],Expansion(s)
 
 #### Checking `acrobase.txt` for correctness
 
@@ -241,18 +243,24 @@ you don't see them listed on the web page.
 
 ### Using the Macros:
 
+_This macro in the `aambase.txt` file:_
+
+> [style i <i>[b]</i>]
+
+_Used in a post as follows:_
+
 > `Italizing for emphasis, I {i really} mean it!`
 
 _Produces:_
 
 > `Italizing for emphasis, I <i>really</i> mean it!`
 
-### The signature generator
+### The Signature Generator
 
-I've included three macros for your signing pleasure. soylentnews.org allows you to
-have one short, fixed string for your signature. This can be limiting. So clear out
-your signature setting on soylentnews.org, and use the signature generator macro
-instead!
+I've included three macros for your signing pleasure. soylentnews.org
+allows you to have one short, fixed string for your signature. This can
+be limiting. You can clear out your signature setting on soylentnews.org,
+and use the signature generator macro instead.
 
 There's a list named `sigs` towards the end of  the `aambase.txt` file.
 This contains a list of various signatures, separated by the `|` (pipe)
