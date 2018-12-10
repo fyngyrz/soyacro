@@ -237,7 +237,8 @@ However, since the global styles and the local styles are kept in
 separate lists, the application uses the local list to display available
 styles, which effectively hides the global styles from the list at the
 bottom of the page. The end result is that you can create styles that
-don't clog up the page with things you're not planning to use directly.
+don't clog up style listing on the page with things you're not planning
+to use directly.
 
 I demonstrate this with the signature generator \(`{sig}`\) style. You'd
 use that, but not any of the lower-level styles that it calls upon, so
