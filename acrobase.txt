@@ -208,6 +208,7 @@ EHF,,Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
+EMP,,Electro-Magnetic Pulse
 EMS,,Emergency Medical Services
 EMT,,Emergency Medical Technician
 ENSO,,El Ni&#241;o/Southern Oscillation
@@ -306,6 +307,7 @@ HM,,Her Majesty
 HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
+HPV,,Human Papilloma Virus
 HQ,,Headquarters
 HR,,Human Resources
 HRW,,Human Rights Watch
@@ -346,7 +348,7 @@ IE9,,Internet Explorer v9
 IE10,,Internet Explorer v10
 IE11,,Internet Explorer v11
 IED,,Improvised Explosive Device
-IEEE,,Institute Of Electrical And Electronics Engineers
+IEEE,,Institute of Electrical and Electronics Engineers
 IF,,Intermediate Frequency
 IIRC,,If I ReCall
 IIS,,Internet Information Services
