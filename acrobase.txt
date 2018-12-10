@@ -45,6 +45,7 @@ AFAIK,,As Far As I Know
 AF,,Audio Frequency
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AG,,Attorney General; Aerographer's mate (US navy)
+AGU,,American Geophysical Union
 AGW,,Antropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
@@ -309,7 +310,7 @@ HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
 HPV,,Human Papilloma Virus
-HQ,,Headquarters
+HQ,,HeadQuarters
 HR,,Human Resources
 HRW,,Human Rights Watch
 HTH,,Hope That Helped; Here To Help
@@ -490,6 +491,7 @@ NSA,,National Security Agency (US)
 NSFW,,Not Safe For Work
 NS,,Nova Scotia (Canada)
 NTS,,Note To Self
+NTSC,,National Television System Committee; Never Twice the Same Color
 NTSB,,National Transportation Safety Board
 NTW,,Not To Worry
 NU,,Nunavut (Canada)
@@ -569,6 +571,7 @@ RIAA,,Recording Industry Association of America
 RISC,,Reduced Instruction Set Comput(ing/er)
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 RNC,,Repubican National Convention
+ROI,,Return On Investment	
 ROM,,Read-Only Memory - you can't write new information to this
 ROFLMAO,,Rolling On Floor Laughing My Ass Off
 ROTFL,,Rolling On The Floor Laughing
