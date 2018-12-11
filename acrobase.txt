@@ -28,6 +28,7 @@
 747,,A passenger aircraft
 8080,,An Intel 8-bit CPU
 A320,,A passenger aircraft
+AA,,Alcoholics Anonymous
 AB,,Alberta (Canada)
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
@@ -105,7 +106,7 @@ CA,,California (USA)
 CAD,,Computer Aided Design
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CB,,Citizen's Band radio
-CBC,,Canadian Broadcasting Corporation
+CBC,,Canadian Broadcasting Corporation; Complete Blood Count; Criminal Background Check; Congressional Black Caucus
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy; Credit Card; Creative Commons
@@ -251,6 +252,7 @@ FOIA,,Freedom Of Information Act (US)
 FORTRAN,,A computer language, "FORmula TRANSlator"
 FOSS,,Free Open Source Software
 FOSTA,,Fight Online Sex Trafficking Act (US)
+FP,,Front Page
 FP16,,16-bit Floating Point
 FP32,,32-bit Floating Point
 FPGA,,Field-Programmable Gate Array
@@ -578,6 +580,7 @@ RGB,,Red, Green, Blue
 RH,,Relative Humidity
 RI,,Rhode Island (USA)
 RIAA,,Recording Industry Association of America
+RIP,,Rest In Peace
 RISC,,Reduced Instruction Set Comput(ing/er)
 RNA,,RiboNucleic Acid: messenger carrying instructions from DNA
 RNC,,Repubican National Convention
@@ -673,6 +676,7 @@ TM,,TradeMark
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TOS,,Terms Of Service
+TPP,,Trans-Pacific Partnership
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TSMC,,Taiwan Semiconductor Manufacturing Company
@@ -730,6 +734,7 @@ WASP,,White Anglo Saxon Protestant
 WA,,Washington (USA)
 WAC,,Worked All Countries (amatuer radio)
 WAS,,Worked All States (amatuer radio)
+WBC,,White Blood Count
 WC,,Water Closet (bathroom); Waist Circumference
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
