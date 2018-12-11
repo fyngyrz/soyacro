@@ -256,6 +256,7 @@ FP32,,32-bit Floating Point
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
+FSK,,Frequency Shift Keying
 FTC,,Federal Trade Commission (USA)
 FTFY,,Fixed That For You
 FTP,,File Transfer Protocol
