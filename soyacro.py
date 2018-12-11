@@ -33,8 +33,8 @@ cginame		= 'soyacro.py'		# this CGI file
 ifile		= 'acrobase.txt'	# acronyms file
 mfile		= 'aambase.txt'		# macros file
 
-# Web Page Options:
-# -----------------
+# Initial Web Page Options:
+# -------------------------
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
@@ -75,6 +75,60 @@ if cmdline == False:
 else: # we're running from command line
 	usertext = u'skip this: <abbr title="testing">DONTTREADONME</abbr> uchar pizza: &#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
 	usernote = u'Running from command line'
+
+# Set the flags
+# -------------
+checkautosignature=u''
+checkshowsignatures=u''
+checkusemacros=u''
+checkshowexpansions=u''
+checkshowstyles=u''
+
+try:
+	flag = form['resubmit'].value
+	resubmit = True
+except:
+	resubmit = False
+hidden = u''
+
+if resubmit == True: # this is only true when form is resubmitted
+	try:
+		flag = form['signature'].value
+		randsigs = True
+	except:
+		randsigs = False
+
+	try:
+		flag = form['showsignatures'].value
+		showsigs = True
+	except:
+		showsigs = False
+
+	try:
+		flag = form['usemacros'].value
+		usemacros = True
+	except:
+		usemacros = False
+
+	try:
+		flag = form['showexpansions'].value
+		showacros = True
+	except:
+		showacros = False
+
+	try:
+		flag = form['showstyles'].value
+		showstyles = True
+	except:
+		showstyles = False
+
+# Now set the checkmarks in the form:
+# -----------------------------------
+if showsigs == True: checkshowsignatures = u'CHECKED'
+if randsigs == True: checkautosignature = u'CHECKED'
+if usemacros == True: checkusemacros = u'CHECKED'
+if showacros == True: checkshowexpansions = u'CHECKED'
+if showstyles == True: checkshowstyles = u'CHECKED'
 
 # Read in the style definitions:
 # ------------------------------
@@ -341,13 +395,29 @@ all-caps-and/or-digits.
 myform = u"""
 <FORM ACTION="CGINAME" METHOD="POST">
 <div style="text-align: center;">
-<TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
+<div>
+<TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA>
+<div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
+<INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
+<INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
+<INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
+<INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macro&nbsp;Styles<br>
+<INPUT TYPE="checkbox" NAME="showexpansions"CHECKSHOWEXPANSIONS>Show&nbsp;Expansions<br>
+<br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
+</div>
 <br><br>
+</div>
 </div>
 </FORM>
 """
+
 myform = myform.replace(u'ENTLINES',unicode(str(entlines)))
+myform = myform.replace(u'CHECKSHOWSIGNATURES',checkshowsignatures)
+myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
+myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
+myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
+myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
@@ -366,8 +436,10 @@ mybody += u'<hr>'							# new output section
 tmp = makeacros(usertext)					# Now the post gets its acronyms
 testforsquigs(tmp)			# verify {macro} brace balance
 if aambase != '':			# here's the aa_macro processing, if braces balance
-	if randsigs == True:	# automatically append a random signature? ...
-		tmp += u'\n{sig}'	# ...yep.
+	if randsigs == True:
+		if tmp[-1:] != u'\n':
+			tmp += u'\n'
+		tmp += u'\n{sig}'
 	tmp = nosquares(tmp)	# escape any square brackets
 	tmp = makeascii(tmp)	# aa_macro requires ASCII string
 	tmp = mod.do(tmp)		# process the {macros}
@@ -410,7 +482,7 @@ if showstyles == True:
 			thestyles = unicode(thestyles)
 			mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
 
-if showsigs == True:
+if usemacros == True and showsigs == True:
 	siglist = unicode(mod.do('{wlsigs}'))
 	siglist = siglist.replace(u'\n',u'<br>\n')
 	siglist = u'<hr><div><span style="color:#00ff00;">Signatures:</span><br>\n'+siglist+u'</div>'
