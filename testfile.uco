@@ -24,9 +24,19 @@ all-caps-and/or-digits.
 </p>
 <FORM ACTION="soyacro.py" METHOD="POST">
 <div style="text-align: center;">
-<TEXTAREA NAME="thetext" ROWS="20" COLS="80">skip this: &lt;abbr title="testing"&gt;DONTTREADONME&lt;/abbr&gt; uchar pizza: &amp;#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.</TEXTAREA><br>
+<div>
+<TEXTAREA NAME="thetext" ROWS="20" COLS="80">skip this: &lt;abbr title="testing"&gt;DONTTREADONME&lt;/abbr&gt; uchar pizza: &amp;#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.</TEXTAREA>
+<div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
+<INPUT TYPE="checkbox" NAME="usemacros"CHECKED>Use&nbsp;Macros<br>
+<INPUT TYPE="checkbox" NAME="signature">Auto&nbsp;Signature<br>
+<INPUT TYPE="checkbox" NAME="showsignatures"CHECKED>Show&nbsp;Signatures<br>
+<INPUT TYPE="checkbox" NAME="showstyles"CHECKED>Show&nbsp;Macro&nbsp;Styles<br>
+<INPUT TYPE="checkbox" NAME="showexpansions">Show&nbsp;Expansions<br>
+<br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
+</div>
 <br><br>
+</div>
 </div>
 </FORM>
 <hr><div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="20" COLS="80">skip this: &lt;abbr title="testing"&gt;DONTTREADONME&lt;/abbr&gt; uchar pizza: 🍕 and a little &lt;abbr title="American Standard Code For Information Interchange (a 7-bit code)"&gt;ASCII&lt;/abbr&gt; to stroke the acronym generator, some &lt;i&gt;italics&lt;/i&gt; to run the macro processor.</TEXTAREA></div><br></div><hr><div><span style="color:#00ff00;">Styles (10):</span><br><span style="color:green;"><span style="color:#ff00ff;">&#123;</span><span style="color:white;">b</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">bq</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">i</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">ls</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">lsigs</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">nsig</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">rs</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">sig</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">sqig</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span>&#44; <span style="color:#ff00ff;">&#123;</span><span style="color:white;">strike</span>&nbsp;<span style="color:#00ffff;"><i>content</i></span><span style="color:#ff00ff;">&#125;</span></span></div><hr><div><span style="color:#00ff00;">Signatures:</span><br>
