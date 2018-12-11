@@ -560,6 +560,7 @@ PR,,Pull Request - source code alteration submission; Public Relations; Puerto R
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
+PSU,,Power Supply Unit
 PT,,Pacific Time
 PVC,,PolyVinyl Chloride
 QC,,Quebec (Canada)
