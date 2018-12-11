@@ -93,4 +93,7 @@ print '%d definitions' % (defcount)
 print '%d terms have multiple definitions' % (multidefs)
 print '%d terms have replacements' % (rct)
 print 'expansion file size is %d bytes' % (len(text))
-print 'average expansion length is %d characters' % (round(float(exl) / float(al)))
+s = 'average expansion length is %d characters' % (round(float(exl) / float(al)))
+ll = len(s)
+print s
+print '-' * ll
