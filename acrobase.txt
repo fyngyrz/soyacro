@@ -529,6 +529,7 @@ OTOH,,On The Other Hand
 P2P,,Peer to Peer
 PAC,,Political Action Committee
 PA,,Pennsylvania (USA)
+PAL,,Phase Alternate Line video encoding
 PCI,,Payment Card Industry
 PC,,Personal Computer
 PCB,,Printed Circuit Board
