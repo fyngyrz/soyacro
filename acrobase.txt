@@ -104,6 +104,7 @@ BW,,Black and White (imaging); Bandwidth
 CA,,California (USA)
 CAD,,Computer Aided Design
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
+CB,,Citizen's Band radio
 CBC,,Canadian Broadcasting Corporation
 CBD,,Cannabidiol
 CBS,,Columbia Broadcasting System
@@ -173,7 +174,7 @@ DJ,,Disc Jockey
 DMA,,Direct Memory Access
 DMR,,Digital Mobile Radio
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
-DNC,,Democratic National Convention
+DNC,,Democratic National Convention; Democratic National Committee
 DNS,,Domain Name System
 DOB,,Date Of Birth
 DOD,,Department Of Defense (US)
@@ -325,6 +326,7 @@ HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol; Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
+IBIS,,In-Body Image Stabilization
 IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
 ICBM,,Intercontinental Ballistic Missile
@@ -373,6 +375,7 @@ IRA,,Individual Retirement Account; Irish-Republican Army
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
+IS,,Image Stabilization
 ISA,,Industry Standard Architecture
 ISIS,,Islamic State of Iraq and Syria
 ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
@@ -400,6 +403,7 @@ KW,kW,kiloWatt
 KY,,Kentucky (USA)
 LA,,Louisiana (USA); Los Angeles (California, USA)
 LAN,,Local Area Network
+LAPD,,Los Angeles Police Department
 LASER,,Light Amplification by Stimulated Emission of Radiation
 LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
@@ -438,6 +442,7 @@ MIC,,Miltary Industrial Complex
 MIDI,,Musical Instrument Digital Interface
 MIT,,Massachusetts Institute of Technology
 MLB,,Major League Baseball
+MLK,,Martin Luther King
 MM,,2-digit Month, 01-12
 MMORPG,,Massively Multiplayer Online Role-Playing Game
 MMU,,Memory Management Unit
