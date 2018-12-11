@@ -423,6 +423,7 @@ LTE,,A mobile communications standard
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
+MAMR,,Microwave-Assisted Magnetic Recording
 MB,,Megabyte; Manitoba (Canada)
 MD,,Maryland (USA); Medical Doctor
 MDT,,Mountain Daylight Time
