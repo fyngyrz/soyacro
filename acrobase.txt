@@ -420,6 +420,7 @@ LIFO,,Last In, First Out
 LLC,,Limited Liability Corporation
 LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
+LNA,,Low Noise Amplifier
 LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
 LSD,,Lysergic Acid Diethylamide - C20H25N3O
