@@ -37,6 +37,7 @@ AC,,Anonymous Coward; Alternating Current; Air Conditioning
 ACA,,Affordable Care Act (US)
 ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
+ACS,,American Chemical Society
 ACT,,Air Channel Transistor
 ADA,,Americans with Disabilities Act (US)
 AD,,Anno Domini (in the year of the Lord)
@@ -161,7 +162,7 @@ DB,,Database
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
 DD,,2-digit day, 01-31
-DDOS,,Distributed Denial Of Service
+DDOS,DDoS,Distributed Denial of Service
 DEA,,Drug Enforcement Agency (US)
 DE,,Delaware (USA)
 DGPS,,Differential Global Positioning System
