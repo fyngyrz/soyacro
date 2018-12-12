@@ -132,7 +132,7 @@ CMYK,,Cyan, Magenta, Yellow, Black
 CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
 CNSA,,China National Space Administration
-CO2,,Carbon Dioxide
+CO2,,1 carbon atom, 2 oxygen atoms: Carbon Dioxide
 CO,,Colorado (USA); Carbon Monoxide
 COBOL,,Common Business-Oriented Language
 COM,,COMmunications
@@ -158,6 +158,7 @@ CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
+DARPA,,Defense Advanced Research Projects Agency
 DB,,Database
 DBMS,,Database Management System
 DC,,Direct Current; Washington DC (District of Columbia) (USA)
@@ -212,6 +213,7 @@ EHF,,Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
 EMACS,Emacs,Editing MACroS
+EMM,,Extended Memory Manager
 EMP,,Electro-Magnetic Pulse
 EMS,,Emergency Medical Services
 EMT,,Emergency Medical Technician
@@ -235,6 +237,7 @@ EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
 FAQ,,Frequently Asked Questions
+FAS,,Fetal Alcohol Syndrome
 FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
 FCC,,Federal Communications Commission (US)
@@ -295,6 +298,7 @@ GPS,,Global Positioning System
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
 H1B,,Non-immigrant visa (US)
+H2O,,2 hydrogen atoms, 1 oxygen atom: water
 HAM,Ham,Amatuer radio operators
 HAMR,,Heat-Assisted Magnetic Recording
 HBO,,Home Box Office (US media)
@@ -330,6 +334,7 @@ HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol; Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
+IANAL,,I Am Not A Lawyer
 IBIS,,In-Body Image Stabilization
 IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
@@ -387,6 +392,8 @@ ISP,,Internet Service Provider
 ISRO,,India Space Research Organisation
 ISS,,International Space Station
 IT,,Information Technology
+IVF,,In Vitro Fertilization
+JFK,,John F. Kennedy
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
 JPL,,Jet Propulsion Labratory (US)
@@ -545,6 +552,7 @@ PC,,Personal Computer
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
 PDA,,Personal Digital Assitant; Public Display of Affection
+PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
 PHD,Ph.D.,Doctorate of Philosphy
@@ -594,7 +602,7 @@ RPG,,Role Playing Game
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
-RV,,Research Vessel
+RV,,Research Vessel; Recreational Vehicle
 RX,,Receive
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
@@ -629,6 +637,7 @@ SMP,,Surface Mount Package; Symmetric Multi-Process(ing/or)
 SMS,,Short Message Service
 SMT,,Surface Mount Technology
 SN,,Soylent News
+SNAFU,,Situation Normal, All Fucked Up
 SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
@@ -672,12 +681,14 @@ TIL,,Today I Learned
 TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
 TLDR,TL;DR:,Too Long, Didn't Read
 TL,,Too Long
+TLD,,Top-Level Domain
 TLS,,Transport Layer Security
 TM,,TradeMark
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TOS,,Terms Of Service
 TPP,,Trans-Pacific Partnership
+TPU,,Tensor Processing Unit
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TSMC,,Taiwan Semiconductor Manufacturing Company
@@ -724,6 +735,7 @@ VIP,,Very Important Person
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
+VOIP,VoIP,Voice over IP
 VP,,Vice President
 VPN,,Virtual Private Network
 VR,,Virtual Reality
@@ -762,6 +774,7 @@ WY,,Wyoming (USA)
 WYSIWYG,,What You See Is What You Get
 XL,,eXtra Large
 XML,,eXtensible Markup Language
+XMS,,Extended Memory Specification
 XOR,,XOR gate: input 1 not equal input 2 = output
 XTAL,,Crystal
 XXL,,eXtra eXtra Large
