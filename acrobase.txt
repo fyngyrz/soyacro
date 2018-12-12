@@ -30,6 +30,7 @@
 A320,,A passenger aircraft
 AA,,Alcoholics Anonymous
 AB,,Alberta (Canada)
+ABA,,American Bar Association
 ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 ABS,,Automatic Braking System
@@ -104,11 +105,12 @@ BSOD,,Blue Screen Of Death
 BTW,,By The Way
 BW,,Black and White (imaging); Bandwidth
 CA,,California (USA)
-CAD,,Computer Aided Design
+CAD,,Computer Aided Design; CAnadian Dollars
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CB,,Citizen's Band radio
 CBC,,Canadian Broadcasting Corporation; Complete Blood Count; Criminal Background Check; Congressional Black Caucus
 CBD,,Cannabidiol
+CBP,,Customs and Border Protection (US)
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy; Credit Card; Creative Commons
 CCTV,,Closed Circuit TeleVision; China Central Television
@@ -135,6 +137,7 @@ CNSA,,China National Space Administration
 CO2,,1 carbon atom, 2 oxygen atoms: Carbon Dioxide
 CO,,Colorado (USA); Carbon Monoxide
 COBOL,,Common Business-Oriented Language
+COD,,Cash On Delivery
 COM,,COMmunications
 COO,,Chief Operating Officer
 CP,,Child Porn
@@ -222,6 +225,7 @@ EO,,Executive Order
 EOF,,End Of File
 EOL,,End Of Line
 EPA,,Environmental Protection Agency (US)
+EPIC,,Electronic Privacy Information Center	
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
 ERU,,Energy Recovery Unit
@@ -315,6 +319,7 @@ HIG,,Human Interface Guidelines
 HIPAA,,Health Insurance Portability and Accountability Act (US)
 HIV,,Human Immunodeficiency Virus
 HM,,Her Majesty
+HMCS,,Her Majesty's Canadian Ship
 HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
@@ -372,6 +377,7 @@ IMHO,,In My Honest Opinion
 IMO,,In My Opinion
 INF,,Intermediate-range Nuclear Forces (treaty)
 IN,,Indiana (USA)
+IOC,,International Olympic Committee
 IOS,iOS,An Apple Operating System.
 IOT,,Internet Of Things
 IOW,,In Other Words
@@ -468,6 +474,7 @@ MPH,,Miles Per Hour
 MP,,MegaPixel; Member of Parliament
 MS,,Mississippi (USA); MicroSoft
 MSFT,,Microsoft (stock ticker symbol)
+MSNBC,,MicroSoft National Broadcasting Company
 MST,,Mountain Standard Time
 MT,,Montana (USA); Mountain Time
 MTBF,,Mean Time Between Failures
