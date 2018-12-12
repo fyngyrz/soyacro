@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 8th, 2018 (this code file only)
+#  Last Update: December 11th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #  Tab Spacing: Set to 4 for sane readability of Python source
@@ -22,16 +22,15 @@
 #               standard Python os import library
 # ----------------------------------------------------------
 
-### Configuration: ###
-### ============== ###
-### ============== ###
-### ============== ###
+# =========================================================================
+# =========================== CONFIGURATION ===============================
+# =========================================================================
 
 # App Filenames:
 # --------------
-cginame		= 'soyacro.py'		# this CGI file
-ifile		= 'acrobase.txt'	# acronyms file
-mfile		= 'aambase.txt'		# macros file
+cginame		= 'soyacro.py'		# this CGI filename
+ifile		= 'acrobase.txt'	# acronyms filename
+mfile		= 'aambase.txt'		# macros filename
 
 # Initial Web Page Options:
 # -------------------------
@@ -42,8 +41,9 @@ showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
+
 # =========================================================================
-# =========================================================================
+# ========================= END CONFIGURATION =============================
 # =========================================================================
 
 # Code - Good luck if you change anything. :)
@@ -84,6 +84,8 @@ checkusemacros=u''
 checkshowexpansions=u''
 checkshowstyles=u''
 
+# Detect if this is a resubmit or an initial entry:
+# -------------------------------------------------
 try:
 	flag = form['resubmit'].value
 	resubmit = True
@@ -91,7 +93,12 @@ except:
 	resubmit = False
 hidden = u''
 
-if resubmit == True: # this is only true when form is resubmitted
+# If the form isn't being resubmitted, we skip using
+# the checkboxes to set the initial conditions, and
+# instead will default to the variable settings
+# above.
+# --------------------------------------------------
+if resubmit == True:
 	try:
 		flag = form['signature'].value
 		randsigs = True
@@ -202,12 +209,20 @@ for el in l1:
 # prevents users of the page from using aa_macro's more powerful
 # square-bracket commands directly and putting the host at risk.
 # --------------------------------------------------------------
-metaleft = u'7G6H7f9sJJq'
-metaright= u'8fgh36vhd0x'
+metaleft = u'7G6H7f9sJJqhdfudf67'
+metaright= u'8fgh36vhd0x7887fgsz'
 def nosquares(text):
 	global metaleft,metaright
 	text = text.replace('[',metaleft)
 	text = text.replace(']',metaright)
+	return text
+
+# Restores square brackets, post aa_macro processing
+# --------------------------------------------------
+def repsquares(text):
+	global metaleft,metaright
+	text = text.replace(metaleft,'[')
+	text = text.replace(metaright,']')
 	return text
 
 # This converts character entities into actual unicode
@@ -242,15 +257,6 @@ def subents(text):
 				o += accum
 				state = 0
 	return o
-
-
-# Restores braces, post aa_macro processing
-# -----------------------------------------
-def repsquares(text):
-	global metaleft,metaright
-	text = text.replace(metaleft,'[')
-	text = text.replace(metaright,']')
-	return text
 
 # Converts a unicode string to an ASCII string, replacing any
 # characters > 127 with the appropriate character entity.
