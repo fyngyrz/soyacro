@@ -44,6 +44,7 @@ ADA,,Americans with Disabilities Act (US)
 AD,,Anno Domini (in the year of the Lord)
 ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
+AES,,Advanced Encryption Standard
 AFAIK,,As Far As I Know
 AF,,Audio Frequency
 AFK,,Away From Keyboard
@@ -73,6 +74,7 @@ APRS,,Automatic Packet Reporting System
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
 ARRL,,American Radio Relay League (Amatuer radio)
+ASAP,,As Soon As Possible
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
 ASPCA,,American Society for the Prevention of Cruelty to Animals
@@ -103,6 +105,7 @@ BP,,Blood Pressure
 BS,,Bachelor of Science; BullShit
 BSD,,Berkeley Software Distribution
 BSOD,,Blue Screen Of Death
+BTC,,BiTCoin
 BTW,,By The Way
 BW,,Black and White (imaging); Bandwidth
 BYOB,,Bring Your Own Bottle
@@ -123,6 +126,7 @@ CE,,Current Era
 CEO,,Chief Executive Officer
 CEQA,,California Environmental Quality Act (US)
 CERN,,European Organization for Nuclear Research (French orig.)
+CES,,Consumer Electronics Show
 CFC,,ChloroFluoroCarbon
 CFO,,Chief Financial Officer
 CGI,,Common Gateway Interface, also Computer Generated Imagery
@@ -131,6 +135,7 @@ CIO,,Chief Information Officer
 CIS,,Cisgender - where sense of identity corresponds to birth sex
 CIT,,California Institute of Technology
 CMOS,,Complementary Metal Oxide Semiconductor
+CMS,,Content Management System
 CMY,,Cyan, Magenta, Yellow
 CMYK,,Cyan, Magenta, Yellow, Black
 CNC,,Computer Numeric Control (manufacturing tools)
@@ -243,6 +248,7 @@ EUVL,,Extreme UltraViolet Lithography
 EV,,Electric Vehicle
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
+FAI,,World Air Sports Federation (Swiss)
 FAQ,,Frequently Asked Questions
 FAS,,Fetal Alcohol Syndrome
 FAX,,Facsimile transmission
@@ -326,6 +332,7 @@ HMCS,,Her Majesty's Canadian Ship
 HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
+HPC,,High-Performance Computing
 HPV,,Human Papilloma Virus
 HQ,,HeadQuarters
 HR,,Human Resources
@@ -385,6 +392,7 @@ IOS,iOS,An Apple Operating System.
 IOT,,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address); Intellectual Property
+IPC,,InterProcess Communications
 IPO,,Initial Public Offering
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
@@ -414,6 +422,7 @@ KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
 KISS,,Keep It Simple, Stupid
+KJV,,King James Version (English language bible)
 KMS,,Kilometers; Knowledge Management System
 KPH,,Kilometers Per Hour
 KS,,Kansas (USA)
@@ -450,6 +459,7 @@ MA,,Massachusetts (USA)
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MAMR,,Microwave-Assisted Magnetic Recording
 MB,,Megabyte; Manitoba (Canada)
+MC,,Midnight Commander (software)
 MD,,Maryland (USA); Medical Doctor
 MDT,,Mountain Daylight Time
 ME,,Maine (USA)
@@ -507,6 +517,7 @@ NJ,,New Jersey (USA)
 NL,,New Brunswick; New Line
 NM,,New Mexico (USA); Never Mind
 NN,,Network Neutrality
+NNTP,,Network News Transfer Protocol
 NOAA,,National Oceanic and Atmospheric Administration (US)
 NOT,,NOT gate: input 1 = output in opposite state
 NPC,,Non-Player Character; National People's Congress (China)
@@ -652,6 +663,7 @@ SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
+SOTA,,State Of The Art
 SP,,Spelling
 SPID,,Service Profile Identifier
 SQL,,Structured Query Language (for databases)
@@ -661,9 +673,11 @@ SSA,,Social Security Administration (US)
 SSB,,Single SideBand
 SSD,,Solid State Disk
 SSH,,Secure SHell
+SSID,,Service Set IDentifier
 SSL,,Secure Sockets Layer
 SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
+SST,,SuperSonic Transport
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
 SVG,,Scalable Vector Graphics
@@ -696,6 +710,7 @@ TLS,,Transport Layer Security
 TM,,TradeMark
 TMI,,Too Much Information
 TN,,Tennessee (USA)
+TOR,,The Onion Router
 TOS,,Terms Of Service
 TPP,,Trans-Pacific Partnership
 TPU,,Tensor Processing Unit
@@ -746,6 +761,7 @@ VIP,,Very Important Person
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory
+VOD,,Video On Demand
 VOIP,VoIP,Voice over IP
 VP,,Vice President
 VPN,,Virtual Private Network
