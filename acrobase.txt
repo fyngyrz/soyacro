@@ -738,6 +738,7 @@ UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
 UK,,United Kingdom
 UL,,Underwriter's Labratories
+ULA,,United Launch Alliance
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
 UPS,,Uninterruptible Power Supply|United Parcel Service
