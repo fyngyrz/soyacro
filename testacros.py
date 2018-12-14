@@ -73,7 +73,7 @@ for line in data:
 				if di.get(key,'') != '':
 					errors += 'duplicate key %s at line %d\n' % (key,ln)
 				di[key] = expansion
-			sublist = expansion.split(';')
+			sublist = expansion.split('|')
 			dc = len(sublist)
 			defcount += dc
 			if dc > 1:

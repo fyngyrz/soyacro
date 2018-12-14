@@ -213,7 +213,7 @@ for el in l1:
 						term = alternate
 					if acros.get(key,'') != '':
 						errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-					alist = expansion.split(';')
+					alist = expansion.split('|')
 					if len(alist) == 1:
 						acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
 					else:

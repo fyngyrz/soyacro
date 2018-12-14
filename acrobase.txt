@@ -5,10 +5,10 @@
 #    A-SINGLE-COMMA
 #    Nothing OR replacement for term, ie MHZ,MHz,Megahertz
 #    A-SINGLE-COMMA
-#    Expansion, separate multiples with ';'.
+#    Expansion, separate multiples with '|'. Use &#124; for actual pipes.
 # Examples:
 #    MHZ,MHz,Megahertz
-#    AL,,Alabama (USA); Artificial Life
+#    AL,,Alabama (USA)|Artificial Life
 # -----------------------------------------------------------------------------
 
 1802,,An RCA 8-bit CPU
@@ -31,10 +31,10 @@ A320,,A passenger aircraft
 AA,,Alcoholics Anonymous
 AB,,Alberta (Canada)
 ABA,,American Bar Association
-ABC,,American Broadcasting Company; Australian Broadcasting Corporation
+ABC,,American Broadcasting Company|Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 ABS,,Automatic Braking System
-AC,,Anonymous Coward; Alternating Current; Air Conditioning
+AC,,Anonymous Coward|Alternating Current|Air Conditioning
 ACA,,Affordable Care Act (US, AKA Obamacare)
 ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
@@ -49,17 +49,17 @@ AFAIK,,As Far As I Know
 AF,,Audio Frequency
 AFK,,Away From Keyboard
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
-AG,,Attorney General; Aerographer's mate (US navy)
+AG,,Attorney General|Aerographer's mate (US navy)
 AGU,,American Geophysical Union
 AGW,,Antropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
 AKA,,Also Known As
 AK,,Alaska (USA)
-AL,,Alabama (USA); Artificial Life
+AL,,Alabama (USA)|Artificial Life
 ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AMA,,Ask Me Anything
-AM,,Amplitude Modulation; Ante Meridiem - before midday
+AM,,Amplitude Modulation|Ante Meridiem - before midday
 AMD,,American Micro Devices
 AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
@@ -69,7 +69,7 @@ AOL,,America OnLine (a digital services provider)
 AP,,Access Point
 APFS,,APple File System
 API,,Application Programmer Interface
-APL,,A Programming Language; APpLe stock symbol
+APL,,A Programming Language|APpLe stock symbol
 APRS,,Automatic Packet Reporting System
 AR,,Arkansas (USA)
 ARM,,A class of CPUs
@@ -79,12 +79,12 @@ ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
 ASPCA,,American Society for the Prevention of Cruelty to Animals
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
-ATM,,Automated Teller Machine; At The Moment; Asynchronous Transfer Mode
+ATM,,Automated Teller Machine|At The Moment|Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 ATV,,All Terrain Vehicle
-AU,,Astronomical Unit; Australia
+AU,,Astronomical Unit|Australia
 AV,,Autonomous Vehicle
-AWG,,Atmospheric Water Generator; American Wire Gauge
+AWG,,Atmospheric Water Generator|American Wire Gauge
 AWOL,,Absent Without Official Leave
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
@@ -93,7 +93,7 @@ BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BB,,A small, round projectile
 BBC,,British Broadcasting Corporation
 BBIAB,,Be Back In A Bit
-BC,,British Columbia (Canada); Before Christ
+BC,,British Columbia (Canada)|Before Christ
 BCB,,BroadCast Band
 BCC,,Blind Carbon Copy
 BFE,,Bum Fuck Egypt (middle of nowhere)
@@ -102,23 +102,23 @@ BI,,Bisexual
 BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure
-BS,,Bachelor of Science; BullShit
+BS,,Bachelor of Science|BullShit
 BSD,,Berkeley Software Distribution
 BSOD,,Blue Screen Of Death
 BTC,,BiTCoin
 BTW,,By The Way
-BW,,Black and White (imaging); Bandwidth
+BW,,Black and White (imaging)|Bandwidth
 BYOB,,Bring Your Own Bottle
 CA,,California (USA)
-CAD,,Computer Aided Design; CAnadian Dollars
+CAD,,Computer Aided Design|CAnadian Dollars
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CB,,Citizen's Band radio
-CBC,,Canadian Broadcasting Corporation; Complete Blood Count; Criminal Background Check; Congressional Black Caucus
+CBC,,Canadian Broadcasting Corporation|Complete Blood Count|Criminal Background Check|Congressional Black Caucus
 CBD,,Cannabidiol
 CBP,,Customs and Border Protection (US)
 CBS,,Columbia Broadcasting System
-CC,,Carbon Copy; Credit Card; Creative Commons
-CCTV,,Closed Circuit TeleVision; China Central Television
+CC,,Carbon Copy|Credit Card|Creative Commons
+CCTV,,Closed Circuit TeleVision|China Central Television
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
 CDT,,Central Daylight Time
@@ -142,7 +142,7 @@ CNC,,Computer Numeric Control (manufacturing tools)
 CNN,,Cable News Network
 CNSA,,China National Space Administration
 CO2,,1 carbon atom, 2 oxygen atoms: Carbon Dioxide
-CO,,Colorado (USA); Carbon Monoxide
+CO,,Colorado (USA)|Carbon Monoxide
 COBOL,,Common Business-Oriented Language
 COD,,Cash On Delivery
 COM,,COMmunications
@@ -158,11 +158,11 @@ CRT,,Cathode Ray Tube
 CS,,Computer Science
 CSS,,Cascading Style Sheet - a means to indirectly format HTML
 CST,,Central Standard Time
-CT,,Connecticut (USA); Central Time
+CT,,Connecticut (USA)|Central Time
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
-CV,,Computer Vision; Curriculum Vitae (latin: "course of life")
+CV,,Computer Vision|Curriculum Vitae (latin: "course of life")
 CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
@@ -171,7 +171,7 @@ DAC,,Digital to Analog Converter
 DARPA,,Defense Advanced Research Projects Agency
 DB,,Database
 DBMS,,Database Management System
-DC,,Direct Current; Washington DC (District of Columbia) (USA)
+DC,,Direct Current|Washington DC (District of Columbia) (USA)
 DD,,2-digit day, 01-31
 DDOS,DDoS,Distributed Denial of Service
 DEA,,Drug Enforcement Agency (US)
@@ -187,20 +187,20 @@ DJ,,Disc Jockey
 DMA,,Direct Memory Access
 DMR,,Digital Mobile Radio
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
-DNC,,Democratic National Convention; Democratic National Committee
+DNC,,Democratic National Convention|Democratic National Committee
 DNS,,Domain Name System
 DOB,,Date Of Birth
 DOD,,Department Of Defense (US)
 DOE,,Department Of Energy (US)
 DOH,DoH,DNS-over-HTTPS
-DOI,,Department of the Interior (US); Digital Object Identifier
+DOI,,Department of the Interior (US)|Digital Object Identifier
 DOJ,,Department Of Justice (US)
-DOS,,Disk Operating System; Denial Of Service
+DOS,,Disk Operating System|Denial Of Service
 DOT,,Department Of Transportation (US)
 DPI,,Dots Per Inch
 DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
 DR,,Didn't Read
-DRM,,Digital Rights Management; Digital Radio Mondial (a digital broadcast format)
+DRM,,Digital Rights Management|Digital Radio Mondial (a digital broadcast format)
 DSL,,Digital Subscriber Line
 DSLR,,Digital Single-Lens Reflex (camera)
 DSS,,Data Security Standard
@@ -241,7 +241,7 @@ ESA,,European Space Agency
 ESC,,Escape key or keycode $1B
 ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
-ET,,Eastern Time; Extra-Terrestrial
+ET,,Eastern Time|Extra-Terrestrial
 EU,,European Union
 EULA,,End User License Agreement
 EUVL,,Extreme UltraViolet Lithography
@@ -290,20 +290,20 @@ GA,,Georgia (USA)
 GAN,,Generative Adversarial Network
 GAO,,Government Accountability Office (US)
 GB,,Gigabyte
-GCC,,GNU Compiler Collection; Gulf Cooperation Council
+GCC,,GNU Compiler Collection|Gulf Cooperation Council
 GCHQ,,Government Communications HeadQuarters (UK)
 GDP,,Gross Domestic Product
 GDPR,,General Data Protection Regulation (EU)
 GFLOPS,,Giga FLoating Point OPerations per Second
 GHZ,GHz,Gigahertz - Billions of cycles per second
 GIF,,Graphics Interchange Format - stores either still or animated images
-GI,,Gastro-Intestinal; soldier, rank of private, US army (from "Galvanized Iron")
+GI,,Gastro-Intestinal|soldier, rank of private, US army (from "Galvanized Iron")
 GIGO,,Garbage In, Garbage Out
-GM,,General Motors; General Manager
+GM,,General Motors|General Manager
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GNU,,GNU's Not Unix (a recursive definition!)
 GOP,,Grand Old Party (Republican party, USA)
-GP,,GrandParent (usually parent of parent post); General Practitioner (medical)
+GP,,GrandParent (usually parent of parent post)|General Practitioner (medical)
 GPH,,Gallons Per Hour
 GPIO,,General Purose Input Output
 GPL,,General Public License
@@ -331,14 +331,14 @@ HM,,Her Majesty
 HMCS,,Her Majesty's Canadian Ship
 HMS,,Her Majesty's Ship
 HOA,,Home Owner's Association
-HP,,Hewlett-Packard (company); Highway Patrol (officer); HorsePower
+HP,,Hewlett-Packard (company)|Highway Patrol (officer)|HorsePower
 HPC,,High-Performance Computing
 HPV,,Human Papilloma Virus
 HQ,,HeadQuarters
 HR,,Human Resources
 HRW,,Human Rights Watch
 HT,,Handie-Talky, AKA Walkie-Talkie - a handheld radio transceiver
-HTH,,Hope That Helped; Here To Help
+HTH,,Hope That Helped|Here To Help
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
 HTML4,,HyperText Markup Language version 4
@@ -348,7 +348,7 @@ HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
 HUD,,Housing and Urban Development
 HVM,,High Volume Manufacturing
-HWP,,HighWay Patrol; Height Weight Proportional
+HWP,,HighWay Patrol|Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
 IANAL,,I Am Not A Lawyer
@@ -357,16 +357,16 @@ IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
 ICBM,,Intercontinental Ballistic Missile
 ICE,,Immigration and Customs Enforcement (US)
-IC,,Integrated Circuit; Insenstive Clod
+IC,,Integrated Circuit|Insenstive Clod
 ICMP,,Internet Control Message Protocol
 IDC,,I Don't Care
 IDE,,Integrated Development Environment (for example editor + compiler + linker)
 IDF,,Israel Defense Forces
 IDGAD,,I Don't Give A Damn
 IDGAF,,I Don't Give A Fuck
-ID,,Idaho (USA); Identification
+ID,,Idaho (USA)|Identification
 IDK,,I Don't Know
-IE,,Internet Explorer; IE sometimes for i.e., is id est "for example""
+IE,,Internet Explorer|IE sometimes for i.e., is id est "for example""
 IE2,,Internet Explorer v2
 IE3,,Internet Explorer v3
 IE4,,Internet Explorer v4
@@ -393,13 +393,13 @@ IOC,,International Olympic Committee
 IOS,iOS,An Apple Operating System.
 IOT,,Internet Of Things
 IOW,,In Other Words
-IP,,Internet Protocol (often a specific Internet address); Intellectual Property
+IP,,Internet Protocol (often a specific Internet address)|Intellectual Property
 IPC,,InterProcess Communications
 IPO,,Initial Public Offering
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
-IQ,,Intelligence Quotient; I/Q phases of data encoding
-IRA,,Individual Retirement Account; Irish-Republican Army
+IQ,,Intelligence Quotient|I/Q phases of data encoding
+IRA,,Individual Retirement Account|Irish-Republican Army
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
@@ -419,20 +419,20 @@ JPL,,Jet Propulsion Labratory (US)
 JRE,,Java Runtime Environment
 JSON,,A file format designed to hold human- and machine-readable data
 K12,,Kindergarten to 12th grade
-KB,,Kilobyte; Knowledge Base
+KB,,Kilobyte|Knowledge Base
 KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
 KISS,,Keep It Simple, Stupid
 KJV,,King James Version (English language bible)
-KMS,,Kilometers; Knowledge Management System
+KMS,,Kilometers|Knowledge Management System
 KPH,,Kilometers Per Hour
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
 KWH,kWh,kiloWatt-Hour
 KW,kW,kiloWatt
 KY,,Kentucky (USA)
-LA,,Louisiana (USA); Los Angeles (California, USA)
+LA,,Louisiana (USA)|Los Angeles (California, USA)
 LAN,,Local Area Network
 LAPD,,Los Angeles Police Department
 LASER,,Light Amplification by Stimulated Emission of Radiation
@@ -460,15 +460,15 @@ MAC,,Media Access Control address
 MA,,Massachusetts (USA)
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MAMR,,Microwave-Assisted Magnetic Recording
-MB,,Megabyte; Manitoba (Canada)
+MB,,Megabyte|Manitoba (Canada)
 MC,,Midnight Commander (software)
-MD,,Maryland (USA); Medical Doctor
+MD,,Maryland (USA)|Medical Doctor
 MDT,,Mountain Daylight Time
 ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
 MF,,Medium Frequency: 300-3000 KHz
 MHZ,MHz,Megahertz - Millions of cycles per second
-MI,,Michigan (USA); Machine Intelligence
+MI,,Michigan (USA)|Machine Intelligence
 MI6,,Secret Intelligence Service (UK, also know as SIS)
 MIA,,Missing In Action
 MIC,,Miltary Industrial Complex
@@ -486,12 +486,12 @@ MOS,,Metal Oxide Semiconductor
 MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
-MP,,MegaPixel; Member of Parliament
-MS,,Mississippi (USA); MicroSoft
+MP,,MegaPixel|Member of Parliament
+MS,,Mississippi (USA)|MicroSoft
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
 MST,,Mountain Standard Time
-MT,,Montana (USA); Mountain Time
+MT,,Montana (USA)|Mountain Time
 MTBF,,Mean Time Between Failures
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
 MW,,Medium Wave
@@ -506,7 +506,7 @@ NC,,North Carolina (USA)
 NCA,,Non-Compete Agreement
 NDA,,Non Disclosure Agreement
 ND,,North Dakota (USA)
-NE,,Nebraska (USA); NorthEast
+NE,,Nebraska (USA)|NorthEast
 NFW,,No Fucking Way
 NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
@@ -516,13 +516,13 @@ NIH,,Not Invented Here
 NIMBY,,Not In My Back Yard
 NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
-NL,,New Brunswick; New Line
-NM,,New Mexico (USA); Never Mind
+NL,,Netherlands|New Brunswick (Canada)|New Line
+NM,,New Mexico (USA)|Never Mind
 NN,,Network Neutrality
 NNTP,,Network News Transfer Protocol
 NOAA,,National Oceanic and Atmospheric Administration (US)
 NOT,,NOT gate: input 1 = output in opposite state
-NPC,,Non-Player Character; National People's Congress (China)
+NPC,,Non-Player Character|National People's Congress (China)
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
@@ -532,7 +532,7 @@ NSA,,National Security Agency (US)
 NSFW,,Not Safe For Work
 NS,,Nova Scotia (Canada)
 NTS,,Note To Self
-NTSC,,National Television System Committee; Never Twice the Same Color
+NTSC,,National Television System Committee|Never Twice the Same Color
 NTSB,,National Transportation Safety Board
 NTW,,Not To Worry
 NU,,Nunavut (Canada)
@@ -544,13 +544,13 @@ NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYPD,,New York city Police Department
 NYT,,New York Times
-NZ,,New Zealand; Non-Zero
-OC,,Organized Crime; Original Content
+NZ,,New Zealand|Non-Zero
+OC,,Organized Crime|Original Content
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
 OH,,Ohio (USA)
 OIG,,Office of the Inspector General (US DOJ)
-OK,,Oklahoma (USA); "Okay"
+OK,,Oklahoma (USA)|"Okay"
 OJT,,On the Job Training
 OLED,,Organic Light Emitting Diode
 OMB,,Office of Management and Budget (US)
@@ -558,11 +558,11 @@ OMG,,Oh My God
 ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
 OPEC,,Organization of Petroleum Exporting Countries
-OP,,Original Poster; OPerator
-OR,,Oregon (USA); OR gate: input 1 OR input 2 = output
+OP,,Original Poster|OPerator
+OR,,Oregon (USA)|OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
-OS,,Operating System; Open-Source (software)
+OS,,Operating System|Open-Source (software)
 OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
@@ -574,14 +574,14 @@ PCI,,Payment Card Industry
 PC,,Personal Computer
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
-PDA,,Personal Digital Assitant; Public Display of Affection
+PDA,,Personal Digital Assitant|Public Display of Affection
 PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
 PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
 PITA,,Pain In The Ass
-PM,,Prime Minister; Post Meridiem - after midday
+PM,,Prime Minister|Post Meridiem - after midday
 PNAS,,Proceedings of the National Academy of Sciences
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
@@ -590,7 +590,7 @@ POV,,Point Of View
 PPI,,Pixels Per Inch
 PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
-PR,,Pull Request - source code alteration submission; Public Relations; Puerto Rico
+PR,,Pull Request - source code alteration submission|Public Relations|Puerto Rico
 PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
@@ -602,8 +602,8 @@ QSL,,Radio shorthand for response
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
-RC,,Resistor-Capacitor; Radio Control(ed)
-RCA,,Radio Corporation of America; an audio / low RF connector
+RC,,Resistor-Capacitor|Radio Control(ed)
+RCA,,Radio Corporation of America|an audio / low RF connector
 RDS,,Radio Data System
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
@@ -625,7 +625,7 @@ RPG,,Role Playing Game
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
-RV,,Research Vessel; Recreational Vehicle
+RV,,Research Vessel|Recreational Vehicle
 RX,,Receive
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
@@ -633,17 +633,17 @@ SCOTUS,,Supreme Court Of The United States
 SCUBA,,Self-Contained Underwater Breathing Apparatus
 SC,,South Carolina (USA)
 SDR,,Software Defined Radio
-SD,,South Dakota (USA); Secure Digital
+SD,,South Dakota (USA)|Secure Digital
 SDK,,Software Development Kit
 SE,,SouthEast
 SEC,,Securities and Exchange Commission (US)
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
-SF,,Science Fiction or less accurately Speculative Fiction; San Francisco (California)
+SF,,Science Fiction or less accurately Speculative Fiction|San Francisco (California)
 SFWA,,Science Fiction Writers of America
 SFW,,Safe For Work
 SHF,,Super High Frequency: 3-30 GHz
-SIG,,Special Interest Group; Signature
+SIG,,Special Interest Group|Signature
 SIMM,,Single Inline Memory Module
 SIS,,Secret Intelligence Service (UK, also know as MI6)
 SJW,,Social Justice Warrior
@@ -656,7 +656,7 @@ SMB,,Server Message Block
 SMC,,Surface Mount Component
 SMD,,Surface Mount Device
 SMH,,Suck Me Hard
-SMP,,Surface Mount Package; Symmetric Multi-Process(ing/or)
+SMP,,Surface Mount Package|Symmetric Multi-Process(ing/or)
 SMS,,Short Message Service
 SMT,,Surface Mount Technology
 SN,,Soylent News
@@ -670,7 +670,7 @@ SP,,Spelling
 SPID,,Service Profile Identifier
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
-SS,,Secret Service; SteamShip
+SS,,Secret Service|SteamShip
 SSA,,Social Security Administration (US)
 SSB,,Single SideBand
 SSD,,Solid State Disk
@@ -683,7 +683,7 @@ SST,,SuperSonic Transport
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
 SVG,,Scalable Vector Graphics
-SW,,Shortwave (radio); SouthWest
+SW,,Shortwave (radio)|SouthWest
 SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
@@ -719,11 +719,11 @@ TPU,,Tensor Processing Unit
 TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TSMC,,Taiwan Semiconductor Manufacturing Company
-TTL,,Transistor-Transistor Logic; Through The Lens; Time To Live
+TTL,,Transistor-Transistor Logic|Through The Lens|Time To Live
 TTYL,,Talk To You Later
 TTY,,Teletype
 TV,,Television
-TX,,Texas (USA); Transmit
+TX,,Texas (USA)|Transmit
 UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
 UCSD,,University of California, San Diego
@@ -735,11 +735,11 @@ UK,,United Kingdom
 UL,,Underwriter's Labratories
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
-UPS,,Uninterruptible Power Supply; United Parcel Service
+UPS,,Uninterruptible Power Supply|United Parcel Service
 URI,,Uniform Resource Identifier
 URL,,Uniform Resource Locator
 USAF,,United States Air Force
-USA,,United States of America; United States Army
+USA,,United States of America|United States Army
 USB2,,Universal Serial Bus v2
 USB3,,Universal Serial Bus v3
 USB,,Universal Serial Bus
@@ -754,7 +754,7 @@ USSR,,United Soviet Socialist Republics
 US,,United States (of America)
 UTC,,Universal Coordinated Time
 UT,,Utah (USA)
-VA,,Virgina (USA); Veteran's Administration (US)
+VA,,Virgina (USA)|Veteran's Administration (US)
 VC,,Venture Capitalist
 VFO,,Variable Frequency Oscillator
 VHF,,Very High Frequency: 30-300 MHz
@@ -762,7 +762,7 @@ VIN,,Vehicle Identification Number
 VIP,,Very Important Person
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
-VM,,Virtual Memory; Virtual Machine
+VM,,Virtual Memory|Virtual Machine
 VOD,,Video On Demand
 VOIP,VoIP,Voice over IP
 VP,,Vice President
@@ -777,7 +777,7 @@ WA,,Washington (USA)
 WAC,,Worked All Countries (amatuer radio)
 WAS,,Worked All States (amatuer radio)
 WBC,,White Blood Count
-WC,,Water Closet (bathroom); Waist Circumference
+WC,,Water Closet (bathroom)|Waist Circumference
 WEC,,Wave Energy Converter
 WFM,,Wide FM (generally 200 KHz wide broadcast format)
 WH,,White House (US)

@@ -17,7 +17,7 @@ be adding to it regularly. Better yet, submit your additions here as a
 pull request, and we all win. Here's the format for a line to do that, where
 [] indicates optional:
 
-> term,[replacement],expansion[;expansion]
+> term,[replacement],expansion[|expansion]
 
 You can produce output that is comprised more than just all-caps and/or
 numbers by using the second field, the optional replacement. The only
@@ -31,6 +31,11 @@ instance, this line in the `acrobase.txt` file...
 ...sets things up so that when you enter TLDR in your post source, the
 output post will contain the string `TL;DR:` instead, which corresponds
 with the actual common usage.
+
+You separate multiple expansion definitions using the pipe character: \(`|`\)
+
+If you need to use the pipe character itself in an expansion definition, use
+the HTML entity: \(`&#124;`\)
 
 There is also a built-in macro processor that lets you build shortcuts
 for anything, signatures, etc., so you can make richer posts more easily.
