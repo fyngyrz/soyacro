@@ -35,7 +35,7 @@ ABC,,American Broadcasting Company; Australian Broadcasting Corporation
 ABM,,Anti-Ballistic Missile
 ABS,,Automatic Braking System
 AC,,Anonymous Coward; Alternating Current; Air Conditioning
-ACA,,Affordable Care Act (US)
+ACA,,Affordable Care Act (US, AKA Obamacare)
 ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
 ACS,,American Chemical Society
