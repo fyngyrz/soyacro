@@ -46,6 +46,7 @@ ADC,,Analog to Digital Converter
 ADD,,Attention Deficit Disorder
 AFAIK,,As Far As I Know
 AF,,Audio Frequency
+AFK,,Away From Keyboard
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AG,,Attorney General; Aerographer's mate (US navy)
 AGU,,American Geophysical Union
@@ -206,6 +207,7 @@ ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
 ECU,,Engine Control Unit
 EDT,,Eastern Daylight Time
+EE,,Electrical/Electronic Engineering
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
 EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only, but can be erased
@@ -586,8 +588,8 @@ QSL,,Radio shorthand for response
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
+RC,,Resistor-Capacitor; Radio Control(ed)
 RCA,,Radio Corporation of America; an audio / low RF connector
-RC,,Radio Control(ed)
 RDS,,Radio Data System
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
@@ -712,6 +714,7 @@ UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
 UK,,United Kingdom
+UL,,Underwriter's Labratories
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
 UPS,,Uninterruptible Power Supply; United Parcel Service
