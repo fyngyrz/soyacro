@@ -760,7 +760,7 @@ VIN,,Vehicle Identification Number
 VIP,,Very Important Person
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
-VM,,Virtual Memory
+VM,,Virtual Memory; Virtual Machine
 VOD,,Video On Demand
 VOIP,VoIP,Voice over IP
 VP,,Vice President
