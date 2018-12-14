@@ -684,7 +684,7 @@ SSID,,Service Set IDentifier
 SSL,,Secure Sockets Layer
 SSN,,Social Security Number
 SSO,,Sun Synchronous Orbit
-SST,,SuperSonic Transport
+SST,,SuperSonic Transport|Space Ship Two
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
 SVG,,Scalable Vector Graphics
