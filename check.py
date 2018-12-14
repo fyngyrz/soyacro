@@ -8,6 +8,28 @@ import sys
 # ./check.py NAFTA CEO CPU
 # ./check.py NOTINHERE 73
 
+# Project Info:
+# =============
+#   Written by: fyngyrz - codes with magnetic needle
+#   Incep date: November 24th, 2018
+#  Last Update: December 14th, 2018 (this code file only)
+#  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
+# Source Files: soyacro.py, acrobase.txt (these may be renamed)
+#               check.py, testacros.py
+#  Tab Spacing: Set to 4 for sane readability of Python source
+#     Security: Suitable for benign users only (IOW, me.)
+#      Purpose: Creates informative <abbr> tag wraps around
+#               all-caps terms in the source text. Written
+#               to support use of <abbr> on soylentnews.org
+#               Also supports canned aa_macro styles via mfile
+#      License: None. Use as you will. PD, free, etc.
+# Dependencies: aa_webpage.py by fyngyrz
+#               aa_macro.py by fyngyrz
+#               standard Python cgi import library
+#               standard Python sys import library
+#               standard Python os import library
+# ----------------------------------------------------------
+
 errors = u''
 
 argc = len(sys.argv)
