@@ -327,7 +327,7 @@ Please do observe the ruminations at the top of this readme about security.
 
 ## Limitations and Design Choices
 
-This is a **Python** project. It incorporates another **Python** project,
+This is a **Python** project. It incorporates another **Python** public domain project of mine,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
 or unless I move that project to **Python3** \(not very likely, but someone
 else might undertake that\), **Python** will remain the target here.
