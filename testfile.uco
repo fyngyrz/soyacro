@@ -28,9 +28,9 @@ all-caps-and/or-digits.
 <TEXTAREA NAME="thetext" ROWS="20" COLS="80">skip this: &lt;abbr title="testing"&gt;DONTTREADONME&lt;/abbr&gt; uchar pizza: &amp;#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.</TEXTAREA>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKED>Use&nbsp;Macros<br>
+<INPUT TYPE="checkbox" NAME="showstyles"CHECKED>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature">Auto&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKED>Show&nbsp;Signatures<br>
-<INPUT TYPE="checkbox" NAME="showstyles"CHECKED>Show&nbsp;Macro&nbsp;Styles<br>
 <INPUT TYPE="checkbox" NAME="showexpansions">Show&nbsp;Expansions<br>
 <INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="20">&nbsp;Entry Lines<br>
 <INPUT TYPE="TEXT" NAME="reslines" SIZE="3" VALUE="20">&nbsp;Result Lines<br>
