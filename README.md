@@ -332,7 +332,7 @@ This is a **Python** project. It incorporates another public domain **Python** p
 or unless I move that project to **Python3** \(not very likely, but someone
 else might undertake that\), **Python** will remain the target here.
 
-Having said all that, by all means feel free to fork and go your own way
+Having said that, by all means feel free to fork and go your own way
 with either / both projects. The Github repo for the macro processor is
 [here](https://github.com/fyngyrz/aa_macro).
 
