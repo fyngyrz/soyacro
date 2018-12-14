@@ -598,6 +598,10 @@ PST,,Pacific Standard Time
 PSU,,Power Supply Unit
 PT,,Pacific Time
 PVC,,PolyVinyl Chloride
+Q1,,First Quarter
+Q2,,Second Quarter
+Q3,,Third Quarter
+Q4,,Fourth Quarter
 QC,,Quebec (Canada)
 QSL,,Radio shorthand for response
 RAID,,Redundant Array of Independent Disks
