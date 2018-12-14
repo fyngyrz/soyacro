@@ -258,6 +258,7 @@ FDA,,Food and Drug Administration (US)
 FDIC,,Federal Deposit Insurance Corporation (US)
 FEMA,,Federal Emergency Management Agency (US)
 FFS,,For Fuck's Sake
+FHA,,Federal Housing Administration (US)
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
 FLEX,,An OS for the 6800 and 6809 microprocessors
