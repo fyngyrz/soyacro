@@ -422,9 +422,9 @@ myform = u"""
 <TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
+<INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
-<INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macro&nbsp;Styles<br>
 <INPUT TYPE="checkbox" NAME="showexpansions"CHECKSHOWEXPANSIONS>Show&nbsp;Expansions<br>
 <INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="ENTLINES">&nbsp;Entry Lines<br>
 <INPUT TYPE="TEXT" NAME="reslines" SIZE="3" VALUE="RESLINES">&nbsp;Result Lines<br>
