@@ -105,6 +105,7 @@ BSD,,Berkeley Software Distribution
 BSOD,,Blue Screen Of Death
 BTW,,By The Way
 BW,,Black and White (imaging); Bandwidth
+BYOB,,Bring Your Own Bottle
 CA,,California (USA)
 CAD,,Computer Aided Design; CAnadian Dollars
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
