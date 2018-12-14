@@ -101,6 +101,22 @@ hidden = u''
 # --------------------------------------------------
 if resubmit == True:
 	try:
+		val = int(form['entlines'].value)
+		if val < 10: val = 10
+		elif val > 50: val = 50
+		entlines = val
+	except:
+		pass
+
+	try:
+		val = int(form['reslines'].value)
+		if val < 10: val = 10
+		elif val > 50: val = 50
+		reslines = val
+	except:
+		pass
+
+	try:
 		flag = form['signature'].value
 		randsigs = True
 	except:
@@ -410,6 +426,8 @@ myform = u"""
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macro&nbsp;Styles<br>
 <INPUT TYPE="checkbox" NAME="showexpansions"CHECKSHOWEXPANSIONS>Show&nbsp;Expansions<br>
+<INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="ENTLINES">&nbsp;Entry Lines<br>
+<INPUT TYPE="TEXT" NAME="reslines" SIZE="3" VALUE="RESLINES">&nbsp;Result Lines<br>
 <br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
 </div>
@@ -425,6 +443,8 @@ myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
 myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
 myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
 myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
+myform = myform.replace(u'ENTLINES',str(entlines))
+myform = myform.replace(u'RESLINES',str(reslines))
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
