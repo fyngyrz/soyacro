@@ -49,6 +49,7 @@ except:
 # Create a dictionary from the acronym / abbreviation file contents:
 # ------------------------------------------------------------------
 acros = {}
+altkeys = {}
 linecounter = 1
 l1 = acrobase.split(u'\n')
 for el in l1:
@@ -62,10 +63,10 @@ for el in l1:
 				if veri == True:
 					term = key
 					if alternate != u'':
-						term = alternate
+						altkeys[key] = alternate
 					if acros.get(key,'') != '':
 						errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-					acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
+					acros[key] = expansion
 				else:
 					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
 			except:
@@ -90,7 +91,16 @@ while len(loclist) > 0:
 			if res == '':
 				print '"' + tst + '" not in acronyms'
 			else:
-				print tst + ' : ' + res
+				ll = res.split('|')
+				if len(ll) == 1:
+					alt = altkeys.get(tst,'')
+					if alt != '': tst = alt
+					print tst + ' : ' + res
+				else:
+					n = 1
+					for el in ll:
+						print tst + ' (' + str(n) + '): ' + str(el)
+						n += 1
 		else:
 			print '"'+tst+'" is not a valid expansion key'
 	iput = raw_input(':')
