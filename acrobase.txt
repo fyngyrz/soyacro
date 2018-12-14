@@ -337,6 +337,7 @@ HPV,,Human Papilloma Virus
 HQ,,HeadQuarters
 HR,,Human Resources
 HRW,,Human Rights Watch
+HT,,Handie-Talky, AKA Walkie-Talkie - a handheld radio transceiver
 HTH,,Hope That Helped; Here To Help
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
