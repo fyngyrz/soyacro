@@ -318,6 +318,7 @@ HAMR,,Heat-Assisted Magnetic Recording
 HBO,,Home Box Office (US media)
 HD,,Hard Disk
 HDD,,Hard Disk Drive
+HDL,,Hardware Description Language
 HDMI,,High Definition Multimedia Interface
 HDR,,High Dynamic Range
 HEX,,Hexadecimal - base 16 numbers, used because one HEX digit conveniently equals four binary digits
@@ -579,6 +580,7 @@ PDA,,Personal Digital Assitant|Public Display of Affection
 PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
+PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
 PITA,,Pain In The Ass
