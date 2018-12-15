@@ -292,6 +292,7 @@ GAN,,Generative Adversarial Network
 GAO,,Government Accountability Office (US)
 GB,,Gigabyte
 GCC,,GNU Compiler Collection|Gulf Cooperation Council
+GCF,,Gender Critical Feminist
 GCHQ,,Government Communications HeadQuarters (UK)
 GDP,,Gross Domestic Product
 GDPR,,General Data Protection Regulation (EU)
@@ -701,6 +702,7 @@ TBD,,To Be Determined
 TBH,,To Be Honest
 TCPA,,Telecom Consumer Protection Act
 TDP,,Thermal Design Power or Point
+TERF,,Trans-Exlusionary Radical Feminist
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFC,,The Fucking Comments: bowdlerized, The Fine Comments
 TFLOPS,,Tera FLoating Point OPerations per Second
@@ -818,6 +820,8 @@ XML,,eXtensible Markup Language
 XMS,,Extended Memory Specification
 XOR,,XOR gate: input 1 not equal input 2 = output
 XTAL,,Crystal
+XX,,Female chromosomes
+XY,,Male chromosomes
 XXL,,eXtra eXtra Large
 XXXL,,eXtra eXtra eXtra Large
 YMMV,,Your Milage May Vary
