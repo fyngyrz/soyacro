@@ -413,6 +413,7 @@ ISP,,Internet Service Provider
 ISRO,,India Space Research Organisation
 ISS,,International Space Station
 IT,,Information Technology
+ITER,,International Thermonuclear Experimental Reactor
 IVF,,In Vitro Fertilization
 JFK,,John F. Kennedy
 JPEG,,A format for compressing image files.
@@ -598,6 +599,7 @@ PS,,PostScript
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
 PSU,,Power Supply Unit
+PSYOPS,,PSYchological OPerationS
 PT,,Pacific Time
 PVC,,PolyVinyl Chloride
 Q1,,First Quarter
