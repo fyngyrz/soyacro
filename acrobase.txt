@@ -798,8 +798,10 @@ WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
 WRT,,With Regard To
 WSJ,,Wall Street Journal (US newspaper)
+WTC,,World Trade Center
 WTF,,What The Fuck
 WTH,,What The Hell
+WTO,,World Trade Organization
 WV,,West Virginia (USA)
 WW1,,World War One
 WW2,,World War Two
