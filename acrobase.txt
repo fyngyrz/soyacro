@@ -168,6 +168,7 @@ CVSS,,Common Vulnerability Scoring System
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
+DACA,,Deferred Action for Childhood Arrivals
 DARPA,,Defense Advanced Research Projects Agency
 DB,,Database
 DBMS,,Database Management System
