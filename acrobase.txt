@@ -71,7 +71,7 @@ APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language|APpLe stock symbol
 APRS,,Automatic Packet Reporting System
-AR,,Arkansas (USA)
+AR,,Arkansas (USA)|Augmented Reality
 ARM,,A class of CPUs
 ARRL,,American Radio Relay League (Amatuer radio)
 ASAP,,As Soon As Possible
