@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 14th, 2018 (this code file only)
+#  Last Update: December 15th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -40,6 +40,7 @@ showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
+sigecho		= False				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 
@@ -84,6 +85,7 @@ checkshowsignatures=u''
 checkusemacros=u''
 checkshowexpansions=u''
 checkshowstyles=u''
+checksigecho=u''
 
 # Detect if this is a resubmit or an initial entry:
 # -------------------------------------------------
@@ -123,6 +125,12 @@ if resubmit == True:
 		randsigs = False
 
 	try:
+		flag = form['sigecho'].value
+		sigecho = True
+	except:
+		sigecho = False
+
+	try:
 		flag = form['showsignatures'].value
 		showsigs = True
 	except:
@@ -148,11 +156,13 @@ if resubmit == True:
 
 # Now set the checkmarks in the form:
 # -----------------------------------
-if showsigs == True: checkshowsignatures = u'CHECKED'
-if randsigs == True: checkautosignature = u'CHECKED'
-if usemacros == True: checkusemacros = u'CHECKED'
-if showacros == True: checkshowexpansions = u'CHECKED'
-if showstyles == True: checkshowstyles = u'CHECKED'
+chk = u'CHECKED'
+if showsigs == True: checkshowsignatures = chk
+if randsigs == True: checkautosignature = chk
+if usemacros == True: checkusemacros = chk
+if showacros == True: checkshowexpansions = chk
+if showstyles == True: checkshowstyles = chk
+if sigecho == True: checksigecho = chk
 
 # Read in the style definitions:
 # ------------------------------
@@ -434,6 +444,7 @@ myform = u"""
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
+<INPUT TYPE="checkbox" NAME="sigecho"CHECKSIGECHO>Echo&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
 <INPUT TYPE="checkbox" NAME="showexpansions"CHECKSHOWEXPANSIONS>Show&nbsp;Expansions<br>
 <INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="ENTLINES">&nbsp;Entry Lines<br>
@@ -441,6 +452,7 @@ myform = u"""
 <br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
 </div>
+PUTRSIGHERE
 <br><br>
 </div>
 </div>
@@ -450,6 +462,7 @@ myform = u"""
 myform = myform.replace(u'ENTLINES',unicode(str(entlines)))
 myform = myform.replace(u'CHECKSHOWSIGNATURES',checkshowsignatures)
 myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
+myform = myform.replace(u'CHECKSIGECHO',checksigecho)
 myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
 myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
 myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
@@ -472,16 +485,22 @@ mybody += myform							# form added to main page body
 mybody += u'<hr>'							# new output section
 tmp = makeacros(usertext)					# Now the post gets its acronyms
 testforsquigs(tmp)			# verify {macro} brace balance
+rsig = ''
 if aambase != '':			# here's the aa_macro processing, if braces balance
 	if randsigs == True:
 		if tmp[-1:] != u'\n':
 			tmp += u'\n'
-		tmp += u'\n{sig}'
+		rsig = mod.do('\n{sig}')
+		tmp += unicode(rsig)
 	tmp = nosquares(tmp)	# escape any square brackets
 	tmp = makeascii(tmp)	# aa_macro requires ASCII string
 	tmp = mod.do(tmp)		# process the {macros}
 	tmp = repsquares(tmp)	# replace the square brackets
 	tmp = makeraw(tmp)		# encode for the textarea
+if sigecho == False: rsig = ''
+else:
+	rsig = rsig.replace('\n','<br>')
+	rsig = '<div style="text-align:left;">'+rsig+'</div>'
 
 tmp = tmp.replace(u'&amp;#',u'&#')	# watch out for intended char entities
 tmp = subents(tmp)					# convert char entities into actual unicode
@@ -491,6 +510,10 @@ tmp = subents(tmp)					# convert char entities into actual unicode
 resform = u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="RESLINES" COLS="80">'+tmp+u'</TEXTAREA></div><br></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
+if rsig != '':
+	mybody = mybody.replace(u'PUTRSIGHERE',u'<br>'+unicode(rsig))
+else:
+	mybody = mybody.replace(u'PUTRSIGHERE',u'')
 
 # Report any errors:
 # ------------------
