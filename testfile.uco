@@ -30,6 +30,7 @@ all-caps-and/or-digits.
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKED>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKED>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature">Auto&nbsp;Signature<br>
+<INPUT TYPE="checkbox" NAME="sigecho">Echo&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKED>Show&nbsp;Signatures<br>
 <INPUT TYPE="checkbox" NAME="showexpansions">Show&nbsp;Expansions<br>
 <INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="20">&nbsp;Entry Lines<br>
@@ -37,6 +38,7 @@ all-caps-and/or-digits.
 <br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
 </div>
+
 <br><br>
 </div>
 </div>
