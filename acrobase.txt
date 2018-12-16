@@ -644,6 +644,7 @@ ROM,,Read-Only Memory - you can't write new information to this
 ROFLMAO,,Rolling On Floor Laughing My Ass Off
 ROTFL,,Rolling On The Floor Laughing
 ROTFLMAO,,Rolling On The Floor Laughing My Ass Off
+ROV,,Remotely Operated Vehicles
 RPG,,Role Playing Game
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
