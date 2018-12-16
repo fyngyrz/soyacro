@@ -815,6 +815,7 @@ WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
 WRT,,With Regard To
 WSJ,,Wall Street Journal (US newspaper)
+WSPR,,Weak Signal Propagation Reporter
 WTC,,World Trade Center
 WTF,,What The Fuck
 WTH,,What The Hell
