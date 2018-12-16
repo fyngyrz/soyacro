@@ -337,6 +337,7 @@ HIFI,HiFi,High Fidelity
 HI,,Hawaii (USA)
 HIG,,Human Interface Guidelines
 HIPAA,,Health Insurance Portability and Accountability Act (US)
+HIRISE,HiRISE,High Resolution Imaging Science Experiment
 HIV,,Human Immunodeficiency Virus
 HM,,Her Majesty
 HMCS,,Her Majesty's Canadian Ship
