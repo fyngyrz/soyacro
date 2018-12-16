@@ -494,6 +494,7 @@ MMORPG,,Massively Multiplayer Online Role-Playing Game
 MMU,,Memory Management Unit
 MN,,Minnesota (USA)
 MOAB,,Mother Of All Bombs - a very large fuel-air bomb
+MOBA,,Multiplayer Online Battle Arena
 MO,,Missouri (USA)
 MOS,,Metal Oxide Semiconductor
 MPAA,,Motion Picture Association of America
