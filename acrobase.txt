@@ -147,6 +147,7 @@ COBOL,,Common Business-Oriented Language
 COD,,Cash On Delivery
 COM,,COMmunications
 COO,,Chief Operating Officer
+COP,,Conference Of the Parties (UNFCCC)
 CP,,Child Porn
 CPM,CP/M,An OS for the 8080 microprocessor: Control Program for Microcomputers
 CPR,,CardioPulmonary Resusitation
@@ -203,10 +204,12 @@ DPI,,Dots Per Inch
 DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
 DR,,Didn't Read
 DRM,,Digital Rights Management|Digital Radio Mondial (a digital broadcast format)
+DSA,,Democratic Socialists of America
 DSL,,Digital Subscriber Line
 DSLR,,Digital Single-Lens Reflex (camera)
 DSS,,Data Security Standard
 DTMF,,Dual Tone Multi Frequency (touch-tone encoding)
+DUI,,Driving Under the Influence (of drugs)
 DUVL,,Deep UltraViolet Lithography
 DVD,,Digital Video Disk
 DVR,,Digital Video Recorder
@@ -216,6 +219,7 @@ ECG,,ElectroCardioGram
 ECU,,Engine Control Unit
 EDT,,Eastern Daylight Time
 EE,,Electrical/Electronic Engineering
+EEG,,Eastern European Group
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
 EEPROM,,Electrically Erasable Programmable Read-Only Memory - normally read-only, but can be erased
@@ -577,7 +581,7 @@ PAC,,Political Action Committee
 PA,,Pennsylvania (USA)
 PAL,,Phase Alternate Line video encoding
 PCI,,Payment Card Industry
-PC,,Personal Computer
+PC,,Personal Computer|Politically Correct
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
 PDA,,Personal Digital Assitant|Public Display of Affection
@@ -747,6 +751,7 @@ UI,,User Interface
 UK,,United Kingdom
 UL,,Underwriter's Labratories
 ULA,,United Launch Alliance
+UNFCCC,,United Nations Framework Convention on Climate Change
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
 UPS,,Uninterruptible Power Supply|United Parcel Service
