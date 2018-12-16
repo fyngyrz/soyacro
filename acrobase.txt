@@ -527,6 +527,7 @@ NIMBY,,Not In My Back Yard
 NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
 NL,,Netherlands|New Brunswick (Canada)|New Line
+NLP,,Natural Language Processing
 NM,,New Mexico (USA)|Never Mind
 NN,,Network Neutrality
 NNTP,,Network News Transfer Protocol
