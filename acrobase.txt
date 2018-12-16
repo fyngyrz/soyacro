@@ -768,7 +768,7 @@ US,,United States (of America)
 UTC,,Universal Coordinated Time
 UT,,Utah (USA)
 VA,,Virgina (USA)|Veteran's Administration (US)
-VC,,Venture Capitalist
+VC,,Venture Capital/Capitalist
 VFO,,Variable Frequency Oscillator
 VHF,,Very High Frequency: 30-300 MHz
 VIN,,Vehicle Identification Number
