@@ -58,7 +58,7 @@ AKA,,Also Known As
 AK,,Alaska (USA)
 AL,,Alabama (USA)|Artificial Life
 ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
-AMA,,Ask Me Anything
+AMA,,Ask Me Anything|Against Medical Advice|American Medical Association
 AM,,Amplitude Modulation|Ante Meridiem - before midday
 AMD,,American Micro Devices
 AMSAT,,AMateur SATellite Corporation
@@ -499,6 +499,7 @@ MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MP,,MegaPixel|Member of Parliament
+MRO,,Mars Reconnaissance Orbiter
 MS,,Mississippi (USA)|MicroSoft
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
