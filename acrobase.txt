@@ -317,6 +317,7 @@ GPH,,Gallons Per Hour
 GPIO,,General Purose Input Output
 GPL,,General Public License
 GPS,,Global Positioning System
+GT,,Grand Touring
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
 H1B,,Non-immigrant visa (US)
