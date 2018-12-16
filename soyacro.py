@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 15th, 2018 (this code file only)
+#  Last Update: December 16th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -33,14 +33,15 @@ cginame		= 'soyacro.py'		# this CGI filename
 ifile		= 'acrobase.txt'	# acronyms filename
 mfile		= 'aambase.txt'		# macros filename
 
-# Initial Web Page Options:
-# -------------------------
+# Initial Web Page Options -- effective on 1st entry from URL
+# These can be over-ridden by settings on the web page itself
+# -----------------------------------------------------------
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
-sigecho		= False				# echo the random signature to the page
+sigecho		= True				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 
@@ -163,6 +164,10 @@ if usemacros == True: checkusemacros = chk
 if showacros == True: checkshowexpansions = chk
 if showstyles == True: checkshowstyles = chk
 if sigecho == True: checksigecho = chk
+
+# Override autosigs if '{nsig ' is present
+if usertext.find('{nsig ') != -1:
+	randsigs = False
 
 # Read in the style definitions:
 # ------------------------------
@@ -444,7 +449,7 @@ myform = u"""
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
-<INPUT TYPE="checkbox" NAME="sigecho"CHECKSIGECHO>Echo&nbsp;Signature<br>
+<INPUT TYPE="checkbox" NAME="sigecho"CHECKSIGECHO>Echo&nbsp;Auto&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
 <INPUT TYPE="checkbox" NAME="showexpansions"CHECKSHOWEXPANSIONS>Show&nbsp;Expansions<br>
 <INPUT TYPE="TEXT" NAME="entlines" SIZE="3" VALUE="ENTLINES">&nbsp;Entry Lines<br>
