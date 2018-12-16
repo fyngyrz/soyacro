@@ -96,6 +96,7 @@ BBIAB,,Be Back In A Bit
 BC,,British Columbia (Canada)|Before Christ
 BCB,,BroadCast Band
 BCC,,Blind Carbon Copy
+BDAC,,Broadband Deployment Advisory Committee
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFR,,Big Fucking Rocket
 BI,,Bisexual
