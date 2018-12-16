@@ -159,6 +159,7 @@ CS,,Computer Science
 CSS,,Cascading Style Sheet - a means to indirectly format HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)|Central Time
+CTO,,Chief Technology Officer
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
 CUL,,See You Later
