@@ -13,6 +13,7 @@
 
 1802,,An RCA 8-bit CPU
 2D,,Two Dimensional
+2FA,,Two Factor Authentication
 3D,,Three Dimensional
 401K,401(k),Retirement savings plan
 411,,A shorthand for: Information
