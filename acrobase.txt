@@ -488,7 +488,7 @@ MI6,,Secret Intelligence Service (UK, also know as SIS)
 MIA,,Missing In Action
 MIC,,Miltary Industrial Complex
 MIDI,,Musical Instrument Digital Interface
-MIPS,,Millions of Instructions Per Second
+MIPS,,Millions of Instructions Per Second|Microprocessor without Interlocked Pipelined Stages
 MIT,,Massachusetts Institute of Technology
 MLB,,Major League Baseball
 MLK,,Martin Luther King
