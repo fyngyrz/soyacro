@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 16th, 2018 (this code file only)
+#  Last Update: December 17th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -33,9 +33,8 @@ cginame		= 'soyacro.py'		# this CGI filename
 ifile		= 'acrobase.txt'	# acronyms filename
 mfile		= 'aambase.txt'		# macros filename
 
-# Initial Web Page Options -- effective on 1st entry from URL
-# These can be over-ridden by settings on the web page itself
-# -----------------------------------------------------------
+# Initial Web Page Options:
+# -------------------------
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
@@ -59,6 +58,7 @@ import cgi,sys,os
 
 undict = {}
 errors = u''
+tiglist = ''
 
 if 'GATEWAY_INTERFACE' in os.environ:
 	cmdline = False
@@ -112,6 +112,16 @@ if resubmit == True:
 		pass
 
 	try:
+		val = form['iglist'].value
+		tiglist = val
+		if val == 'IGLIST':
+			tiglist = ''
+		tiglist = tiglist.replace(',',' ') # allow use of commas
+		tiglist = tiglist.upper()
+	except:
+		tiglist = ''
+
+	try:
 		val = int(form['reslines'].value)
 		if val < 10: val = 10
 		elif val > 50: val = 50
@@ -154,6 +164,7 @@ if resubmit == True:
 		showstyles = True
 	except:
 		showstyles = False
+
 
 # Now set the checkmarks in the form:
 # -----------------------------------
@@ -245,6 +256,17 @@ for el in l1:
 				errors += u'line '+str(linecounter)+u': '
 				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
 	linecounter += 1
+
+# remove any items in the ignore list:
+# ------------------------------------
+iglist = tiglist.split(' ')
+for el in iglist:
+	el = el.strip()
+	if el != '':
+		try:
+			del acros[el]
+		except:
+			pass
 
 # This removes all square braces prior to aa_macro processing.
 # That means that only styles can be used; and that, in turn,
@@ -444,7 +466,10 @@ myform = u"""
 <FORM ACTION="CGINAME" METHOD="POST">
 <div style="text-align: center;">
 <div>
-<TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA>
+<div style="float:left;">
+<TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
+Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
+PUTRSIGHERE</div>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
@@ -457,7 +482,6 @@ myform = u"""
 <br>
 <INPUT TYPE="SUBMIT" VALUE="Submit">
 </div>
-PUTRSIGHERE
 <br><br>
 </div>
 </div>
@@ -473,6 +497,7 @@ myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
 myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
 myform = myform.replace(u'ENTLINES',str(entlines))
 myform = myform.replace(u'RESLINES',str(reslines))
+myform = myform.replace(u'IGLIST',tiglist)
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
@@ -487,7 +512,7 @@ myform = myform.replace(u'TEXTBLOCK',tmp)	# goes into the entry form (again)
 mybody = makeraw(mybody)					# the text at the top of the page
 mybody = u'<p>'+makeacros(mybody)+u'</p>'	# gets the acronyms stuffed in
 mybody += myform							# form added to main page body
-mybody += u'<hr>'							# new output section
+#mybody += u'<hr>'							# new output section
 tmp = makeacros(usertext)					# Now the post gets its acronyms
 testforsquigs(tmp)			# verify {macro} brace balance
 rsig = ''
