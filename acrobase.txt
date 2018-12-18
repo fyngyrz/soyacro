@@ -103,7 +103,7 @@ BFR,,Big Fucking Rocket
 BI,,Bisexual
 BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
-BP,,Blood Pressure
+BP,,Blood Pressure|British Petroleum
 BS,,Bachelor of Science|BullShit
 BSD,,Berkeley Software Distribution
 BSOD,,Blue Screen Of Death
@@ -473,6 +473,7 @@ LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
+MAGA,,Make America Great Again
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MAMR,,Microwave-Assisted Magnetic Recording
 MB,,Megabyte|Manitoba (Canada)
@@ -508,6 +509,7 @@ MRO,,Mars Reconnaissance Orbiter
 MS,,Mississippi (USA)|MicroSoft
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
+MSRP,,Manufacturer Suggested Retail Price
 MST,,Mountain Standard Time
 MT,,Montana (USA)|Mountain Time
 MTBF,,Mean Time Between Failures
@@ -798,6 +800,7 @@ VIP,,Very Important Person
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory|Virtual Machine
+VOA,,Voice Of America (broadcast entity)
 VOD,,Video On Demand
 VOIP,VoIP,Voice over IP
 VP,,Vice President
@@ -821,6 +824,7 @@ WIFI,Wi-Fi,WLAN based on any of the 802.11 standards
 WI,,Wisonsin (USA)
 WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
+WNEW,,Prog rock FM station in NYC in the 1900's
 WRT,,With Regard To
 WSJ,,Wall Street Journal (US newspaper)
 WSPR,,Weak Signal Propagation Reporter
