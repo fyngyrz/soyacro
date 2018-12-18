@@ -617,6 +617,7 @@ PST,,Pacific Standard Time
 PSU,,Power Supply Unit
 PSYOPS,,PSYchological OPerationS
 PT,,Pacific Time
+PTSD,,Post Traumatic Stress Disorder
 PVC,,PolyVinyl Chloride
 Q1,,First Quarter
 Q2,,Second Quarter
