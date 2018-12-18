@@ -394,6 +394,7 @@ IE11,,Internet Explorer v11
 IED,,Improvised Explosive Device
 IEEE,,Institute of Electrical and Electronics Engineers
 IF,,Intermediate Frequency
+IHOP,,International House of Pancakes
 IIRC,,If I ReCall
 IIS,,Internet Information Services
 IL,,Illinois (USA)
