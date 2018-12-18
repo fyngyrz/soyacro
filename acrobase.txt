@@ -512,6 +512,7 @@ MT,,Montana (USA)|Mountain Time
 MTBF,,Mean Time Between Failures
 MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Programming System
 MW,,Medium Wave
+NAACP,,National Association for the Advancement of Colored People
 NAFTA,,North American Free Trade Agreement
 NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
