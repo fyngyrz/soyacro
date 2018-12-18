@@ -563,6 +563,7 @@ NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYPD,,New York city Police Department
+NYSE,,New York Stock Exchange
 NYT,,New York Times
 NZ,,New Zealand|Non-Zero
 OC,,Organized Crime|Original Content
@@ -578,6 +579,7 @@ OMG,,Oh My God
 ON,,Ontario (Canada)
 OOP,,Object Oriented Programming
 OPEC,,Organization of Petroleum Exporting Countries
+OPED,Op-Ed,(placed) Opposite of Editorial page: reader commentary
 OP,,Original Poster|OPerator
 OR,,Oregon (USA)|OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
