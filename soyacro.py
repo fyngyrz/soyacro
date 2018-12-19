@@ -40,8 +40,8 @@ usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
-randsigs	= True				# append a random signature when generating
-sigecho		= False				# echo the random signature to the page
+randsigs	= False				# append a random signature when generating
+sigecho		= True				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 
