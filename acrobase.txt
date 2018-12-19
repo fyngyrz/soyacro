@@ -19,6 +19,7 @@
 *,C,Capacitor
 *,CRT,Cathode Ray Tube
 *,D,Diode
+*,DSP,Digital Signal Processor
 *,F,Fuse
 *,FET,Field Effect Transistor
 *,IC,Integrated Circuit
@@ -250,6 +251,7 @@ DRM,,Digital Rights Management|Digital Radio Mondial (a digital broadcast format
 DSA,,Democratic Socialists of America
 DSL,,Digital Subscriber Line
 DSLR,,Digital Single-Lens Reflex (camera)
+DSP,,Digital Signal Processor
 DSS,,Data Security Standard
 DTMF,,Dual Tone Multi Frequency (touch-tone encoding)
 DUI,,Driving Under the Influence (of drugs)
