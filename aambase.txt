@@ -7,6 +7,9 @@
 [style sqig [ls][b][rs]]
 [style ls [ls]]
 [style rs [rs]]
+[gstyle listlinewrap [stripe [b]]]
+[style ol [ol wrap=listlinewrap,sep=|,[b]]]
+[style ul [ul wrap=listlinewrap,sep=|,[b]]]
 
 [comment the following three lines implement random selection from lists:]
 [gstyle rt [random]]  
