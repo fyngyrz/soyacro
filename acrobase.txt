@@ -1,9 +1,9 @@
 # This is an all-caps term->expansion definition file, ASCII-only format
 # To be used with soyacro.py or similar application
 # Each entry all on one line with 3 elements; ASCII characters only, no HTML:
-#    ALL-CAPSorNUMBERS-NOTHING-ELSE-TERM
+#    ALL-CAPSorNUMBERS-NOTHING-ELSE-TERM, or a single * to indicate component matching
 #    A-SINGLE-COMMA
-#    Nothing OR replacement for term, ie MHZ,MHz,Megahertz
+#    Nothing OR replacement for term, ie MHZ,MHz,Megahertz, or component designator
 #    A-SINGLE-COMMA
 #    Expansion, separate multiples with '|'. Use &#124; for actual pipes.
 # Examples:
