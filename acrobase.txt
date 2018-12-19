@@ -571,6 +571,7 @@ NCA,,Non-Compete Agreement
 NDA,,Non Disclosure Agreement
 ND,,North Dakota (USA)
 NE,,Nebraska (USA)|NorthEast
+NFL,,National Football League (US)
 NFW,,No Fucking Way
 NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
@@ -679,7 +680,7 @@ RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
 RC,,Resistor-Capacitor|Radio Control(ed)
 RCA,,Radio Corporation of America|an audio / low RF connector
-RDS,,Radio Data System
+RDS,,Radio Data System|Relational Database Service
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
