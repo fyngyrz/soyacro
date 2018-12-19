@@ -60,7 +60,7 @@ For example:
 
 Then you can use HTML entities. For instance, El ni&#241;o can be
 represented by `El ni&#241;o`. You can place an HTML-entity containing
-string in the replacement field and/or in the expansion field wherever
+string in a replacement field and/or in an expansion field wherever
 such characters are needed:
 
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
