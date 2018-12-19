@@ -14,17 +14,21 @@ long as they're in the expansion file, `acrobase.txt`.\) You can edit the
 `acrobase.txt` file and add terms, and you should, as you find yourself
 using them. You might keep an eye on the one in the project, as I seem to
 be adding to it regularly. Better yet, submit your additions here as a
-pull request, and we all win. Here's the format for a line to do that, where
-[] indicates optional:
+pull request, and we all win.
+
+#### Fixed Expansions
+
+Here's the format for a line to submit a fixed expansion, where []
+brackets indicate optional content:
 
 > term,[replacement],expansion[|expansion]
 
 You can produce output that is comprised more than just all-caps and/or
-numbers by using the second field, the optional replacement. The only
-restrictions are that there can be no actual commas in the replacement
-\(you can use &amp;#44; if you need a comma, just not an actual
-comma character\), and that there be no non-ASCII characters. So, for
-instance, this line in the `acrobase.txt` file...
+numbers for fixed terms by using the second field, the optional
+replacement. The only restrictions are that there can be no actual commas
+in the replacement \(you can use &amp;#44; if you need a comma, just not
+an actual comma character\), and that there be no non-ASCII characters.
+So, for instance, this line in the `acrobase.txt` file...
 
 > `TLDR,TL;DR:,Too Long, Didn't Read`
 
@@ -32,10 +36,27 @@ instance, this line in the `acrobase.txt` file...
 output post will contain the string `TL;DR:` instead, which corresponds
 with the actual common usage.
 
-You separate multiple expansion definitions using the pipe character: \(`|`\)
+You separate multiple fixed expansion definitions using the pipe character:
+\(`|`\)
 
 If you need to use the pipe character itself in an expansion definition, use
 the HTML entity: \(`&#124;`\)
+
+#### Electronic Component Expansions
+
+When electronic circuits are discussed, it is typical to refer to the
+components with letter + number sequences such as `R1`, `IC32` and so on.
+
+These can also be automatically expanded, and the format for doing so
+is this:
+
+> `*,designator,expansion`
+
+For example:
+
+> `*,IC,Integrated Circuit`
+
+### Macros!
 
 There is also a built-in macro processor that lets you build shortcuts
 for anything, signatures, etc., so you can make richer posts more easily.
