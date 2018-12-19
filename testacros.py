@@ -4,7 +4,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 14th, 2018 (this code file only)
+#  Last Update: December 19th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -23,8 +23,9 @@
 # ----------------------------------------------------------
 
 afile = 'acrobase.txt'
-
 errors = ''
+relist = []
+rmlist = []
 
 try:
 	with open(afile) as fh:
@@ -34,6 +35,7 @@ except:
 	exit()
 
 def tstchars(text):
+	if key == '*': return True
 	for c in text:
 		if (c >= 'A' and c <= 'Z'):
 			pass
@@ -56,7 +58,7 @@ for line in data:
 		try:
 			key,replacement,expansion = line.split(',',2)
 		except:
-			errors += 'line %d failed to split into three components\n' % (ln)
+			errors += 'line %d does not contain three components\n' % (ln)
 		else:
 			if replacement != '': rct += 1
 			if expansion.find('<') != -1: errors += 'expansion of key '+key+' contains "<"\n'
@@ -70,9 +72,13 @@ for line in data:
 			if key == '':
 				errors += 'key is empty at line %d\n' % (ln)
 			else:
-				if di.get(key,'') != '':
-					errors += 'duplicate key %s at line %d\n' % (key,ln)
-				di[key] = expansion
+				if key != '*':
+					if di.get(key,'') != '':
+						errors += 'duplicate key %s at line %d\n' % (key,ln)
+					di[key] = expansion
+				else: # this is a component key
+					relist.append(replacement)
+					rmlist.append(expansion)
 			sublist = expansion.split('|')
 			dc = len(sublist)
 			defcount += dc
@@ -89,8 +95,10 @@ else:
 	print s
 	print '-' * sl
 al = len(di)
-print '%d terms found' % (len(di))
-print '%d definitions' % (defcount)
+ct = len(relist)
+print '%d component terms found' % (ct)
+print '%d fixed terms found' % (len(di))
+print '%d definitions' % (defcount+ct)
 print '%d terms have multiple definitions' % (multidefs)
 print '%d terms have replacements' % (rct)
 print 'expansion file size is %d bytes' % (len(text))

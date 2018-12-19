@@ -30,6 +30,7 @@
 *,L,Inductor
 *,MIC,Microphone
 *,M,Motor
+*,MOSFET,Metal Oxide Semiconductor Field Effect Transistor
 *,MOV,Metal Oxid Varistor
 *,NE,Neon Bulb
 *,PCB,Printed Circuit Board
