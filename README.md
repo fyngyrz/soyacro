@@ -56,6 +56,8 @@ For example:
 
 > `*,IC,Integrated Circuit`
 
+### But what if I _need_ non-ASCII characters in a replacement or expansion field?
+
 Then you can use HTML entities. For instance, El ni&#241;o can be
 represented by `El ni&#241;o`. You can place an HTML-entity containing
 string in the replacement field and/or in the expansion field wherever
@@ -67,8 +69,6 @@ such characters are needed:
 
 There is also a built-in macro processor that lets you build shortcuts
 for anything, signatures, etc., so you can make richer posts more easily.
-
-### But what if I _need_ non-ASCII characters in a replacement or expansion field?
 
 ### Contributions:
 
