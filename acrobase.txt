@@ -11,6 +11,45 @@
 #    AL,,Alabama (USA)|Artificial Life
 # -----------------------------------------------------------------------------
 
+# These match electronic components:
+# ----------------------------------
+*,ANT,Antenna
+*,B,Battery
+*,BR,Bridge Rectifier
+*,C,Capacitor
+*,CRT,Cathode Ray Tube
+*,D,Diode
+*,F,Fuse
+*,FET,Field Effect Transistor
+*,IC,Integrated Circuit
+*,J,Jack
+*,JFET,Junction Field Effect Transistor
+*,JP,Jumper
+*,LCD,Liquid Crystal Display
+*,LED,Light-Emitting Diode
+*,L,Inductor
+*,MIC,Microphone
+*,M,Motor
+*,MOV,Metal Oxid Varistor
+*,NE,Neon Bulb
+*,PCB,Printed Circuit Board
+*,Q,Transistor
+*,R,Resistor
+*,RY,Relay
+*,SCR,Silicon Controlled Rectifier
+*,S,Switch
+*,SW,Switch
+*,TFT,Thin-Film Transitor display
+*,TH,Termistor
+*,TP,Test Point
+*,T,Transformer
+*,VC,Variable Capacitor
+*,V,Vacuum Tube
+*,XTAL,Crystal
+*,Z,Zener Diode
+
+# These match fixed terms:
+# ------------------------
 1802,,An RCA 8-bit CPU
 2D,,Two Dimensional
 2FA,,Two Factor Authentication

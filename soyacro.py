@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 17th, 2018 (this code file only)
+#  Last Update: December 19th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -35,12 +35,13 @@ mfile		= 'aambase.txt'		# macros filename
 
 # Initial Web Page Options:
 # -------------------------
+detectcomps	= True				# detect electronic component designations
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
-randsigs	= False				# append a random signature when generating
-sigecho		= True				# echo the random signature to the page
+randsigs	= True				# append a random signature when generating
+sigecho		= False				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 
@@ -56,9 +57,16 @@ reslines	= 20				# number of text lines in result box
 from aa_webpage import *
 import cgi,sys,os
 
+import re
+
 undict = {}
 errors = u''
 tiglist = ''
+
+# These provide for matching component designations
+# -------------------------------------------------
+relist = [] # regular expressions
+rmlist = [] # component terms
 
 if 'GATEWAY_INTERFACE' in os.environ:
 	cmdline = False
@@ -87,6 +95,7 @@ checkusemacros=u''
 checkshowexpansions=u''
 checkshowstyles=u''
 checksigecho=u''
+checkdetectcomps=u''
 
 # Detect if this is a resubmit or an initial entry:
 # -------------------------------------------------
@@ -142,6 +151,12 @@ if resubmit == True:
 		sigecho = False
 
 	try:
+		flag = form['detectcomps'].value
+		detectcomps = True
+	except:
+		detectcomps = False
+
+	try:
 		flag = form['showsignatures'].value
 		showsigs = True
 	except:
@@ -165,7 +180,6 @@ if resubmit == True:
 	except:
 		showstyles = False
 
-
 # Now set the checkmarks in the form:
 # -----------------------------------
 chk = u'CHECKED'
@@ -175,6 +189,7 @@ if usemacros == True: checkusemacros = chk
 if showacros == True: checkshowexpansions = chk
 if showstyles == True: checkshowstyles = chk
 if sigecho == True: checksigecho = chk
+if detectcomps == True: checkdetectcomps = chk
 
 # Override autosigs if '{nsig ' is present
 if usertext.find('{nsig ') != -1:
@@ -234,27 +249,31 @@ for el in l1:
 				if expansion.find('<') != -1: veri = False
 				if expansion.find('>') != -1: veri = False
 				if veri == True:
-					term = key
-					if alternate != u'':
-						term = alternate
-					if acros.get(key,'') != '':
-						errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-					alist = expansion.split('|')
-					if len(alist) == 1:
-						acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
-					else:
-						s = u''
-						n = 1
-						for el in alist:
-							if n != 1: s = s + u' '
-							s = s + u'(' + unicode(str(n)) + u'): '+unicode(str(el))
-							n += 1
-						acros[key] = u'<abbr title="'+s+'">'+term+u'</abbr>'
+					if detectcomps == True and key == '*': # if this is a component designator
+						rmlist.append(expansion)
+						relist.append(alternate)
+					else: # normal term definition
+						term = key
+						if alternate != u'':
+							term = alternate
+						if acros.get(key,'') != '':
+							errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
+						alist = expansion.split('|')
+						if len(alist) == 1:
+							acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
+						else:
+							s = u''
+							n = 1
+							for el in alist:
+								if n != 1: s = s + u' '
+								s = s + u'(' + unicode(str(n)) + u'): '+unicode(str(el))
+								n += 1
+							acros[key] = u'<abbr title="'+s+'">'+term+u'</abbr>'
 				else:
 					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
-			except:
+			except Exception,e:
 				errors += u'line '+str(linecounter)+u': '
-				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
+				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'+unicode(str(e))
 	linecounter += 1
 
 # remove any items in the ignore list:
@@ -381,6 +400,25 @@ def isnumeric(text):
 		if c < u'0' or c > u'9': return False
 	return True
 
+def compmatch(term):
+	global relist,rmlist,detectcomps
+	if detectcomps == False: return term
+	if isnumeric(term) == False: # if not fully numeric
+		rmatch = False
+		ren = 0
+		for el in relist:
+			ln = len(el)
+			el = el + '\d*'
+			if re.match(el,term):
+				try:
+					n = int(term[ln:])
+				except: # not a number, bail
+					return term
+				string = '<abbr title="'+rmlist[ren] + ' ' + str(n) + '">'+term+'</abbr>'
+				return string
+			ren += 1
+	return term
+
 # Convert ALL-CAPS sequences into <abbr>ALL-CAPS</abbr> sequences:
 # ----------------------------------------------------------------
 def makeacros(text):
@@ -407,9 +445,11 @@ def makeacros(text):
 		else: # not a cap now
 			if len(accum) > 1:
 				taccum = acros.get(accum,accum)
-				if taccum == accum:
-					if isnumeric(taccum) == False:
-						undict[taccum] = 1 # we don't know this one
+				if taccum == accum: # not found
+					if isnumeric(term) == False: # if not fully numeric
+						taccum = compmatch(accum)
+						if taccum == accum: # still not found
+							undict[taccum] = 1 # we don't know this one
 				accum = taccum
 				accum += c
 				o += accum
@@ -423,7 +463,9 @@ def makeacros(text):
 			taccum = acros.get(accum,accum)
 			if taccum == accum:
 				if isnumeric(taccum) == False:
-					undict[taccum] = 1 # we don't know this one
+					taccum = compmatch(accum)
+					if taccum == accum: # still not found
+						undict[taccum] = 1 # we don't know this one
 			accum = taccum
 			o += accum
 		else: # 1 or 0
@@ -471,6 +513,7 @@ myform = u"""
 Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
 PUTRSIGHERE</div>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
+<INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
@@ -498,6 +541,7 @@ myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
 myform = myform.replace(u'ENTLINES',str(entlines))
 myform = myform.replace(u'RESLINES',str(reslines))
 myform = myform.replace(u'IGLIST',tiglist)
+myform = myform.replace(u'CHECKDETECTCOMPS',checkdetectcomps)
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
