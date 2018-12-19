@@ -440,13 +440,13 @@ def makeacros(text):
 		elif ctag[:6] == u'</abbr':
 			wait2 = False
 			ctag = u''
-		if wait == False and wait2 == False and (c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9'):
+		if wait == False and wait2 == False and ((c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9')):
 			accum += c
 		else: # not a cap now
 			if len(accum) > 1:
 				taccum = acros.get(accum,accum)
 				if taccum == accum: # not found
-					if isnumeric(term) == False: # if not fully numeric
+					if isnumeric(accum) == False: # if not fully numeric
 						taccum = compmatch(accum)
 						if taccum == accum: # still not found
 							undict[taccum] = 1 # we don't know this one
