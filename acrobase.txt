@@ -172,7 +172,7 @@ CERN,,European Organization for Nuclear Research (French orig.)
 CES,,Consumer Electronics Show
 CFC,,ChloroFluoroCarbon
 CFO,,Chief Financial Officer
-CGI,,Common Gateway Interface, also Computer Generated Imagery
+CGI,,Common Gateway Interface|Computer Generated Imagery
 CIA,,Central Intelligence Agency (US)
 CIO,,Chief Information Officer
 CIS,,Cisgender - where sense of identity corresponds to birth sex
@@ -528,7 +528,7 @@ MFLOPS,,Million FLoating Point OPerations per Second
 MF,,Medium Frequency: 300-3000 KHz
 MHZ,MHz,Megahertz - Millions of cycles per second
 MI,,Michigan (USA)|Machine Intelligence
-MI6,,Secret Intelligence Service (UK, also know as SIS)
+MI6,,Secret Intelligence Service (UK, also known as SIS)
 MIA,,Missing In Action
 MIC,,Miltary Industrial Complex
 MIDI,,Musical Instrument Digital Interface
@@ -721,7 +721,7 @@ SFW,,Safe For Work
 SHF,,Super High Frequency: 3-30 GHz
 SIG,,Special Interest Group|Signature
 SIMM,,Single Inline Memory Module
-SIS,,Secret Intelligence Service (UK, also know as MI6)
+SIS,,Secret Intelligence Service (UK, also known as MI6)
 SJW,,Social Justice Warrior
 SK,,Saskatchewan (Canada)|South Korea|Silent Key (deceased)
 SLAC,,Stanford Linear Accelerator Center
