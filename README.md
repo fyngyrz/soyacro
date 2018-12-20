@@ -50,11 +50,12 @@ components with letter + number sequences such as `R1`, `IC32` and so on.
 These can also be automatically expanded, and the format for doing so
 is this:
 
-> `*,designator,expansion`
+> `*,designator,expansion[|expansion]`
 
 For example:
 
-> `*,IC,Integrated Circuit`
+> `*,IC,Integrated Circuit`  
+> `*,R,Resistor|Relay`
 
 ### But what if I _need_ non-ASCII characters in a replacement or expansion field?
 
@@ -157,7 +158,11 @@ File | Purpose
 ## `acrobase.txt`:
 
 The format is defined at the top of the file. Basically there are three
-comma-separated fields. **Important:** _Don't use HTML in these fields._
+comma-separated fields, which define either fixed term expansions or
+standard electronic component expansionss. **Important:** _Don't use HTML
+in these fields._
+
+### Fixed term expansions
 
 The first field is the caps-and/or-number sequence that is the term,
 such as `TIL`, `3D`, or `MHZ`.
@@ -176,14 +181,12 @@ there's no limit on the accuracy of the results, only on the all-caps
 sequences used to trigger them, and those don't show up in the posts
 except where there is no replacement field content.
 
-### Examples:
+#### Examples:
 
 > `3D,,Three Dimensional`  
-> `411,,A number, and a shorthand for: Information`  
+> `411,,A number|shorthand for: Information`  
 > `MHZ,MHz,Megahertz - Millions of cycles per second`  
 > `NASA,,National Aeronautics and Space Administration (US)`  
-
-### Working with `acrobase.txt`
 
 #### Adding new expansions
 
