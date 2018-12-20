@@ -171,6 +171,7 @@ BDAC,,Broadband Deployment Advisory Committee
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFR,,Big Fucking Rocket
 BI,,Bisexual
+BIOS,,Basic Input Output System
 BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure|British Petroleum
