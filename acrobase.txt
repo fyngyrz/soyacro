@@ -9,6 +9,8 @@
 # Examples:
 #    MHZ,MHz,Megahertz
 #    AL,,Alabama (USA)|Artificial Life
+#    *,R,Resistor
+#    *,VR,Voltage Regulator|Variable Resistor
 # -----------------------------------------------------------------------------
 
 # These match electronic components:
