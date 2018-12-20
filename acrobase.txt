@@ -538,6 +538,7 @@ LIFO,,Last In, First Out
 LLC,,Limited Liability Corporation
 LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
+LMGTFY,,Let Me Google That For You
 LNA,,Low Noise Amplifier
 LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
