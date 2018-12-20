@@ -856,6 +856,7 @@ USB2,,Universal Serial Bus v2
 USB3,,Universal Serial Bus v3
 USB,,Universal Serial Bus
 USD,,United States Dollars (currency)
+USDA,,United States Department of Agriculture
 USG,,United States Government
 USMC,,United States Marine Corps
 USMCA,,United States-Mexico-Canada Agreement
