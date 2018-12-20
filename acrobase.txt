@@ -705,7 +705,9 @@ Q2,,Second Quarter
 Q3,,Third Quarter
 Q4,,Fourth Quarter
 QC,,Quebec (Canada)
+QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
+QSO,,Radio shorthand for conversation
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
