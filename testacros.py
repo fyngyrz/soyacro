@@ -26,6 +26,8 @@ afile = 'acrobase.txt'
 errors = ''
 relist = []
 rmlist = []
+cxcount = 0
+cxmult = 0
 
 try:
 	with open(afile) as fh:
@@ -79,6 +81,10 @@ for line in data:
 				else: # this is a component key
 					relist.append(replacement)
 					rmlist.append(expansion)
+					tlist = expansion.split('|')
+					tlen = len(tlist)
+					cxcount += tlen
+					if tlen > 1: cxmult += 1
 			sublist = expansion.split('|')
 			dc = len(sublist)
 			defcount += dc
@@ -97,6 +103,16 @@ else:
 al = len(di)
 ct = len(relist)
 print '%d component terms found' % (ct)
+print '%d component types found' % (cxcount)
+cxpl = ''
+cxhh = 'has a'
+if cxmult > 1:
+	cxpl = 's'
+	cxhh = 'have'
+if cxmult == 0:
+	print 'There are no multiply defined components'
+else:
+	print '%d component%s %s multiple definition%s' % (cxmult,cxpl,cxhh,cxpl)
 print '%d fixed terms found' % (len(di))
 print '%d definitions' % (defcount+ct)
 print '%d terms have multiple definitions' % (multidefs)
