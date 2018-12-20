@@ -14,41 +14,67 @@
 # These match electronic components:
 # ----------------------------------
 *,ANT,Antenna
-*,B,Battery
+*,AT,Attenuator
 *,BR,Bridge Rectifier
+*,BT,Battery
 *,C,Capacitor
+*,CN,Capacitor Network
 *,CRT,Cathode Ray Tube
 *,D,Diode
+*,DS,Display
 *,DSP,Digital Signal Processor
 *,F,Fuse
+*,FB,Ferrite Bead
 *,FET,Field Effect Transistor
+*,FL,Filter
+*,G,Generator|Oscillator
+*,GN,General Network
+*,H,Hardware
+*,HY,Circulator|Directional Coupler
 *,IC,Integrated Circuit
 *,J,Jack
 *,JFET,Junction Field Effect Transistor
 *,JP,Jumper
+*,K,Relay|General Contactor
 *,LCD,Liquid Crystal Display
 *,LED,Light-Emitting Diode
 *,L,Inductor
+*,LS,Loudspeaker|Buzzer
 *,MIC,Microphone
+*,MK,Microphone
+*,MP,Mechanical Part
 *,M,Motor
 *,MOSFET,Metal Oxide Semiconductor Field Effect Transistor
 *,MOV,Metal Oxid Varistor
 *,NE,Neon Bulb
 *,PCB,Printed Circuit Board
+*,P,Plug
+*,PS,Power Supply
 *,Q,Transistor
 *,R,Resistor
+*,RT,Thermistor
 *,RY,Relay
+*,RV,Varistor
 *,SCR,Silicon Controlled Rectifier
 *,S,Switch
 *,SW,Switch
+*,TC,Thermocouple
 *,TFT,Thin-Film Transitor display
 *,TH,Termistor
 *,TP,Test Point
+*,TUN,Tuner
 *,T,Transformer
+*,U,Integrated Circuit
 *,VC,Variable Capacitor
 *,VR,Voltage Regulator|Variable Resistor
 *,V,Vacuum Tube
+*,XA,Printed Circuit Assembly Connector
+*,XU,Integrated Circuit Connector
+*,XDS,Light Socket
+*,XV,Vacuum Tube Socket Connector
+*,XF,Fuseholder
 *,XTAL,Crystal
+*,Y,Crystal|Oscillator
 *,Z,Zener Diode
 
 # These match fixed terms:
