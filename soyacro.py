@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 19th, 2018 (this code file only)
+#  Last Update: December 20th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -414,7 +414,18 @@ def compmatch(term):
 					n = int(term[ln:])
 				except: # not a number, bail
 					return term
-				string = '<abbr title="'+rmlist[ren] + ' ' + str(n) + '">'+term+'</abbr>'
+				comp = rmlist[ren]
+				ell = comp.split('|')
+				if len(ell) == 1:
+					string = '<abbr title="'+comp + ' ' + str(n) + '">'+term+'</abbr>'
+				else: # multiple elements
+					x = 1
+					string = '<abbr title="'
+					for element in ell:
+						if x != 1: string += ' '
+						string += '(%d): %s %d' % (x,element,n)
+						x += 1
+					string += '">'+term+'</abbr>'
 				return string
 			ren += 1
 	return term
