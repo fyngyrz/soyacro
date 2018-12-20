@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys
+import sys,re
 
 # Quick way to see if an acronym is in the acrobase.txt file
 # ----------------------------------------------------------
@@ -31,6 +31,9 @@ import sys
 # ----------------------------------------------------------
 
 errors = u''
+relist = []
+rmlist = []
+detectcomps = True
 
 argc = len(sys.argv)
 if argc < 2:
@@ -45,6 +48,46 @@ try:
 except:
 	print 'Could not read' + fn
 	exit()
+
+# This method determines if what appears to be an acronym (because
+# acronyms can have/be numbers) is entirely numeric. If it is, it
+# won't warn that it can't expand an unrecongized number group the
+# way it does for an all-caps sequence it doesn't recognize.
+# ----------------------------------------------------------------
+def isnumeric(text):
+	for c in text:
+		if c < u'0' or c > u'9': return False
+	return True
+
+def compmatch(term):
+	global relist,rmlist,detectcomps
+	if detectcomps == False: return term
+	if isnumeric(term) == False: # if not fully numeric
+		rmatch = False
+		ren = 0
+		for el in relist:
+			ln = len(el)
+			el = el + '\d*'
+			if re.match(el,term):
+				try:
+					n = int(term[ln:])
+				except: # not a number, bail
+					return term
+				comp = rmlist[ren]
+				ell = comp.split('|')
+				if len(ell) == 1:
+					string = term + ' : ' +comp + ' ' + str(n)
+				else: # multiple elements
+					x = 1
+					string = ''
+					for element in ell:
+						if x != 1: string += '\n'
+						string += term + ' (%d): %s %d' % (x,element,n)
+						x += 1
+				return string
+			ren += 1
+	return term
+
 
 # Create a dictionary from the acronym / abbreviation file contents:
 # ------------------------------------------------------------------
@@ -62,11 +105,15 @@ for el in l1:
 				if expansion.find('>') != -1: veri = False
 				if veri == True:
 					term = key
-					if alternate != u'':
-						altkeys[key] = alternate
-					if acros.get(key,'') != '':
-						errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-					acros[key] = expansion
+					if key == '*':
+						relist.append(alternate)
+						rmlist.append(expansion)
+					else:
+						if alternate != u'':
+							altkeys[key] = alternate
+						if acros.get(key,'') != '':
+							errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
+						acros[key] = expansion
 				else:
 					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
 			except:
@@ -89,7 +136,11 @@ while len(loclist) > 0:
 		if okay == True:
 			res = acros.get(tst,'')
 			if res == '':
-				print '"' + tst + '" not in acronyms'
+				res = compmatch(tst)
+				if res == tst:
+					print '"' + tst + '" not in acronyms'
+				else:
+					print res
 			else:
 				ll = res.split('|')
 				if len(ll) == 1:
@@ -103,7 +154,7 @@ while len(loclist) > 0:
 						n += 1
 		else:
 			print '"'+tst+'" is not a valid expansion key'
-	iput = raw_input(':')
+	iput = raw_input('> ')
 	loclist = iput.split(' ')
 	if len(loclist) == 1:
 		if loclist[0] == '':
