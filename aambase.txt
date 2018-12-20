@@ -6,6 +6,7 @@
 [style bq <blockquote>[b]</blockquote>]
 [style sqig [ls][b][rs]]
 [style ls [ls]]
+[style lmgtfy {link http://lmgtfy.com/?q=[urlencode [b]]|LMGTFY}]
 [style rs [rs]]
 [gstyle listlinewrap [stripe [b]]]
 [style ol [ol wrap=listlinewrap,sep=|,[b]]]
