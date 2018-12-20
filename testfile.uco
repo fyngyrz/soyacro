@@ -15,12 +15,11 @@ border-bottom: red dashed;
 </HEAD>
 <BODY style="color: #FFFF00; background-color: #000088;">
 <p>
-This is an all-caps-and/or-digits acronym clarifier. When you're going
+This is an all-caps-and/or-digits term clarifier. When you're going
 to make a post on soylentnews.org, which supports use of the &lt;abbr&gt; tag,
 run the post through this first, then copy &amp; paste the output into the
 Soylent comment box. For example, here's what happens to "<abbr title="Internet Service Provider">ISP</abbr>." Be sure
-to enter any aconym or abbreviation you want replaced as
-all-caps-and/or-digits.
+to enter any term you want replaced as all-caps-and/or-digits.
 </p>
 <FORM ACTION="soyacro.py" METHOD="POST">
 <div style="text-align: center;">
