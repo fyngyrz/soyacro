@@ -46,6 +46,7 @@
 *,TP,Test Point
 *,T,Transformer
 *,VC,Variable Capacitor
+*,VR,Voltage Regulator|Variable Resistor
 *,V,Vacuum Tube
 *,XTAL,Crystal
 *,Z,Zener Diode
