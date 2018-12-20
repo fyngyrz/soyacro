@@ -137,7 +137,7 @@ AMZN,,Amazon's stock ticker symbol
 AND,,AND gate: input 1 AND input 2 = output
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
-AP,,Access Point
+AP,,Access Point|Associated Press
 APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language|APpLe stock symbol
@@ -188,6 +188,7 @@ CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Ap
 CB,,Citizen's Band radio
 CBC,,Canadian Broadcasting Corporation|Complete Blood Count|Criminal Background Check|Congressional Black Caucus
 CBD,,Cannabidiol
+CBO,,Congressional Budget Office
 CBP,,Customs and Border Protection (US)
 CBS,,Columbia Broadcasting System
 CC,,Carbon Copy|Credit Card|Creative Commons
@@ -240,6 +241,7 @@ CUL,,See You Later
 CV,,Computer Vision|Curriculum Vitae (latin: "course of life")
 CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
+CVT,,Continuously Variable Transmission
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
@@ -327,6 +329,7 @@ EU,,European Union
 EULA,,End User License Agreement
 EUVL,,Extreme UltraViolet Lithography
 EV,,Electric Vehicle
+EVP,,Executive Vice President
 EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
 FAI,,World Air Sports Federation (Swiss)
@@ -383,6 +386,7 @@ GIF,,Graphics Interchange Format - stores either still or animated images
 GI,,Gastro-Intestinal|soldier, rank of private, US army (from "Galvanized Iron")
 GIGO,,Garbage In, Garbage Out
 GM,,General Motors|General Manager
+GMO,,Genetically Modified Organism
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
 GNU,,GNU's Not Unix (a recursive definition!)
 GOP,,Grand Old Party (Republican party, USA)
@@ -500,6 +504,7 @@ ISS,,International Space Station
 IT,,Information Technology
 ITER,,International Thermonuclear Experimental Reactor
 IVF,,In Vitro Fertilization
+IWC,,International Whaling Commission
 JFK,,John F. Kennedy
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
@@ -527,6 +532,7 @@ LASER,,Light Amplification by Stimulated Emission of Radiation
 LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
+LDNLS,,Low Dimensional Neural-Like Systems
 LDS,,Latter Day Saints (Mormons)
 LED,,Light Emitting Diode
 LENR,,Low Energy Nuclear Reactor
@@ -541,6 +547,7 @@ LMAO,,Laughing My Ass Off
 LMFAO,,Laughing My Fucking Ass Off
 LMGTFY,,Let Me Google That For You
 LNA,,Low Noise Amplifier
+LNG,,Liquid Natural Gas
 LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
 LSD,,Lysergic Acid Diethylamide - C20H25N3O
@@ -678,6 +685,7 @@ PDA,,Personal Digital Assitant|Public Display of Affection
 PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
+PEP,,Python Enhancement Proposal
 PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
 PI,,Private Investigator
@@ -771,6 +779,7 @@ SMS,,Short Message Service
 SMT,,Surface Mount Technology
 SN,,Soylent News
 SNAFU,,Situation Normal, All Fucked Up
+SNAP,,Supplemental Nutrition Assistance Program
 SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
@@ -809,6 +818,7 @@ TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
 TFT,,Thin Film Transistor (usually display)
+THC,,TetraHydroCannabinol
 THF,,Tremendously Frequency: 300 GHz - 3 THz
 THOT,,That Hoe Over There
 THZ,THz,TeraHertz
