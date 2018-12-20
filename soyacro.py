@@ -507,12 +507,11 @@ border-bottom: red dashed;
 """
 
 mybody = u"""
-This is an all-caps-and/or-digits acronym clarifier. When you're going
+This is an all-caps-and/or-digits term clarifier. When you're going
 to make a post on soylentnews.org, which supports use of the <abbr> tag,
 run the post through this first, then copy & paste the output into the
 Soylent comment box. For example, here's what happens to "ISP." Be sure
-to enter any aconym or abbreviation you want replaced as
-all-caps-and/or-digits.
+to enter any term you want replaced as all-caps-and/or-digits.
 """
 
 myform = u"""
