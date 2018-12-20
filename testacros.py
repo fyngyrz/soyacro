@@ -114,7 +114,7 @@ if cxmult == 0:
 else:
 	print '%d component%s %s multiple definition%s' % (cxmult,cxpl,cxhh,cxpl)
 print '%d fixed terms found' % (len(di))
-print '%d definitions' % (defcount+ct)
+print '%d definitions' % (defcount+cxcount)
 print '%d terms have multiple definitions' % (multidefs)
 print '%d terms have replacements' % (rct)
 print 'expansion file size is %d bytes' % (len(text))
