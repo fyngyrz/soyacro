@@ -803,6 +803,7 @@ SSO,,Sun Synchronous Orbit
 SST,,SuperSonic Transport|Space Ship Two
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
+SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
 SW,,Shortwave (radio)|SouthWest
 SWAT,,Special Weapons And Tactics 
