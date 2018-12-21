@@ -529,6 +529,7 @@ LA,,Louisiana (USA)|Los Angeles (California, USA)
 LAN,,Local Area Network
 LAPD,,Los Angeles Police Department
 LASER,,Light Amplification by Stimulated Emission of Radiation
+LAX,,Los Angeles, California airport
 LC,,Inductor-Capacitor combination
 LCD,,Liquid Crystal Display
 LDAP,,Lightweight Directory Access Protocol
