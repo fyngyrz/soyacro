@@ -864,6 +864,7 @@ UI,,User Interface
 UK,,United Kingdom
 UL,,Underwriter's Labratories
 ULA,,United Launch Alliance
+UML,,Unified Modeling Language
 UNFCCC,,United Nations Framework Convention on Climate Change
 UNESCO,,United Nations Educational, Scientific and Cultural Organization
 UN,,United Nations
