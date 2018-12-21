@@ -143,6 +143,7 @@ API,,Application Programmer Interface
 APL,,A Programming Language|APpLe stock symbol
 APRS,,Automatic Packet Reporting System
 AR,,Arkansas (USA)|Augmented Reality
+ARC,,Amatuer Radio Club
 ARM,,A class of CPUs
 ARRL,,American Radio Relay League (Amatuer radio)
 ASAP,,As Soon As Possible
@@ -255,6 +256,7 @@ DDOS,DDoS,Distributed Denial of Service
 DDT,,DichloroDiphenylTrichloroethane, an insecticide, mostly banned
 DEA,,Drug Enforcement Agency (US)
 DE,,Delaware (USA)
+DEFCON,,DEFense CONdition
 DGPS,,Differential Global Positioning System
 DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
@@ -496,6 +498,7 @@ IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
 IS,,Image Stabilization
 ISA,,Industry Standard Architecture|Instruction Set Architecture
+ISIL,,Islamic State of Iraq and the Levant
 ISIS,,Islamic State of Iraq and Syria
 ISO,,The name ISO is taken from the ISO 9660 file system used with CD-ROM media, but what is known as an ISO image might also contain a UDF (ISO/IEC 13346) file system (commonly used by DVDs and Blu-ray Discs).
 ISP,,Internet Service Provider
@@ -600,6 +603,7 @@ MUMPS,,Programming language: Massachusetts General Hospital Utility Multi-Progra
 MW,,Medium Wave
 NAACP,,National Association for the Advancement of Colored People
 NAFTA,,North American Free Trade Agreement
+NAS,,Network Attached Storage
 NASA,,National Aeronautics and Space Administration (US)
 NAT,,Network Address Translation
 NATO,,North Atlantic Treaty Organization
@@ -757,6 +761,7 @@ SD,,South Dakota (USA)|Secure Digital
 SDK,,Software Development Kit
 SE,,SouthEast
 SEC,,Securities and Exchange Commission (US)
+SECDEF,,SECretary of DEFense
 SEO,,Search Engine Optimization
 SETI,,Search for Extra Terrestrial Intelligence
 SF,,Science Fiction or less accurately Speculative Fiction|San Francisco (California)
@@ -852,6 +857,7 @@ UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
 UCSD,,University of California, San Diego
 UC,,University of California
+UCLA,,University of California, Los Angeles
 UDP,,User Datagram Protocol
 UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
