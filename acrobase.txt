@@ -505,6 +505,7 @@ IT,,Information Technology
 ITER,,International Thermonuclear Experimental Reactor
 IVF,,In Vitro Fertilization
 IWC,,International Whaling Commission
+JEDEC,,Joint Electron Device Engineering Council
 JFK,,John F. Kennedy
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
@@ -917,6 +918,7 @@ WNEW,,Prog rock FM station in NYC in the 1900's
 WRT,,With Regard To
 WSJ,,Wall Street Journal (US newspaper)
 WSPR,,Weak Signal Propagation Reporter
+WSU,,Washington State University
 WTC,,World Trade Center
 WTF,,What The Fuck
 WTH,,What The Hell
