@@ -169,7 +169,9 @@ BC,,British Columbia (Canada)|Before Christ
 BCB,,BroadCast Band
 BCC,,Blind Carbon Copy
 BDAC,,Broadband Deployment Advisory Committee
+BF,,BoyFriend
 BFE,,Bum Fuck Egypt (middle of nowhere)
+BFF,,Best Female Friend
 BFR,,Big Fucking Rocket
 BI,,Bisexual
 BIOS,,Basic Input Output System
