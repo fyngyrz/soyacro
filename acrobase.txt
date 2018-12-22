@@ -155,7 +155,7 @@ ATM,,Automated Teller Machine|At The Moment|Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 ATV,,All Terrain Vehicle
 AU,,Astronomical Unit|Australia
-AV,,Autonomous Vehicle
+AV,,Autonomous Vehicle|Audio-Video
 AWG,,Atmospheric Water Generator|American Wire Gauge
 AWOL,,Absent Without Official Leave
 AWS,,Amazon Web Services
@@ -173,6 +173,7 @@ BFE,,Bum Fuck Egypt (middle of nowhere)
 BFR,,Big Fucking Rocket
 BI,,Bisexual
 BIOS,,Basic Input Output System
+BLM,,Bureau of Land Management (US)
 BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
 BP,,Blood Pressure|British Petroleum
@@ -291,6 +292,7 @@ DTMF,,Dual Tone Multi Frequency (touch-tone encoding)
 DUI,,Driving Under the Influence (of drugs)
 DUVL,,Deep UltraViolet Lithography
 DVD,,Digital Video Disk
+DVM,,Digital VoltMeter|Doctor of Veterinary Medicine
 DVR,,Digital Video Recorder
 DX,,Distance, in radio reception
 ECC,,Error Correcting Code
@@ -363,6 +365,7 @@ FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FSB,,Federal Security Service (Russian Federation)
 FSK,,Frequency Shift Keying
+FSM,,Flying Spaghetti Monster
 FTC,,Federal Trade Commission (USA)
 FTFY,,Fixed That For You
 FTP,,File Transfer Protocol
@@ -438,7 +441,7 @@ HTML5,,HyperText Markup Language version 5
 HTML,,HyperText Markup Language (in general, also version 1)
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
-HUD,,Housing and Urban Development
+HUD,,Housing and Urban Development (US)
 HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol|Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
@@ -496,7 +499,7 @@ IRA,,Individual Retirement Account|Irish-Republican Army
 IRC,,Internet Relay Chat
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
-IS,,Image Stabilization
+IS,,Image Stabilization|Islamic State
 ISA,,Industry Standard Architecture|Instruction Set Architecture
 ISIL,,Islamic State of Iraq and the Levant
 ISIS,,Islamic State of Iraq and Syria
