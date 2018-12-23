@@ -78,6 +78,7 @@ def compmatch(term):
 				if len(ell) == 1:
 					string = term + ' : ' +comp + ' ' + str(n)
 				else: # multiple elements
+					ell.sort()
 					x = 1
 					string = ''
 					for element in ell:
@@ -148,6 +149,7 @@ while len(loclist) > 0:
 					if alt != '': tst = alt
 					print tst + ' : ' + res
 				else:
+					ll.sort()
 					n = 1
 					for el in ll:
 						print tst + ' (' + str(n) + '): ' + str(el)
