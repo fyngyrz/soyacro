@@ -271,6 +271,7 @@ for el in l1:
 						if len(alist) == 1:
 							acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
 						else:
+							alist.sort()
 							s = u''
 							n = 1
 							for el in alist:
@@ -430,6 +431,7 @@ def compmatch(term):
 				else: # multiple elements
 					x = 1
 					string = '<abbr title="'
+					ell.sort()
 					for element in ell:
 						if x != 1: string += ' '
 						string += '(%d): %s %d' % (x,element,n)
