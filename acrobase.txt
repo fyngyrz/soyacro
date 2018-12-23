@@ -127,7 +127,7 @@ AFRL,,Air Force Research Laboratory
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AG,,Attorney General|Aerographer's mate (US navy)
 AGU,,American Geophysical Union
-AGW,,Antropogenic Global Warming
+AGW,,Anthropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
 AKA,,Also Known As
