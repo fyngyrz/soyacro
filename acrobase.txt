@@ -813,6 +813,7 @@ SSO,,Sun Synchronous Orbit
 SST,,SuperSonic Transport|Space Ship Two
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
+STT,,Speech-To-Text
 SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
 SW,,Shortwave (radio)|SouthWest
@@ -854,6 +855,7 @@ TRS,,Tip Ring Sleeve connector
 TSA,,Transportation Security Administration (US)
 TSMC,,Taiwan Semiconductor Manufacturing Company
 TTL,,Transistor-Transistor Logic|Through The Lens|Time To Live
+TTS,,Text-To-Speech
 TTYL,,Talk To You Later
 TTY,,Teletype
 TV,,Television
