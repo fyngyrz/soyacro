@@ -340,6 +340,7 @@ EXIF,,EXchangeable Image File format
 FAA,,Federal Aviation Administration (US)
 FAI,,World Air Sports Federation (Swiss)
 FAQ,,Frequently Asked Questions
+FARC,,Fuerzas Armadas Revolucionarias de Colombia
 FAS,,Fetal Alcohol Syndrome
 FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
@@ -639,6 +640,7 @@ NM,,New Mexico (USA)|Never Mind
 NN,,Network Neutrality
 NNTP,,Network News Transfer Protocol
 NOAA,,National Oceanic and Atmospheric Administration (US)
+NORAD,,North American Aerospace Defense Command
 NOT,,NOT gate: input 1 = output in opposite state
 NPC,,Non-Player Character|National People's Congress (China)
 NPM,,Node Package Manager (Javascript)
@@ -714,6 +716,7 @@ PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PR,,Pull Request - source code alteration submission|Public Relations|Puerto Rico
 PS,,PostScript
+PSA,,Public Service Announcement
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
 PSU,,Power Supply Unit
@@ -758,6 +761,7 @@ RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
 RV,,Research Vessel|Recreational Vehicle
 RX,,Receive
+SA,,South Africa|South America
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
