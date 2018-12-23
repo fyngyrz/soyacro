@@ -954,6 +954,7 @@ WY,,Wyoming (USA)
 WYSIWYG,,What You See Is What You Get
 XL,,eXtra Large
 XML,,eXtensible Markup Language
+XMPP,,Extensible Messaging and Presence Protocol
 XMS,,Extended Memory Specification
 XOR,,XOR gate: input 1 not equal input 2 = output
 XTAL,,Crystal
