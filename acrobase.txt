@@ -357,7 +357,7 @@ FIOS,,FIber Optic Service
 FLEX,,An OS for the 6800 and 6809 microprocessors
 FL,,Florida (USA)
 FLOPS,,FLoating Point OPerations per Second
-FM,,Frequency Modulation|Foreign Minister
+FM,,Frequency Modulation|Foreign Minister|Finance Minister
 FML,,Fuck My Life
 FOIA,,Freedom Of Information Act (US)
 FORTRAN,,A computer language, "FORmula TRANSlator"
