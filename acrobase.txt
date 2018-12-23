@@ -349,6 +349,7 @@ FAQ,,Frequently Asked Questions
 FARC,,Fuerzas Armadas Revolucionarias de Colombia
 FAS,,Fetal Alcohol Syndrome
 FAX,,Facsimile transmission
+FB,,Facebook|Fine Business
 FBI,,Federal Bureau of Investigation (US)
 FBO,,Federal Budget Office (US)
 FCC,,Federal Communications Commission (US)
