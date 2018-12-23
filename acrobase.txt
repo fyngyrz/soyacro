@@ -217,6 +217,7 @@ CIA,,Central Intelligence Agency (US)
 CIO,,Chief Information Officer
 CIS,,Cisgender - where sense of identity corresponds to birth sex
 CIT,,California Institute of Technology
+CLI,,Command Line Interface
 CMOS,,Complementary Metal Oxide Semiconductor
 CMS,,Content Management System
 CMY,,Cyan, Magenta, Yellow
@@ -572,6 +573,7 @@ LOL,,Laugh Out Loud
 LPI,,Lines Per Inch
 LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
+LWNJ,,Left Wing Nut Job
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
 MAGA,,Make America Great Again
@@ -767,6 +769,7 @@ RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
 RV,,Research Vessel|Recreational Vehicle
+RWNJ,,Right Wing Nut Job
 RX,,Receive
 SA,,South Africa|South America
 SATA,,Serial Advanced Technology Attachment
