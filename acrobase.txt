@@ -393,6 +393,7 @@ GHZ,GHz,Gigahertz - Billions of cycles per second
 GIF,,Graphics Interchange Format - stores either still or animated images
 GI,,Gastro-Intestinal|soldier, rank of private, US army (from "Galvanized Iron")
 GIGO,,Garbage In, Garbage Out
+GIMP,,GNU Image Manipulation Program
 GM,,General Motors|General Manager
 GMO,,Genetically Modified Organism
 GMT,,Greenwich Mean Time (equivalent to Coordinated Universal Time)
