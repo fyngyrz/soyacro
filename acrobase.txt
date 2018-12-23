@@ -742,6 +742,7 @@ Q3,,Third Quarter
 Q4,,Fourth Quarter
 QED,,Quod Erat Demonstrandum: that which was to be demonstrated
 QC,,Quebec (Canada)
+QOS,QoS,Quality of Service
 QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
 QSO,,Radio shorthand for conversation
