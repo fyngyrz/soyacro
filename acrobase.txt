@@ -11,7 +11,11 @@
 #    AL,,Alabama (USA)|Artificial Life
 #    *,R,Resistor
 #    *,VR,Voltage Regulator|Variable Resistor
-# -----------------------------------------------------------------------------
+#
+# Tecnically, thhe order of entries and multiple definitions does not matter
+# here, as the soyacro.py application sorts them before applying them. However,
+# for hand-editing this file, it's much easier if the actual terms are in order.
+# ------------------------------------------------------------------------------
 
 # These match electronic components:
 # ----------------------------------
