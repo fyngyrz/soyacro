@@ -489,7 +489,7 @@ INF,,Intermediate-range Nuclear Forces (treaty)
 IN,,Indiana (USA)
 IOC,,International Olympic Committee
 IOS,iOS,An Apple Operating System.
-IOT,,Internet Of Things
+IOT,IoT,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address)|Intellectual Property
 IPC,,InterProcess Communications
@@ -750,7 +750,7 @@ ROFLMAO,,Rolling On Floor Laughing My Ass Off
 ROTFL,,Rolling On The Floor Laughing
 ROTFLMAO,,Rolling On The Floor Laughing My Ass Off
 ROV,,Remotely Operated Vehicles
-RPG,,Role Playing Game
+RPG,,Role Playing Game|Anti-tank missile (Russian)
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
 RTTY,,Radio Teletype
