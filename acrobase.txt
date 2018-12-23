@@ -797,6 +797,7 @@ SO,,Significant Other
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
+SOS,,Save Our Souls|Shit On a Shingle (chipped beef on bread)
 SOTA,,State Of The Art
 SP,,Spelling
 SPID,,Service Profile Identifier
