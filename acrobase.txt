@@ -395,6 +395,7 @@ GCF,,Gender Critical Feminist
 GCHQ,,Government Communications HeadQuarters (UK)
 GDP,,Gross Domestic Product
 GDPR,,General Data Protection Regulation (EU)
+GEO,,GEOstationary orbit
 GFLOPS,,Giga FLoating Point OPerations per Second
 GGP,,Great Grandparent (usually parent of parent of parent post)
 GHZ,GHz,Gigahertz - Billions of cycles per second
