@@ -524,6 +524,7 @@ ITER,,International Thermonuclear Experimental Reactor
 IVF,,In Vitro Fertilization
 IWC,,International Whaling Commission
 JEDEC,,Joint Electron Device Engineering Council
+JFC,,Jesus Fucking Christ
 JFK,,John F. Kennedy
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
@@ -737,6 +738,7 @@ Q1,,First Quarter
 Q2,,Second Quarter
 Q3,,Third Quarter
 Q4,,Fourth Quarter
+QED,,Quod Erat Demonstrandum: that which was to be demonstrated
 QC,,Quebec (Canada)
 QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
