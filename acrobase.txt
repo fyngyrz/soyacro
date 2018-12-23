@@ -119,6 +119,7 @@ AES,,Advanced Encryption Standard
 AFAIK,,As Far As I Know
 AF,,Audio Frequency
 AFK,,Away From Keyboard
+AFRL,,Air Force Research Laboratory
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AG,,Attorney General|Aerographer's mate (US navy)
 AGU,,American Geophysical Union
@@ -344,6 +345,7 @@ FARC,,Fuerzas Armadas Revolucionarias de Colombia
 FAS,,Fetal Alcohol Syndrome
 FAX,,Facsimile transmission
 FBI,,Federal Bureau of Investigation (US)
+FBO,,Federal Budget Office (US)
 FCC,,Federal Communications Commission (US)
 FDA,,Food and Drug Administration (US)
 FDIC,,Federal Deposit Insurance Corporation (US)
@@ -549,6 +551,7 @@ LDNLS,,Low Dimensional Neural-Like Systems
 LDS,,Latter Day Saints (Mormons)
 LED,,Light Emitting Diode
 LENR,,Low Energy Nuclear Reactor
+LEO,,Low Earth Orbit
 LF,,Low Frequency: 30-300 KHz
 LGB,,Lesbian, Gay and Bisexual
 LGBT,,Lesbian, Gay, Bisexual and Transexual
