@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 23rd, 2018 (this code file only)
+#  Last Update: December 24th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -639,7 +639,7 @@ if showstyles == True:
 		if thestyles != '':
 			thestylecount = unicode(thestylecount)
 			thestyles = unicode(thestyles)
-			mybody += u'<hr><div><span style="color:#00ff00;">Styles ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
+			mybody += u'<hr><div><span style="color:#00ff00;">Macros ('+thestylecount+u'):</span><br><span style="color:green;">'+thestyles+u'</span></div>'
 
 if usemacros == True and showsigs == True:
 	siglist = unicode(mod.do('{wlsigs}'))
