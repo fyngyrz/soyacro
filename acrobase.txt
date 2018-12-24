@@ -183,6 +183,7 @@ BIOS,,Basic Input Output System
 BLM,,Bureau of Land Management (US)
 BMI,,Body Mass Index
 BND,,Bundesnachrichtendienst - Federal Intelligence Service (German)
+BOM,,Bill Of Materials
 BP,,Blood Pressure|British Petroleum
 BS,,Bachelor of Science|BullShit
 BSD,,Berkeley Software Distribution
