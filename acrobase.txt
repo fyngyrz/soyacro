@@ -497,7 +497,7 @@ IIS,,Internet Information Services
 IL,,Illinois (USA)
 IMDB,IMDb,Internet Movie Database
 IMF,,International Monetary Fund
-IMHO,,In My Humble/Honest Opinion
+IMHO,,In My Humble Opinion|In My Honest Opinion
 IMO,,In My Opinion
 INF,,Intermediate-range Nuclear Forces (treaty)
 IN,,Indiana (USA)
