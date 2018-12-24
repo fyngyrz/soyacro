@@ -537,6 +537,7 @@ JRE,,Java Runtime Environment
 JSON,,A file format designed to hold human- and machine-readable data
 K12,,Kindergarten to 12th grade
 KB,,Kilobyte|Knowledge Base
+KFC,,Kentucky Fried Chicken (US food chain)
 KFLOPS,,Kilo FLoating Point OPerations per Second
 KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Security) Federal Security Service (Russian Federation)
 KHZ,KHz,Kilohertz - Thousands of cycles per second
