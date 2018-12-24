@@ -394,7 +394,7 @@ GB,,Gigabyte
 GCC,,GNU Compiler Collection|Gulf Cooperation Council
 GCF,,Gender Critical Feminist
 GCHQ,,Government Communications HeadQuarters (UK)
-GDP,,Gross Domestic Product
+GDP,,Gross Domestic Product|General Data Protection
 GDPR,,General Data Protection Regulation (EU)
 GEO,,GEOstationary orbit
 GFLOPS,,Giga FLoating Point OPerations per Second
@@ -613,7 +613,7 @@ MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MP,,MegaPixel|Member of Parliament
 MRO,,Mars Reconnaissance Orbiter
-MS,,Mississippi (USA)|MicroSoft
+MS,,Mississippi (USA)|MicroSoft|Multiple Sclerosis
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
 MSRP,,Manufacturer Suggested Retail Price
@@ -716,7 +716,7 @@ PE,,Prince Edward Island (Canada)
 PEP,,Python Enhancement Proposal
 PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
-PI,,Private Investigator
+PI,,Private Investigator|3.14159265359
 PITA,,Pain In The Ass
 PM,,Prime Minister|Post Meridiem - after midday
 PNAS,,Proceedings of the National Academy of Sciences
