@@ -51,7 +51,7 @@
 *,MP,Mechanical Part
 *,M,Motor
 *,MOSFET,Metal Oxide Semiconductor Field Effect Transistor
-*,MOV,Metal Oxid Varistor
+*,MOV,Metal Oxide Varistor
 *,NE,Neon Bulb
 *,PCB,Printed Circuit Board
 *,P,Plug
