@@ -161,7 +161,7 @@ File | Purpose
 
 The format is defined at the top of the file. Basically there are three
 comma-separated fields, which define either fixed term expansions or
-standard electronic component expansionss. **Important:** _Don't use HTML
+standard electronic component expansions. **Important:** _Don't use HTML
 in these fields._
 
 ### Fixed term expansions
