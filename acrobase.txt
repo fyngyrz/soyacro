@@ -53,9 +53,11 @@
 *,MOSFET,Metal Oxide Semiconductor Field Effect Transistor
 *,MOV,Metal Oxide Varistor
 *,NE,Neon Bulb
+*,NTC,Negative Temperature Coefficient (thermistor)
 *,PCB,Printed Circuit Board
 *,P,Plug
 *,PS,Power Supply
+*,PTC,Positive Temperature Coefficient (thermistor)
 *,Q,Transistor
 *,R,Resistor
 *,RT,Thermistor
