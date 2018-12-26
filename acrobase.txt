@@ -128,6 +128,7 @@ AFK,,Away From Keyboard
 AFRL,,Air Force Research Laboratory
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
 AG,,Attorney General|Aerographer's mate (US navy)
+AGI,,Artificial General Intelligence
 AGU,,American Geophysical Union
 AGW,,Anthropogenic Global Warming
 AI,,Artificial Intelligence
@@ -281,6 +282,7 @@ DMA,,Direct Memory Access
 DMR,,Digital Mobile Radio
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNC,,Democratic National Convention|Democratic National Committee
+DNN,,Deep Neural Network
 DNS,,Domain Name System
 DOB,,Date Of Birth
 DOD,,Department Of Defense (US)
@@ -418,6 +420,7 @@ GPH,,Gallons Per Hour
 GPIO,,General Purose Input Output
 GPL,,General Public License
 GPS,,Global Positioning System
+GSA,,Government Services Authority (US)
 GT,,Grand Touring
 GPU,,Graphics Processing Unit
 GUI,,Graphic User Interface
@@ -705,6 +708,7 @@ OS,,Operating System|Open-Source (software)
 OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
 OTC,,Over The Counter
 OTOH,,On The Other Hand
+OTT,,Over The Top (direct distribution of streaming content)
 P2P,,Peer to Peer
 PAC,,Political Action Committee
 PA,,Pennsylvania (USA)
@@ -800,6 +804,7 @@ SFWA,,Science Fiction Writers of America
 SFW,,Safe For Work
 SHF,,Super High Frequency: 3-30 GHz
 SIG,,Special Interest Group|Signature
+SIM,,Subscriber Identification Module (usually removable card)
 SIMM,,Single Inline Memory Module
 SIS,,Secret Intelligence Service (UK, also known as MI6)
 SJW,,Social Justice Warrior
@@ -885,6 +890,7 @@ TTL,,Transistor-Transistor Logic|Through The Lens|Time To Live
 TTS,,Text-To-Speech
 TTYL,,Talk To You Later
 TTY,,Teletype
+TU,,Terminal Unit
 TV,,Television
 TX,,Texas (USA)|Transmit
 UAE,,United Arab Emirates
