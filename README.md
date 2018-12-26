@@ -146,6 +146,8 @@ any other commenting system that allows the `<abbr>` tag.\)
 
 File | Purpose
 ---- | -------
+`README.md` | This Readme
+`COPYING` | Declaration of public domain
 `soyacro.py` | the webserver cgi
 `aa_webpage.py` | convenience for generating HTML 4.01 pages
 `aa_macro.py` | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
