@@ -256,7 +256,7 @@ _Result:_
 > `[style strike <strike>[b]</strike>]`  
 > `[style bq <blockquote>[b]</blockquote>]`  
 
-### More about styles
+### More about macro styles
 
 Specifically in the context of this application, `[style]` \(page-local
 styles\) and `[gstyle]` \(global styles\) perform exactly the same
@@ -289,6 +289,41 @@ _Used in a post as follows:_
 _Produces:_
 
 > `Italizing for emphasis, I <i>really</i> mean it!`
+
+### Possible "gotchas" with the macros
+
+The macros, if used, are processed after the term expansions.
+
+If a macro is processing the content in any way that depends on the
+content -- such as doing math on it -- this can cause a problem in
+certain cases, because the HTML tags that surround the term will also be
+handed to the macro.
+
+So for instance, let's say you are allowing processing of pure numeric
+terms. You want to use the farenheit to celsius macro, which expects to
+be fed a number (the temperature in farenheit) to convert to celsius, and
+so you use this in your post:
+
+> `{f 73}`
+
+You expect this result:
+
+> `73&deg;F (22.8&deg;C)`
+
+But what you get is this...
+
+> `<abbr title="A shorthand for: Goodbye">73</abbr>&deg;F (0&deg;C)`
+
+...what happened there was the 73 got expanded, and then the HTML
+tags that comprise the expansion were fed to the {f} macro, which
+couldn't make any sense out of
+`<abbr title="A shorthand for: Goodbye">73</abbr>` when it was
+expecting a number (73 in this case), and so the conversion to
+celsius failed.
+
+In order to get around this, you can turn off `Detect Number Terms`
+on the web page. That stops the term expansion of pure numbers, and
+just expands mixed numeric and caps terms and pure caps terms.
 
 ### The Signature Generator
 
