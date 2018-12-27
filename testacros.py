@@ -36,6 +36,21 @@ except:
 	print 'failed to read ' + afile
 	exit()
 
+def pluralize(num):
+	if num == 1: return ''
+	return 's'
+
+def conjunction(num):
+	if num == 1: return 'has a'
+	return 'have'
+
+def chkint(text):
+	try:
+		n = int(text)
+	except:
+		return False
+	return True
+
 def tstchars(text):
 	if key == '*': return True
 	for c in text:
@@ -54,6 +69,7 @@ ln = 1
 rct = 0
 exl = 0
 defcount = 0
+numcount = 0
 multidefs = 0
 for line in data:
 	if line != '' and line[0] != '#':
@@ -71,6 +87,7 @@ for line in data:
 			if key.find('<') != -1: errors += 'key '+key+' contains "<"\n'
 			if key.find('>') != -1: errors += 'key '+key+' contains ">"\n'
 			if tstchars(key) == False: errors += 'key '+key+' contains illegal characters\n'
+			if chkint(key) == True: numcount += 1
 			if key == '':
 				errors += 'key is empty at line %d\n' % (ln)
 			else:
@@ -102,23 +119,21 @@ else:
 	print '-' * sl
 al = len(di)
 ct = len(relist)
-print '%d component terms found' % (ct)
-print '%d component types found' % (cxcount)
-cxpl = ''
-cxhh = 'has a'
-if cxmult > 1:
-	cxpl = 's'
-	cxhh = 'have'
-if cxmult == 0:
-	print 'There are no multiply defined components'
-else:
-	print '%d component%s %s multiple definition%s' % (cxmult,cxpl,cxhh,cxpl)
+print '%d component term%s found' % (ct,pluralize(ct))
+print '%d component type%s found' % (cxcount,pluralize(cxcount))
+cxpl = pluralize(cxmult)
+print '%d component%s %s multiple definition%s' % (cxmult,cxpl,conjunction(cxmult),cxpl)
 print '%d fixed terms found' % (len(di))
-print '%d definitions' % (defcount+cxcount)
-print '%d terms have multiple definitions' % (multidefs)
-print '%d terms have replacements' % (rct)
-print 'expansion file size is %d bytes' % (len(text))
-s = 'average expansion length is %d characters' % (round(float(exl) / float(al)))
+print '%d pure numeric term%s found' % (numcount,pluralize(numcount))
+print '%d definition%s' % (defcount+cxcount,pluralize(defcount+cxcount))
+cxpl = pluralize(multidefs)
+print '%d term%s %s multiple definition%s' % (multidefs,cxpl,conjunction(multidefs),cxpl)
+cxpl = pluralize(rct)
+print '%d term%s %s replacement%s' % (rct,cxpl,conjunction(rct),cxpl)
+tlen = len(text)
+print 'expansion file size is %d byte%s' % (tlen,pluralize(tlen))
+cct = round(float(exl) / float(al))
+s = 'average expansion length is %d character%s' % (cct,pluralize(cct))
 ll = len(s)
 print s
 print '-' * ll
