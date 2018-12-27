@@ -683,6 +683,7 @@ NWS,,National Weather Service (USA)
 NYC,,New York City (New York, USA)
 NY,,New York (USA)
 NYPD,,New York city Police Department
+NYPL,,New York Public Library
 NYSE,,New York Stock Exchange
 NYT,,New York Times
 NZ,,New Zealand|Non-Zero
