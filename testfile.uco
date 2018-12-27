@@ -30,6 +30,7 @@ Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="">
 <br><div style="text-align:left;"></div></div>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKED>Detect&nbsp;Terms<br>
+<INPUT TYPE="checkbox" NAME="detectnumbers">Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKED>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKED>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKED>Show&nbsp;Macros<br>
