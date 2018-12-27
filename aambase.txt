@@ -12,6 +12,15 @@
 [style ol [ol wrap=listlinewrap,sep=|,[b]]]
 [style ul [ul wrap=listlinewrap,sep=|,[b]]]
 
+[comment these conversions are used by the c2f and f2c macros:]
+[gstyle r21 [div mode=float,[round [mul mode=float,10 [b]]] 10]]
+[gstyle f2c {r21 [mul mode=float,0.555555 [sub mode=float,[b] 32]]}]
+[gstyle c2f {r21 [add mode=float,32 [mul mode=float,1.8 [b]]]}]
+
+[comment these convert from deg F to deg C and vice-versa: {f 72} {c 22.2}]
+[style f [b]&deg;F ({f2c [b]}&deg;C)]
+[style c [b]&deg;C ({c2f [b]}&deg;F)]
+
 [comment the following three lines implement random selection from lists:]
 [gstyle rt [random]]  
 [gstyle rrange [int [mul mode=float,[b] {rt}]]]  
