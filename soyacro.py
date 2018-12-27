@@ -35,8 +35,8 @@ mfile		= 'aambase.txt'		# macros filename
 
 # Initial Web Page Options:
 # -------------------------
-detectterms = True				# detect general terms
-numberterms = False				# detect completely numeric terms
+detectterms	= True				# detect general terms
+numberterms	= False				# detect completely numeric terms
 detectcomps	= True				# detect electronic component designations
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
