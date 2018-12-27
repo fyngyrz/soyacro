@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 25th, 2018 (this code file only)
+#  Last Update: December 27th, 2018 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -36,12 +36,13 @@ mfile		= 'aambase.txt'		# macros filename
 # Initial Web Page Options:
 # -------------------------
 detectterms = True				# detect general terms
+numberterms = False				# detect completely numeric terms
 detectcomps	= True				# detect electronic component designations
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
 showsigs	= True				# all signatures displayed or not
-randsigs	= False				# append (a) random signature when generating
+randsigs	= False				# append a random signature when generating
 sigecho		= True				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
@@ -57,8 +58,16 @@ reslines	= 20				# number of text lines in result box
 
 from aa_webpage import *
 import cgi,sys,os
-
 import re
+
+# returns true if text is an integer
+# ----------------------------------
+def chkint(text):
+	try:
+		n = int(text)
+	except:
+		return False
+	return True
 
 undict = {}
 errors = u''
@@ -98,6 +107,7 @@ checkshowstyles=u''
 checksigecho=u''
 checkdetectcomps=u''
 checkdetectterms=u''
+checkdetectnumbers=u''
 
 # Detect if this is a resubmit or an initial entry:
 # -------------------------------------------------
@@ -165,6 +175,12 @@ if resubmit == True:
 		detectterms = False
 
 	try:
+		flag = form['detectnumbers'].value
+		numberterms = True
+	except:
+		numberterms = False
+
+	try:
 		flag = form['showsignatures'].value
 		showsigs = True
 	except:
@@ -199,6 +215,7 @@ if showstyles == True: checkshowstyles = chk
 if sigecho == True: checksigecho = chk
 if detectcomps == True: checkdetectcomps = chk
 if detectterms == True: checkdetectterms = chk
+if numberterms == True: checkdetectnumbers = chk;
 
 # Override autosigs if '{nsig ' is present
 if usertext.find('{nsig ') != -1:
@@ -264,6 +281,8 @@ for el in l1:
 							relist.append(alternate)
 						else:
 							pass
+					elif numberterms == False and chkint(key) == True:
+						pass
 					else: # normal term definition
 						term = key
 						if alternate != u'':
@@ -541,6 +560,7 @@ Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
 PUTRSIGHERE</div>
 <div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKDETECTTERMS>Detect&nbsp;Terms<br>
+<INPUT TYPE="checkbox" NAME="detectnumbers"CHECKDETECTNUMBERS>Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
@@ -571,6 +591,7 @@ myform = myform.replace(u'RESLINES',str(reslines))
 myform = myform.replace(u'IGLIST',tiglist)
 myform = myform.replace(u'CHECKDETECTCOMPS',checkdetectcomps)
 myform = myform.replace(u'CHECKDETECTTERMS',checkdetectterms)
+myform = myform.replace(u'CHECKDETECTNUMBERS',checkdetectnumbers)
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
