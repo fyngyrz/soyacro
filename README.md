@@ -295,7 +295,7 @@ _Produces:_
 The macros, if used, are processed after the term expansions.
 
 If a macro is processing the content in any way that depends on the
-content -- such as doing math on it -- this can cause a problem in
+content &mdash; such as doing math on it &mdash; this can cause a problem in
 certain cases, because the HTML tags that surround the term will also be
 handed to the macro.
 
