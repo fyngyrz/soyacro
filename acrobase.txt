@@ -247,7 +247,7 @@ CPR,,CardioPulmonary Resusitation
 CPS,,Crown Prosecution Service (England/UK)
 CPU,,Central Processing Unit
 CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
-CRA,,Computing Research Association
+CRA,,Computing Research Association|Congressional Review Act
 CRISPR,,Clustered Regularly Interspaced Short Palindromic Repeats - genetic editing tool
 CRT,,Cathode Ray Tube
 CS,,Computer Science
@@ -263,6 +263,7 @@ CV,,Computer Vision|Curriculum Vitae (latin: "course of life")
 CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
 CVT,,Continuously Variable Transmission
+CVV,,Card Verification Value
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
@@ -330,6 +331,7 @@ EG,e.g.,exempli gratia: "for example"
 EHF,,Extremely High Frequency: 30-300 GHz
 EKG,,Electro(C/k)ardioGram
 EM,,Electro-Magnetic
+EME,,Earth-Moon-Earth (communications)
 EMACS,Emacs,Editing MACroS
 EMM,,Extended Memory Manager
 EMP,,Electro-Magnetic Pulse
@@ -378,6 +380,7 @@ FIOS,,FIber Optic Service
 FLEX,,An OS for the 6800 and 6809 microprocessors
 FL,,Florida (USA)
 FLOPS,,FLoating Point OPerations per Second
+FLOTUS,,First Lady Of The United States
 FM,,Frequency Modulation|Foreign Minister|Finance Minister
 FML,,Fuck My Life
 FOIA,,Freedom Of Information Act (US)
@@ -411,7 +414,7 @@ GCC,,GNU Compiler Collection|Gulf Cooperation Council
 GCF,,Gender Critical Feminist
 GCHQ,,Government Communications HeadQuarters (UK)
 GDP,,Gross Domestic Product|General Data Protection
-GDPR,,General Data Protection Regulation (EU)
+GDPR,,General Data Protection Regulation (EU)	
 GEO,,GEOstationary orbit
 GFLOPS,,Giga FLoating Point OPerations per Second
 GGP,,Great Grandparent (usually parent of parent of parent post)
@@ -600,6 +603,7 @@ LNG,,Liquid Natural Gas
 LOL,,Laugh Out Loud
 LOPG,LOP-G,Lunar Orbital Platform-Gateway
 LPI,,Lines Per Inch
+LR,,Long Range|Lightroom (Adobe product)
 LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 LWNJ,,Left Wing Nut Job
@@ -640,6 +644,7 @@ MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MP,,MegaPixel|Member of Parliament
 MP3,,Moving Picture Experts Group Layer-3 Audio format
+MPU,,Micro Processing Unit
 MRO,,Mars Reconnaissance Orbiter
 MS,,Mississippi (USA)|MicroSoft|Multiple Sclerosis
 MSFT,,Microsoft (stock ticker symbol)
@@ -737,7 +742,7 @@ PAC,,Political Action Committee
 PA,,Pennsylvania (USA)
 PAL,,Phase Alternate Line video encoding
 PCI,,Payment Card Industry
-PC,,Personal Computer|Politically Correct
+PC,,Personal Computer; any computer owned by an individual|Politically Correct
 PCB,,Printed Circuit Board
 PD,,Public Domain, Police Department
 PDA,,Personal Digital Assitant|Public Display of Affection
@@ -760,7 +765,7 @@ PPI,,Pixels Per Inch
 PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PR,,Pull Request - source code alteration submission|Public Relations|Puerto Rico
-PS,,PostScript
+PS,,PostScript|Photoshop (Adobe product)
 PSA,,Public Service Announcement
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
@@ -821,6 +826,7 @@ SDR,,Software Defined Radio
 SD,,South Dakota (USA)|Secure Digital
 SDK,,Software Development Kit
 SE,,SouthEast
+SEAL,,Sea Air and Land (US Navy special operations group)
 SEC,,Securities and Exchange Commission (US)
 SECDEF,,SECretary of DEFense
 SEO,,Search Engine Optimization
@@ -838,6 +844,7 @@ SK,,Saskatchewan (Canada)|South Korea|Silent Key (deceased)
 SLAC,,Stanford Linear Accelerator Center
 SLR,,Single Lens Reflex (cameras)
 SLS,,Space Launch System
+SM,S&amp;M,Sado-Masochism
 SMA,,Surface Mount Assembly
 SMB,,Server Message Block
 SMC,,Surface Mount Component
@@ -852,6 +859,7 @@ SNAP,,Supplemental Nutrition Assistance Program
 SO,,Significant Other
 SOB,,Son Of a Bitch
 SOC,SoC,System on a Chip
+SOG,,Special Operations Group
 SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
 SOS,,Save Our Souls|Shit On a Shingle (chipped beef on bread)
