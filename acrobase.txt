@@ -106,6 +106,7 @@
 8080,,An Intel 8-bit CPU
 A320,,A passenger aircraft
 AA,,Alcoholics Anonymous
+AAA,,American Automobile Association
 AB,,Alberta (Canada)
 ABA,,American Bar Association
 ABC,,American Broadcasting Company|Australian Broadcasting Corporation
@@ -219,6 +220,7 @@ CERN,,European Organization for Nuclear Research (French orig.)
 CES,,Consumer Electronics Show
 CFC,,ChloroFluoroCarbon
 CFO,,Chief Financial Officer
+CHD,,CardHolder Data
 CGI,,Common Gateway Interface|Computer Generated Imagery
 CIA,,Central Intelligence Agency (US)
 CIO,,Chief Information Officer
@@ -231,7 +233,7 @@ CMS,,Content Management System
 CMY,,Cyan, Magenta, Yellow
 CMYK,,Cyan, Magenta, Yellow, Black
 CNC,,Computer Numeric Control (manufacturing tools)
-CNN,,Cable News Network
+CNN,,Cable News Network|Convolutional Neural Network
 CNSA,,China National Space Administration
 CO2,,1 carbon atom, 2 oxygen atoms: Carbon Dioxide
 CO,,Colorado (USA)|Carbon Monoxide
@@ -264,6 +266,7 @@ CVE,,Common Vulnerabilities and Exposures
 CVSS,,Common Vulnerability Scoring System
 CVT,,Continuously Variable Transmission
 CVV,,Card Verification Value
+CVV2,,Card Verification Value 2
 CW,,Continous Wave (only) transmissions (generally Morse Code)
 CYA,,Cover Your Ass
 DAC,,Digital to Analog Converter
@@ -394,6 +397,7 @@ FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FS,,Fucking Summary
 FSB,,Federal Security Service (Russian Federation)
+FSF,,Free Software Foundation
 FSK,,Frequency Shift Keying
 FSM,,Flying Spaghetti Monster
 FTC,,Federal Trade Commission (USA)
@@ -670,6 +674,7 @@ NCA,,Non-Compete Agreement
 NDA,,Non Disclosure Agreement
 ND,,North Dakota (USA)
 NE,,Nebraska (USA)|NorthEast
+NFC,,Near Field Communication(s)
 NFL,,National Football League (US)
 NFW,,No Fucking Way
 NGO,,Non-Governmental Organization
@@ -754,6 +759,7 @@ PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
 PHP,,Personal Home Page, now "Hypertext Preprocessor"
 PI,,Private Investigator|3.14159265359
+PIN,,Personal Identification Number
 PITA,,Pain In The Ass
 PM,,Prime Minister|Post Meridiem - after midday
 PNAS,,Proceedings of the National Academy of Sciences
@@ -781,6 +787,7 @@ Q4,,Fourth Quarter
 QED,,Quod Erat Demonstrandum: that which was to be demonstrated
 QC,,Quebec (Canada)
 QOS,QoS,Quality of Service
+QR,,Quick Response code
 QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
 QSO,,Radio shorthand for conversation
@@ -809,6 +816,7 @@ ROTFLMAO,,Rolling On The Floor Laughing My Ass Off
 ROV,,Remotely Operated Vehicles
 RPG,,Role Playing Game|Anti-tank missile (Russian)
 RPM,,Revolutions Per Minute
+RSA,,Rivest, Shamir, and Adelman (data security company / algorithm)
 RSS,,Really Simple Syndication
 RTFA,,Read The Fucking Article
 RTFM,,Read The Fucking Manual
@@ -935,6 +943,7 @@ UCSD,,University of California, San Diego
 UC,,University of California
 UCLA,,University of California, Los Angeles
 UDP,,User Datagram Protocol
+UFO,,Unidentified Flying Object
 UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
 UK,,United Kingdom
