@@ -695,6 +695,7 @@ NOAA,,National Oceanic and Atmospheric Administration (US)
 NORAD,,North American Aerospace Defense Command
 NOT,,NOT gate: input 1 = output in opposite state
 NPC,,Non-Player Character|National People's Congress (China)
+NPG,,Negative Population Growth
 NPM,,Node Package Manager (Javascript)
 NPR,,National Public Radio (US)
 NRA,,National Rifle Association (US)
