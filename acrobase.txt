@@ -172,6 +172,7 @@ AWOL,,Absent Without Official Leave
 AWS,,Amazon Web Services
 AWSSI,,Accumulated Winter Season Severity Index
 AZ,,Arizona (USA)
+BASIC,,Beginner's All-purpose Symbolic Instruction Code
 BATF,,Bureau of Alcohol, Tobacco, and Firearms (US)
 BB,,A small, round projectile
 BBC,,British Broadcasting Corporation
@@ -212,6 +213,7 @@ CC,,Carbon Copy|Credit Card|Creative Commons
 CCTV,,Closed Circuit TeleVision|China Central Television
 CDC,,Center for Disease Control (US)
 CD,,Compact Disk
+CDD,,Customer Due Diligence|Community Driven Development
 CDT,,Central Daylight Time
 CE,,Current Era
 CEO,,Chief Executive Officer
@@ -219,6 +221,7 @@ CEQA,,California Environmental Quality Act (US)
 CERN,,European Organization for Nuclear Research (French orig.)
 CES,,Consumer Electronics Show
 CFC,,ChloroFluoroCarbon
+CFD,,Computational Fluid Dynamics
 CFO,,Chief Financial Officer
 CHD,,CardHolder Data
 CGI,,Common Gateway Interface|Computer Generated Imagery
@@ -374,6 +377,7 @@ FBO,,Federal Budget Office (US)
 FCC,,Federal Communications Commission (US)
 FDA,,Food and Drug Administration (US)
 FDIC,,Federal Deposit Insurance Corporation (US)
+FEM,,Finite Element Method
 FEMA,,Federal Emergency Management Agency (US)
 FF,,Full frame: 36 x 24 mm sensor size|Fast Forward
 FFS,,For Fuck's Sake
@@ -448,6 +452,7 @@ HAM,Ham,Amatuer radio operators
 HAMR,,Heat-Assisted Magnetic Recording
 HBO,,Home Box Office (US media)
 HD,,Hard Disk|High Definition
+HDCP,,High Definition Copy Protocol
 HDD,,Hard Disk Drive
 HDL,,Hardware Description Language
 HDMI,,High Definition Multimedia Interface
@@ -554,6 +559,8 @@ IWC,,International Whaling Commission
 JEDEC,,Joint Electron Device Engineering Council
 JFC,,Jesus Fucking Christ
 JFK,,John F. Kennedy
+JIT,,Just In Time (compilation)
+JITC,,Just In Time Compilation
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
 JPL,,Jet Propulsion Labratory (US)
@@ -797,6 +804,7 @@ RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
 RC,,Resistor-Capacitor|Radio Control(ed)
 RCA,,Radio Corporation of America|an audio / low RF connector
+RCS,,Revision Control System
 RDS,,Radio Data System|Relational Database Service
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
@@ -890,6 +898,7 @@ SSO,,Sun Synchronous Orbit
 SST,,SuperSonic Transport|Space Ship Two
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
+STL,,Standard Tessellation Language|Special Technologies Laboratory|Salt, Tequila and Lime
 STT,,Speech-To-Text
 SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
@@ -963,6 +972,7 @@ USA,,United States of America|United States Army
 USB2,,Universal Serial Bus v2
 USB3,,Universal Serial Bus v3
 USB,,Universal Serial Bus
+USBC,USB-C,Universal Serial Bus, type C
 USD,,United States Dollars (currency)
 USDA,,United States Department of Agriculture
 USG,,United States Government
@@ -976,7 +986,7 @@ US,,United States (of America)
 UTC,,Universal Coordinated Time
 UT,,Utah (USA)
 VA,,Virgina (USA)|Veteran's Administration (US)
-VC,,Venture Capital/Capitalist
+VC,,Venture Capital/Capitalist|Version Control
 VFO,,Variable Frequency Oscillator
 VHF,,Very High Frequency: 30-300 MHz
 VIN,,Vehicle Identification Number
