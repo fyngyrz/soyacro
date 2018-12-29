@@ -779,7 +779,10 @@ PPI,,Pixels Per Inch
 PRC,,People's Republic of China
 PROM,,Programmable Read-Only Memory - can be user programmed, usually only once
 PR,,Pull Request - source code alteration submission|Public Relations|Puerto Rico
-PS,,PostScript|Photoshop (Adobe product)
+PS,,PostScript|Photoshop (Adobe product)|PlayStation
+PS2,,PlayStation 2
+PS3,,PlayStation 3
+PS4,,PlayStation 4
 PSA,,Public Service Announcement
 PSLV,,Polar Satellite Launch Vehicle
 PST,,Pacific Standard Time
@@ -902,7 +905,7 @@ STL,,Standard Tessellation Language|Special Technologies Laboratory|Salt, Tequil
 STT,,Speech-To-Text
 SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
-SW,,Shortwave (radio)|SouthWest
+SW,,Shortwave (radio)|SouthWest|SoftWare
 SWAT,,Special Weapons And Tactics 
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
@@ -991,6 +994,7 @@ VFO,,Variable Frequency Oscillator
 VHF,,Very High Frequency: 30-300 MHz
 VIN,,Vehicle Identification Number
 VIP,,Very Important Person
+VLAN,,Virtual Local Area Network
 VLF,,Very Low Frequency: 3-30 KHz
 VLSI,,Very Large Scale Integrated circuit
 VM,,Virtual Memory|Virtual Machine
