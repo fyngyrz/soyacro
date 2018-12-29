@@ -149,7 +149,9 @@ AP,,Access Point|Associated Press
 APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language|APpLe stock symbol
+APP,,Application|Advanced Placement Program
 APRS,,Automatic Packet Reporting System
+APSC,APS-C,22.2 x 14.8 mm image sensor size (Canon) and 23.5-23.7 x 15.6 mm for others
 AR,,Arkansas (USA)|Augmented Reality
 ARC,,Amatuer Radio Club
 ARM,,A class of CPUs
@@ -180,7 +182,8 @@ BDAC,,Broadband Deployment Advisory Committee
 BF,,BoyFriend
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFF,,Best Female Friend
-BFR,,Big Fucking Rocket
+BFR,,Big Fucking Rocket / Big Falcon Rocket (now "Super Heavy")
+BFS,,Big Fucking Spaceship / Big Falcon Spaceship (now "Starship")
 BI,,Bisexual
 BIOS,,Basic Input Output System
 BLM,,Bureau of Land Management (US)
@@ -223,6 +226,7 @@ CIS,,Cisgender - where sense of identity corresponds to birth sex
 CIT,,California Institute of Technology
 CLI,,Command Line Interface
 CMOS,,Complementary Metal Oxide Semiconductor
+CLPS,,Commercial Lunar Payload Services
 CMS,,Content Management System
 CMY,,Cyan, Magenta, Yellow
 CMYK,,Cyan, Magenta, Yellow, Black
@@ -236,9 +240,11 @@ COD,,Cash On Delivery
 COM,,COMmunications
 COO,,Chief Operating Officer
 COP,,Conference Of the Parties (UNFCCC)
+CORBA,,Common Object Request Broker Architecture
 CP,,Child Porn
 CPM,CP/M,An OS for the 8080 microprocessor: Control Program for Microcomputers
 CPR,,CardioPulmonary Resusitation
+CPS,,Crown Prosecution Service (England/UK)
 CPU,,Central Processing Unit
 CQUAM,C-QUAM,Compatible QUadrature Amplitude Modulation
 CRA,,Computing Research Association
@@ -248,6 +254,7 @@ CS,,Computer Science
 CSS,,Cascading Style Sheet - a means to indirectly format HTML
 CST,,Central Standard Time
 CT,,Connecticut (USA)|Central Time
+CTBTO,,Comprehensive nuclear-Test-Ban Treaty Organization
 CTO,,Chief Technology Officer
 CTRL,,Control
 CUDA,,Compute Unified Device Architecture
@@ -346,8 +353,10 @@ EU,,European Union
 EULA,,End User License Agreement
 EUVL,,Extreme UltraViolet Lithography
 EV,,Electric Vehicle
+EVIL,,Electronic Viewfinder Interchangeable Lens
 EVP,,Executive Vice President
 EXIF,,EXchangeable Image File format
+FA,,Fucking Article
 FAA,,Federal Aviation Administration (US)
 FAI,,World Air Sports Federation (Swiss)
 FAQ,,Frequently Asked Questions
@@ -361,6 +370,7 @@ FCC,,Federal Communications Commission (US)
 FDA,,Food and Drug Administration (US)
 FDIC,,Federal Deposit Insurance Corporation (US)
 FEMA,,Federal Emergency Management Agency (US)
+FF,,Full frame: 36 x 24 mm sensor size|Fast Forward
 FFS,,For Fuck's Sake
 FHA,,Federal Housing Administration (US)
 FIFO,,First In, First Out
@@ -379,6 +389,7 @@ FP16,,16-bit Floating Point
 FP32,,32-bit Floating Point
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
+FS,,Fucking Summary
 FSB,,Federal Security Service (Russian Federation)
 FSK,,Frequency Shift Keying
 FSM,,Flying Spaghetti Monster
@@ -429,7 +440,7 @@ H2O,,2 hydrogen atoms, 1 oxygen atom: water
 HAM,Ham,Amatuer radio operators
 HAMR,,Heat-Assisted Magnetic Recording
 HBO,,Home Box Office (US media)
-HD,,Hard Disk
+HD,,Hard Disk|High Definition
 HDD,,Hard Disk Drive
 HDL,,Hardware Description Language
 HDMI,,High Definition Multimedia Interface
@@ -500,6 +511,7 @@ IHOP,,International House of Pancakes
 IIRC,,If I ReCall
 IIS,,Internet Information Services
 IL,,Illinois (USA)
+ILC,,Interchangeable Lens Camera
 IMDB,IMDb,Internet Movie Database
 IMF,,International Monetary Fund
 IMHO,,In My Humble Opinion|In My Honest Opinion
@@ -555,6 +567,11 @@ KVM,,Keyboard, Video, and Mouse switch
 KWH,kWh,kiloWatt-Hour
 KW,kW,kiloWatt
 KY,,Kentucky (USA)
+L1,,Lagrangian point 1 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
+L2,,Lagrangian point 2 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
+L3,,Lagrangian point 3 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
+L4,,Lagrangian point 4 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
+L5,,Lagrangian point 5 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
 LA,,Louisiana (USA)|Los Angeles (California, USA)
 LAN,,Local Area Network
 LAPD,,Los Angeles Police Department
@@ -581,16 +598,19 @@ LMGTFY,,Let Me Google That For You
 LNA,,Low Noise Amplifier
 LNG,,Liquid Natural Gas
 LOL,,Laugh Out Loud
+LOPG,LOP-G,Lunar Orbital Platform-Gateway
 LPI,,Lines Per Inch
 LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 LWNJ,,Left Wing Nut Job
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
+MAD,,Mutally Assured Destruction
 MAGA,,Make America Great Again
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MAMR,,Microwave-Assisted Magnetic Recording
 MB,,Megabyte|Manitoba (Canada)
+MBA,,Masters of Business Administration
 MC,,Midnight Commander (software)
 MD,,Maryland (USA)|Medical Doctor
 MDT,,Mountain Daylight Time
@@ -619,10 +639,12 @@ MPAA,,Motion Picture Association of America
 MPEG,,Motion Picture Experts Group
 MPH,,Miles Per Hour
 MP,,MegaPixel|Member of Parliament
+MP3,,Moving Picture Experts Group Layer-3 Audio format
 MRO,,Mars Reconnaissance Orbiter
 MS,,Mississippi (USA)|MicroSoft|Multiple Sclerosis
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
+MSM,,MainStream Media
 MSRP,,Manufacturer Suggested Retail Price
 MST,,Mountain Standard Time
 MT,,Montana (USA)|Mountain Time
@@ -725,6 +747,7 @@ PE,,Prince Edward Island (Canada)
 PEP,,Python Enhancement Proposal
 PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
+PHP,,Personal Home Page, now "Hypertext Preprocessor"
 PI,,Private Investigator|3.14159265359
 PITA,,Pain In The Ass
 PM,,Prime Minister|Post Meridiem - after midday
@@ -782,6 +805,8 @@ ROV,,Remotely Operated Vehicles
 RPG,,Role Playing Game|Anti-tank missile (Russian)
 RPM,,Revolutions Per Minute
 RSS,,Really Simple Syndication
+RTFA,,Read The Fucking Article
+RTFM,,Read The Fucking Manual
 RTTY,,Radio Teletype
 RV,,Research Vessel|Recreational Vehicle
 RWNJ,,Right Wing Nut Job
@@ -825,12 +850,14 @@ SN,,Soylent News
 SNAFU,,Situation Normal, All Fucked Up
 SNAP,,Supplemental Nutrition Assistance Program
 SO,,Significant Other
+SOB,,Son Of a Bitch
 SOC,SoC,System on a Chip
 SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
 SOS,,Save Our Souls|Shit On a Shingle (chipped beef on bread)
 SOTA,,State Of The Art
 SP,,Spelling
+SPD,,Space Policy Directive
 SPID,,Service Profile Identifier
 SQL,,Structured Query Language (for databases)
 SRLSY,,Seriously
@@ -892,7 +919,7 @@ TTS,,Text-To-Speech
 TTYL,,Talk To You Later
 TTY,,Teletype
 TU,,Terminal Unit
-TV,,Television
+TV,,Television|Transvestite/Tranny
 TX,,Texas (USA)|Transmit
 UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
