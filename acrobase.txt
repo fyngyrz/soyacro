@@ -827,6 +827,7 @@ RAW,,Deep color image files, usually from cameras
 RC,,Resistor-Capacitor|Radio Control(ed)
 RCA,,Radio Corporation of America|an audio / low RF connector
 RCS,,Revision Control System
+RD,R&amp;D,Research and Development
 RDS,,Radio Data System|Relational Database Service
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
