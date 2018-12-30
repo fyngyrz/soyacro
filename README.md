@@ -16,6 +16,10 @@ using them. You might keep an eye on the one in the project, as I seem to
 be adding to it regularly. Better yet, submit your additions here as a
 pull request, and we all win.
 
+The objective here definitely isn't to cover all acronyms ever. Instead,
+the aim is to go after terms that are currently, recently, or about to be
+in the news, and in particular, the technical news.
+
 #### Fixed Expansions
 
 Here's the format for a line to submit a fixed expansion, where []
