@@ -1049,6 +1049,7 @@ WH,,White House (US)
 WHO,,World Health Organization
 WIFI,Wi-Fi,WLAN based on any of the 802.11 standards
 WI,,Wisonsin (USA)
+WIC,,Women, Infants and Children
 WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
 WNEW,,Prog rock FM station in NYC in the 1900's
