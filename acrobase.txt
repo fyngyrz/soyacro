@@ -395,6 +395,8 @@ FFS,,For Fuck's Sake
 FHA,,Federal Housing Administration (US)
 FIFO,,First In, First Out
 FIOS,,FIber Optic Service
+FISA,,Foreign Intelligence Surveillance Act
+FISC,,Foreign Intelligence Surveillance Court
 FLEX,,An OS for the 6800 and 6809 microprocessors
 FL,,Florida (USA)
 FLOPS,,FLoating Point OPerations per Second
