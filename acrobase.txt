@@ -333,6 +333,7 @@ DX,,Distance, in radio reception
 ECC,,Error Correcting Code
 ECG,,ElectroCardioGram
 ECU,,Engine Control Unit
+ED,,Emergency Department|Erectile Dysfunction
 EDT,,Eastern Daylight Time
 EE,,Electrical/Electronic Engineering
 EEG,,Eastern European Group
@@ -675,6 +676,7 @@ MP,,MegaPixel|Member of Parliament
 MP3,,Moving Picture Experts Group Layer-3 Audio format
 MPU,,Micro Processing Unit
 MRO,,Mars Reconnaissance Orbiter
+MRSA,,Methicillin-Resistant Staphylococcus Aureus
 MS,,Mississippi (USA)|MicroSoft|Multiple Sclerosis
 MSFT,,Microsoft (stock ticker symbol)
 MSNBC,,MicroSoft National Broadcasting Company
@@ -707,7 +709,8 @@ NGO,,Non-Governmental Organization
 NHK,,International public broadcasting service of Japan.
 NH,,New Hampshire (USA)
 NHS,,National Health Service (Britain)
-NIH,,Not Invented Here
+NIA,,National Institute on Aging
+NIH,,Not Invented Here|National Institute of Health
 NIMBY,,Not In My Back Yard
 NIST,,National Institute of Standards and Technology
 NJ,,New Jersey (USA)
@@ -985,6 +988,7 @@ UCSD,,University of California, San Diego
 UC,,University of California
 UCLA,,University of California, Los Angeles
 UDP,,User Datagram Protocol
+UEFI,,Unified Extensible Firmware Interface
 UFO,,Unidentified Flying Object
 UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
