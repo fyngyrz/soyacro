@@ -406,7 +406,7 @@ FM,,Frequency Modulation|Foreign Minister|Finance Minister
 FML,,Fuck My Life
 FOIA,,Freedom Of Information Act (US)
 FORTRAN,,A computer language, "FORmula TRANSlator"
-FOSS,,Free Open Source Software
+FOSS,,Free and Open Source Software
 FOSTA,,Fight Online Sex Trafficking Act (US)
 FP,,Front Page
 FP16,,16-bit Floating Point
