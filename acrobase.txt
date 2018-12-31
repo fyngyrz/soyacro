@@ -186,6 +186,7 @@ BC,,British Columbia (Canada)|Before Christ|BroadCast (radio)
 BCB,,BroadCast Band (radio)
 BCC,,Blind Carbon Copy
 BDAC,,Broadband Deployment Advisory Committee
+BEV,Battery Electric Vehicle
 BF,,BoyFriend
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFF,,Best Female Friend
@@ -385,6 +386,7 @@ FB,,Facebook|Fine Business
 FBI,,Federal Bureau of Investigation (US)
 FBO,,Federal Budget Office (US)
 FCC,,Federal Communications Commission (US)
+FCEV,,Fuel Cell Electric Vehicle
 FDA,,Food and Drug Administration (US)
 FDIC,,Federal Deposit Insurance Corporation (US)
 FDM,,Frequency Division Multiplexing
@@ -788,6 +790,7 @@ PE,,Prince Edward Island (Canada)
 PEP,,Python Enhancement Proposal
 PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
+PHEV,,Plug-In Hybrid Electric Vehicle
 PHP,,Personal Home Page, now "Hypertext Preprocessor"
 PI,,Private Investigator|3.14159265359
 PIN,,Personal Identification Number
