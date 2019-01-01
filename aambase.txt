@@ -16,7 +16,7 @@
 [style smile &#128522;]
 [style shrug &#175;\_(&#12484;)_/&#175;]
 
-[comment these conversions are used by the c2f and f2c macros:]
+[comment these conversions are used by the c and f macros:]
 [gstyle r21 [round digits=1,[b]]]
 [gstyle f2c {r21 [mul mode=float,0.555555 [sub mode=float,[b] 32]]}]
 [gstyle c2f {r21 [add mode=float,32 [mul mode=float,1.8 [b]]]}]
