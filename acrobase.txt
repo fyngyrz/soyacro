@@ -792,7 +792,7 @@ PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
 PHEV,,Plug-In Hybrid Electric Vehicle
 PHP,,Personal Home Page, now "Hypertext Preprocessor"
-PI,,Private Investigator|3.14159265359
+PI,,Private Investigator|3.14159265359|Privacy International
 PIN,,Personal Identification Number
 PITA,,Pain In The Ass
 PLL,,Phase Locked Loop
