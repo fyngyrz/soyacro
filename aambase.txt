@@ -22,6 +22,12 @@
 [style f [b]&deg;F ({f2c [b]}&deg;C)]
 [style c [b]&deg;C ({c2f [b]}&deg;F)]
 
+[comment here are some examples of "canned" links, used like {gimp}]
+[style gimp {link https://www.gimp.org|GIMP}]
+[style itoolbox {link http://ourtimelines.com/itdoc/intro.html|iToolBox}]
+[style mycroft {link https://mycroft.ai|MyCroft}]
+[style photoshop {link https://www.adobe.com/products/photoshop.html|Photoshop}]
+
 [comment the following three lines implement random selection from lists:]
 [gstyle rt [random]]  
 [gstyle rrange [int [mul mode=float,[b] {rt}]]]  
