@@ -9,6 +9,7 @@
 [style lmgtfy {link http://lmgtfy.com/?q=[urlencode [b]]|LMGTFY}]
 [style rs [rs]]
 [gstyle listlinewrap [stripe [b]]]
+[style link [split |,[b]]<a rel="noopener" target="_blank" href="[parm 0]">[parm 1]</a>]
 [style ol [ol wrap=listlinewrap,sep=|,[b]]]
 [style ul [ul wrap=listlinewrap,sep=|,[b]]]
 
