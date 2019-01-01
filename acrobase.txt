@@ -67,7 +67,7 @@
 *,S,Switch
 *,SW,Switch
 *,TC,Thermocouple
-*,TFT,Thin-Film Transitor display
+*,TFT,Thin-Film Transistor display
 *,TH,Termistor
 *,TP,Test Point
 *,TUN,Tuner
@@ -186,7 +186,7 @@ BC,,British Columbia (Canada)|Before Christ|BroadCast (radio)
 BCB,,BroadCast Band (radio)
 BCC,,Blind Carbon Copy
 BDAC,,Broadband Deployment Advisory Committee
-BEV,Battery Electric Vehicle
+BEV,,Battery Electric Vehicle
 BF,,BoyFriend
 BFE,,Bum Fuck Egypt (middle of nowhere)
 BFF,,Best Female Friend
