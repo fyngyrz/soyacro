@@ -8,6 +8,7 @@
 [style ls [ls]]
 [style lmgtfy {link http://lmgtfy.com/?q=[urlencode [b]]|LMGTFY}]
 [style rs [rs]]
+[style vb [vb]]
 [gstyle listlinewrap [stripe [b]]]
 [style ol [ol wrap=listlinewrap,sep=|,[b]]]
 [style ul [ul wrap=listlinewrap,sep=|,[b]]]
