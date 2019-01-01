@@ -548,7 +548,7 @@ IMO,,In My Opinion
 INF,,Intermediate-range Nuclear Forces (treaty)
 IN,,Indiana (USA)
 IOC,,International Olympic Committee
-IOS,iOS,An Apple Operating System.
+IOS,iOS,An Apple Operating System (iPad,iPhone)
 IOT,IoT,Internet Of Things
 IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address)|Intellectual Property
