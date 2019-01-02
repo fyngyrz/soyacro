@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 27th, 2018 (this code file only)
+#  Last Update: January 2nd, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -610,11 +610,13 @@ mybody += myform							# form added to main page body
 tmp = makeacros(usertext)					# Now the post gets its acronyms
 testforsquigs(tmp)			# verify {macro} brace balance
 rsig = ''
+rsignum = ''
 if aambase != '':			# here's the aa_macro processing, if braces balance
 	if randsigs == True:
 		if tmp[-1:] != u'\n':
 			tmp += u'\n'
 		rsig = mod.do('\n{sig}')
+		rsignum = mod.do('[add 1 [v rresult]]')
 		tmp += unicode(rsig)
 	tmp = nosquares(tmp)	# escape any square brackets
 	tmp = makeascii(tmp)	# aa_macro requires ASCII string
@@ -624,6 +626,10 @@ if aambase != '':			# here's the aa_macro processing, if braces balance
 if sigecho == False: rsig = ''
 else:
 	rsig = rsig.replace('\n','<br>')
+	grn = '<span style="color:#ff8844;">'
+	rrn = '<span style="color:#ff00ff;">'
+	zsn = ' '+grn+'(</span>'+rrn+rsignum+'</span>'+grn+')</span>'
+	rsig = rsig.replace('--','--'+zsn)
 	rsig = '<div style="text-align:left;">'+rsig+'</div>'
 
 tmp = tmp.replace(u'&amp;#',u'&#')	# watch out for intended char entities

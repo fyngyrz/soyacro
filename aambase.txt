@@ -40,7 +40,7 @@
 [gstyle c2f {r21 [add mode=float,32 [mul mode=float,1.8 [b]]]}]
 [comment these three implement random selection from lists:]
 [gstyle rt [random]]  
-[gstyle rrange [int [mul mode=float,[b] {rt}]]]  
+[gstyle rrange [local rresult [int [mul mode=float,[b] {rt}]]][v rresult]]
 [gstyle rlist [local tfllen [llen [b]]][e [b],{rrange [v tfllen]}]]
 
 [comment you can use {lsigs} to get a numbered list of your signatures, and...]
