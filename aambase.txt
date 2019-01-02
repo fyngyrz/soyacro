@@ -48,8 +48,9 @@
 [comment fill this list in with various signatures:]
 [comment ==========================================]
 [list sep=|,sigs,Signature 1
-|Signature 2
+|Signature 2[nl]Signature two 2nd line using newline escape
 |Signature 3
+Signature three 2nd line using actual LF
 |...
 |Signature N
 ]
