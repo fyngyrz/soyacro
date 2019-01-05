@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 2nd, 2019 (this code file only)
+#  Last Update: January 5th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -238,7 +238,7 @@ if usemacros == True:
 		mod = macro(noshell=True,noembrace=True,noinclude=True)
 		mod.do(aambase)
 		mod.do('[listg source=local,loclist][asort loclist]')
-		thestyles = mod.do('[style cnt <span style="color:#00ffff;">[b]</span>][style pur <span style="color:#ff00ff;">[b]</span>][style tmp {pur [ls]}<span style="color:white;">[b]</span>&nbsp;{cnt [i content]}{pur [rs]}][dlist style=tmp,inter=[co] ,loclist]')
+		thestyles = mod.do('[dlist style=dls,inter=[co] ,loclist]')
 		thestylecount = mod.do('[llen loclist]')
 	else:
 		mod = None
