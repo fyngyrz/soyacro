@@ -1034,6 +1034,7 @@ UT,,Utah (USA)
 VA,,Virgina (USA)|Veteran's Administration (US)
 VC,,Venture Capital/Capitalist|Version Control
 VEC,,Volunteer Exam Coordinator
+VESA,,Video Electronics Standards Association
 VFO,,Variable Frequency Oscillator
 VHF,,Very High Frequency: 30-300 MHz
 VIN,,Vehicle Identification Number
