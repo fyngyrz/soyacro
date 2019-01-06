@@ -284,7 +284,7 @@ you don't see them listed on the web page.
 
 _This macro in the `aambase.txt` file:_
 
-> [style i <i>[b]</i>]
+> `[style i <i>[b]</i>]`
 
 _Used in a post as follows:_
 
