@@ -362,6 +362,7 @@ EPA,,Environmental Protection Agency (US)
 EPIC,,Electronic Privacy Information Center	
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
+ER,,Emergency Room
 ERP,,Effective Radiated Power
 ERU,,Energy Recovery Unit
 ESA,,European Space Agency
@@ -752,6 +753,7 @@ NYPL,,New York Public Library
 NYSE,,New York Stock Exchange
 NYT,,New York Times
 NZ,,New Zealand|Non-Zero
+OA,,Open Access
 OC,,Organized Crime|Original Content
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
