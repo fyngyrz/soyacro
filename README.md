@@ -294,6 +294,28 @@ _Produces:_
 
 > `Italizing for emphasis, I <i>really</i> mean it!`
 
+### Providing macro usage guides and help bubbles
+
+The `[style]` built-in allows you to define two separate text blocks
+that are associated with the style, but not used _in_ the style. These
+are used in this project to provide a usage guide and bubble help. The
+options come immediately after the `[style ` keyword.
+
+Here's how that is set up for the italics macro:
+
+> [style help=content,help2=italicize content,i <i>[b]</i>]
+
+The `help` option sets up a help string that appears in the macro
+list; the `help2` option sets up text that appears if you hover
+your mouse pointer over the macro name. So the list contains
+this now:
+
+> `{i content}`
+
+...and hovering over the `i` results in a text bubble that reads:
+
+> `italicize content`
+
 ### Possible "gotchas" with the macros
 
 The macros, if used, are processed after the term expansions.
