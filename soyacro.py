@@ -379,7 +379,6 @@ def subents(text):
 # processor, as character entities are 100$ ASCII.
 # -----------------------------------------------------------
 def makeascii(text):
-	global ucrep
 	o = ''
 	for i in range(0,len(text)):
 		try:

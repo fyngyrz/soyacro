@@ -669,7 +669,6 @@ class macro(object):
 		return o
 
 	def unicodetoascii(self,text):
-#		global ucrep
 		o = ''
 		n = len(text)
 		for i in range(0,n):
