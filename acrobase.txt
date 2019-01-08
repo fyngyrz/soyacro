@@ -143,7 +143,7 @@ ALC,,Automatic Level Control
 ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AMA,,Ask Me Anything|Against Medical Advice|American Medical Association
 AM,,Amplitude Modulation|Ante Meridiem - before midday
-AMD,,American Micro Devices
+AMD,,Advanced Micro Devices
 AMS,,AM Stereo (radio)
 AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
@@ -622,6 +622,7 @@ LED,,Light Emitting Diode
 LENR,,Low Energy Nuclear Reactor
 LEO,,Low Earth Orbit
 LF,,Low Frequency: 30-300 KHz
+LG,,Life is Good (brand)
 LGB,,Lesbian, Gay and Bisexual
 LGBT,,Lesbian, Gay, Bisexual and Transexual
 LGBTQ,,Lesbian, Gay, Bisexual, Transexual and Questioning
