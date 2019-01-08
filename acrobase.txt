@@ -654,7 +654,7 @@ MB,,Megabyte|Manitoba (Canada)
 MBA,,Masters of Business Administration
 MC,,Midnight Commander (software)
 MD,,Maryland (USA)|Medical Doctor
-MDMA,,Ecstasy/Molly: 3,4-methylenedioxy-methamphetamine (C11H15NO2)
+MDMA,,Ecstasy/Molly: 3,4-methylenedioxy-methamphetamine - C11H15NO2
 MDT,,Mountain Daylight Time
 ME,,Maine (USA)
 MFLOPS,,Million FLoating Point OPerations per Second
