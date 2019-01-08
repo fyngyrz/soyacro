@@ -833,6 +833,7 @@ Q3,,Third Quarter
 Q4,,Fourth Quarter
 QED,,Quod Erat Demonstrandum: that which was to be demonstrated
 QC,,Quebec (Canada)
+QLED,,Quantum dot Light Emitting Diode
 QOS,QoS,Quality of Service
 QR,,Quick Response code
 QRZ,,Radio shorthand for are you there?
