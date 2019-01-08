@@ -879,6 +879,7 @@ RV,,Research Vessel|Recreational Vehicle
 RWNJ,,Right Wing Nut Job
 RX,,Receive
 SA,,South Africa|South America
+SAE,,Society of Automotive Engineers
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
