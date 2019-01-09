@@ -71,6 +71,8 @@ such characters are needed:
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
 
 You can use the unicode &rarr; HTML entity converter on the web page for this.
+Just enter the unicode into the left box, and when you press `Submit`, the
+result will appear in the right, read-only box, ready for copy and paste.
 
 ### Macros!
 
@@ -143,7 +145,8 @@ When you write your post on this page, if you use a known term it'll be
 wrapped with HTML `<abbr>` tags and will include an expansion visible
 when one hovers a mouse pointer in a web browser.
 
-The result is generated into the lower text box when you press `submit`.
+The result is generated into the lower, read-only text box when you press
+`submit`.
 
 Copy the result and paste it into the soylentnews.org comment box \(or
 any other commenting system that allows the `<abbr>` tag.\)
