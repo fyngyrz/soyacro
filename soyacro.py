@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 5th, 2019 (this code file only)
+#  Last Update: January 9th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -636,7 +636,7 @@ tmp = subents(tmp)					# convert char entities into actual unicode
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
-resform = u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="RESLINES" COLS="80">'+tmp+u'</TEXTAREA></div><br></div>'
+resform = u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div><br></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 if rsig != '':
