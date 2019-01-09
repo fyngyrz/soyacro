@@ -70,6 +70,8 @@ such characters are needed:
 
 > `ENSO,,El Ni&#241;o/Southern Oscillation`
 
+You can use the unicode &rarr; HTML entity converter on the web page for this.
+
 ### Macros!
 
 There is also a built-in macro processor that lets you build shortcuts
@@ -237,6 +239,9 @@ here, then write it as an HTML numeric entity, such as `&#128169;`
 ...which you would use this way: `{poophead fyngyrz}` and which would generate...
 
 > fyngyrz is a &#128169;-head.
+
+You can use the unicode &rarr; HTML entity converter on the web page to
+determine the HTML entities you need to use..
 
 As to HTML in general, here's a macro that produces a link to my iToolBox
 project as a simple example:
