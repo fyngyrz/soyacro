@@ -107,8 +107,9 @@ and set the `cginame` variable to match.
 At the top of the `soyacro.py` file, there are settings you can change to
 control the number of lines in the entry and result text boxes, and to
 switch on or off various displays of other information relevant to what
-you're doing. You can also set up automatic random signatures. See the
-section on signatures below for more details.
+you're doing. You can also set up automatic random signatures, and change
+the background color of the read-only text boxes. See the section on
+signatures below for more details.
 
 ### More on Security:
 
