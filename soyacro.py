@@ -47,6 +47,10 @@ sigecho		= True				# echo the random signature to the page
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 
+# Other
+# -----
+bgcolor		= u'#DDFFDD'		# background color for read-only textboxes
+
 # =========================================================================
 # ========================= END CONFIGURATION =============================
 # =========================================================================
@@ -72,6 +76,7 @@ def chkint(text):
 undict = {}
 errors = u''
 tiglist = ''
+coninput = u''
 
 # These provide for matching component designations
 # -------------------------------------------------
@@ -131,6 +136,14 @@ if resubmit == True:
 		entlines = val
 	except:
 		pass
+
+	try:
+		val = unicode(form['coninput'].value,'UTF-8')
+		coninput = val
+		if val == 'CONINPUT':
+			coninput = u''
+	except:
+		coninput = u''
 
 	try:
 		val = form['iglist'].value
@@ -542,22 +555,24 @@ border-bottom: red dashed;
 """
 
 mybody = u"""
-This is an all-caps-and/or-digits term clarifier. When you're going
-to make a post on soylentnews.org, which supports use of the <abbr> tag,
-run the post through this first, then copy & paste the output into the
-Soylent comment box. For example, here's what happens to "ISP." Be sure
-to enter any term you want replaced as all-caps-and/or-digits.
+This is an all-caps-and/or-digits term clarifier and macro system. When
+you're going to make a post on soylentnews.org, which supports use of
+the <abbr> tag, run the post through this first, then copy & paste the
+output into the Soylent comment box. For example, here's what happens to
+"ISP." Be sure to enter any term you want replaced as
+all-caps-and/or-digits.
 """
 
 myform = u"""
-<FORM ACTION="CGINAME" METHOD="POST">
+PUTRSIGHERE<FORM ACTION="CGINAME" METHOD="POST">
 <div style="text-align: center;">
 <div>
 <div style="float:left;">
 <TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
 Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
-PUTRSIGHERE</div>
-<div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
+<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="CONINPUT">&rarr;<INPUT style="background-color:BGCOLOR;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="CONOUTPUT" readonly><br></div></div>
+</div>
+<div style="float:left;"><div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKDETECTTERMS>Detect&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectnumbers"CHECKDETECTNUMBERS>Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
@@ -591,6 +606,13 @@ myform = myform.replace(u'IGLIST',tiglist)
 myform = myform.replace(u'CHECKDETECTCOMPS',checkdetectcomps)
 myform = myform.replace(u'CHECKDETECTTERMS',checkdetectterms)
 myform = myform.replace(u'CHECKDETECTNUMBERS',checkdetectnumbers)
+myform = myform.replace(u'CONINPUT',coninput)
+conoutput = ''
+if coninput != '':
+	conoutput = makeascii(coninput)
+	conoutput = conoutput.replace(u'&',u'&amp;')
+myform = myform.replace(u'CONOUTPUT',conoutput)
+
 
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
@@ -636,11 +658,13 @@ tmp = subents(tmp)					# convert char entities into actual unicode
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
-resform = u'<div style="text-align:center;"><div><TEXTAREA NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div><br></div>'
+resform = u'<div style="text-align:left;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div><br></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
+mybody = mybody.replace(u'BGCOLOR',bgcolor)
 if rsig != '':
-	mybody = mybody.replace(u'PUTRSIGHERE',u'<br>'+unicode(rsig))
+	trsig = rsig.replace('<br>',' ')
+	mybody = mybody.replace(u'PUTRSIGHERE',unicode(trsig))
 else:
 	mybody = mybody.replace(u'PUTRSIGHERE',u'')
 
