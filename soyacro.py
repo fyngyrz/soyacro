@@ -5,7 +5,7 @@
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 9th, 2019 (this code file only)
+#  Last Update: January 10th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -323,11 +323,13 @@ for el in l1:
 
 # remove any items in the ignore list:
 # ------------------------------------
+nonolist = {}
 iglist = tiglist.split(' ')
 for el in iglist:
 	el = el.strip()
 	if el != '':
 		try:
+			nonolist[el] = True
 			del acros[el]
 		except:
 			pass
@@ -436,7 +438,7 @@ def testforhtml(text):
 
 # This method determines if what appears to be an acronym (because
 # acronyms can have/be numbers) is entirely numeric. If it is, it
-# won't warn that it can't expand an unrecongized number group the
+# won't warn that it can't expand an unrecogized number group the
 # way it does for an all-caps sequence it doesn't recognize.
 # ----------------------------------------------------------------
 def isnumeric(text):
@@ -447,6 +449,7 @@ def isnumeric(text):
 def compmatch(term):
 	global relist,rmlist,detectcomps,errors
 	if detectcomps == False: return term
+	if nonolist.get(term,False) == True: return term
 	if isnumeric(term) == False: # if not fully numeric
 		rmatch = False
 		ren = 0
