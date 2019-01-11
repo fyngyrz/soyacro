@@ -508,7 +508,7 @@ HTML5,,HyperText Markup Language version 5
 HTML,,HyperText Markup Language (in general, also version 1)
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
-HUD,,Housing and Urban Development (US)
+HUD,,Housing and Urban Development (US)|Heads-Up Display
 HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol|Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
