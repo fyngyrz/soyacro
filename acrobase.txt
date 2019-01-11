@@ -322,7 +322,7 @@ DOS,,Disk Operating System|Denial Of Service
 DOT,,Department Of Transportation (US)
 DPI,,Dots Per Inch
 DRAM,,Dynamic Random Access Memory - access any part at any time, but must keep refreshing it or it forgets
-DR,,Didn't Read
+DR,,Didn't Read|Doctor|Democratic Republic|Dynamic Range
 DRM,,Digital Rights Management|Digital Radio Mondial (a digital broadcast format)
 DSA,,Democratic Socialists of America
 DSL,,Digital Subscriber Line
