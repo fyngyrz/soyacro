@@ -845,6 +845,7 @@ QSO,,Radio shorthand for conversation
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
+RBG,,Red Blue Green|Ruth Bader Ginsberg
 RC,,Resistor-Capacitor|Radio Control(ed)
 RCA,,Radio Corporation of America|an audio / low RF connector
 RCMP,,Royal Canadian Mounted Police
