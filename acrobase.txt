@@ -965,6 +965,7 @@ TCPA,,Telecom Consumer Protection Act
 TDM,,Time Division Multiplexing
 TDP,,Thermal Design Power or Point
 TERF,,Trans-Exlusionary Radical Feminist
+TESS,,Transiting Exoplanet Survey Satellite
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFC,,The Fucking Comments: bowdlerized, The Fine Comments
 TFLOPS,,Tera FLoating Point OPerations per Second
