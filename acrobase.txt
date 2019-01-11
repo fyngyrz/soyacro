@@ -144,6 +144,7 @@ ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AMA,,Ask Me Anything|Against Medical Advice|American Medical Association
 AM,,Amplitude Modulation|Ante Meridiem - before midday
 AMD,,Advanced Micro Devices
+AMOLED,,Active Matrix Organic Light Emitting Diode
 AMS,,AM Stereo (radio)
 AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
