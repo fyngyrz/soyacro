@@ -21,6 +21,7 @@ start = time.time()
 #      License: None. Use as you will. PD, free, etc.
 # Dependencies: aa_webpage.py by fyngyrz
 #               aa_macro.py by fyngyrz
+#               acroclass.py by fyngyrz
 #               standard Python cgi import library
 #               standard Python sys import library
 #               standard Python os import library
@@ -64,26 +65,12 @@ bgcolor		= u'#DDFFDD'		# background color for read-only textboxes
 # ===========================================
 
 from aa_webpage import *
+import acroclass
 import cgi,sys,os,re
 
-# returns true if text is an integer
-# ----------------------------------
-def chkint(text):
-	try:
-		n = int(text)
-	except:
-		return False
-	return True
-
-undict = {}
 errors = u''
 tiglist = ''
 coninput = u''
-
-# These provide for matching component designations
-# -------------------------------------------------
-relist = [] # regular expressions
-rmlist = [] # component terms
 
 if 'GATEWAY_INTERFACE' in os.environ:
 	cmdline = False
@@ -222,15 +209,15 @@ if resubmit == True:
 # Now set the checkmarks in the form:
 # -----------------------------------
 chk = u'CHECKED'
-if showsigs == True: checkshowsignatures = chk
-if randsigs == True: checkautosignature = chk
-if usemacros == True: checkusemacros = chk
-if showacros == True: checkshowexpansions = chk
-if showstyles == True: checkshowstyles = chk
-if sigecho == True: checksigecho = chk
-if detectcomps == True: checkdetectcomps = chk
-if detectterms == True: checkdetectterms = chk
-if numberterms == True: checkdetectnumbers = chk;
+if showsigs == True:	checkshowsignatures = chk
+if randsigs == True:	checkautosignature = chk
+if usemacros == True:	checkusemacros = chk
+if showacros == True:	checkshowexpansions = chk
+if showstyles == True:	checkshowstyles = chk
+if sigecho == True:		checksigecho = chk
+if detectcomps == True:	checkdetectcomps = chk
+if detectterms == True:	checkdetectterms = chk
+if numberterms == True:	checkdetectnumbers = chk;
 
 # Override autosigs if '{nsig ' is present
 if usertext.find('{nsig ') != -1:
@@ -265,76 +252,12 @@ else:
 	thestyles = u''
 	thestylecount = u''
 
-# Read in the abbreviation / acronym file:
-# ----------------------------------------
-try:
-	with open(ifile) as fh:
-		acrobase = fh.read()
-except Exception,e:
-	acrobase = u''
-	errors += u'failed to read file'+str(e)+u'<br>'
-else:
-	acrobase = acrobase.replace(u'"',u'&quot;') # can't have quotes in abbr tags
-
-# Create a dictionary from the acronym / abbreviation file contents:
-# ------------------------------------------------------------------
-acros = {}
-linecounter = 1
-l1 = acrobase.split(u'\n')
-for el in l1:
-	if len(el) != 0:
-		if el[0:1] != u'#':
-			try:
-				veri = True
-				key,alternate,expansion = el.split(u',',2)
-				if expansion.find('<') != -1: veri = False
-				if expansion.find('>') != -1: veri = False
-				if veri == True:
-					if key == '*': # if this is a component designator
-						if detectcomps == True:
-							rmlist.append(expansion)
-							relist.append(alternate)
-						else:
-							pass
-					elif numberterms == False and chkint(key) == True:
-						pass
-					else: # normal term definition
-						term = key
-						if alternate != u'':
-							term = alternate
-						if acros.get(key,'') != '':
-							errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-						alist = expansion.split('|')
-						if len(alist) == 1:
-							acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
-						else:
-							alist.sort()
-							s = u''
-							n = 1
-							for el in alist:
-								if n != 1: s = s + u' '
-								s = s + u'(' + unicode(str(n)) + u'): '+unicode(str(el))
-								n += 1
-							acros[key] = u'<abbr title="'+s+'">'+term+u'</abbr>'
-				else:
-					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
-			except Exception,e:
-				errors += u'line '+str(linecounter)+u': '
-				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'+unicode(str(e))
-	linecounter += 1
-
-# remove any items in the ignore list:
-# ------------------------------------
-nonolist = {}
-iglist = tiglist.split(' ')
-for el in iglist:
-	el = el.strip()
-	if el != '':
-		try:
-			nonolist[el] = True
-			del acros[el]
-		except:
-			pass
+ltiglist = tiglist.split(' ')
+ac = acroclass.core(acrofile=ifile,
+					iglist=ltiglist,
+					detectterms = detectterms,
+					numberterms = numberterms,
+					detectcomps = detectcomps)
 
 # This removes all square braces prior to aa_macro processing.
 # That means that only styles can be used; and that, in turn,
@@ -438,104 +361,6 @@ def testforhtml(text):
 	if lrtest(u'<',u'>',text) == False:
 		errors += u'<span style="color: red;">Unbalanced &lt;...&gt; braces: need &amp;lt; or &amp;gt; ? Or is an HTML tag unclosed?</span><br>'
 
-# This method determines if what appears to be an acronym (because
-# acronyms can have/be numbers) is entirely numeric. If it is, it
-# won't warn that it can't expand an unrecongized number group the
-# way it does for an all-caps sequence it doesn't recognize.
-# ----------------------------------------------------------------
-def isnumeric(text):
-	for c in text:
-		if c < u'0' or c > u'9': return False
-	return True
-
-def compmatch(term):
-	global relist,rmlist,detectcomps,errors
-	if detectcomps == False: return term
-	if nonolist.get(term,False) == True: return term
-	if isnumeric(term) == False: # if not fully numeric
-		rmatch = False
-		ren = 0
-		for el in relist:
-			ln = len(el)
-			el = el + '\d*'
-			if re.match(el,term):
-				try:
-					n = int(term[ln:])
-				except: # not a number, bail
-					pass
-				else:
-					comp = rmlist[ren]
-					ell = comp.split('|')
-					if len(ell) == 1:
-						string = '<abbr title="'+comp + ' ' + str(n) + '">'+term+'</abbr>'
-					else: # multiple elements
-						x = 1
-						string = '<abbr title="'
-						ell.sort()
-						for element in ell:
-							if x != 1: string += ' '
-							string += '(%d): %s %d' % (x,element,n)
-							x += 1
-						string += '">'+term+'</abbr>'
-					return string
-			ren += 1
-	return term
-
-# Convert ALL-CAPS sequences into <abbr>ALL-CAPS</abbr> sequences:
-# ----------------------------------------------------------------
-def makeacros(text):
-	global detectterms
-	if detectterms == False: return text
-	incaps = False
-	accum = u''
-	o = u''
-	ctag = u''
-	wait = False
-	wait2 = False
-	for c in text: # iterate all characters
-		if c == u'<':
-			wait = True	# if within an HTML tag, don't bother
-			ctag = u''	# reset abbr detector
-		elif c == u'>': wait = False
-		ctag += c.lower()
-		if ctag[:5] == u'<abbr':
-			wait2 = True	# ignore between <abbr></abbr>
-			ctag = u''
-		elif ctag[:6] == u'</abbr':
-			wait2 = False
-			ctag = u''
-		if wait == False and wait2 == False and ((c >= u'A' and c <= u'Z') or (c >= u'0' and c <= u'9')):
-			accum += c
-		else: # not a cap now
-			if len(accum) > 1:
-				taccum = acros.get(accum,accum)
-				if taccum == accum: # not found
-					if isnumeric(accum) == False: # if not fully numeric
-						taccum = compmatch(accum)
-						if taccum == accum: # still not found
-							undict[taccum] = 1 # we don't know this one
-				accum = taccum
-				accum += c
-				o += accum
-				accum = u''
-			else: # 1 or 0
-				o += accum
-				accum = u''
-				o += c
-	if accum != u'': # any pending on end of post?
-		if len(accum) > 1:
-			taccum = acros.get(accum,accum)
-			if taccum == accum:
-				if isnumeric(taccum) == False:
-					taccum = compmatch(accum)
-					if taccum == accum: # still not found
-						undict[taccum] = 1 # we don't know this one
-			accum = taccum
-			o += accum
-		else: # 1 or 0
-			o += accum
-	return o
-
 # HTML conversion of some active HTML entities so formatted for repost
 # --------------------------------------------------------------------
 reps = {u'<':u'&lt;',
@@ -618,7 +443,6 @@ if coninput != '':
 	conoutput = conoutput.replace(u'&',u'&amp;')
 myform = myform.replace(u'CONOUTPUT',conoutput)
 
-
 # The name of this Python file can change. This takes care of the
 # invocation being correct in the form above:
 # ---------------------------------------------------------------
@@ -626,15 +450,15 @@ myform = myform.replace(u'CGINAME',unicode(cginame))
 
 # ready to go, process everything into page body
 # ----------------------------------------------
-testforhtml(usertext)						# test for unbalanced HTML tag braces
-tmp = makeraw(usertext)						# the text you entered
-myform = myform.replace(u'TEXTBLOCK',tmp)	# goes into the entry form (again)
-mybody = makeraw(mybody)					# the text at the top of the page
-mybody = u'<p>'+makeacros(mybody)+u'</p>'	# gets the acronyms stuffed in
-mybody += myform							# form added to main page body
-#mybody += u'<hr>'							# new output section
-tmp = makeacros(usertext)					# Now the post gets its acronyms
-testforsquigs(tmp)			# verify {macro} brace balance
+testforhtml(usertext)							# test for unbalanced HTML tag braces
+tmp = makeraw(usertext)							# the text you entered
+myform = myform.replace(u'TEXTBLOCK',tmp)		# goes into the entry form (again)
+mybody = makeraw(mybody)						# the text at the top of the page
+mybody = u'<p>'+ac.makeacros(mybody)+u'</p>'	# gets the acronyms stuffed in
+mybody += myform								# form added to main page body
+#mybody += u'<hr>'								# new output section
+tmp = ac.makeacros(usertext)					# Now the post gets its acronyms
+testforsquigs(tmp)								# verify {macro} brace balance
 rsig = ''
 rsignum = ''
 if aambase != '':			# here's the aa_macro processing, if braces balance
@@ -675,14 +499,16 @@ else:
 
 # Report any errors:
 # ------------------
-if errors != '':
+if errors != u'' or ac.errors != u'':
 	mybody += u'<hr><div><b><span style="color:orange;">Errors found:</span></b><br>'
 	mybody += errors
+	lerrors = ac.errors.replace('\n','<br>')
+	mybody += lerrors
 	mybody += u'</div>'
 
 # Report any non-fully-numeric caps sequences that are not recognized:
 # --------------------------------------------------------------------
-unknowns = undict.keys()
+unknowns = ac.undict.keys()
 if unknowns != []:
 	unknowns.sort()
 	o = u''
@@ -709,7 +535,7 @@ if usemacros == True and showsigs == True:
 # Report all known acronyms:
 # --------------------------
 if showacros == True:
-	ka = acros.keys()
+	ka = ac.acros.keys()
 	if ka != None:
 		ka.sort()
 		o = u''
