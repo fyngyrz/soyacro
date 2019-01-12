@@ -491,6 +491,7 @@ HIV,,Human Immunodeficiency Virus
 HM,,Her Majesty
 HMCS,,Her Majesty's Canadian Ship
 HMS,,Her Majesty's Ship
+HN,,Hacker News
 HOA,,Home Owner's Association
 HP,,Hewlett-Packard (company)|Highway Patrol (officer)|HorsePower
 HPC,,High-Performance Computing
