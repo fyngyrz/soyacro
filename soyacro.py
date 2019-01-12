@@ -1,11 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import time
+start = time.time()
+
 # Project Info:
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 10th, 2019 (this code file only)
+#  Last Update: January 12th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -61,8 +64,7 @@ bgcolor		= u'#DDFFDD'		# background color for read-only textboxes
 # ===========================================
 
 from aa_webpage import *
-import cgi,sys,os
-import re
+import cgi,sys,os,re
 
 # returns true if text is an integer
 # ----------------------------------
@@ -438,7 +440,7 @@ def testforhtml(text):
 
 # This method determines if what appears to be an acronym (because
 # acronyms can have/be numbers) is entirely numeric. If it is, it
-# won't warn that it can't expand an unrecogized number group the
+# won't warn that it can't expand an unrecongized number group the
 # way it does for an all-caps sequence it doesn't recognize.
 # ----------------------------------------------------------------
 def isnumeric(text):
@@ -722,9 +724,15 @@ mybody += u'<hr>'
 
 # Finally, produce the web page:
 # ------------------------------
+end = time.time()
+if cmdline == False:
+	timestr = u'<div><br>Execution time: '+unicode(str(round(end-start,2)))+u' seconds</div>'
+else:
+	timestr = u''
+
 tp = thePage(	title   = u'Abbr processor',
 				styles  = mystyles,
-				body    = mybody,
+				body    = mybody+timestr,
 				valid   = 1,
 				forhead = mtag,
 				forbody = colors)
