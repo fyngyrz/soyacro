@@ -20,7 +20,7 @@ class core(object):
 	def version_set(self):
 		return('0.0.1 Beta')
 
-	def __init__(self,	detectterms=True,			# disable class.amkeacros() = False
+	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
 						detectcomps=True,			# detect electronic components
 						iglist=[],					# terms to ignore
