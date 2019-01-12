@@ -10,8 +10,8 @@ start = time.time()
 #   Incep date: November 24th, 2018
 #  Last Update: January 12th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
-# Source Files: soyacro.py, acrobase.txt (these may be renamed)
-#               check.py, testacros.py
+# Source Files: soyacro.py, check.py, testacros.py
+#   Data files: acrobase.txt
 #  Tab Spacing: Set to 4 for sane readability of Python source
 #     Security: Suitable for benign users only (IOW, me.)
 #      Purpose: Creates informative <abbr> tag wraps around
