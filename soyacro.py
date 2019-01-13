@@ -413,6 +413,14 @@ mystyles = u"""
 abbr {
 border-bottom: red dashed;
 }
+ul {
+margin-top: -1em;
+margin-bottom: 0px;
+}
+ol {
+margin-top: -1em;
+margin-bottom: 0px;
+}
 """
 
 mybody = u"""
@@ -525,15 +533,11 @@ resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 
 if showpreview == True:
-	resform = u'<div style="padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
+	resform = u'<div style="white-space:pre-line; padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
 	tmp = tmp.replace(u'&lt;',u'<')
 	tmp = tmp.replace(u'&gt;',u'>')
 	tmp = tmp.replace(u'&amp;',u'&')
-	while tmp.find(u'\n\n\n') != -1:
-		tmp = tmp.replace(u'\n\n\n',u'\n\n')
-	tmp = tmp.replace(u'\n',u'<br>')
-	while tmp.find(u'</blockquote><br>') != -1:
-		tmp = tmp.replace(u'</blockquote><br>',u'</blockquote>')
+	tmp = tmp.replace(u'</li>\n',u'</li>')
 	tmp = tmp.replace(u'<blockquote>',u'<blockquote style="padding-left:3px; border-left:solid; border-left-width:3px; border-left-color:#000000;">')
 	resform = resform.replace(u'TEXTHERE',tmp)
 	mybody += resform
