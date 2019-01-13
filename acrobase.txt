@@ -959,7 +959,7 @@ SWL,,ShortWave Listener
 SWR,,Standing Wave Ratio
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
-TB,,TeraByte
+TB,,TeraByte|Tuberculosis
 TBD,,To Be Determined
 TBH,,To Be Honest
 TCPA,,Telecom Consumer Protection Act
