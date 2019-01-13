@@ -7,8 +7,7 @@ class core(object):
 	#   Incep date: November 24th, 2018
 	#  Last Update: January 12th, 2019 (this code file only)
 	#  Environment: Python 2.7
-	# Source Files: acroclass.py
-	#   Data files: acrobase.txt
+	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
 	#     Security: Suitable for benign users only (IOW, me.)
 	#      Purpose: Creates informative <abbr> tag wraps around
@@ -19,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.1 Beta')
+		return('0.0.2 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -36,10 +35,12 @@ class core(object):
 		self.acros = {}
 		self.rmlist = []
 		self.relist = []
-		self.errors = u''
+		self.errors = u'' # note that errors are unicode strings!
 		self.setacros(acrofile)
 		self.geniglist(iglist)
 
+	# Generate ignore list, remove items from main list
+	# -------------------------------------------------
 	def geniglist(self,iglist):
 		for el in iglist:
 			el = str(el).upper()
@@ -49,6 +50,56 @@ class core(object):
 			except:
 				pass
 
+	# Convert a unicode string to an ASCII string, replacing any
+	# characters > 127 with the appropriate character entity.
+	# That in turn makes the text compatible with the macro
+	# processor, as character entities are 100$ ASCII.
+	# ----------------------------------------------------------
+	def makeascii(self,text):
+		o = ''
+		for i in range(0,len(text)):
+			try:
+				c = text[i].encode("ascii")
+				o += c
+			except:
+				o += '&#{:d};'.format(ord(text[i]))
+		return o
+
+	# Convert HTML character entities into unicode
+	# --------------------------------------------
+	def subents(self,text):
+		state = 0 # nothing detected
+		accum = u''
+		o = u''
+		for c in text:
+			if state == 0:		# nothing as yet?
+				if c == u'&':	# ampersand?
+					state = 1	# ampersand!
+				else:
+					o += c
+			elif state == 1:	# ampersand found?
+				if c == u'#':	# hash?
+					state = 2	# hash!
+					accum = u''	# clear accumulator
+				else:			# not a hash, so not an entity encoding
+					state = 0	# abort
+					o += u'&'+c	# flush char, done
+			elif state == 2:	# expecting digits or terminating semicolon
+				if c.isdigit():	# digit?
+					accum += c	# add it to accumulator if so
+				elif c == u';':	# terminating
+					s = u'\\U%08x' % (int(accum))
+					ss= s.decode('unicode-escape')
+					o += ss
+					state = 0
+				else: # bad encoding?
+					o += u'&#'
+					o += accum
+					state = 0
+		return o
+
+	# Read term expansion file into memory
+	# ------------------------------------
 	def setacros(self,acrofile):
 		try:
 			with open(acrofile) as fh:
@@ -60,6 +111,8 @@ class core(object):
 			self.acrobase = self.acrobase.replace(u'"',u'&quot;') # can't have quotes in abbr tags
 			self.makedict()
 
+	# Test string for integer representation
+	# --------------------------------------
 	def chkint(self,text):
 		try:
 			n = int(text)
@@ -67,9 +120,9 @@ class core(object):
 			return False
 		return True
 
+	# Create dictionary from the acronym / abbreviation file contents
+	# ---------------------------------------------------------------
 	def makedict(self):
-		# Create a dictionary from the acronym / abbreviation file contents:
-		# ------------------------------------------------------------------
 		self.acros = {}
 		linecounter = 1
 		l1 = self.acrobase.split(u'\n')
@@ -115,6 +168,8 @@ class core(object):
 						self.errors += u'"'+unicode(el)+u'"\n'+unicode(str(e))
 			linecounter += 1
 
+	# Match term against component encodings
+	# --------------------------------------
 	def compmatch(self,term):
 		if self.detectcomps == False: return term
 		if self.igdict.get(term,False) == True: return term
@@ -147,13 +202,51 @@ class core(object):
 				ren += 1
 		return term
 
+	# Explicit match against numerals 0...9
+	# -------------------------------------
 	def isnumeric(self,text):
 		for c in text:
 			if c < u'0' or c > u'9': return False
 		return True
 
+	# Conversion including translation to unicode
+	# -------------------------------------------
+	def a2u(self,text):				# ASCII in
+		if type(text) is not str:
+			self.errors += u'class function a2u() requires ASCII input\n';
+			return u''
+		return self.makeacros(unicode(text))	# generate <abbr> tags, unicode out
+
+	def a2a(self,text):				# ASCII in
+		if type(text) is not str:
+			self.errors += u'class function a2a() requires ASCII input\n';
+			return u''
+		text =  self.makeacros(unicode(text))	# generate <abbr> tags, unicode out
+		return self.makeascii(text)				# get back an entity-encoded string
+
+	# Conversion including translation from unicode
+	# ---------------------------------------------
+	def u2a(self,text):				# unicode in
+		if type(text) is not unicode:
+			self.errors += u'class function u2a() requires unicode input\n';
+			return ''
+		text = self.makeacros(text)	# generate <abbr> tags, ASCII out
+		return self.makeascii(text) # convert to ASCII string
+
+	def cleanbraces(self,text):
+		text = text.replace('<','&lt;')
+		text = text.replace('>','&gt;')
+		return text
+
+	# Convert all instances of TERM to <abbr title="expansion">TERM</abbr>
+	# where TERM is capAlpha or some combination of capAlpha and Numeric
+	# This is unicode in, unicode out
+	# --------------------------------------------------------------------
 	def makeacros(self,text):
 		if self.detectterms == False: return text
+		if type(text) is not unicode:
+			self.errors += 'class function makeacros() requires unicode input\n';
+			return ''
 		incaps = False
 		accum = u''
 		o = u''
