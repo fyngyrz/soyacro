@@ -465,6 +465,8 @@ result = ac.a2u('AFAIK, it is so.') # result is unicode
 
 ## License
 
+See the COPYING file for a formal layout of circumstances. More generally:
+
 You can use this any way you want. It's 100% free and unencumbered by any
 rights claims whatsoever, released into the public domain. It is original
 code written by me, and any claims otherwise should be heartily laughed
