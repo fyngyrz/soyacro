@@ -707,6 +707,7 @@ NAT,,Network Address Translation
 NATO,,North Atlantic Treaty Organization
 NBC,,National Broadcasting Company
 NB,,New Brunswick (Canada)
+NCEI,,National Centers for Environmental Information (NOAA, US)
 NCIS,,Naval Criminal Investigative Service (US)
 NC,,North Carolina (USA)
 NCA,,Non-Compete Agreement
