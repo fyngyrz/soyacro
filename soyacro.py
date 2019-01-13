@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 12th, 2019 (this code file only)
+#  Last Update: January 13th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -34,6 +34,7 @@ start = time.time()
 # App Filenames:
 # --------------
 cginame		= 'soyacro.py'		# this CGI filename
+configfile	= 'saconfig.txt'	# configuration override filename
 ifile		= 'acrobase.txt'	# acronyms filename
 mfile		= 'aambase.txt'		# macros filename
 
@@ -45,6 +46,7 @@ detectcomps	= True				# detect electronic component designations
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
+showpreview	= False				# show preview of formatted post
 showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
 sigecho		= True				# echo the random signature to the page
@@ -67,6 +69,65 @@ bgcolor		= u'#DDFFDD'		# background color for read-only textboxes
 from aa_webpage import *
 import acroclass
 import cgi,sys,os,re
+
+# Create true / False from text parameter:
+# ----------------------------------------
+def maketf(text):
+	result = False
+	text == text.lower().strip()
+	if text == 't' or text == 'true' or text == '1' or text == 'yes':
+		result = True
+	return result
+
+# create an integer from text, or use default
+def makeint(text,default):
+	try:
+		n = int(text)
+	except:
+		n = default
+	return n
+
+# See if there's a config file that overrides the settings in this file:
+# ----------------------------------------------------------------------
+try:
+	with open(configfile) as fh:
+		cfbase = fh.read()
+except: # it's okay if we can't read this
+	pass
+else: # but if we did read it, then we process it for settings
+	clist = cfbase.split('\n')	# break it into lines
+	line = 1
+	for el in clist:
+		el = el.strip() # remove leading and trailing space(s)
+		if el != '' and el[0] != '#':
+			el = el.split('#') # strip off comments if present
+			el = el[0]
+			try:
+				parm,data = el.split('=')
+				data = data.replace("'",'')	# terms can be single quoted, but we ignore those
+				data = data.replace('"','') # likewise double quotes
+			except:
+				errors += u'Error on line %d of %s: %s<br>' % (line,configfile,el)
+			else: # read the line okay
+				parm = parm.strip()
+				data = data.strip()
+				if parm == 'cginame': cginame = data
+				elif parm == 'ifile': ifile = data
+				elif parm == 'mfile': mfile = data
+				elif parm == 'detectterms': detectterms = maketf(data)
+				elif parm == 'numberterms': numberterms = maketf(data)
+				elif parm == 'detectcomps': detectcomps = maketf(data)
+				elif parm == 'usemacros': usemacros = maketf(data)
+				elif parm == 'showstyles': showstyles = maketf(data)
+				elif parm == 'showacros': showacros = maketf(data)
+				elif parm == 'showpreview': showpreview = maketf(data)
+				elif parm == 'showsigs': showsigs = maketf(data)
+				elif parm == 'randsigs': randsigs = maketf(data)
+				elif parm == 'sigecho': sigecho = maketf(data)
+				elif parm == 'entlines': entlines = makeint(data,entlines)
+				elif parm == 'reslines': reslines = makeint(data,reslines)
+				elif parm == 'bgcolor': bgcolor = data
+		line += 1
 
 errors = u''
 tiglist = ''
@@ -97,6 +158,7 @@ checkautosignature=u''
 checkshowsignatures=u''
 checkusemacros=u''
 checkshowexpansions=u''
+checkshowpreview=u''
 checkshowstyles=u''
 checksigecho=u''
 checkdetectcomps=u''
@@ -183,6 +245,12 @@ if resubmit == True:
 		numberterms = False
 
 	try:
+		flag = form['showpreview'].value
+		showpreview = True
+	except:
+		showpreview = False
+
+	try:
 		flag = form['showsignatures'].value
 		showsigs = True
 	except:
@@ -214,6 +282,7 @@ if randsigs == True:	checkautosignature = chk
 if usemacros == True:	checkusemacros = chk
 if showacros == True:	checkshowexpansions = chk
 if showstyles == True:	checkshowstyles = chk
+if showpreview == True:	checkshowpreview = chk
 if sigecho == True:		checksigecho = chk
 if detectcomps == True:	checkdetectcomps = chk
 if detectterms == True:	checkdetectterms = chk
@@ -360,6 +429,7 @@ Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
 <INPUT TYPE="checkbox" NAME="showstyles"CHECKSHOWSTYLES>Show&nbsp;Macros<br>
+<INPUT TYPE="checkbox" NAME="showpreview"CHECKSHOWPREVIEW>Show&nbsp;Preview<br>
 <INPUT TYPE="checkbox" NAME="signature"CHECKAUTOSIGNATURE>Auto&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="sigecho"CHECKSIGECHO>Echo&nbsp;Auto&nbsp;Signature<br>
 <INPUT TYPE="checkbox" NAME="showsignatures"CHECKSHOWSIGNATURES>Show&nbsp;Signatures<br>
@@ -381,6 +451,7 @@ myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
 myform = myform.replace(u'CHECKSIGECHO',checksigecho)
 myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
 myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
+myform = myform.replace(u'CHECKSHOWPREVIEW',checkshowpreview)
 myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
 myform = myform.replace(u'ENTLINES',str(entlines))
 myform = myform.replace(u'RESLINES',str(reslines))
@@ -442,7 +513,22 @@ tmp = ac.subents(tmp)				# convert char entities into actual unicode
 resform = u'<div style="text-align:left;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div><br></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
+
+if showpreview == True:
+	resform = u'<div style="color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
+	tmp = tmp.replace(u'&lt;',u'<')
+	tmp = tmp.replace(u'&gt;',u'>')
+	tmp = tmp.replace(u'&amp;',u'&')
+	tmp = tmp.replace(u'\n',u'<br>')
+	resform = resform.replace(u'TEXTHERE',tmp)
+	mybody += resform
+
+# Set read-only areas background color
+# ------------------------------------
 mybody = mybody.replace(u'BGCOLOR',bgcolor)
+
+# Insert random signature pick
+# ----------------------------
 if rsig != '':
 	trsig = rsig.replace('<br>',' ')
 	mybody = mybody.replace(u'PUTRSIGHERE',unicode(trsig))
