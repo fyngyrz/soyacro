@@ -76,24 +76,24 @@ from aa_webpage import *
 import acroclass
 import cgi,sys,os,re
 
+errors = u''
+
 # Create true / False from text parameter:
 # ----------------------------------------
-def maketf(text):
+def maketf(p,text):
 	result = False
-	text == text.lower().strip()
+	text = text.lower().strip()
 	if text == 't' or text == 'true' or text == '1' or text == 'yes':
 		result = True
 	return result
 
 # create an integer from text, or use default
-def makeint(text,default):
+def makeint(p,text,default):
 	try:
 		n = int(text)
 	except:
 		n = default
 	return n
-
-errors = u''
 
 # See if there's a config file that overrides the settings in this file:
 # ----------------------------------------------------------------------
@@ -123,19 +123,19 @@ else: # but if we did read it, then we process it for settings
 				if parm == 'cginame': cginame = data
 				elif parm == 'ifile': ifile = data
 				elif parm == 'mfile': mfile = data
-				elif parm == 'detectterms': detectterms = maketf(data)
-				elif parm == 'numberterms': numberterms = maketf(data)
-				elif parm == 'detectcomps': detectcomps = maketf(data)
-				elif parm == 'usemacros': usemacros = maketf(data)
-				elif parm == 'showstyles': showstyles = maketf(data)
-				elif parm == 'showacros': showacros = maketf(data)
-				elif parm == 'showpreview': showpreview = maketf(data)
-				elif parm == 'showsigs': showsigs = maketf(data)
-				elif parm == 'randsigs': randsigs = maketf(data)
-				elif parm == 'sigecho': sigecho = maketf(data)
-				elif parm == 'entlines': entlines = makeint(data,entlines)
-				elif parm == 'reslines': reslines = makeint(data,reslines)
-				elif parm == 'bgcolor': bgcolor = unicode(data)
+				elif parm == 'detectterms':	detectterms = maketf(parm,data)
+				elif parm == 'numberterms':	numberterms = maketf(parm,data)
+				elif parm == 'detectcomps':	detectcomps = maketf(parm,data)
+				elif parm == 'usemacros':	usemacros = maketf(parm,data)
+				elif parm == 'showstyles':	showstyles = maketf(parm,data)
+				elif parm == 'showacros':	showacros = maketf(parm,data)
+				elif parm == 'showpreview':	showpreview = maketf(parm,data)
+				elif parm == 'showsigs':	showsigs = maketf(parm,data)
+				elif parm == 'randsigs':	randsigs = maketf(parm,data)
+				elif parm == 'sigecho':		sigecho = maketf(parm,data)
+				elif parm == 'entlines':	entlines = makeint(parm,data,entlines)
+				elif parm == 'reslines':	reslines = makeint(parm,data,reslines)
+				elif parm == 'bgcolor':		bgcolor = unicode(data)
 				else: errors += u'config file; unknown parameter error: %s<br>' % (unicode(thisline))
 		line += 1
 
