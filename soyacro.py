@@ -29,6 +29,12 @@ start = time.time()
 
 # =========================================================================
 # =========================== CONFIGURATION ===============================
+# You can override this with a local file. Just copy the lines below into
+# a file called saconfig.txt and set them as you like. Then, as you update
+# the project files from the github repo, your config file will override
+# the settings here, allowing you to maintain consistent behavior as you
+# prefer. Otherwise, every time you update from the repo, the settings
+# here will need to be changed if you don't like the defaults.
 # =========================================================================
 
 # App Filenames:
@@ -46,7 +52,7 @@ detectcomps	= True				# detect electronic component designations
 usemacros	= True				# macro styles enabled or not
 showstyles	= True				# macro styles displayed or not
 showacros	= False				# all acronyms displayed or not
-showpreview	= False				# show preview of formatted post
+showpreview	= True				# show preview of formatted post
 showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
 sigecho		= True				# echo the random signature to the page
@@ -55,7 +61,7 @@ reslines	= 20				# number of text lines in result box
 
 # Other
 # -----
-bgcolor		= u'#DDFFDD'		# background color for read-only textboxes
+bgcolor		= 'DDFFDD'		# background color for read-only textboxes
 
 # =========================================================================
 # ========================= END CONFIGURATION =============================
@@ -87,6 +93,8 @@ def makeint(text,default):
 		n = default
 	return n
 
+errors = u''
+
 # See if there's a config file that overrides the settings in this file:
 # ----------------------------------------------------------------------
 try:
@@ -100,6 +108,7 @@ else: # but if we did read it, then we process it for settings
 	for el in clist:
 		el = el.strip() # remove leading and trailing space(s)
 		if el != '' and el[0] != '#':
+			thisline = el
 			el = el.split('#') # strip off comments if present
 			el = el[0]
 			try:
@@ -126,12 +135,13 @@ else: # but if we did read it, then we process it for settings
 				elif parm == 'sigecho': sigecho = maketf(data)
 				elif parm == 'entlines': entlines = makeint(data,entlines)
 				elif parm == 'reslines': reslines = makeint(data,reslines)
-				elif parm == 'bgcolor': bgcolor = data
+				elif parm == 'bgcolor': bgcolor = unicode(data)
+				else: errors += u'config file; unknown parameter error: %s<br>' % (unicode(thisline))
 		line += 1
 
-errors = u''
 tiglist = ''
 coninput = u''
+bgcolor = u'#'+unicode(bgcolor)
 
 if 'GATEWAY_INTERFACE' in os.environ:
 	cmdline = False
@@ -515,11 +525,16 @@ resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 
 if showpreview == True:
-	resform = u'<div style="color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
+	resform = u'<div style="padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
 	tmp = tmp.replace(u'&lt;',u'<')
 	tmp = tmp.replace(u'&gt;',u'>')
 	tmp = tmp.replace(u'&amp;',u'&')
+	while tmp.find(u'\n\n\n') != -1:
+		tmp = tmp.replace(u'\n\n\n',u'\n\n')
 	tmp = tmp.replace(u'\n',u'<br>')
+	while tmp.find(u'</blockquote><br>') != -1:
+		tmp = tmp.replace(u'</blockquote><br>',u'</blockquote>')
+	tmp = tmp.replace(u'<blockquote>',u'<blockquote style="padding-left:3px; border-left:solid; border-left-width:3px; border-left-color:#000000;">')
 	resform = resform.replace(u'TEXTHERE',tmp)
 	mybody += resform
 
