@@ -448,7 +448,7 @@ Method | Purpose
 `content = makeacros(content)` | for unicode-to-unicode
 `content = u2a(content)` | for unicode-to-str
 `content = a2a(content)` | for str-to-str
-`content = a2u(content)` | for str-to-unicode`
+`content = a2u(content)` | for str-to-unicode
 
 The class requires the `acrobase.txt` file be present in its path, or you
 can set your own path and compatible file in the class instantiation. You
