@@ -152,11 +152,12 @@ The result is generated into the lower, read-only text box when you press
 Copy the result and paste it into the soylentnews.org comment box \(or
 any other commenting system that allows the `<abbr>` tag.\)
 
-## Files
+## Project Files
 
 File | Purpose
 ---- | -------
 `README.md` | This Readme
+`saconfig.txt` | **User-supplied config file** \(see `soyacro.py` for details\)
 `COPYING` | Declaration of public domain
 `soyacro.py` | the webserver cgi
 `aa_webpage.py` | convenience for generating HTML 4.01 pages
