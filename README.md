@@ -437,6 +437,27 @@ Having said that, by all means feel free to fork and go your own way
 with either / both projects. The Github repo for the macro processor is
 [here](https://github.com/fyngyrz/aa_macro).
 
+## Using term conversion in your own projects
+
+The file `acroclass.py` contains everything you need to expand `str` or
+`unicode` content to `str` or `unicode` results. The four methods
+available to use are:
+
+Method | Purpose
+---- | -------
+`content=makeacros(content)` | for unicode-to-unicode
+`content=u2a(content)` | for unicode-to-str
+`content=a2a(content)` | for str-to-str
+`content=a2u(content)` | for str-to-unicode`
+
+One example of typical use would be:
+
+```python
+import acroclass
+ac = acroclass.core()
+result = ac.a2u('AFAIK, it is so.') # result is unicode
+```
+
 ## License
 
 You can use this any way you want. It's 100% free and unencumbered by any
