@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 13th, 2019 (this code file only)
+#  Last Update: January 14th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -538,7 +538,7 @@ if showpreview == True:
 	tmp = tmp.replace(u'&gt;',u'>')
 	tmp = tmp.replace(u'&amp;',u'&')
 	tmp = tmp.replace(u'</li>\n',u'</li>')
-	tmp = tmp.replace(u'<blockquote>',u'<blockquote style="padding-left:3px; border-left:solid; border-left-width:3px; border-left-color:#000000;">')
+	tmp = tmp.replace(u'<blockquote>',u'<blockquote style="margin-bottom:-1em; margin-top:1em; padding-left:3px; border-left:solid; border-left-width:3px; border-left-color:#000000;">')
 	resform = resform.replace(u'TEXTHERE',tmp)
 	mybody += resform
 
