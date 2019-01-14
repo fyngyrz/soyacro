@@ -169,6 +169,7 @@ ASCII,,American Standard Code For Information Interchange (a 7-bit code)
 ASIC,,Application-Specific Integrated Circuit
 ASPCA,,American Society for the Prevention of Cruelty to Animals
 ASUS,,ASUS is a Taiwan-based, multinational computer hardware and consumer electronics company, established 1989.
+ATLAS,,Asteroid Terrestrial-impact Last Alert System
 ATM,,Automated Teller Machine|At The Moment|Asynchronous Transfer Mode
 ATT,AT&amp;T,American Telephone and Telegraph company
 ATU,,Antenna Tuning Unit
