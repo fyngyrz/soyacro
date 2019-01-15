@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: January 12th, 2019 (this code file only)
+	#  Last Update: January 15th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.2 Beta')
+		return('0.0.3 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -238,11 +238,14 @@ class core(object):
 		text = text.replace('>','&gt;')
 		return text
 
+	def makeacros(self,text): # for compatibility only
+		return self.u2u(text)
+
 	# Convert all instances of TERM to <abbr title="expansion">TERM</abbr>
 	# where TERM is capAlpha or some combination of capAlpha and Numeric
 	# This is unicode in, unicode out
 	# --------------------------------------------------------------------
-	def makeacros(self,text):
+	def u2u(self,text):
 		if self.detectterms == False: return text
 		if type(text) is not unicode:
 			self.errors += 'class function makeacros() requires unicode input\n';
