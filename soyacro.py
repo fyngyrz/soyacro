@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 14th, 2019 (this code file only)
+#  Last Update: January 15th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -495,10 +495,9 @@ testforhtml(usertext)							# test for unbalanced HTML tag braces
 tmp = makeraw(usertext)							# the text you entered
 myform = myform.replace(u'TEXTBLOCK',tmp)		# goes into the entry form (again)
 mybody = makeraw(mybody)						# the text at the top of the page
-mybody = u'<p>'+ac.makeacros(mybody)+u'</p>'	# gets the acronyms stuffed in
+mybody = u'<p>'+ac.u2u(mybody)+u'</p>'			# gets the acronyms stuffed in
 mybody += myform								# form added to main page body
-#mybody += u'<hr>'								# new output section
-tmp = ac.makeacros(usertext)					# Now the post gets its acronyms
+tmp = ac.u2u(usertext)							# Now the post gets its acronyms
 testforsquigs(tmp)								# verify {macro} brace balance
 rsig = ''
 rsignum = ''
