@@ -157,6 +157,7 @@ any other commenting system that allows the `<abbr>` tag.\)
 File | Purpose
 ---- | -------
 `README.md` | This Readme
+`.editorconfig` | This file tells github how to display the python source properly
 `saconfig.txt` | **User-supplied config file** \(see `soyacro.py` for details\)
 `COPYING` | Declaration of public domain
 `soyacro.py` | the webserver cgi
