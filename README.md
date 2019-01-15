@@ -457,13 +457,22 @@ can set your own path and compatible file in the class instantiation. You
 can also set a number of flag options, and an optional term ignore list.
 See the `acroclass.py` file for details.
 
-One example of typical use would be:
+Examples of typical use would be:
 
 ```python
 import acroclass
 ac = acroclass.core()
-result = ac.a2u('AFAIK, it is so.') # result is unicode
+result = ac.u2u(u'AFAIK, it is so.')	# input and result are both unicode
+result = ac.u2a(u'AFAIK, it is so.')	# input is unicode, result is ASCII
+result = ac.a2u('AFAIK, it is so.')		# input is ASCII, result is unicode
+result = ac.a2a('AFAIK, it is so.')		# input is ASCII, result is ASCII
 ```
+
+Note that `u2a()` will convert actual unicode characters above 7-bit
+ASCII in the source text to HTML ASCII unicode entities. The result will
+display properly in any web page using a unicode-supporting font, and can
+be further processed within Python using the str class, which doesn't
+understand actual unicode.
 
 ## License
 
