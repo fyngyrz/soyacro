@@ -567,6 +567,7 @@ IPO,,Initial Public Offering
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
 IQ,,Intelligence Quotient|I/Q phases of data encoding
+IR,,InfraRed
 IRA,,Individual Retirement Account|Irish-Republican Army
 IRC,,Internet Relay Chat|International Reply Coupon
 IRQ,,Interrupt ReQuest
