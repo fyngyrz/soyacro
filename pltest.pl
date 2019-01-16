@@ -39,17 +39,18 @@ my $utext = "What the 73 CAM FOO BAR BLEEP is going on with the GHZ into R1 and 
 # ------------
 my $cvt = new acroclass;	# instantiate class
 
-# You can set a prefix to go in the <abbr> tag that makes
-# it clear that the <abbr> is coming from a particular source, such
-# as soylentnews.org. Bytram has expressed a concern with the reader
-# knowing the difference between an <abbr> in the original source,
-# and an <abbr> that is adde by this system. This allows an ID preamble
-# to be stuffed into every one of the generated <abbr> tags so as
-# to address that specific concern. The default is no preamble.
-# This must be set before loadstandard() and loadlocal() are called.
-# You add a prefix this way:
+# You can set a prefix and/or postfix to go in the <abbr> tag that makes it
+# clear that the <abbr> is coming from a particular source, such as
+# soylentnews.org. Bytram has expressed a concern with the reader knowing
+# the difference between an <abbr> in the original source, and an <abbr>
+# that is adde by this system. This allows constant identifying verbiage to
+# be stuffed into every one of the generated <abbr> tags title element so
+# as to address that specific concern. The default is no prefix or postfix.
+# These must be set before loadstandard() and loadlocal() are called. You
+# add a prefix and/or postfix this way:
 # ---------------------------------------------------------------------
-$cvt->setntag('SN&rarr; ');
+$cvt->setntag('Ed:[');
+$cvt->setmtag(']');
 
 # You can call setstandardfile('filename') here to load other than acrobase.txt
 $cvt->loadstandard();		# get acros from standard list or from other file

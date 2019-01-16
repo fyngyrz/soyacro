@@ -17,6 +17,7 @@ sub new
 				standardfile=>'acrobase.txt',
 				localfile=>'acrolocl.txt',
 				ntag=>'',
+				mtag=>'',
 				worry=>0,
 				detectcomps=>1,
 				detectterms=>1,
@@ -38,6 +39,13 @@ sub new
 		my $self = shift;
 		my $ntag = shift;
 		$self->{ntag} = $ntag;
+	}
+
+	sub setmtag
+	{
+		my $self = shift;
+		my $ntag = shift;
+		$self->{mtag} = $ntag;
 	}
 
 	sub loadstandard
@@ -157,7 +165,7 @@ sub new
 		my $o = '';
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
-		if ($len == 1)	{ return($self->{ntag} . $text);	} # nothing to do
+		if ($len == 1)	{ return($self->{ntag} . $text . $self->{mtag});	} # nothing to do
 		$count = 0;
 		while(@ray)
 		{
@@ -166,7 +174,7 @@ sub new
 			$item = pop(@ray);
 			$o = $o . "($count): $item";
 		}
-		return($self->{ntag} . $o);
+		return($self->{ntag} . $o . $self->{mtag});
 	}
 
 	sub multicomp
@@ -180,11 +188,13 @@ sub new
 		my $count;
 		my $item;
 		my $ntag;
+		my $mtag;
 		my $o = '';
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
 		$ntag = $self->{ntag};
-		if ($len == 1)	{ return("<abbr title=\"$ntag$text $num\">$des</abbr>");	} # nothing to do
+		$mtag = $self->{mtag};
+		if ($len == 1)	{ return("<abbr title=\"$ntag$text $num$mtag\">$des</abbr>");	} # nothing to do
 		$count = 0;
 		$o = "<abbr title=\"$ntag";
 		while(@ray)
@@ -194,7 +204,7 @@ sub new
 			$item = pop(@ray);
 			$o = $o . "($count): $item $num";
 		}
-		$o = $o . "\">$des</abbr>";
+		$o = $o . "$mtag\">$des</abbr>";
 		return($o);
 	}
 
