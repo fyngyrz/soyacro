@@ -213,7 +213,7 @@ BTW,,By The Way
 BW,,Black and White (imaging)|Bandwidth
 BYOB,,Bring Your Own Bottle|Bring Your Own Booze
 CA,,California (USA)
-CAD,,Computer Aided Design|CAnadian Dollars
+CAD,,Computer Aided Design|Canadian Dollars
 CAGR,,Compound Annual Growth Rate
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CB,,Citizen's Band radio
