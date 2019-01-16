@@ -16,6 +16,7 @@ sub new
 				nflst=>[],
 				standardfile=>'acrobase.txt',
 				localfile=>'acrolocl.txt',
+				ntag=>'',
 				worry=>0,
 				detectcomps=>1,
 				detectterms=>1,
@@ -30,6 +31,13 @@ sub new
 		my $self = shift;
 		my $err = shift;
 		$self->{errors} = $self->{errors} . $err . "\n";
+	}
+
+	sub setntag
+	{
+		my $self = shift;
+		my $ntag = shift;
+		$self->{ntag} = $ntag;
 	}
 
 	sub loadstandard
@@ -99,7 +107,7 @@ sub new
 								{
 									$term = $ray[1];
 								}
-								$mdef = multidef($ray[2]);
+								$mdef = multidef($self,$ray[2]);
 								$term = "<abbr title=\"$mdef\">$term</abbr>";
 								$self->{acros}{$ray[0]} = $term;
 							}
@@ -140,6 +148,7 @@ sub new
 
 	sub multidef
 	{
+		my $self = shift;
 		my $text = shift;
 		my @ray;
 		my $len;
@@ -148,7 +157,7 @@ sub new
 		my $o = '';
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
-		if ($len == 1)	{ return($text);	} # nothing to do
+		if ($len == 1)	{ return($self->{ntag} . $text);	} # nothing to do
 		$count = 0;
 		while(@ray)
 		{
@@ -157,11 +166,12 @@ sub new
 			$item = pop(@ray);
 			$o = $o . "($count): $item";
 		}
-		return($o);
+		return($self->{ntag} . $o);
 	}
 
 	sub multicomp
 	{
+		my $self = shift;
 		my $text = shift;
 		my $num = shift;
 		my $des = shift;
@@ -169,12 +179,14 @@ sub new
 		my $len;
 		my $count;
 		my $item;
+		my $ntag;
 		my $o = '';
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
-		if ($len == 1)	{ return("<abbr title=\"$text $num\">$des</abbr>");	} # nothing to do
+		$ntag = $self->{ntag};
+		if ($len == 1)	{ return("<abbr title=\"$ntag$text $num\">$des</abbr>");	} # nothing to do
 		$count = 0;
-		$o = "<abbr title=\"";
+		$o = "<abbr title=\"$ntag";
 		while(@ray)
 		{
 			if ($count != 0)	{	$o = $o . " ";	} # intersticials
@@ -261,7 +273,7 @@ sub new
 				if (exists($self->{codic}{$1}))			# if letters in comps dict
 				{
 					$term = $self->{codic}{$1};			# get term from comps dict
-					$text = multicomp($term,$2,$text);	# build comp or multicomp
+					$text = multicomp($self,$term,$2,$text);	# build comp or multicomp
 				}
 			}
 		}
