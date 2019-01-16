@@ -158,7 +158,7 @@ File | Purpose
 ---- | -------
 [README.md](README.md) | This Readme
 [.editorconfig](.editorconfig) | This file tells github how to display the python source properly
-[saconfig.txt](sconfig.txt) | **User-supplied config file** \(see `soyacro.py` for details\)
+**saconfig.txt** | **User-supplied config file** \(see `soyacro.py` for details\)
 [COPYING](COPYING) | Declaration of public domain
 [soyacro.py](soyacro.py) | the webserver cgi
 [aa_webpage.py](aa_webpage.py) | convenience for generating HTML 4.01 pages
