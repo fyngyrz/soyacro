@@ -156,18 +156,21 @@ any other commenting system that allows the `<abbr>` tag.\)
 
 File | Purpose
 ---- | -------
-`README.md` | This Readme
-`.editorconfig` | This file tells github how to display the python source properly
-`saconfig.txt` | **User-supplied config file** \(see `soyacro.py` for details\)
-`COPYING` | Declaration of public domain
-`soyacro.py` | the webserver cgi
-`aa_webpage.py` | convenience for generating HTML 4.01 pages
-`aa_macro.py` | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
-`aambase.txt` | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
-`acrobase.txt` | term definitions \(see below\)
-`testacros.py` | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
-`testfile.uco` | Test comparison file for running `soyacro.py` from the command line
-`check.py` | Quick checker to see if a term is in `acrobase.txt`
+[README.md](README.md) | This Readme
+[.editorconfig](.editorconfig) | This file tells github how to display the python source properly
+[saconfig.txt](sconfig.txt) | **User-supplied config file** \(see `soyacro.py` for details\)
+[COPYING](COPYING) | Declaration of public domain
+[soyacro.py](soyacro.py) | the webserver cgi
+[aa_webpage.py](aa_webpage.py) | convenience for generating HTML 4.01 pages
+[aa_macro.py](aa_macro.py) | macro processor [docs here](http://ourtimelines.com/aamacrodoc/general.html)
+[aambase.txt](aambase.txt) | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
+[acrobase.txt](acrobase.txt) | term definitions \(see below\)
+[testacros.py](testacros.py) | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
+[testfile.uco](testfile.uco) | Test comparison file for running `soyacro.py` from the command line
+[check.py](check.py) | Quick checker to see if a term is in `acrobase.txt`
+[acroclass.py](acroclass.py) | Python 2.7 class to provide primary expansion functionality
+[acroclass.pm](acroclass.pm) | Perl 5 class comparable with `acroclass.py`
+[pltest.pl](pltest.pl) | Test script for `acroclass.pm`
 
 ## `acrobase.txt`:
 
@@ -430,7 +433,8 @@ Please do observe the ruminations at the top of this readme about security.
 
 ## Limitations and Design Choices
 
-This is a **Python** project. It incorporates another public domain **Python** project of mine,
+This is a **Python** project. It incorporates another public domain **Python**
+project of mine,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), and until
 or unless I move that project to **Python3** \(not very likely, but someone
 else might undertake that\), **Python** will remain the target here.
@@ -441,9 +445,13 @@ with either / both projects. The Github repo for the macro processor is
 
 ## Using term conversion in your own projects
 
-The file `acroclass.py` contains everything you need to expand `str` or
-`unicode` content to `str` or `unicode` results. The four methods
-available to use are:
+Both Python 2.7 and Perl 5 are supported.
+
+### Python 2.7
+
+The file [acroclass.py](acroclass.py) contains everything you need to
+expand `str` or `unicode` content to `str` or `unicode` results in a
+Python 2.7 environment. The four methods available to use are:
 
 Method | Purpose
 ---- | -------
@@ -473,6 +481,12 @@ ASCII in the source text to HTML ASCII unicode entities. The result will
 display properly in any web page using a unicode-supporting font, and can
 be further processed within Python using the str class, which doesn't
 understand actual unicode.
+
+### Perl 5
+
+The file [acroclass.pm](acroclass.pm) contains everything you need to
+expand `unicode` content to or `unicode` results in a Perl 5 environment.
+The file [pltest.pl](pltest.pl) demonstrates how to use the class.
 
 ## License
 
