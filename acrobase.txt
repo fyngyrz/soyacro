@@ -153,6 +153,7 @@ ANR,,Automatic Noise Reduction
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
 AP,,Access Point|Associated Press
+APA,,American Psychological Association
 APFS,,APple File System
 API,,Application Programmer Interface
 APL,,A Programming Language|APpLe stock symbol
