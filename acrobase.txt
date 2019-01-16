@@ -215,6 +215,7 @@ BYOB,,Bring Your Own Bottle|Bring Your Own Booze
 CA,,California (USA)
 CAD,,Computer Aided Design|Canadian Dollars
 CAGR,,Compound Annual Growth Rate
+CAM,,Computer Aided Manufacturing
 CAPTCHA,,Completely Automated Public Turing test to tell Computers and Humans Apart
 CB,,Citizen's Band radio
 CBC,,Canadian Broadcasting Corporation|Complete Blood Count|Criminal Background Check|Congressional Black Caucus
