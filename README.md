@@ -10,19 +10,28 @@ clogging up the post text with explanations.
 
 So what this project does is provides built-in definitions of terms
 written in all-capital letters and/or numeric digits used in posts \(as
-long as they're in the expansion file, `acrobase.txt`.\) You can edit the
-`acrobase.txt` file and add terms, and you should, as you find yourself
-using them. You might keep an eye on the one in the project, as I seem to
-be adding to it regularly. Better yet, submit your additions here as a
-pull request, and we all win.
+long as they're in the expansion file, [acrobase.txt](acrobase.txt).\)
+
+You can edit the [acrobase.txt](acrobase.txt) file and add terms, and you
+should, as you find yourself using them. You might keep an eye on the one
+in the project, as I seem to be adding to it regularly. Better yet,
+submit your additions here as a pull request, and we all win.
 
 The objective here definitely isn't to cover all acronyms ever. Instead,
 the aim is to go after terms that are currently, recently, or about to be
 in the news, and in particular, the technical news.
 
+There are three things going on here. The first is a complete webserver
+based system to create posts. The second is a Python 2.7 class,
+[acroclass.py](acroclass.py), that will allow you to create your own
+system to expand terms in that environment. The third is a Perl 5 module,
+[acroclass.pm](acroclass.pm), that will do the same thing in the Perl 5
+environment. All three use the [acrobase.txt](acrobase.txt) file to
+generate the HTML term expansions.
+
 #### Fixed Expansions
 
-Here's the format for a line to submit a fixed expansion, where []
+Here's the format for a line to submit a fixed expansion, where \[\]
 brackets indicate optional content:
 
 > term,[replacement],expansion[|expansion]
@@ -120,7 +129,7 @@ hand out the URL to this web application, as I wrote it for the use of a
 benign user.
 
 On a WAN or untrusted LAN? I've provided a means for
-security-by-obscurity, in that you can rename any of the data files \(and
+security-by-obscurity, in that you can rename any of the files \(and
 you should do so\) to anything you like, preferably something very
 unlikely, so as to prevent anyone from stumbling upon the cgi.
 
@@ -172,7 +181,7 @@ File | Purpose
 [acroclass.pm](acroclass.pm) | Perl 5 class comparable with [acroclass.py](acroclass.py)
 [pltest.pl](pltest.pl) | Test script for [acroclass.pm](acroclass.pm)
 
-## `acrobase.txt`:
+## [acrobase.txt](acrobase.txt):
 
 The format is defined at the top of the file. Basically there are three
 comma-separated fields, which define either fixed term expansions or
@@ -207,30 +216,30 @@ except where there is no replacement field content.
 
 #### Adding new expansions
 
-Edit the `acrobase.txt` file with a text editor. Stick to the format
-described at the top of the file. ASCII only, no unicode. Square
-braces mean optional:
+Edit the [acrobase.txt](acrobase.txt) file with a text editor. Stick to
+the format described at the top of the file. ASCII only, no unicode.
+Square braces mean optional:
 
 > TERM,[replacement],Expansion(s)
 
 #### Checking `acrobase.txt` for correctness
 
-Run `testacros.py` - it will tell you if there are any problems,
-and where they are in the file.
+Run [testacros.py](testacros.py) - it will tell you if there are any
+problems, and where they are in the file.
 
 #### Checking to see if an expansion is already present
 
-Run `check.py` with the term(s) you want to check for...
+Run [check.py](check.py) with the term(s) you want to check for...
 
 > `./check.py MHZ THZ`
 
 ...If the term or terms are found in the file, you'll see confirmation of
 that. If not, you'll be informed as to what is missing.
 
-Once `check.py` is running, it will keep running until you press `return`
-without providing a term to search for.
+Once [check.py](check.py) is running, it will keep running until you
+press `return` without providing a term to search for.
 
-## `aambase.txt`:
+## [aambase.txt](aambase.txt):
 
 This contains macros you can use in your posts. The macro language,
 [aa_macro](http://ourtimelines.com/aamacrodoc/general.html), is very

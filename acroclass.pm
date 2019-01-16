@@ -18,7 +18,8 @@ sub new
 				localfile=>'acrolocl.txt',
 				worry=>0,
 				detectcomps=>1,
-				detectterms=>1
+				detectterms=>1,
+				detectnums=>1
 				};
 
 	bless $self;
@@ -199,6 +200,13 @@ sub new
 		$self->{detectterms} = $flag;
 	}
 
+	sub setdetectnums
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{detectnums} = $flag;
+	}
+
 	sub setiglist
 	{
 		my $self = shift;	# self
@@ -260,6 +268,18 @@ sub new
 		return("$text");
 	}
 
+	sub isnum
+	{
+		my $text = shift;
+		my $char;
+		foreach $char (split //, $text)
+		{
+			if ($char lt "0")		{	return(0);	}
+			elsif ($char gt "9")	{	return(0);	}
+		}
+		return(1);
+	}
+
 	sub u2u
 	{
 		my $self = shift;	# self
@@ -273,6 +293,7 @@ sub new
 		my $taccum = '';	# temp accumulator
 		my $char;
 		my $key;
+		my $go;				# flag to control number hits
 		my @keys=();
 
 		if ($self->{detectterms} == 0) {	return($text);	} # function disabled
@@ -314,9 +335,24 @@ sub new
 			{
 				if (length($accum) > 1)
 				{
+					$go = 1;
+					if (!$self->{detectnums}) # if excluding numbers
+					{
+						if (isnum($accum))	# watch for pure numbers
+						{
+							$go = 0;
+						}
+					}
 					if (exists($self->{acros}{$accum})) # is this defined?
 					{
-						$taccum = $self->{acros}{$accum}; # then grab it
+						if ($go)
+						{
+							$taccum = $self->{acros}{$accum}; # then grab it
+						}
+						else # it's a number and we're ignoring it
+						{
+							$taccum = $accum;
+						}
 					}
 					else # we don't know about this one
 					{
@@ -325,7 +361,7 @@ sub new
 							$taccum = compmatch($self,$accum); # is this a component?
 							if ($taccum eq $accum) # if still not found
 							{
-								if (!exists($self->{igdic}{$accum})) # in ignore dict?
+								if ($go and !exists($self->{igdic}{$accum})) # in ignore dict?
 								{
 									$self->{undic}{$accum} = 1; # whoops... don't know this one
 								}
@@ -333,13 +369,10 @@ sub new
 						}
 					}
 					$accum = $taccum;
-					if ($taccum eq '')
-					{
-						$taccum = '';
-					}
 					$o = $o . $taccum;
 					$o = $o . $char;
 					$accum = '';
+					$taccum = '';
 				}
 				else	# length 1 or zero, ignore so far
 				{

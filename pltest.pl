@@ -24,6 +24,7 @@ my $nfl;
 # In the following test string:
 # -----------------------------
 # FOO, BLEEP and C1 are ignored terms
+# 123 is a pure numeric term
 # BAR will result in a "not found"
 # GHZ is a translated term: ends up as "GHz"
 # R1 is a single definition component
@@ -31,7 +32,7 @@ my $nfl;
 # DF21 is an undefined, component-style term, which will be "not found"
 # BS is a multiple definition term
 # --------------------------------
-my $utext = "What the CAM FOO BAR BLEEP is going on with the GHZ into R1 and C1 at VR23 in DF13? What is this BS?\n";
+my $utext = "What the 73 CAM FOO BAR BLEEP is going on with the GHZ into R1 and C1 at VR23 in DF13? What is this BS?\n";
 # --------------------------------
 
 # Basic setup:
@@ -63,6 +64,16 @@ $cvt->setiglist(\@ignore);
 # -------------------------------------------------------------------
 $cvt->setdetectterms(1);	# detect all terms: 0/[1]=no/[yes]
 $cvt->setdetectcomps(1);	# detect electronic components: 0/[1]=no/[yes]
+
+# You can tell the class to ignore pure numeric terms; But numbers
+# are a special case even when detectable in that if a numeric
+# term is not found, it will NOT be included in the "not found"
+# list, as numbers are almost always not imbued with special
+# meanings, so it isn't a great idea to freak out every time
+# one can't be expanded. The following is redundant, it defaults
+# to detecting them:
+# --------------------------------------------------------------
+$cvt->setdetectnums(1);		# detect numeric terms 0/[1]=no[yes]
 
 # $ret = processed text
 # $err = a text block possibly containing processing errors
