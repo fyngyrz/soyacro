@@ -157,8 +157,8 @@ any other commenting system that allows the `<abbr>` tag.\)
 File | Purpose
 ---- | -------
 [README.md](README.md) | This Readme
-[.editorconfig](.editorconfig) | This file tells github how to display the python source properly
-**saconfig.txt** | **User-supplied config file** \(see `soyacro.py` for details\)
+[.editorconfig](.editorconfig) | This file tells github how to display the source code properly
+**saconfig.txt** | **User-supplied config file** \(see top of [soyacro.py](soyacro.py) for details\)
 [COPYING](COPYING) | Declaration of public domain
 [soyacro.py](soyacro.py) | the webserver cgi
 [aa_webpage.py](aa_webpage.py) | convenience for generating HTML 4.01 pages
@@ -166,11 +166,11 @@ File | Purpose
 [aambase.txt](aambase.txt) | macro definitions [docs here](http://ourtimelines.com/aamacrodoc/general.html)
 [acrobase.txt](acrobase.txt) | term definitions \(see below\)
 [testacros.py](testacros.py) | Tests `acrobase.txt` file to assure proper operation with `soyacro.py`
-[testfile.uco](testfile.uco) | Test comparison file for running `soyacro.py` from the command line
-[check.py](check.py) | Quick checker to see if a term is in `acrobase.txt`
+[testfile.uco](testfile.uco) | Test comparison file for running [soyacro.py](soyacro.py) from the command line
+[check.py](check.py) | Quick checker to see if a term is in [acrobase.txt](acrobase.txt)
 [acroclass.py](acroclass.py) | Python 2.7 class to provide primary expansion functionality
-[acroclass.pm](acroclass.pm) | Perl 5 class comparable with `acroclass.py`
-[pltest.pl](pltest.pl) | Test script for `acroclass.pm`
+[acroclass.pm](acroclass.pm) | Perl 5 class comparable with [acroclass.py](acroclass.py)
+[pltest.pl](pltest.pl) | Test script for [acroclass.pm](acroclass.pm)
 
 ## `acrobase.txt`:
 
