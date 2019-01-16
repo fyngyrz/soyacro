@@ -12,6 +12,7 @@
 # These are demonstrated in the code below.
 
 use strict;
+use warnings;
 
 use acroclass;
 use utf8;
