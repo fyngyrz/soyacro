@@ -749,6 +749,7 @@ NRO,,National Reconnaisance Office (US)
 NSA,,National Security Agency (US)
 NSFW,,Not Safe For Work
 NS,,Nova Scotia (Canada)
+NT,,New Testament
 NTS,,Note To Self
 NTSC,,National Television System Committee|Never Twice the Same Color
 NTSB,,National Transportation Safety Board
@@ -787,6 +788,7 @@ OS9,,An OS for the 6800 and 6809 microprocessors
 OSI,,Open Systems Interconnection
 OS,,Operating System|Open-Source (software)
 OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
+OT,,Old Testament
 OTC,,Over The Counter
 OTOH,,On The Other Hand
 OTT,,Over The Top (direct distribution of streaming content)
