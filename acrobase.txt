@@ -304,6 +304,7 @@ DEFCON,,DEFense CONdition
 DGPS,,Differential Global Positioning System
 DHCP,,Dynamic Host Configuration Protocol
 DHS,,Department of Homeland Security (US)
+DIAF,,Die In A Fire
 DIMM,,Dual Inline Memory module
 DIN,,German institute, similar to US ANSI
 DIP,,Dual Inline Package
@@ -808,6 +809,7 @@ PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
 PEP,,Python Enhancement Proposal
+PFT,,Prints For Time: photographer exchanges prints for model's time
 PGP,,Pretty Good Privacy
 PHD,Ph.D.,Doctorate of Philosphy
 PHEV,,Plug-In Hybrid Electric Vehicle
@@ -980,6 +982,7 @@ TFC,,The Fucking Comments: bowdlerized, The Fine Comments
 TFLOPS,,Tera FLoating Point OPerations per Second
 TFS,,The Fucking Summary: bowdlerized, The Fine Summary
 TF,,The Fuck
+TFP,,Time For Prints: model exchanges time for photographer's prints
 TFT,,Thin Film Transistor (usually display)
 THC,,TetraHydroCannabinol
 THF,,Tremendously Frequency: 300 GHz - 3 THz
