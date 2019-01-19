@@ -8,11 +8,17 @@ import sys,re
 # ./check.py NAFTA CEO CPU
 # ./check.py NOTINHERE 73
 
+# Once a term is tested, you can enter one or more new terms.
+# Each time you do, the acrobase is reloaded so that any edits
+# are taken into account. If instead of entering new terms,
+# you enter q<return> or just <return> the program will exit.
+# ------------------------------------------------------------
+
 # Project Info:
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: December 23rd, 2018 (this code file only)
+#  Last Update: January 19th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, acrobase.txt (these may be renamed)
 #               check.py, testacros.py
@@ -34,20 +40,18 @@ errors = u''
 relist = []
 rmlist = []
 detectcomps = True
+acrobase = ''
+acros = {}
+altkeys = {}
 
-argc = len(sys.argv)
-if argc < 2:
-	print 'Usage: check.py ACRO[,ACRO2]...[ACROn]'
-	exit()
-
-fn = 'acrobase.txt'
-
-try:
-	with open(fn) as fh:
-		acrobase = fh.read()
-except:
-	print 'Could not read' + fn
-	exit()
+def getacros():
+	global acrobase,errors
+	try:
+		with open(fn) as fh:
+			acrobase = fh.read()
+	except:
+		print 'Could not read' + fn
+		exit()
 
 # This method determines if what appears to be an acronym (because
 # acronyms can have/be numbers) is entirely numeric. If it is, it
@@ -89,43 +93,55 @@ def compmatch(term):
 			ren += 1
 	return term
 
-
 # Create a dictionary from the acronym / abbreviation file contents:
 # ------------------------------------------------------------------
-acros = {}
-altkeys = {}
-linecounter = 1
-l1 = acrobase.split(u'\n')
-for el in l1:
-	if len(el) != 0:
-		if el[0:1] != u'#':
-			try:
-				veri = True
-				key,alternate,expansion = el.split(u',',2)
-				if expansion.find('<') != -1: veri = False
-				if expansion.find('>') != -1: veri = False
-				if veri == True:
-					term = key
-					if key == '*':
-						relist.append(alternate)
-						rmlist.append(expansion)
+def makeacros():
+	global acros,altkeys,acrobase,relist,rmlist,errors
+	acros = {}
+	altkeys = {}
+	linecounter = 1
+	l1 = acrobase.split(u'\n')
+	for el in l1:
+		if len(el) != 0:
+			if el[0:1] != u'#':
+				try:
+					veri = True
+					key,alternate,expansion = el.split(u',',2)
+					if expansion.find('<') != -1: veri = False
+					if expansion.find('>') != -1: veri = False
+					if veri == True:
+						term = key
+						if key == '*':
+							relist.append(alternate)
+							rmlist.append(expansion)
+						else:
+							if alternate != u'':
+								altkeys[key] = alternate
+							if acros.get(key,'') != '':
+								errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
+							acros[key] = expansion
 					else:
-						if alternate != u'':
-							altkeys[key] = alternate
-						if acros.get(key,'') != '':
-							errors += u'<span style="color:red;">Duplicate ACRO key: '+ unicode(key) + u'</span><br>'
-						acros[key] = expansion
-				else:
-					errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
-			except:
-				errors += u'line '+str(linecounter)+u': '
-				errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
-	linecounter += 1
+						errors += u'<span style="color:red;">&lt; or &gt; found in ACRO: '+ unicode(key) + u'</span><br>'
+				except:
+					errors += u'line '+str(linecounter)+u': '
+					errors += u'"<span style="color:red;">'+unicode(el)+u'</span>"<br>'
+		linecounter += 1
 
+# Setup:
+# ------
+argc = len(sys.argv)
+if argc < 2:
+	print 'Usage: check.py ACRO[,ACRO2]...[ACROn]'
+	exit()
+fn = 'acrobase.txt'
 loclist = sys.argv[1:]
 llen = argc - 1
 
+# Check loop - reloads every time so edits are taken into account
+# ---------------------------------------------------------------
 while len(loclist) > 0:
+	getacros()
+	makeacros()
 	for n in range(0,llen):
 		tst = loclist[n]
 		okay = True
