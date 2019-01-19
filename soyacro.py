@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 15th, 2019 (this code file only)
+#  Last Update: January 19th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -527,12 +527,12 @@ tmp = ac.subents(tmp)				# convert char entities into actual unicode
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
-resform = u'<div style="text-align:left;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div><br></div>'
+resform = u'<div style="text-align:left;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 
 if showpreview == True:
-	resform = u'<div style="white-space:pre-line; padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
+	resform = u'Preview:<br><div style="white-space:pre-line; padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
 	tmp = tmp.replace(u'&lt;',u'<')
 	tmp = tmp.replace(u'&gt;',u'>')
 	tmp = tmp.replace(u'&amp;',u'&')
