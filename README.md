@@ -239,6 +239,10 @@ that. If not, you'll be informed as to what is missing.
 Once [check.py](check.py) is running, it will keep running until you
 press `return` without providing a term to search for.
 
+Each time you enter a new term or set of terms, [check.py](check.py)
+reloads the acrobase; this is done so that any saved edits show up
+immediately.
+
 ## [aambase.txt](aambase.txt):
 
 This contains macros you can use in your posts. The macro language,
