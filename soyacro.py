@@ -211,6 +211,15 @@ if resubmit == True:
 		tiglist = val
 		if val == 'IGLIST':
 			tiglist = ''
+		tiglist = tiglist.replace('\t',' ')
+		while(tiglist.find(',,') != -1):
+			tiglist = tiglist.replace(',,',',')
+		while(tiglist.find(' ,') != -1):
+			tiglist = tiglist.replace(' ,',',')
+		while(tiglist.find(', ') != -1):
+			tiglist = tiglist.replace(', ',',')
+		while(tiglist.find('  ') != -1):
+			tiglist = tiglist.replace('  ',' ')
 		tiglist = tiglist.replace(',',' ') # allow use of commas
 		tiglist = tiglist.upper()
 	except:
