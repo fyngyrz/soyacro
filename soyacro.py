@@ -532,7 +532,7 @@ resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 
 if showpreview == True:
-	resform = u'Preview:<br><div style="white-space:pre-line; padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
+	resform = u'Preview:<br><div style="white-space:pre-line; margin-top:-1em; padding-left:3px; color:#000000; width:36em; background-color:#ffffff; border-color:#000000;">TEXTHERE</div>'
 	tmp = tmp.replace(u'&lt;',u'<')
 	tmp = tmp.replace(u'&gt;',u'>')
 	tmp = tmp.replace(u'&amp;',u'&')
