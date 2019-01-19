@@ -233,7 +233,7 @@ CDT,,Central Daylight Time
 CE,,Current Era
 CEO,,Chief Executive Officer
 CEQA,,California Environmental Quality Act (US)
-CERN,,European Organization for Nuclear Research (French orig.)
+CERN,,European Organization for Nuclear Research (French orig., Conseil Europ&#233;en pour la Recherche Nucl&#233;aire)
 CES,,Consumer Electronics Show
 CFC,,ChloroFluoroCarbon
 CFD,,Computational Fluid Dynamics
