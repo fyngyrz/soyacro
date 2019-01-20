@@ -21,13 +21,30 @@ The objective here definitely isn't to cover all acronyms ever. Instead,
 the aim is to go after terms that are currently, recently, or about to be
 in the news, and in particular, the technical news.
 
-There are three things going on here. The first is a complete webserver
-based system to create posts. The second is a Python 2.7 class,
+### Overview:
+
+There are three subprojects happening here. The first is a complete
+webserver based system to create posts. The second is a Python 2.7 class,
 [acroclass.py](acroclass.py), that will allow you to create your own
 system to expand terms in that environment. The third is a Perl 5 module,
 [acroclass.pm](acroclass.pm), that will do the same thing in the Perl 5
 environment. All three use the [acrobase.txt](acrobase.txt) file to
 generate the HTML term expansions.
+
+## Editor's Markup
+
+Both the Perl and Python classes offer the ability to add "editor's
+markup" to the acronym expansions. This is a prefix and a postfix
+that are wrapped around the expansion; the idea here is that if
+what is being processed is a quote, or added by editors, then
+that can be indicated so as not to give the impression it was
+part of the source being quoted. The defaults are:
+
+> 'ed: ['
+> ']'
+
+The web page provides incorporates this ability; turn on the `editor`
+checkmark to use it.
 
 #### Fixed Expansions
 
