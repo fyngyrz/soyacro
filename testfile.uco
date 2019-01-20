@@ -36,10 +36,15 @@ all-caps-and/or-digits.
 <div style="float:left;">
 <TEXTAREA NAME="thetext" ROWS="20" COLS="80">skip this: &lt;abbr title="testing"&gt;DONTTREADONME&lt;/abbr&gt; uchar pizza: &amp;#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.</TEXTAREA><br>
 Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="">
-<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="">&rarr;<INPUT style="background-color:#DDFFDD;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="" readonly><br></div></div>
+<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="">&rarr;<INPUT style="background-color:#DDFFDD;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="" readonly><br>
+Editor Pre Markup: <INPUT TYPE="TEXT" NAME="edpre" SIZE="10" VALUE="ed: [">
+Editor Post Markup: <INPUT TYPE="TEXT" NAME="edpost" SIZE="10" VALUE="]">
+</div>
+</div>
 </div>
 <div style="float:left;"><div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKED>Detect&nbsp;Terms<br>
+<INPUT TYPE="checkbox" NAME="editor">Editor's&nbsp;Wrapper<br>
 <INPUT TYPE="checkbox" NAME="detectnumbers">Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKED>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKED>Use&nbsp;Macros<br>
