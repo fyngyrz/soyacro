@@ -9,6 +9,7 @@ use warnings;
 sub new
 {
 	my $self = {errors=>'',
+				version=>'0.2',
 				acros=>{},
 				igdic=>{},
 				undic=>{},
@@ -27,13 +28,6 @@ sub new
 	bless $self;
 	return $self;
 
-	sub rpterr
-	{
-		my $self = shift;
-		my $err = shift;
-		$self->{errors} = $self->{errors} . $err . "\n";
-	}
-
 	sub setntag
 	{
 		my $self = shift;
@@ -46,6 +40,71 @@ sub new
 		my $self = shift;
 		my $ntag = shift;
 		$self->{mtag} = $ntag;
+	}
+
+	sub setworry
+	{
+		my $self = shift;			# class hash
+		my $worry = shift;			# should we worry about localfile?
+		$self->{worry} = $worry;	# set it for later
+	}
+
+	sub setstandardfile
+	{
+		my $self = shift;				# class hash
+		my $fn = shift;					# passed filename
+		$self->{standardfile} = $fn;	# setter
+	}
+
+	sub setlocalfile
+	{
+		my $self = shift;			# class hash
+		my $fn = shift;				# passed filename
+		$self->{localfile} = $fn;	# setter
+	}
+
+	sub setdetectterms
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{detectterms} = $flag;
+	}
+
+	sub setdetectnums
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{detectnums} = $flag;
+	}
+
+	sub setiglist
+	{
+		my $self = shift;	# self
+		my @list = @{$_[0]};
+		foreach(@list)
+		{
+			$self->{igdic}{$_} = 1;
+		}
+	}
+
+	sub setdetectcomps
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{detectcomps} = $flag;
+	}
+
+	sub getversion
+	{
+	my $self = shift;
+		return($self->{version});
+	}
+
+	sub rpterr
+	{
+		my $self = shift;
+		my $err = shift;
+		$self->{errors} = $self->{errors} . $err . "\n";
 	}
 
 	sub loadstandard
@@ -133,27 +192,6 @@ sub new
 		return(1); # oops
 	}
 
-	sub setworry
-	{
-		my $self = shift;			# class hash
-		my $worry = shift;			# should we worry about localfile?
-		$self->{worry} = $worry;	# set it for later
-	}
-
-	sub setstandardfile
-	{
-		my $self = shift;				# class hash
-		my $fn = shift;					# passed filename
-		$self->{standardfile} = $fn;	# setter
-	}
-
-	sub setlocalfile
-	{
-		my $self = shift;			# class hash
-		my $fn = shift;				# passed filename
-		$self->{localfile} = $fn;	# setter
-	}
-
 	sub multidef
 	{
 		my $self = shift;
@@ -206,37 +244,6 @@ sub new
 		}
 		$o = $o . "$mtag\">$des</abbr>";
 		return($o);
-	}
-
-	sub setdetectcomps
-	{
-		my $self = shift;
-		my $flag = shift;
-		$self->{detectcomps} = $flag;
-	}
-
-	sub setdetectterms
-	{
-		my $self = shift;
-		my $flag = shift;
-		$self->{detectterms} = $flag;
-	}
-
-	sub setdetectnums
-	{
-		my $self = shift;
-		my $flag = shift;
-		$self->{detectnums} = $flag;
-	}
-
-	sub setiglist
-	{
-		my $self = shift;	# self
-		my @list = @{$_[0]};
-		foreach(@list)
-		{
-			$self->{igdic}{$_} = 1;
-		}
 	}
 
 	sub chkhtmlbalance

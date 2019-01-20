@@ -39,6 +39,9 @@ my $utext = "What the 73 CAM FOO BAR BLEEP is going on with the GHZ into R1 and 
 # ------------
 my $cvt = new acroclass;	# instantiate class
 
+my $version = $cvt->getversion();
+print "Version $version\n";
+
 # You can set a prefix and/or postfix to go in the <abbr> tag that makes it
 # clear that the <abbr> is coming from a particular source, such as
 # soylentnews.org. Bytram has expressed a concern with the reader knowing
