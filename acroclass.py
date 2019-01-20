@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: January 15th, 2019 (this code file only)
+	#  Last Update: January 20th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,13 +18,16 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.3 Beta')
+		return('0.0.4 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
 						detectcomps=True,			# detect electronic components
 						iglist=[],					# terms to ignore
-						acrofile='acrobase.txt'):	# file to load term expansions from
+						acrofile='acrobase.txt',	# file to load term expansions from
+						editor=False,				# use editor's marks
+						edpre = '',					# editor prefix
+						edpost = ''):				# editor postfix
 		self.version = self.version_set()
 		self.detectterms = detectterms
 		self.numberterms = numberterms
@@ -32,6 +35,9 @@ class core(object):
 		self.acrofile = acrofile
 		self.igdict = {}
 		self.undict = {}
+		self.editor = editor
+		self.edpre = edpre
+		self.edpost = edpost
 		self.acros = {}
 		self.rmlist = []
 		self.relist = []
@@ -126,6 +132,11 @@ class core(object):
 		self.acros = {}
 		linecounter = 1
 		l1 = self.acrobase.split(u'\n')
+		edpr = u''
+		edpo = u''
+		if self.editor == True:
+			edpr = self.edpre
+			edpo = self.edpost
 		for el in l1:
 			if len(el) != 0:
 				if el[0:1] != u'#':
@@ -151,7 +162,7 @@ class core(object):
 									self.errors += u'Duplicate ACRO key: '+ unicode(key) + u'\n'
 								alist = expansion.split('|')
 								if len(alist) == 1:
-									self.acros[key] = u'<abbr title="'+expansion+'">'+term+u'</abbr>'
+									self.acros[key] = u'<abbr title="'+edpr+expansion+edpo+'">'+term+u'</abbr>'
 								else:
 									alist.sort()
 									s = u''
@@ -160,7 +171,7 @@ class core(object):
 										if n != 1: s = s + u' '
 										s = s + u'(' + unicode(str(n)) + u'): '+unicode(str(el))
 										n += 1
-									self.acros[key] = u'<abbr title="'+s+'">'+term+u'</abbr>'
+									self.acros[key] = u'<abbr title="'+edpr+s+edpo+'">'+term+u'</abbr>'
 						else:
 							self.errors += u'&lt; or &gt; found in ACRO: '+ unicode(key) + u'\n'
 					except Exception,e:
@@ -176,6 +187,11 @@ class core(object):
 		if self.isnumeric(term) == False: # if not fully numeric
 			rmatch = False
 			ren = 0
+			edpr = u''
+			edpo = u''
+			if self.editor == True:
+				edpr = self.edpre
+				edpo = self.edpost
 			for el in self.relist:
 				ln = len(el)
 				el = el + '\d*'
@@ -188,16 +204,16 @@ class core(object):
 						comp = self.rmlist[ren]
 						ell = comp.split('|')
 						if len(ell) == 1:
-							string = '<abbr title="'+comp + ' ' + str(n) + '">'+term+'</abbr>'
+							string = '<abbr title="'+edpr+comp + ' ' + str(n) +edpo+ '">'+term+'</abbr>'
 						else: # multiple elements
 							x = 1
-							string = '<abbr title="'
+							string = '<abbr title="'+edpr
 							ell.sort()
 							for element in ell:
 								if x != 1: string += ' '
 								string += '(%d): %s %d' % (x,element,n)
 								x += 1
-							string += '">'+term+'</abbr>'
+							string += edpo+'">'+term+'</abbr>'
 						return string
 				ren += 1
 		return term

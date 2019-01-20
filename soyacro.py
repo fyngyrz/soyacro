@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 19th, 2019 (this code file only)
+#  Last Update: January 20th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -56,8 +56,11 @@ showpreview	= True				# show preview of formatted post
 showsigs	= True				# all signatures displayed or not
 randsigs	= False				# append a random signature when generating
 sigecho		= True				# echo the random signature to the page
+editor		= False				# impose <abbr> tags as editor with edpre and edpost
 entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
+edpre		= 'ed: ['			# editor's prefix
+edpost		= ']'				# editor's postfix
 
 # Other
 # -----
@@ -131,17 +134,22 @@ else: # but if we did read it, then we process it for settings
 				elif parm == 'showacros':	showacros = maketf(parm,data)
 				elif parm == 'showpreview':	showpreview = maketf(parm,data)
 				elif parm == 'showsigs':	showsigs = maketf(parm,data)
+				elif parm == 'editor':		editor = maketf(parm,data)
 				elif parm == 'randsigs':	randsigs = maketf(parm,data)
 				elif parm == 'sigecho':		sigecho = maketf(parm,data)
 				elif parm == 'entlines':	entlines = makeint(parm,data,entlines)
 				elif parm == 'reslines':	reslines = makeint(parm,data,reslines)
 				elif parm == 'bgcolor':		bgcolor = unicode(data)
+				elif parm == 'edpre':		edpre = data
+				elif parm == 'edpost':		edpost = data
 				else: errors += u'config file; unknown parameter error: %s<br>' % (unicode(thisline))
 		line += 1
 
 tiglist = ''
 coninput = u''
 bgcolor = u'#'+unicode(bgcolor)
+edpre = unicode(edpre)
+edpost = unicode(edpost)
 
 if 'GATEWAY_INTERFACE' in os.environ:
 	cmdline = False
@@ -171,6 +179,7 @@ checkshowexpansions=u''
 checkshowpreview=u''
 checkshowstyles=u''
 checksigecho=u''
+checkeditor=u''
 checkdetectcomps=u''
 checkdetectterms=u''
 checkdetectnumbers=u''
@@ -252,6 +261,12 @@ if resubmit == True:
 		detectcomps = False
 
 	try:
+		flag = form['editor'].value
+		editor = True
+	except:
+		editor = False
+
+	try:
 		flag = form['detectterms'].value
 		detectterms = True
 	except:
@@ -274,6 +289,16 @@ if resubmit == True:
 		showsigs = True
 	except:
 		showsigs = False
+
+	try:
+		edpre = str(form['edpre'].value)
+	except:
+		pass
+
+	try:
+		edpost = str(form['edpost'].value)
+	except:
+		pass
 
 	try:
 		flag = form['usemacros'].value
@@ -303,6 +328,7 @@ if showacros == True:	checkshowexpansions = chk
 if showstyles == True:	checkshowstyles = chk
 if showpreview == True:	checkshowpreview = chk
 if sigecho == True:		checksigecho = chk
+if editor == True:		checkeditor = chk
 if detectcomps == True:	checkdetectcomps = chk
 if detectterms == True:	checkdetectterms = chk
 if numberterms == True:	checkdetectnumbers = chk;
@@ -345,7 +371,10 @@ ac = acroclass.core(acrofile=ifile,
 					iglist=ltiglist,
 					detectterms = detectterms,
 					numberterms = numberterms,
-					detectcomps = detectcomps)
+					detectcomps = detectcomps,
+					editor = editor,
+					edpre = edpre,
+					edpost = edpost)
 
 # This removes all square braces prior to aa_macro processing.
 # That means that only styles can be used; and that, in turn,
@@ -448,10 +477,15 @@ PUTRSIGHERE<FORM ACTION="CGINAME" METHOD="POST">
 <div style="float:left;">
 <TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
 Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
-<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="CONINPUT">&rarr;<INPUT style="background-color:BGCOLOR;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="CONOUTPUT" readonly><br></div></div>
+<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="CONINPUT">&rarr;<INPUT style="background-color:BGCOLOR;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="CONOUTPUT" readonly><br>
+Editor Pre Markup: <INPUT TYPE="TEXT" NAME="edpre" SIZE="10" VALUE="EDPRE">
+Editor Post Markup: <INPUT TYPE="TEXT" NAME="edpost" SIZE="10" VALUE="EDPOST">
+</div>
+</div>
 </div>
 <div style="float:left;"><div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKDETECTTERMS>Detect&nbsp;Terms<br>
+<INPUT TYPE="checkbox" NAME="editor"CHECKEDITOR>Editor's&nbsp;Wrapper<br>
 <INPUT TYPE="checkbox" NAME="detectnumbers"CHECKDETECTNUMBERS>Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
@@ -475,6 +509,7 @@ Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
 myform = myform.replace(u'ENTLINES',unicode(str(entlines)))
 myform = myform.replace(u'CHECKSHOWSIGNATURES',checkshowsignatures)
 myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
+myform = myform.replace(u'CHECKEDITOR',checkeditor)
 myform = myform.replace(u'CHECKSIGECHO',checksigecho)
 myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
 myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
@@ -482,6 +517,8 @@ myform = myform.replace(u'CHECKSHOWPREVIEW',checkshowpreview)
 myform = myform.replace(u'CHECKSHOWEXPANSIONS',checkshowexpansions)
 myform = myform.replace(u'ENTLINES',str(entlines))
 myform = myform.replace(u'RESLINES',str(reslines))
+myform = myform.replace(u'EDPRE',edpre)
+myform = myform.replace(u'EDPOST',edpost)
 myform = myform.replace(u'IGLIST',tiglist)
 myform = myform.replace(u'CHECKDETECTCOMPS',checkdetectcomps)
 myform = myform.replace(u'CHECKDETECTTERMS',checkdetectterms)
