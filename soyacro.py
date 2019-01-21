@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 20th, 2019 (this code file only)
+#  Last Update: January 21st, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -116,7 +116,7 @@ else: # but if we did read it, then we process it for settings
 		el = el.strip() # remove leading and trailing space(s)
 		if el != '' and el[0] != '#':
 			thisline = el
-			el = el.split('#') # strip off comments if present
+			el = el.rsplit('#',1) # strip off comments if present
 			el = el[0]
 			try:
 				parm,data = el.split('=')
