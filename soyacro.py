@@ -27,15 +27,18 @@ start = time.time()
 #               standard Python os import library
 # ----------------------------------------------------------
 
-# =========================================================================
-# =========================== CONFIGURATION ===============================
+# ==============================================================================
+# =========================== CONFIGURATION ====================================
 # You can override this with a local file. Just copy the lines below into
 # a file called saconfig.txt and set them as you like. Then, as you update
 # the project files from the github repo, your config file will override
 # the settings here, allowing you to maintain consistent behavior as you
 # prefer. Otherwise, every time you update from the repo, the settings
 # here will need to be changed if you don't like the defaults.
-# =========================================================================
+#
+# Notes: (1) The edpre and edpost entries in the local file should NOT be quoted
+#        (2) The iplimit entry is just a comma separated list of IPs, or one IP
+# ==============================================================================
 
 # App Filenames:
 # --------------
@@ -67,9 +70,9 @@ iplimit		= []				# only from this ['ip'], or these comma-separated IP(s) ['ip1',
 # -----
 bgcolor		= 'DDFFDD'		# background color for read-only textboxes
 
-# =========================================================================
-# ========================= END CONFIGURATION =============================
-# =========================================================================
+# ==============================================================================
+# =========================== END CONFIGURATION ================================
+# ==============================================================================
 
 # Code - Good luck if you change anything. :)
 # ===========================================
