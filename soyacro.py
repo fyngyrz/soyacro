@@ -61,6 +61,7 @@ entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 edpre		= 'ed: ['			# editor's prefix
 edpost		= ']'				# editor's postfix
+iplimit		= []				# only from this ['ip'], or these comma-separated IP(s) ['ip1','ip2']
 
 # Other
 # -----
@@ -142,6 +143,8 @@ else: # but if we did read it, then we process it for settings
 				elif parm == 'bgcolor':		bgcolor = unicode(data)
 				elif parm == 'edpre':		edpre = data
 				elif parm == 'edpost':		edpost = data
+				elif parm == 'iplimit':
+					iplimit = data.split(',')
 				else: errors += u'config file; unknown parameter error: %s<br>' % (unicode(thisline))
 		line += 1
 
@@ -152,9 +155,26 @@ edpre = unicode(edpre)
 edpost = unicode(edpost)
 
 if 'GATEWAY_INTERFACE' in os.environ:
+	theip = cgi.escape(os.environ["REMOTE_ADDR"])
 	cmdline = False
+	if iplimit != []:
+		okay = False
+		for ip in iplimit:
+			if theip == ip: okay = True
+		if okay == False:
+			mybody = u'<p>Sorry, this page is private %s</p>' % (unicode(theip))
+			tp = thePage(	title   = u'Abbr processor',
+							styles  = u'',
+							body    = mybody,
+							valid   = 1,
+							forhead = u'',
+							forbody = u'')
+			s = (tp.assemble() + u'\n').encode('UTF-8')
+			sys.stdout.write(s)
+			exit(0)
 else:
 	cmdline = True
+
 
 # Read in the user's post content:
 # --------------------------------
