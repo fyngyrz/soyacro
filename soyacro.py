@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 21st, 2019 (this code file only)
+#  Last Update: January 25th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -64,6 +64,7 @@ entlines	= 20				# number of text lines in entry box
 reslines	= 20				# number of text lines in result box
 edpre		= 'ed: ['			# editor's prefix
 edpost		= ']'				# editor's postfix
+inquotes	= True				# only use editor's marks inside blockquotes
 iplimit		= []				# only from this ['ip'], or these comma-separated IP(s) ['ip1','ip2']
 
 # Other
@@ -146,6 +147,7 @@ else: # but if we did read it, then we process it for settings
 				elif parm == 'bgcolor':		bgcolor = unicode(data)
 				elif parm == 'edpre':		edpre = data
 				elif parm == 'edpost':		edpost = data
+				elif parm == 'inquotes':	inquotes = maketf(parm,data)
 				elif parm == 'iplimit':
 					iplimit = data.split(',')
 				else: errors += u'config file; unknown parameter error: %s<br>' % (unicode(thisline))
@@ -203,6 +205,7 @@ checkshowpreview=u''
 checkshowstyles=u''
 checksigecho=u''
 checkeditor=u''
+checkinquotes=u''
 checkdetectcomps=u''
 checkdetectterms=u''
 checkdetectnumbers=u''
@@ -308,6 +311,12 @@ if resubmit == True:
 		showpreview = False
 
 	try:
+		flag = form['inquotes'].value
+		inquotes = True
+	except:
+		inquotes = False
+
+	try:
 		flag = form['showsignatures'].value
 		showsigs = True
 	except:
@@ -352,6 +361,7 @@ if showstyles == True:	checkshowstyles = chk
 if showpreview == True:	checkshowpreview = chk
 if sigecho == True:		checksigecho = chk
 if editor == True:		checkeditor = chk
+if inquotes == True:	checkinquotes = chk;
 if detectcomps == True:	checkdetectcomps = chk
 if detectterms == True:	checkdetectterms = chk
 if numberterms == True:	checkdetectnumbers = chk;
@@ -396,6 +406,7 @@ ac = acroclass.core(acrofile=ifile,
 					numberterms = numberterms,
 					detectcomps = detectcomps,
 					editor = editor,
+					inquotes = inquotes,
 					edpre = edpre,
 					edpost = edpost)
 
@@ -508,7 +519,8 @@ Editor Post Markup: <INPUT TYPE="TEXT" NAME="edpost" SIZE="10" VALUE="EDPOST">
 </div>
 <div style="float:left;"><div style="float:right; text-align:left;"><INPUT TYPE="hidden" NAME="resubmit" VALUE="foo">
 <INPUT TYPE="checkbox" NAME="detectterms"CHECKDETECTTERMS>Detect&nbsp;Terms<br>
-<INPUT TYPE="checkbox" NAME="editor"CHECKEDITOR>Editor's&nbsp;Wrapper<br>
+<INPUT TYPE="checkbox" NAME="editor"CHECKEDITOR>Editor's&nbsp;Marks<br>
+<INPUT TYPE="checkbox" NAME="inquotes"CHECKINQUOTES>Ed's&nbsp;marks&nbsp;only&nbsp;in&nbsp;quotes<br>
 <INPUT TYPE="checkbox" NAME="detectnumbers"CHECKDETECTNUMBERS>Detect&nbsp;Number&nbsp;Terms<br>
 <INPUT TYPE="checkbox" NAME="detectcomps"CHECKDETECTCOMPS>Detect&nbsp;Electronic&nbsp;Components<br>
 <INPUT TYPE="checkbox" NAME="usemacros"CHECKUSEMACROS>Use&nbsp;Macros<br>
@@ -534,6 +546,7 @@ myform = myform.replace(u'CHECKSHOWSIGNATURES',checkshowsignatures)
 myform = myform.replace(u'CHECKAUTOSIGNATURE',checkautosignature)
 myform = myform.replace(u'CHECKEDITOR',checkeditor)
 myform = myform.replace(u'CHECKSIGECHO',checksigecho)
+myform = myform.replace(u'CHECKINQUOTES',checkinquotes)
 myform = myform.replace(u'CHECKUSEMACROS',checkusemacros)
 myform = myform.replace(u'CHECKSHOWSTYLES',checkshowstyles)
 myform = myform.replace(u'CHECKSHOWPREVIEW',checkshowpreview)
@@ -566,7 +579,8 @@ myform = myform.replace(u'TEXTBLOCK',tmp)		# goes into the entry form (again)
 mybody = makeraw(mybody)						# the text at the top of the page
 mybody = u'<p>'+ac.u2u(mybody)+u'</p>'			# gets the acronyms stuffed in
 mybody += myform								# form added to main page body
-tmp = ac.u2u(usertext)							# Now the post gets its acronyms
+tmp = usertext									# back to raw input text
+
 testforsquigs(tmp)								# verify {macro} brace balance
 rsig = ''
 rsignum = ''
@@ -581,7 +595,10 @@ if aambase != '':			# here's the aa_macro processing, if braces balance
 	tmp = ac.makeascii(tmp)	# aa_macro requires ASCII string
 	tmp = mod.do(tmp)		# process the {macros}
 	tmp = repsquares(tmp)	# replace the square brackets
-	tmp = makeraw(tmp)		# encode for the textarea
+else: # not doing macros
+	tmp = usertext
+tmp = ac.u2u(tmp)		# Now the macro'd post gets its expansions
+
 if sigecho == False: rsig = ''
 else:
 	rsig = rsig.replace('\n','<br>')

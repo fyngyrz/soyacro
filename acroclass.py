@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: January 20th, 2019 (this code file only)
+	#  Last Update: January 25th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.4 Beta')
+		return('0.0.5 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -26,6 +26,7 @@ class core(object):
 						iglist=[],					# terms to ignore
 						acrofile='acrobase.txt',	# file to load term expansions from
 						editor=False,				# use editor's marks
+						inquotes=False,				# use editor's marks only within blockquote spans
 						edpre = '',					# editor prefix
 						edpost = ''):				# editor postfix
 		self.version = self.version_set()
@@ -36,6 +37,8 @@ class core(object):
 		self.igdict = {}
 		self.undict = {}
 		self.editor = editor
+		self.inquotes = inquotes
+		self.inspan = 0
 		self.edpre = edpre
 		self.edpost = edpost
 		self.acros = {}
@@ -162,7 +165,7 @@ class core(object):
 									self.errors += u'Duplicate ACRO key: '+ unicode(key) + u'\n'
 								alist = expansion.split('|')
 								if len(alist) == 1:
-									self.acros[key] = u'<abbr title="'+edpr+expansion+edpo+'">'+term+u'</abbr>'
+									self.acros[key] = expansion
 								else:
 									alist.sort()
 									s = u''
@@ -171,7 +174,7 @@ class core(object):
 										if n != 1: s = s + u' '
 										s = s + u'(' + unicode(str(n)) + u'): '+unicode(str(el))
 										n += 1
-									self.acros[key] = u'<abbr title="'+edpr+s+edpo+'">'+term+u'</abbr>'
+									self.acros[key] = s
 						else:
 							self.errors += u'&lt; or &gt; found in ACRO: '+ unicode(key) + u'\n'
 					except Exception,e:
@@ -203,17 +206,30 @@ class core(object):
 					else:
 						comp = self.rmlist[ren]
 						ell = comp.split('|')
+						smark = edpr
+						emark = edpo
+						if self.inquotes == True:
+							if self.inspan == 0:
+								smark = u''
+								emark = u''
 						if len(ell) == 1:
-							string = '<abbr title="'+edpr+comp + ' ' + str(n) +edpo+ '">'+term+'</abbr>'
+							string = '<abbr title="%s%s %s%s">%s</abbr>' % (smark,comp,n,emark,term)
+#							string = '<abbr title="'+edpr+comp + ' ' + str(n) +edpo+ '">'+term+'</abbr>'
 						else: # multiple elements
 							x = 1
-							string = '<abbr title="'+edpr
+							smark = edpr
+							emark = edpo
+							if self.inquotes == True:
+								if self.inspan == 0:
+									smark = u''
+									emark = u''
+							string = '<abbr title="'+smark
 							ell.sort()
 							for element in ell:
 								if x != 1: string += ' '
 								string += '(%d): %s %d' % (x,element,n)
 								x += 1
-							string += edpo+'">'+term+'</abbr>'
+							string += emark+'">'+term+'</abbr>'
 						return string
 				ren += 1
 		return term
@@ -270,14 +286,25 @@ class core(object):
 		accum = u''
 		o = u''
 		ctag = u''
+		btag = u''
 		wait = False
 		wait2 = False
 		for c in text: # iterate all characters
 			if c == u'<':
 				wait = True	# if within an HTML tag, don't bother
 				ctag = u''	# reset abbr detector
+				btag = u''	# reset blockquote detector
 			elif c == u'>': wait = False
 			ctag += c.lower()
+			btag += c.lower()
+			if btag[:11] == u'<blockquote':
+				self.inspan += 1
+				btag = u''
+			elif btag[:12] == u'</blockquote':
+				self.inspan -= 1
+				if self.inspan < 0:
+					self.inspan = 0
+				btag = u''
 			if ctag[:5] == u'<abbr':
 				wait2 = True	# ignore between <abbr></abbr>
 				ctag = u''
@@ -295,6 +322,18 @@ class core(object):
 							if taccum == accum: # still not found
 								if self.igdict.get(taccum,'') == '':
 									self.undict[taccum] = 1 # we don't know this one
+					else: # we found it
+						if self.editor == True:
+							smark = self.edpre
+							emark = self.edpost
+						else:
+							smark = u''
+							emark = u''
+						if self.inquotes == True:
+							if self.inspan == 0:
+								smark = u''
+								emark = u''
+						taccum = '<abbr title="%s%s%s">%s</abbr>' % (smark,taccum,emark,accum)
 					accum = taccum
 					accum += c
 					o += accum
