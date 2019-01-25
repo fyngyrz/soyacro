@@ -376,6 +376,7 @@ sub new
 			if ($btag eq '<blockquote')
 			{
 				$self->{inspan} += 1;
+				$btag = '';
 			}
 			elsif ($btag eq '</blockquote')
 			{
@@ -384,6 +385,7 @@ sub new
 				{
 					$self->{inspan} = 0;
 				}
+				$btag = '';
 			}
 			$ntag = $self->{ntag};
 			$mtag = $self->{mtag};
