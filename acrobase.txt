@@ -942,6 +942,7 @@ SOL,,Shit Out of Luck
 SOP,,Standard Operating Procedure
 SOS,,Save Our Souls|Shit On a Shingle (chipped beef on bread)
 SOTA,,State Of The Art
+SOTU,,State Of The Union
 SP,,Spelling
 SPD,,Space Policy Directive
 SPID,,Service Profile Identifier
