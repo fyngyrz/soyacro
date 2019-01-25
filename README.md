@@ -43,8 +43,12 @@ part of the source being quoted. The defaults are:
 > 'ed: ['
 > ']'
 
-The web page provides incorporates this ability; turn on the `editor`
-checkmark to use it.
+In addition, editor's markup can be restricted to only being
+applied within the span of blockquote tags.
+
+The web page provides incorporates these abilities; turn on the `editor`
+checkmark to use the markup, and the `Ed's marks only in quotes` checkmark
+to restrict the markup to blockquotes.
 
 #### Fixed Expansions
 
