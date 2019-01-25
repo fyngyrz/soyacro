@@ -611,11 +611,11 @@ KVM,,Keyboard, Video, and Mouse switch
 KWH,kWh,kiloWatt-Hour
 KW,kW,kiloWatt
 KY,,Kentucky (USA)
-L1,,Lagrangian point 1 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
-L2,,Lagrangian point 2 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
-L3,,Lagrangian point 3 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
-L4,,Lagrangian point 4 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
-L5,,Lagrangian point 5 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies
+L1,,Lagrangian point 1 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies|Inductor 1
+L2,,Lagrangian point 2 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies|Inductor 2
+L3,,Lagrangian point 3 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies|Inductor 3
+L4,,Lagrangian point 4 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies|Inductor 4
+L5,,Lagrangian point 5 - a point near two large bodies in orbit where a smaller object will maintain its position relative to the large orbiting bodies|Inductor 5
 LA,,Louisiana (USA)|Los Angeles (California, USA)
 LAN,,Local Area Network
 LAPD,,Los Angeles Police Department
