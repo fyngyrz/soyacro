@@ -56,7 +56,7 @@ print "Version $version\n";
 # ---------------------------------------------------------------------
 $cvt->setntag('Ed:[');		# prefix markup
 $cvt->setmtag(']');			# postfix markup
-$cvt->setdetectquotes(1);	# markup ONLY within <blockquote> spans
+$cvt->setdetectquotes(1);	# markup only in quotes: [0]/1 = [no]/yes
 # ---------------------------------------------------------------------
 # To recap: (1) If you want editor's marks everywhere, just set them.
 #           (2) If you just want them in blockquotes, set them AND
