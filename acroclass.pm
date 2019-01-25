@@ -20,6 +20,9 @@ sub new
 				ntag=>'',
 				mtag=>'',
 				worry=>0,
+				detectquotes=>0,
+				editmarks=>0,
+				inspan=>0,
 				detectcomps=>1,
 				detectterms=>1,
 				detectnums=>1
@@ -27,6 +30,20 @@ sub new
 
 	bless $self;
 	return $self;
+
+	sub seteditmarks
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{editmarks} = $flag;
+	}
+
+	sub setdetectquotes
+	{
+		my $self = shift;
+		my $flag = shift;
+		$self->{detectquotes} = $flag;
+	}
 
 	sub setntag
 	{
@@ -175,7 +192,7 @@ sub new
 									$term = $ray[1];
 								}
 								$mdef = multidef($self,$ray[2]);
-								$term = "<abbr title=\"$mdef\">$term</abbr>";
+								$term = "$mdef";
 								$self->{acros}{$ray[0]} = $term;
 							}
 						}
@@ -203,7 +220,7 @@ sub new
 		my $o = '';
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
-		if ($len == 1)	{ return($self->{ntag} . $text . $self->{mtag});	} # nothing to do
+		if ($len == 1)	{ return($text);	} # nothing to do
 		$count = 0;
 		while(@ray)
 		{
@@ -212,7 +229,7 @@ sub new
 			$item = pop(@ray);
 			$o = $o . "($count): $item";
 		}
-		return($self->{ntag} . $o . $self->{mtag});
+		return($o);
 	}
 
 	sub multicomp
@@ -225,13 +242,19 @@ sub new
 		my $len;
 		my $count;
 		my $item;
-		my $ntag;
-		my $mtag;
 		my $o = '';
+		my $ntag = $self->{ntag};
+		my $mtag = $self->{mtag};
+		if ($self->{detectquotes} != 0) # looking for quoted regions
+		{
+			if ($self->{inspan} == 0)	# if we're not in a quoted span
+			{
+				$ntag = '';
+				$mtag = '';
+			}
+		}
 		@ray = split(/\|/, $text);
 		$len = scalar(@ray);
-		$ntag = $self->{ntag};
-		$mtag = $self->{mtag};
 		if ($len == 1)	{ return("<abbr title=\"$ntag$text $num$mtag\">$des</abbr>");	} # nothing to do
 		$count = 0;
 		$o = "<abbr title=\"$ntag";
@@ -317,13 +340,16 @@ sub new
 		my $incaps = 0;		# not in caps at start
 		my $wait = 0;		# not holding off expansion at start
 		my $wait2 = 0;		# not holding off expansion at start
-		my $ctag = '';		# 
+		my $ctag = '';		# this tag holds possible occurances of <abbr
+		my $btag = '';		# this tag holds possible occurances of <blockquote
 		my $accum = '';		# accumulator
 		my $taccum = '';	# temp accumulator
 		my $char;
 		my $key;
 		my $go;				# flag to control number hits
 		my @keys=();
+		my $ntag;
+		my $mtag;
 
 		if ($self->{detectterms} == 0) {	return($text);	} # function disabled
 		if (chkhtmlbalance($text) != 0)
@@ -338,12 +364,37 @@ sub new
 			{
 				$wait = 1;	# noop within HTML tags
 				$ctag = '';	# reset abbr detector
+				$btag = '';	# reset blockquote detector
 			}
 			elsif ($char eq ">")
 			{
 				$wait = 0; # out of html tag, presumably
 			}
+
 			$ctag = $ctag . lc($char);
+			$btag = $btag . lc($char);
+			if ($btag eq '<blockquote')
+			{
+				$self->{inspan} += 1;
+			}
+			elsif ($btag eq '</blockquote')
+			{
+				$self->{inspan} -= 1;
+				if ($self->{inspan} < 0)
+				{
+					$self->{inspan} = 0;
+				}
+			}
+			$ntag = $self->{ntag};
+			$mtag = $self->{mtag};
+			if ($self->{detectquotes} != 0) # looking for quoted regions
+			{
+				if ($self->{inspan} == 0)	# if we're not in a quoted span
+				{
+					$ntag = '';
+					$mtag = '';
+				}
+			}
 			if ($ctag eq '<abbr')
 			{
 				$wait2 = 0;
@@ -376,7 +427,7 @@ sub new
 					{
 						if ($go)
 						{
-							$taccum = $self->{acros}{$accum}; # then grab it
+							$taccum = "<abbr title=\"$ntag$self->{acros}{$accum}$mtag\">$accum</abbr>"; # then grab it
 						}
 						else # it's a number and we're ignoring it
 						{

@@ -32,7 +32,7 @@ my $nfl;
 # DF21 is an undefined, component-style term, which will be "not found"
 # BS is a multiple definition term
 # --------------------------------
-my $utext = "What the 73 CAM FOO BAR BLEEP is going on with the GHZ into R1 and C1 at VR23 in DF13? What is this BS?\n";
+my $utext = "What the 73 CAM FOO BAR BLEEP is going on with <blockquote>the XTAL1 GHZ</blockquote> into R1 and C1 at VR23 in DF13? What is this BS?\n";
 # --------------------------------
 
 # Basic setup:
@@ -46,14 +46,21 @@ print "Version $version\n";
 # clear that the <abbr> is coming from a particular source, such as
 # soylentnews.org. Bytram has expressed a concern with the reader knowing
 # the difference between an <abbr> in the original source, and an <abbr>
-# that is adde by this system. This allows constant identifying verbiage to
-# be stuffed into every one of the generated <abbr> tags title element so
-# as to address that specific concern. The default is no prefix or postfix.
-# These must be set before loadstandard() and loadlocal() are called. You
-# add a prefix and/or postfix this way:
+# that is added by this system. This allows constant identifying verbiage
+# to be stuffed into every one of the generated <abbr> tags title element
+# so as to address that specific concern. The default is no prefix or
+# postfix. You can set the detectquotes flag (this turns edit marks on and
+# off ONLY within the scope of <blockquote> and </blockquote>) All of these
+# must be set before loadstandard() and loadlocal() are called. You add a
+# prefix and/or postfix this way:
 # ---------------------------------------------------------------------
-$cvt->setntag('Ed:[');
-$cvt->setmtag(']');
+$cvt->setntag('Ed:[');		# prefix markup
+$cvt->setmtag(']');			# postfix markup
+$cvt->setdetectquotes(1);	# markup ONLY within <blockquote> spans
+# ---------------------------------------------------------------------
+# To recap: (1) If you want editor's marks everywhere, just set them.
+#           (2) If you just want them in blockquotes, set them AND
+#               call setdetectquotes(1)
 
 # You can call setstandardfile('filename') here to load other than acrobase.txt
 $cvt->loadstandard();		# get acros from standard list or from other file
