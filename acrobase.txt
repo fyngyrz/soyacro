@@ -507,7 +507,7 @@ HQ,,HeadQuarters
 HR,,Human Resources
 HRW,,Human Rights Watch
 HT,,Handie-Talky, AKA Walkie-Talkie - a handheld radio transceiver
-HTH,,Hope That Helped|Here To Help
+HTH,,Hope That Helped|Here To Help|Happy To Help
 HTML2,,HyperText Markup Language version 2
 HTML3,,HyperText Markup Language version 3
 HTML4,,HyperText Markup Language version 4
