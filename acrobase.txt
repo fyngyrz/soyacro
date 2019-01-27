@@ -144,6 +144,7 @@ ALS,,Amyotrophic Lateral Sclerosis AKA as Lou Gehrig's disease
 AMA,,Ask Me Anything|Against Medical Advice|American Medical Association
 AM,,Amplitude Modulation|Ante Meridiem - before midday
 AMD,,Advanced Micro Devices
+AMEX,,American Stock Exchange|American Express
 AMOLED,,Active Matrix Organic Light Emitting Diode
 AMP,,Accelerated Mobile Pages
 AMS,,AM Stereo (radio)
@@ -712,6 +713,8 @@ NAACP,,National Association for the Advancement of Colored People
 NAFTA,,North American Free Trade Agreement
 NAS,,Network Attached Storage
 NASA,,National Aeronautics and Space Administration (US)
+NASD,,National Association of Securities Dealers
+NASDAQ,,National Association of Securities Dealers Automated Quotations
 NAT,,Network Address Translation
 NATO,,North Atlantic Treaty Organization
 NBC,,National Broadcasting Company
@@ -803,6 +806,7 @@ PA,,Pennsylvania (USA)
 PATRIOT,,uniting and strengthening america by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism
 PAYGO,,Pay As You GO
 PAL,,Phase Alternate Line video encoding
+PBS,,Public Broadcasting Service
 PCI,,Payment Card Industry
 PC,,Personal Computer; any computer owned by an individual|Politically Correct
 PCB,,Printed Circuit Board
@@ -856,6 +860,7 @@ QR,,Quick Response code
 QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
 QSO,,Radio shorthand for conversation
+RADAR,,RAdio Detection And Ranging
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
 RAW,,Deep color image files, usually from cameras
@@ -896,6 +901,7 @@ RV,,Research Vessel|Recreational Vehicle
 RWNJ,,Right Wing Nut Job
 RX,,Receive
 SA,,South Africa|South America
+SAAS,,Software As A Service
 SAE,,Society of Automotive Engineers
 SATA,,Serial Advanced Technology Attachment
 SCA,,Subsidiary Communications Authorization
