@@ -145,6 +145,7 @@ AMA,,Ask Me Anything|Against Medical Advice|American Medical Association
 AM,,Amplitude Modulation|Ante Meridiem - before midday
 AMD,,Advanced Micro Devices
 AMOLED,,Active Matrix Organic Light Emitting Diode
+AMP,,Accelerated Mobile Pages
 AMS,,AM Stereo (radio)
 AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
@@ -375,6 +376,7 @@ ERP,,Effective Radiated Power
 ERU,,Energy Recovery Unit
 ESA,,European Space Agency
 ESC,,Escape key or keycode $1B
+ESO,,European Southern Observatory
 ESPN,,Entertainment and Sports Programming Network
 EST,,Eastern Standard Time
 ET,,Eastern Time|Extra-Terrestrial
