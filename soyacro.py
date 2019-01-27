@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 25th, 2019 (this code file only)
+#  Last Update: January 27th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -189,11 +189,14 @@ if cmdline == False:
 		usertext = unicode(form['thetext'].value,'UTF-8')
 		usernote = u''
 	except Exception,e:
-		usertext = u''
 		usernote = u'No text entered'
+		usertext = u''
 else: # we're running from command line
 	usertext = u'skip this: <abbr title="testing">DONTTREADONME</abbr> uchar pizza: &#127829; and a little ASCII to stroke the acronym generator, some {i italics} to run the macro processor.'
 	usernote = u'Running from command line'
+
+if usertext[-1:] != u'\n':
+	usertext += u'\n'
 
 # Set the flags
 # -------------
@@ -508,10 +511,10 @@ myform = u"""
 PUTRSIGHERE<FORM ACTION="CGINAME" METHOD="POST">
 <div style="text-align: center;">
 <div>
-<div style="float:left;">
+<div style="float:left; background-color:#000088;">
 <TEXTAREA NAME="thetext" ROWS="ENTLINES" COLS="80">TEXTBLOCK</TEXTAREA><br>
 Ignore List: <INPUT TYPE="TEXT" NAME="iglist" SIZE="64" VALUE="IGLIST">
-<br><div style="text-align:center;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="CONINPUT">&rarr;<INPUT style="background-color:BGCOLOR;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="CONOUTPUT" readonly><br>
+<br><div style="text-align:center; background-color:#000088;">Unicode conversion: <INPUT TYPE="TEXT" NAME="coninput" SIZE="10" VALUE="CONINPUT">&rarr;<INPUT style="background-color:BGCOLOR;" TYPE="TEXT" NAME="conoutput" SIZE="40" VALUE="CONOUTPUT" readonly><br>
 Editor Pre Markup: <INPUT TYPE="TEXT" NAME="edpre" SIZE="10" VALUE="EDPRE">
 Editor Post Markup: <INPUT TYPE="TEXT" NAME="edpost" SIZE="10" VALUE="EDPOST">
 </div>
