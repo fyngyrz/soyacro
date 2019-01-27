@@ -65,7 +65,18 @@ reslines	= 20				# number of text lines in result box
 edpre		= 'ed: ['			# editor's prefix
 edpost		= ']'				# editor's postfix
 inquotes	= True				# only use editor's marks inside blockquotes
-iplimit		= []				# only from this ['ip'], or these comma-separated IP(s) ['ip1','ip2']
+iplimit		= []				# only from this ['ip'], or these comma-separated IP(s) ['ip1','ip2'], use * for any quad wildcard
+								# ex:
+									# 192.168.10.* would allow any of 255 LAN IPs
+									# 192.168.10.*,192.168.1.* would allow two base lans
+									# 192.168.10.100,192.168.10.101 would allow two specific IP's
+									# no limit on number of comma-separated IPs in config or quoted-comma-sep in [] above
+									#
+									# here:
+									# iplimit = ['192.168.10.100','192.168.10.101']
+									#
+									# in config file:
+									# iplimit = 192.168.10.100,192.168.10.101
 
 # Other
 # -----
@@ -165,7 +176,20 @@ if 'GATEWAY_INTERFACE' in os.environ:
 	if iplimit != []:
 		okay = False
 		for ip in iplimit:
-			if theip == ip: okay = True
+			icnt = 0
+			try:
+				o1,o2,o3,o4 = theip.split('.')
+				q1,q2,q3,q4 = ip.split('.')
+			except:
+				o1,o2,o3,o4 = '1','1','1','1'
+				q1,q2,q3,q4 = '0','0','0','0'
+				errors += u'bad IP or incoming IP'
+			if q1 == '*' or q1 == o1: icnt += 1
+			if q2 == '*' or q2 == o2: icnt += 1
+			if q3 == '*' or q3 == o3: icnt += 1
+			if q4 == '*' or q4 == o4: icnt += 1
+			if icnt == 4: okay = True
+#			if theip == ip: okay = True
 		if okay == False:
 			mybody = u'<p>Sorry, this page is private %s</p>' % (unicode(theip))
 			tp = thePage(	title   = u'Abbr processor',
