@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: January 25th, 2019 (this code file only)
+	#  Last Update: January 28th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.5 Beta')
+		return('0.0.7 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -27,6 +27,7 @@ class core(object):
 						acrofile='acrobase.txt',	# file to load term expansions from
 						editor=False,				# use editor's marks
 						inquotes=False,				# use editor's marks only within blockquote spans
+						astyle='',					# style content for <abbr> tags
 						edpre = '',					# editor prefix
 						edpost = ''):				# editor postfix
 		self.version = self.version_set()
@@ -34,6 +35,7 @@ class core(object):
 		self.numberterms = numberterms
 		self.detectcomps = detectcomps
 		self.acrofile = acrofile
+		self.setstyle(astyle)
 		self.igdict = {}
 		self.undict = {}
 		self.editor = editor
@@ -47,6 +49,12 @@ class core(object):
 		self.errors = u'' # note that errors are unicode strings!
 		self.setacros(acrofile)
 		self.geniglist(iglist)
+
+	def setstyle(self,astyle):
+		if astyle == '':
+			self.astyle = astyle
+		else:
+			self.astyle = ' style="%s"' % (astyle)
 
 	# Generate ignore list, remove items from main list
 	# -------------------------------------------------
@@ -213,8 +221,7 @@ class core(object):
 								smark = u''
 								emark = u''
 						if len(ell) == 1:
-							string = '<abbr title="%s%s %s%s">%s</abbr>' % (smark,comp,n,emark,term)
-#							string = '<abbr title="'+edpr+comp + ' ' + str(n) +edpo+ '">'+term+'</abbr>'
+							string = '<abbr%s title="%s%s %s%s">%s</abbr>' % (self.astyle,smark,comp,n,emark,term)
 						else: # multiple elements
 							x = 1
 							smark = edpr
@@ -223,7 +230,7 @@ class core(object):
 								if self.inspan == 0:
 									smark = u''
 									emark = u''
-							string = '<abbr title="'+smark
+							string = '<abbr'+self.astyle+' title="'+smark
 							ell.sort()
 							for element in ell:
 								if x != 1: string += ' '
@@ -278,6 +285,8 @@ class core(object):
 	# This is unicode in, unicode out
 	# --------------------------------------------------------------------
 	def u2u(self,text):
+		tlen = len(text)
+		ccnt = 0
 		if self.detectterms == False: return text
 		if type(text) is not unicode:
 			self.errors += 'class function makeacros() requires unicode input\n';
@@ -290,6 +299,7 @@ class core(object):
 		wait = False
 		wait2 = False
 		for c in text: # iterate all characters
+			ccnt += 1
 			if c == u'<':
 				wait = True	# if within an HTML tag, don't bother
 				ctag = u''	# reset abbr detector
@@ -333,7 +343,7 @@ class core(object):
 							if self.inspan == 0:
 								smark = u''
 								emark = u''
-						taccum = '<abbr title="%s%s%s">%s</abbr>' % (smark,taccum,emark,accum)
+						taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,accum)
 					accum = taccum
 					accum += c
 					o += accum
@@ -351,6 +361,18 @@ class core(object):
 						if taccum == accum: # still not found
 							if self.igdict.get(taccum,'') == '':
 								self.undict[taccum] = 1 # we don't know this one
+				else:
+					if self.editor == True:
+						smark = self.edpre
+						emark = self.edpost
+					else:
+						smark = u''
+						emark = u''
+					if self.inquotes == True:
+						if self.inspan == 0:
+							smark = u''
+							emark = u''
+					taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,accum)
 				accum = taccum
 				o += accum
 			else: # 1 or 0
