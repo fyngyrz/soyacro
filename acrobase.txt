@@ -118,6 +118,7 @@ ACM,,Association for Computing Machinery
 ACLU,,American Civil Liberties Union
 ACS,,American Chemical Society
 ACT,,Air Channel Transistor
+AD,,Alzheimer's Disease
 ADA,,Americans with Disabilities Act (US)
 AD,,Anno Domini (in the year of the Lord)
 ADC,,Analog to Digital Converter
