@@ -595,6 +595,7 @@ JFC,,Jesus Fucking Christ
 JFK,,John F. Kennedy
 JIT,,Just In Time (compilation)
 JITC,,Just In Time Compilation
+JK,,JK (Jack Kirby) Flip-Flop
 JPEG,,A format for compressing image files.
 JPG,,A format for compressing image files.
 JPL,,Jet Propulsion Labratory (US)
