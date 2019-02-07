@@ -657,6 +657,7 @@ LSD,,Lysergic Acid Diethylamide - C20H25N3O
 LTE,,A mobile communications standard
 LUF,,Lowest Usable Frequency
 LW,,LongWave (radio)
+LWN,,Linux Weekly News
 LWNJ,,Left Wing Nut Job
 MAC,,Media Access Control address
 MA,,Massachusetts (USA)
