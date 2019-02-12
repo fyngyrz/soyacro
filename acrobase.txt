@@ -611,6 +611,7 @@ KGB,,Now the FSB - Komitet Gosudarstvennoi Bezopaznosti (Committee for State Sec
 KHZ,KHz,Kilohertz - Thousands of cycles per second
 KISS,,Keep It Simple, Stupid
 KJV,,King James Version (English language bible)
+KKK,,Ku Klux Klan
 KMS,,Kilometers|Knowledge Management System
 KPH,,Kilometers Per Hour
 KS,,Kansas (USA)
