@@ -879,6 +879,7 @@ RCMP,,Royal Canadian Mounted Police
 RCS,,Revision Control System
 RD,R&amp;D,Research and Development
 RDS,,Radio Data System|Relational Database Service
+REST,,REpresentational State Transfer
 RFI,,Radio Frequency Interference
 RF,,Radio Frequency, usually short for Radio Frequency signal
 RGBA,,Red, Green, Blue, Alpha (transparency)
