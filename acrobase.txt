@@ -166,6 +166,7 @@ APU,,Accelerated Processing Unit
 AR,,Arkansas (USA)|Augmented Reality
 ARC,,Amatuer Radio Club
 ARM,,A class of CPUs
+ARPU,,Average Revenue Per User
 ARRL,,American Radio Relay League (Amateur radio)
 ASAP,,As Soon As Possible
 ASCII,,American Standard Code For Information Interchange (a 7-bit code)
@@ -522,6 +523,7 @@ HWP,,HighWay Patrol|Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
 IANAL,,I Am Not A Lawyer
+IARPA,,Intelligence Advanced Research Projects Activity
 IBIS,,In-Body Image Stabilization
 IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
@@ -665,6 +667,7 @@ MAD,,Mutally Assured Destruction
 MAGA,,Make America Great Again
 MASER,,Microwave Amplification by Stimulated Emission of Radiation
 MAMR,,Microwave-Assisted Magnetic Recording
+MAU,,Monthly Active Users
 MB,,Megabyte|Manitoba (Canada)
 MBA,,Masters of Business Administration
 MC,,Midnight Commander (software)
@@ -685,6 +688,7 @@ MIT,,Massachusetts Institute of Technology
 ML,,Machine Learning|Machine Language|Major League
 MLB,,Major League Baseball
 MLK,,Martin Luther King
+MLU,,Magnetic Logic Unit
 MM,,2-digit Month, 01-12
 MMORPG,,Massively Multiplayer Online Role-Playing Game
 MMU,,Memory Management Unit
@@ -785,6 +789,7 @@ OH,,Ohio (USA)
 OIG,,Office of the Inspector General (US DOJ)
 OK,,Oklahoma (USA)|"Okay"
 OJT,,On the Job Training
+OLC,,Octa Level Cell
 OLED,,Organic Light Emitting Diode
 OM,,Old Man
 OMB,,Office of Management and Budget (US)
