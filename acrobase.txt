@@ -970,6 +970,7 @@ SS,,Secret Service|SteamShip
 SSA,,Social Security Administration (US)
 SSB,,Single SideBand
 SSD,,Solid State Disk
+SSDD,,Same Shit, Different Day
 SSH,,Secure SHell
 SSID,,Service Set IDentifier
 SSL,,Secure Sockets Layer
