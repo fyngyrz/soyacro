@@ -314,6 +314,7 @@ DIP,,Dual Inline Package
 DIY,,Do It Yourself
 DJ,,Disc Jockey
 DMA,,Direct Memory Access
+DMOZ,,Originally from open.mozilla.org, then ODP: Open Directory Project
 DMR,,Digital Mobile Radio
 DNA,,DeoxyriboNucleic Acid: chemically encodes genetic information
 DNC,,Democratic National Convention|Democratic National Committee
@@ -784,6 +785,7 @@ NYT,,New York Times
 NZ,,New Zealand|Non-Zero
 OA,,Open Access
 OC,,Organized Crime|Original Content
+ODP,,Open Directory Project
 OCR,,Optical Character Recognition
 OEM,,Original Equipment Manufacturer
 OH,,Ohio (USA)
