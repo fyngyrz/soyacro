@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: January 27th, 2019 (this code file only)
+#  Last Update: February 18th, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -637,6 +637,7 @@ else:
 
 tmp = tmp.replace(u'&amp;#',u'&#')	# watch out for intended char entities
 tmp = ac.subents(tmp)				# convert char entities into actual unicode
+tmp = tmp.replace('&','&amp;')
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
