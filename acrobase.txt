@@ -990,6 +990,7 @@ SWAT,,Special Weapons And Tactics
 SWB,,ShortWave Band (radio)
 SWL,,ShortWave Listener
 SWR,,Standing Wave Ratio
+SWTPC,,SouthWest Technical Products Corporation (6800, 6809 micros)
 TAM,,Total Addressable Market
 TANSTAAFL,,There Ain't No Such Thing As A Free Lunch
 TB,,TeraByte|Tuberculosis
@@ -1119,6 +1120,7 @@ WLAN,,Wireless Local Area Network
 WMD,,Weapons of Mass Destruction
 WNEW,,Prog rock FM station in NYC in the 1900's
 WRT,,With Regard To
+WP,,WordPress|Word Processing
 WSJ,,Wall Street Journal (US newspaper)
 WSPR,,Weak Signal Propagation Reporter
 WSU,,Washington State University
