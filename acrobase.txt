@@ -804,6 +804,7 @@ OPED,Op-Ed,(placed) Opposite of Editorial page: reader commentary
 OP,,Original Poster|OPerator
 OR,,Oregon (USA)|OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
+OSHA,,Occupational Safety and Health Administration (US)
 OSI,,Open Systems Interconnection
 OS,,Operating System|Open-Source (software)
 OSX,OS X / MacOS,Operating System X (Apple), AKA MacOS
