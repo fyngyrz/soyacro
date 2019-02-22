@@ -136,6 +136,7 @@ AGU,,American Geophysical Union
 AGW,,Anthropogenic Global Warming
 AI,,Artificial Intelligence
 AIDS,,Acquired ImmunoDeficiency Syndrome
+AIUI,,As I Understand It
 AKA,,Also Known As
 AK,,Alaska (USA)
 AL,,Alabama (USA)|Artificial Life
