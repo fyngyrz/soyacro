@@ -375,6 +375,7 @@ EPA,,Environmental Protection Agency (US)
 EPIC,,Electronic Privacy Information Center	
 EPROM,,Erasable Programmable Read-Only Memory - normally read-only, but can be erased
 EPS,,Encapsulated PostScript
+EQ,,Equalizer
 ER,,Emergency Room
 ERP,,Effective Radiated Power
 ERU,,Energy Recovery Unit
