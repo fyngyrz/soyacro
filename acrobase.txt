@@ -410,6 +410,7 @@ FDM,,Frequency Division Multiplexing
 FEC,,Forward Error Correction
 FEM,,Finite Element Method
 FEMA,,Federal Emergency Management Agency (US)
+FET,,Field-Effect Transistor
 FF,,Full frame: 36 x 24 mm sensor size|Fast Forward
 FFS,,For Fuck's Sake
 FHA,,Federal Housing Administration (US)
