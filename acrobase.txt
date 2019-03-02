@@ -528,6 +528,7 @@ HZ,Hz,Hertz (cycles per second)
 IA,,Iowa (USA)
 IANAL,,I Am Not A Lawyer
 IARPA,,Intelligence Advanced Research Projects Activity
+IAU,,International Astronomical Union
 IBIS,,In-Body Image Stabilization
 IBM,,International Business Machines
 ICANN,,Internet Corporation For Assigned Names And Numbers
