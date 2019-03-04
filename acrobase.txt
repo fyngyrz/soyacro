@@ -402,6 +402,7 @@ FAX,,Facsimile transmission
 FB,,Facebook|Fine Business
 FBI,,Federal Bureau of Investigation (US)
 FBO,,Federal Budget Office (US)
+FBR,,Full Battle-Rattle
 FCC,,Federal Communications Commission (US)
 FCEV,,Fuel Cell Electric Vehicle
 FDA,,Food and Drug Administration (US)
