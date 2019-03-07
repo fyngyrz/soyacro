@@ -1083,7 +1083,7 @@ USPS,,United States Postal Service
 USS,,United States Ship
 USSR,,United Soviet Socialist Republics
 US,,United States (of America)
-UTC,,Universal Coordinated Time
+UTC,,Coordinated Universal Time
 UT,,Utah (USA)
 VA,,Virgina (USA)|Veteran's Administration (US)
 VC,,Venture Capital/Capitalist|Version Control
