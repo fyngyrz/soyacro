@@ -442,6 +442,8 @@ FSK,,Frequency Shift Keying
 FSM,,Flying Spaghetti Monster
 FTC,,Federal Trade Commission (USA)
 FTFY,,Fixed That For You
+FTFTFA,,Fixed That For The Fucking Article, or, bowdlerized, the Fine article
+FTFTFS,,Fixed That For The Fucking Summary, or, bowdlerized, the Fine summary
 FTP,,File Transfer Protocol
 FTW,,For The Win
 FUBAR,,Fucked Up Beyond All Recovery
@@ -844,6 +846,7 @@ PIN,,Personal Identification Number
 PITA,,Pain In The Ass
 PLL,,Phase Locked Loop
 PM,,Prime Minister|Post Meridiem - after midday
+PMS,,PreMenstrual syndrome
 PNAS,,Proceedings of the National Academy of Sciences
 PNG,,Portable Network Graphics (an image file format and its support community)
 POS,,Piece Of Shit
