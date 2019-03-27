@@ -931,6 +931,7 @@ SCA,,Subsidiary Communications Authorization
 SCOTUS,,Supreme Court Of The United States
 SCUBA,,Self-Contained Underwater Breathing Apparatus
 SC,,South Carolina (USA)
+SCTP,,Stream Control Transmission Protocol
 SDR,,Software Defined Radio
 SD,,South Dakota (USA)|Secure Digital
 SDK,,Software Development Kit
