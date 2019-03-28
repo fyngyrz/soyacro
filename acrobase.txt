@@ -153,6 +153,7 @@ AMS,,AM Stereo (radio)
 AMSAT,,AMateur SATellite Corporation
 AMZN,,Amazon's stock ticker symbol
 AND,,AND gate: input 1 AND input 2 = output
+ANH,,A New Hope
 ANR,,Automatic Noise Reduction
 ANSI,,American National Standards Institute
 AOL,,America OnLine (a digital services provider)
@@ -997,7 +998,7 @@ STL,,Standard Tessellation Language|Special Technologies Laboratory|Salt, Tequil
 STT,,Speech-To-Text
 SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
-SW,,Shortwave (radio)|SouthWest|SoftWare
+SW,,Shortwave (radio)|SouthWest|SoftWare|Star Wars
 SWAT,,Special Weapons And Tactics 
 SWB,,ShortWave Band (radio)
 SWL,,ShortWave Listener
@@ -1012,6 +1013,7 @@ TCPA,,Telecom Consumer Protection Act
 TDM,,Time Division Multiplexing
 TDP,,Thermal Design Power or Point
 TERF,,Trans-Exlusionary Radical Feminist
+TESB,,The Empire Strikes Back
 TESS,,Transiting Exoplanet Survey Satellite
 TFA,,The Fucking Article: bowdlerized, The Fine Article
 TFC,,The Fucking Comments: bowdlerized, The Fine Comments
