@@ -251,6 +251,7 @@ CIO,,Chief Information Officer
 CIS,,Cisgender - where sense of identity corresponds to birth sex
 CIT,,California Institute of Technology
 CLI,,Command Line Interface
+CME,,Coronal Mass Ejection
 CMOS,,Complementary Metal Oxide Semiconductor
 CLPS,,Commercial Lunar Payload Services
 CMS,,Content Management System
