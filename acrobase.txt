@@ -1094,7 +1094,9 @@ US,,United States (of America)
 UTC,,Coordinated Universal Time
 UT,,Utah (USA)
 VA,,Virgina (USA)|Veteran's Administration (US)
+VAC,,Volts Alternating Current
 VC,,Venture Capital/Capitalist|Version Control
+VDC,,Volts Direct Current
 VEC,,Volunteer Exam Coordinator
 VESA,,Video Electronics Standards Association
 VFO,,Variable Frequency Oscillator
