@@ -125,7 +125,7 @@ ADD,,Attention Deficit Disorder
 AES,,Advanced Encryption Standard
 AFAIAC,,As Far As I Am Concerned
 AFAIK,,As Far As I Know
-AF,,Audio Frequency
+AF,,Audio Frequency|As Fuck
 AFK,,Away From Keyboard
 AFRL,,Air Force Research Laboratory
 AFSK,,Audio Frequency Shift Keying - using audio tones to encode data
