@@ -591,6 +591,7 @@ IRA,,Individual Retirement Account|Irish-Republican Army
 IRC,,Internet Relay Chat|International Reply Coupon
 IRQ,,Interrupt ReQuest
 IRS,,Internal Revenue Service (US)
+IRT,,Interborough Rapid Transit company (purchased by NYC in 1940)
 IS,,Image Stabilization|Islamic State
 ISA,,Industry Standard Architecture|Instruction Set Architecture
 ISIL,,Islamic State of Iraq and the Levant
