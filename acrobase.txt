@@ -317,6 +317,7 @@ DIN,,German institute, similar to US ANSI
 DIP,,Dual Inline Package
 DIY,,Do It Yourself
 DJ,,Disc Jockey
+DLC,,DownLoadable Content
 DMA,,Direct Memory Access
 DMOZ,,Originally from open.mozilla.org, then ODP: Open Directory Project
 DMR,,Digital Mobile Radio
