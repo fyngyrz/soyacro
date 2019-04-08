@@ -529,6 +529,7 @@ HTML,,HyperText Markup Language (in general, also version 1)
 HTTP,,HyperText Transfer Protocol
 HTTPS,,HyperText Transfer Protocol, Secure
 HUD,,Housing and Urban Development (US)|Heads-Up Display
+HV,,High Voltage
 HVM,,High Volume Manufacturing
 HWP,,HighWay Patrol|Height Weight Proportional
 HZ,Hz,Hertz (cycles per second)
