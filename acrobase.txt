@@ -886,6 +886,9 @@ QR,,Quick Response code
 QRZ,,Radio shorthand for are you there?
 QSL,,Radio shorthand for response
 QSO,,Radio shorthand for conversation
+QT,,A cross-platform development system
+QT4,,A cross-platform development system
+QT5,,A cross-platform development system
 RADAR,,RAdio Detection And Ranging
 RAID,,Redundant Array of Independent Disks
 RAM,,Random Access Memory - get to any part of the memory at any time
