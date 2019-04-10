@@ -1164,6 +1164,7 @@ XML,,eXtensible Markup Language
 XMPP,,Extensible Messaging and Presence Protocol
 XMS,,Extended Memory Specification
 XOR,,XOR gate: input 1 not equal input 2 = output
+XP,,Short for "Windows XP"
 XTAL,,Crystal
 XX,,Female chromosomes
 XY,,Male chromosomes
