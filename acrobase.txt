@@ -1142,6 +1142,7 @@ WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
 WMD,,Weapons of Mass Destruction
 WNEW,,Prog rock FM station in NYC in the 1900's
+WOT,,Wall Of Text
 WRT,,With Regard To
 WP,,WordPress|Word Processing
 WSJ,,Wall Street Journal (US newspaper)
