@@ -1019,6 +1019,7 @@ TBH,,To Be Honest
 TCPA,,Telecom Consumer Protection Act
 TDM,,Time Division Multiplexing
 TDP,,Thermal Design Power or Point
+TDS,,Trump Derangement Syndrome
 TERF,,Trans-Exlusionary Radical Feminist
 TESB,,The Empire Strikes Back
 TESS,,Transiting Exoplanet Survey Satellite
@@ -1142,9 +1143,9 @@ WIP,,Work In Progress
 WLAN,,Wireless Local Area Network
 WMD,,Weapons of Mass Destruction
 WNEW,,Prog rock FM station in NYC in the 1900's
-WOT,,Wall Of Text
 WRT,,With Regard To
 WP,,WordPress|Word Processing
+WOT,,Wall Of Text
 WSJ,,Wall Street Journal (US newspaper)
 WSPR,,Weak Signal Propagation Reporter
 WSU,,Washington State University
