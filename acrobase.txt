@@ -584,6 +584,7 @@ IOW,,In Other Words
 IP,,Internet Protocol (often a specific Internet address)|Intellectual Property
 IPC,,InterProcess Communications
 IPO,,Initial Public Offering
+IPS,,In-Plane Switching (LCD technology)
 IPSC,iPSC,induced Plutipotent Stem Cells
 IPV4,IPv4,Internet Protocol, 32-bit
 IPV6,IPv6,Internet Protocol, 128-bit
