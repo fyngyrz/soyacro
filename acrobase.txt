@@ -686,7 +686,7 @@ MAMR,,Microwave-Assisted Magnetic Recording
 MAU,,Monthly Active Users
 MB,,Megabyte|Manitoba (Canada)
 MBA,,Masters of Business Administration
-MC,,Midnight Commander (software)
+MC,,MicroCode (CPU technology)|Midnight Commander (software)
 MD,,Maryland (USA)|Medical Doctor
 MDMA,,Ecstasy/Molly: 3,4-methylenedioxy-methamphetamine - C11H15NO2
 MDT,,Mountain Daylight Time
