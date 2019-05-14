@@ -1071,6 +1071,7 @@ UEFI,,Unified Extensible Firmware Interface
 UFO,,Unidentified Flying Object
 UHF,,Ultra High Frequency: 300 MHz - 3 GHz
 UI,,User Interface
+UID,,User IDentifier
 UK,,United Kingdom
 UL,,Underwriter's Labratories
 ULA,,United Launch Alliance
