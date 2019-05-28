@@ -355,6 +355,7 @@ ECU,,Engine Control Unit
 ED,,Emergency Department|Erectile Dysfunction
 EDT,,Eastern Daylight Time
 EE,,Electrical/Electronic Engineering
+EEE,,Embrace, Extend, Extinguish
 EEG,,Eastern European Group
 EELV,,Evolved Expendable Launch Vehicle
 EEOC,,Equal Employment Opportunity Commission (US)
