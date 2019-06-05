@@ -565,7 +565,7 @@ IE10,,Internet Explorer v10
 IE11,,Internet Explorer v11
 IED,,Improvised Explosive Device
 IEEE,,Institute of Electrical and Electronics Engineers
-IF,,Intermediate Frequency
+IF,,Intermediate Frequency|Intermittent Fasting
 IHOP,,International House of Pancakes
 IIRC,,If I ReCall|If I Recall Correctly
 IIS,,Internet Information Services
@@ -810,6 +810,7 @@ OJT,,On the Job Training
 OLC,,Octa Level Cell
 OLED,,Organic Light Emitting Diode
 OM,,Old Man
+OMAD,,One Meal A Day
 OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 ON,,Ontario (Canada)
@@ -1133,6 +1134,7 @@ WA,,Washington (USA)
 WAC,,Worked All Countries (amatuer radio)
 WAS,,Worked All States (amateur radio)
 WAZ,,Worked All Zones (amateur radio)
+WB,,Welcome Back
 WBC,,White Blood Count
 WC,,Water Closet (bathroom)|Waist Circumference
 WEC,,Wave Energy Converter
