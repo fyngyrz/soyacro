@@ -1065,6 +1065,7 @@ TV,,Television|Transvestite/Tranny
 TX,,Texas (USA)|Transmit
 UAE,,United Arab Emirates
 UAV,,Unmanned Aerial Vehicle
+UBI,,Universal Basic Income
 UCSD,,University of California, San Diego
 UC,,University of California
 UCLA,,University of California, Los Angeles
