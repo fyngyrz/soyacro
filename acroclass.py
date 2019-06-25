@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: January 28th, 2019 (this code file only)
+	#  Last Update: June 5th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.7 Beta')
+		return('0.0.8 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -38,6 +38,7 @@ class core(object):
 		self.setstyle(astyle)
 		self.igdict = {}
 		self.undict = {}
+		self.redict= {}
 		self.editor = editor
 		self.inquotes = inquotes
 		self.inspan = 0
@@ -169,6 +170,7 @@ class core(object):
 								term = key
 								if alternate != u'':
 									term = alternate
+									self.redict[key] = alternate
 								if self.acros.get(key,'') != '':
 									self.errors += u'Duplicate ACRO key: '+ unicode(key) + u'\n'
 								alist = expansion.split('|')
@@ -343,7 +345,11 @@ class core(object):
 							if self.inspan == 0:
 								smark = u''
 								emark = u''
-						taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,accum)
+						term = accum
+						uterm = self.redict.get(term,'')
+						if uterm != '':
+							term = uterm
+						taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,term)
 					accum = taccum
 					accum += c
 					o += accum
@@ -372,7 +378,11 @@ class core(object):
 						if self.inspan == 0:
 							smark = u''
 							emark = u''
-					taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,accum)
+					term = accum
+					uterm = self.redict.get(term,'')
+					if uterm != '':
+						term = uterm
+					taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,uterm)
 				accum = taccum
 				o += accum
 			else: # 1 or 0
