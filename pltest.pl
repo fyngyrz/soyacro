@@ -32,7 +32,7 @@ my $nfl;
 # DF21 is an undefined, component-style term, which will be "not found"
 # BS is a multiple definition term
 # --------------------------------
-my $utext = "What the 73 CAM FOO BAR BLEEP is going on with <blockquote>the XTAL1 GHZ</blockquote> into R1 and C1 at VR23 in DF13? What is this BS?\n";
+my $utext = "What the 73 CAM FOO BAR BLEEP is going on with <blockquote>the XTAL1 GHZ</blockquote> into R1 and C1 at VR23 in DF13? What is this BS? Do you use OSX?\n";
 # --------------------------------
 
 # Basic setup:

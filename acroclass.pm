@@ -14,6 +14,7 @@ sub new
 				igdic=>{},
 				undic=>{},
 				codic=>{},
+				redic=>{},
 				nflst=>[],
 				standardfile=>'acrobase.txt',
 				localfile=>'acrolocl.txt',
@@ -189,7 +190,8 @@ sub new
 								$term = $ray[0];
 								if ($ray[1] ne '')	# substitutions
 								{
-									$term = $ray[1];
+#									$term = $ray[1];
+									$self->{redic}{$term} = $ray[1];
 								}
 								$mdef = multidef($self,$ray[2]);
 								$term = "$mdef";
@@ -429,7 +431,12 @@ sub new
 					{
 						if ($go)
 						{
-							$taccum = "<abbr title=\"$ntag$self->{acros}{$accum}$mtag\">$accum</abbr>"; # then grab it
+							my $uterm = $accum;
+							if (exists($self->{redic}{$accum}))
+							{
+								$uterm = $self->{redic}{$accum};
+							}
+							$taccum = "<abbr title=\"$ntag$self->{acros}{$accum}$mtag\">$uterm</abbr>"; # then grab it
 						}
 						else # it's a number and we're ignoring it
 						{
