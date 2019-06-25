@@ -823,7 +823,7 @@ OS9,,An OS for the 6800 and 6809 microprocessors
 OSHA,,Occupational Safety and Health Administration (US)
 OSI,,Open Systems Interconnection
 OS,,Operating System|Open-Source (software)
-OSX,OS&nbsp;X&nbsp;/&nbsp;MacOS,Operating System X (Apple) AKA MacOS
+OSX,OS&nbsp;X,Operating System X (Apple) AKA MacOS
 OT,,Old Testament
 OTC,,Over The Counter
 OTOH,,On The Other Hand
