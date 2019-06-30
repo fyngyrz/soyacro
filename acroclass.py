@@ -5,7 +5,7 @@ class core(object):
 	# =============
 	#   Written by: fyngyrz - codes with magnetic needle
 	#   Incep date: November 24th, 2018
-	#  Last Update: June 5th, 2019 (this code file only)
+	#  Last Update: June 30th, 2019 (this code file only)
 	#  Environment: Python 2.7
 	# Source Files: acroclass.py, acrobase.txt
 	#  Tab Spacing: Set to 4 for sane readability of Python source
@@ -18,7 +18,7 @@ class core(object):
 	# ----------------------------------------------------------
 
 	def version_set(self):
-		return('0.0.8 Beta')
+		return('0.0.9 Beta')
 
 	def __init__(self,	detectterms=True,			# disable class.makeacros() = False
 						numberterms=False,			# disable detecting terms incorporating numbers
@@ -382,7 +382,7 @@ class core(object):
 					uterm = self.redict.get(term,'')
 					if uterm != '':
 						term = uterm
-					taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,uterm)
+					taccum = '<abbr%s title="%s%s%s">%s</abbr>' % (self.astyle,smark,taccum,emark,term)
 				accum = taccum
 				o += accum
 			else: # 1 or 0
