@@ -1041,7 +1041,7 @@ TIA,,Thanks In Advance
 TIFF,,Tagged Image File Format
 TIL,,Today I Learned
 TLA,,Three Letter Agency (FBI, CIA, NSA, etc.)
-TLDR,TL;DR:,Too Long, Didn't Read
+TLDR,TL;DR:,Too Long; Didn't Read:
 TL,,Too Long
 TLD,,Top-Level Domain
 TLS,,Transport Layer Security
