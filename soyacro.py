@@ -8,7 +8,7 @@ start = time.time()
 # =============
 #   Written by: fyngyrz - codes with magnetic needle
 #   Incep date: November 24th, 2018
-#  Last Update: February 18th, 2019 (this code file only)
+#  Last Update: July 2nd, 2019 (this code file only)
 #  Environment: Webserver cgi, HTML 4.01 strict, Python 2.7
 # Source Files: soyacro.py, check.py, testacros.py
 #   Data files: acrobase.txt
@@ -641,7 +641,7 @@ tmp = tmp.replace('&','&amp;')
 
 # Add prepped post to a stand-alone textarea:
 # -------------------------------------------
-resform = u'<div style="text-align:left;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div></div>'
+resform = u'<div style="text-align:left; clear: both;"><div><TEXTAREA style="background-color:BGCOLOR;" NAME="thetext" ROWS="RESLINES" COLS="80" readonly>'+tmp+u'</TEXTAREA></div></div>'
 resform = resform.replace(u'RESLINES',unicode(str(reslines)))
 mybody += resform
 
