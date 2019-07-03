@@ -439,6 +439,7 @@ FP16,,16-bit Floating Point
 FP32,,32-bit Floating Point
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
+FQA,,Frequently Questioned Answers
 FS,,Fucking Summary
 FSB,,Federal Security Service (Russian Federation)
 FSF,,Free Software Foundation
@@ -814,10 +815,12 @@ OMAD,,One Meal A Day
 OMB,,Office of Management and Budget (US)
 OMG,,Oh My God
 ON,,Ontario (Canada)
+OO,,Object Oriented
 OOP,,Object Oriented Programming
 OPEC,,Organization of Petroleum Exporting Countries
 OPED,Op-Ed,(placed) Opposite of Editorial page: reader commentary
 OP,,Original Poster|OPerator
+OPC,,Other People's Code
 OR,,Oregon (USA)|OR gate: input 1 OR input 2 = output
 OS9,,An OS for the 6800 and 6809 microprocessors
 OSHA,,Occupational Safety and Health Administration (US)
@@ -1004,7 +1007,7 @@ SSO,,Sun Synchronous Orbit
 SST,,SuperSonic Transport|Space Ship Two
 SSTV,,Slow Scan TeleVision - images encoded into audio tones, generally sent by radio
 STEM,,Science, Technology, Engineering, Math
-STL,,Standard Tessellation Language|Special Technologies Laboratory|Salt, Tequila and Lime
+STL,,Standard Template Library|Standard Tessellation Language|Special Technologies Laboratory|Salt, Tequila and Lime
 STT,,Speech-To-Text
 SUV,,Sport Utility Vehicle
 SVG,,Scalable Vector Graphics
