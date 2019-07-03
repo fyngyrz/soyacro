@@ -418,6 +418,7 @@ FEM,,Finite Element Method
 FEMA,,Federal Emergency Management Agency (US)
 FET,,Field-Effect Transistor
 FF,,Full frame: 36 x 24 mm sensor size|Fast Forward
+FFF,,Furlog-Firkin-Fortnight length-mass-time measurement system
 FFS,,For Fuck's Sake
 FHA,,Federal Housing Administration (US)
 FIFO,,First In, First Out
@@ -437,6 +438,7 @@ FOSTA,,Fight Online Sex Trafficking Act (US)
 FP,,Front Page
 FP16,,16-bit Floating Point
 FP32,,32-bit Floating Point
+FPF,,Furlongs Per Fortnight: 0.000166309524 m / s
 FPGA,,Field-Programmable Gate Array
 FPU,,Floating Point Unit
 FQA,,Frequently Questioned Answers
@@ -630,7 +632,7 @@ KISS,,Keep It Simple, Stupid
 KJV,,King James Version (English language bible)
 KKK,,Ku Klux Klan
 KMS,,Kilometers|Knowledge Management System
-KPH,,Kilometers Per Hour
+KPH,,Kilometers Per Hour|Keystrokes Per Hour
 KS,,Kansas (USA)
 KVM,,Keyboard, Video, and Mouse switch
 KWH,kWh,kiloWatt-Hour
