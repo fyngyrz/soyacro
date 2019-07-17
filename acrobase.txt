@@ -848,6 +848,8 @@ PDA,,Personal Digital Assitant|Public Display of Affection
 PDF,,Portable Document Format
 PDT,,Pacific Daylight Time
 PE,,Prince Edward Island (Canada)
+PEBCAK,,Problem Exists Between Chair And Keyboard
+PEBKAC,,Problem Exists Between Keyboard And Chair
 PEP,,Python Enhancement Proposal
 PFT,,Prints For Time: photographer exchanges prints for model's time
 PGP,,Pretty Good Privacy
