@@ -815,6 +815,7 @@ OLED,,Organic Light Emitting Diode
 OM,,Old Man
 OMAD,,One Meal A Day
 OMB,,Office of Management and Budget (US)
+OMD,,Oh My Darwin
 OMG,,Oh My God
 ON,,Ontario (Canada)
 OO,,Object Oriented
