@@ -814,7 +814,7 @@ OLC,,Octa Level Cell
 OLED,,Organic Light Emitting Diode
 OM,,Old Man
 OMAD,,One Meal A Day
-OMB,,Office of Management and Budget (US)
+OMB,,Office of Management and Budget (USA)
 OMD,,Oh My Darwin
 OMG,,Oh My God
 ON,,Ontario (Canada)
