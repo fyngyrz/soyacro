@@ -1054,6 +1054,7 @@ TL,,Too Long
 TLD,,Top-Level Domain
 TLS,,Transport Layer Security
 TM,,TradeMark
+TMB,,The Mighty Buzzard
 TMI,,Too Much Information
 TN,,Tennessee (USA)
 TNC,,Terminal Node Controller
