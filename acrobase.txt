@@ -447,6 +447,7 @@ FSB,,Federal Security Service (Russian Federation)
 FSF,,Free Software Foundation
 FSK,,Frequency Shift Keying
 FSM,,Flying Spaghetti Monster
+FITB,,Fill In The Blank
 FTC,,Federal Trade Commission (USA)
 FTFY,,Fixed That For You
 FTFTFA,,Fixed That For The Fucking Article, or, bowdlerized, the Fine article
